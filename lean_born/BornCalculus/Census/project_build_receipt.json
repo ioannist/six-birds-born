@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "roots": [
+    "BornCalculus.Census.FullWitness",
+    "BornCalculus.Census.AuditFull"
+  ],
+  "module_count": 287,
+  "jobs_limit": 8,
+  "max_active_compilers": 8,
+  "wall_seconds": 106.06106727709994,
+  "peak_aggregate_rss_kib": 6489544,
+  "memory_measurement": "maximum sampled sum of RSS of all build child processes; shared mappings can be counted repeatedly",
+  "shard_source_bytes": 117815654
+}

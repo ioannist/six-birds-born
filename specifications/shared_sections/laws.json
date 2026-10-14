@@ -1,0 +1,879 @@
+{
+  "competitor_count": 11,
+  "competitors": [
+    "L_clipped_linear",
+    "q_diag",
+    "q_lambda_1_16",
+    "q_lambda_1_8",
+    "q_lambda_1_4",
+    "q_lambda_1_2",
+    "q_lambda_1",
+    "q_lambda_2",
+    "q_lambda_4",
+    "q_lambda_8",
+    "q_lambda_16"
+  ],
+  "definitions": {
+    "L_clipped_linear": {
+      "arguments": [
+        {
+          "arguments": [
+            {
+              "arguments": [
+                {
+                  "kind": "variable",
+                  "name": "P_V"
+                },
+                {
+                  "kind": "variable",
+                  "name": "p"
+                }
+              ],
+              "kind": "operator",
+              "operator": "matrix_multiply"
+            },
+            {
+              "kind": "literal",
+              "value": 0
+            }
+          ],
+          "function": "componentwise_max",
+          "kind": "call"
+        }
+      ],
+      "function": "normalize",
+      "kind": "call"
+    },
+    "L_full": {
+      "kind": "variable",
+      "name": "p_s"
+    },
+    "L_uniform": {
+      "arguments": [
+        {
+          "kind": "literal",
+          "value": 1
+        },
+        {
+          "kind": "variable",
+          "name": "m"
+        }
+      ],
+      "kind": "operator",
+      "operator": "divide"
+    },
+    "q_diag": {
+      "arguments": [
+        {
+          "arguments": [
+            {
+              "arguments": [
+                {
+                  "arguments": [
+                    {
+                      "arguments": [
+                        {
+                          "arguments": [
+                            {
+                              "kind": "variable",
+                              "name": "p"
+                            }
+                          ],
+                          "function": "sqrt",
+                          "kind": "call"
+                        },
+                        {
+                          "kind": "variable",
+                          "name": "v_j"
+                        }
+                      ],
+                      "function": "inner_product",
+                      "kind": "call"
+                    },
+                    {
+                      "kind": "literal",
+                      "value": 2
+                    }
+                  ],
+                  "kind": "operator",
+                  "operator": "power"
+                },
+                {
+                  "arguments": [
+                    {
+                      "kind": "variable",
+                      "name": "v_j_s"
+                    },
+                    {
+                      "kind": "literal",
+                      "value": 2
+                    }
+                  ],
+                  "kind": "operator",
+                  "operator": "power"
+                }
+              ],
+              "kind": "operator",
+              "operator": "multiply"
+            }
+          ],
+          "kind": "operator",
+          "operator": "sum_over_j"
+        }
+      ],
+      "function": "normalize",
+      "kind": "call"
+    },
+    "q_full": {
+      "arguments": [
+        {
+          "arguments": [
+            {
+              "kind": "variable",
+              "name": "r_s"
+            },
+            {
+              "kind": "literal",
+              "value": 2
+            }
+          ],
+          "kind": "operator",
+          "operator": "power"
+        },
+        {
+          "arguments": [
+            {
+              "arguments": [
+                {
+                  "kind": "variable",
+                  "name": "r_t"
+                },
+                {
+                  "kind": "literal",
+                  "value": 2
+                }
+              ],
+              "kind": "operator",
+              "operator": "power"
+            }
+          ],
+          "kind": "operator",
+          "operator": "sum_over_t"
+        }
+      ],
+      "kind": "operator",
+      "operator": "divide"
+    },
+    "q_lambda": {
+      "arguments": [
+        {
+          "arguments": [
+            {
+              "arguments": [
+                {
+                  "kind": "variable",
+                  "name": "r_s"
+                },
+                {
+                  "kind": "literal",
+                  "value": 2
+                }
+              ],
+              "kind": "operator",
+              "operator": "power"
+            },
+            {
+              "arguments": [
+                {
+                  "kind": "variable",
+                  "name": "lambda"
+                },
+                {
+                  "arguments": [
+                    {
+                      "arguments": [
+                        {
+                          "kind": "variable",
+                          "name": "r"
+                        }
+                      ],
+                      "function": "l2_norm",
+                      "kind": "call"
+                    },
+                    {
+                      "kind": "literal",
+                      "value": 2
+                    }
+                  ],
+                  "kind": "operator",
+                  "operator": "power"
+                },
+                {
+                  "kind": "variable",
+                  "name": "h_s"
+                }
+              ],
+              "kind": "operator",
+              "operator": "multiply"
+            }
+          ],
+          "kind": "operator",
+          "operator": "add"
+        }
+      ],
+      "function": "normalize",
+      "kind": "call"
+    }
+  },
+  "g2b_conditioning": {
+    "alternatives": {
+      "condition_full_p_then_compress": "rejected primary; classical-full comparator",
+      "empirical_bayesian_condition": "rejected: violates zero-fit",
+      "reproject_sqrt_q1_A": "rejected primary; secondary diagnostic",
+      "state_basis_restrict_and_renormalize": "selected",
+      "unnormalized_restriction": "rejected: not a probability distribution and dTV incomparable"
+    },
+    "conditioning_mass_control_failure": {
+      "kind": "comparison",
+      "left": {
+        "kind": "variable",
+        "name": "conditioning_mass"
+      },
+      "operator": "<=",
+      "return_type": "boolean",
+      "right": {
+        "kind": "literal",
+        "value": 1e-15
+      }
+    },
+    "formulas": {
+      "q1_A": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "q1_s"
+              },
+              {
+                "arguments": [
+                  {
+                    "kind": "variable",
+                    "name": "s_in_A"
+                  }
+                ],
+                "function": "indicator",
+                "kind": "call"
+              }
+            ],
+            "kind": "operator",
+            "operator": "multiply"
+          },
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "kind": "variable",
+                    "name": "q1_t"
+                  },
+                  {
+                    "arguments": [
+                      {
+                        "kind": "variable",
+                        "name": "t_in_A"
+                      }
+                    ],
+                    "function": "indicator",
+                    "kind": "call"
+                  }
+                ],
+                "kind": "operator",
+                "operator": "multiply"
+              }
+            ],
+            "kind": "operator",
+            "operator": "sum_over_t"
+          }
+        ],
+        "kind": "operator",
+        "operator": "divide"
+      },
+      "q2_given_A": {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "q1_A"
+          },
+          {
+            "kind": "variable",
+            "name": "K2"
+          }
+        ],
+        "kind": "operator",
+        "operator": "matrix_multiply"
+      }
+    },
+    "scope": "emitted non-contextual state-basis sequential probe",
+    "selected": "state-basis restrict-and-renormalize"
+  },
+  "g2s_nested_dose": {
+    "construction": {
+      "A_k": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "kind": "variable",
+                    "name": "u_1_through_u_k"
+                  }
+                ],
+                "function": "column_stack",
+                "kind": "call"
+              }
+            ],
+            "function": "transpose",
+            "kind": "call"
+          },
+          {
+            "kind": "variable",
+            "name": "W_0"
+          }
+        ],
+        "kind": "operator",
+        "operator": "matrix_multiply"
+      },
+      "W_k": {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "W_0"
+          },
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "kind": "variable",
+                    "name": "u_1_through_u_k"
+                  }
+                ],
+                "function": "span",
+                "kind": "call"
+              }
+            ],
+            "function": "orthogonal_complement",
+            "kind": "call"
+          }
+        ],
+        "function": "intersection",
+        "kind": "call"
+      },
+      "basis_algorithm": "binary64 reduced-row-echelon elimination, increasing columns, largest-absolute pivot with lowest-row tie, free columns increasing, H1 orientation and two-pass orthonormalization",
+      "candidate": {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "constant"
+          },
+          {
+            "kind": "variable",
+            "name": "u_1_through_u_k"
+          },
+          {
+            "kind": "variable",
+            "name": "W_k"
+          }
+        ],
+        "function": "span",
+        "kind": "call"
+      },
+      "constant_total_rank": {
+        "kind": "comparison",
+        "left": {
+          "arguments": [
+            {
+              "kind": "literal",
+              "value": 1
+            },
+            {
+              "kind": "variable",
+              "name": "k"
+            },
+            {
+              "arguments": [
+                {
+                  "kind": "variable",
+                  "name": "d"
+                },
+                {
+                  "kind": "variable",
+                  "name": "k"
+                }
+              ],
+              "kind": "operator",
+              "operator": "subtract"
+            }
+          ],
+          "kind": "operator",
+          "operator": "add"
+        },
+        "operator": "==",
+        "return_type": "boolean",
+        "right": {
+          "kind": "variable",
+          "name": "r"
+        }
+      },
+      "rank_requirements": [
+        {
+          "kind": "comparison",
+          "left": {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "A_k"
+              }
+            ],
+            "function": "rank",
+            "kind": "call"
+          },
+          "operator": "==",
+          "return_type": "boolean",
+          "right": {
+            "kind": "variable",
+            "name": "k"
+          }
+        },
+        {
+          "kind": "comparison",
+          "left": {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "W_k"
+              }
+            ],
+            "function": "dimension",
+            "kind": "call"
+          },
+          "operator": "==",
+          "return_type": "boolean",
+          "right": {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "d"
+              },
+              {
+                "kind": "variable",
+                "name": "k"
+              }
+            ],
+            "kind": "operator",
+            "operator": "subtract"
+          }
+        },
+        {
+          "kind": "comparison",
+          "left": {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "kind": "variable",
+                    "name": "W_k"
+                  }
+                ],
+                "function": "dimension",
+                "kind": "call"
+              },
+              {
+                "arguments": [
+                  {
+                    "kind": "variable",
+                    "name": "W_k_plus_1"
+                  }
+                ],
+                "function": "dimension",
+                "kind": "call"
+              }
+            ],
+            "kind": "operator",
+            "operator": "subtract"
+          },
+          "operator": "==",
+          "return_type": "boolean",
+          "right": {
+            "kind": "literal",
+            "value": 1
+          }
+        }
+      ]
+    },
+    "dose_formula": {
+      "arguments": [
+        {
+          "arguments": [
+            {
+              "kind": "variable",
+              "name": "rho"
+            },
+            {
+              "kind": "variable",
+              "name": "d"
+            }
+          ],
+          "kind": "operator",
+          "operator": "multiply"
+        }
+      ],
+      "function": "round_half_up",
+      "kind": "call"
+    },
+    "duplicate_k": "evaluate once and weight once in slopes, multiplicity, and monotonicity",
+    "nominal_rho": [
+      {
+        "denominator": 1,
+        "numerator": 0
+      },
+      {
+        "denominator": 4,
+        "numerator": 1
+      },
+      {
+        "denominator": 2,
+        "numerator": 1
+      },
+      {
+        "denominator": 4,
+        "numerator": 3
+      },
+      {
+        "denominator": 1,
+        "numerator": 1
+      }
+    ],
+    "rank_one": "G2S_DOSE_NOT_EVALUABLE_RANK_ONE; exclude only from dose analysis"
+  },
+  "g2u_slots": [
+    {
+      "formulas": {
+        "nonnegative": {
+          "kind": "comparison",
+          "left": {
+            "kind": "variable",
+            "name": "psi_t"
+          },
+          "operator": ">=",
+          "return_type": "boolean",
+          "right": {
+            "kind": "variable",
+            "name": "psi_0"
+          }
+        },
+        "solution": {
+          "kind": "comparison",
+          "left": {
+            "kind": "variable",
+            "name": "psi_t"
+          },
+          "operator": "==",
+          "return_type": "boolean",
+          "right": {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "t"
+              }
+            ],
+            "function": "sqrt",
+            "kind": "call"
+          }
+        }
+      },
+      "id": "T1a",
+      "rule": "monotonicity, sphere preservation, and n=2/n=3 additive argument on probability domain"
+    },
+    {
+      "condition": {
+        "kind": "comparison",
+        "left": {
+          "arguments": [
+            {
+              "kind": "variable",
+              "name": "P_V"
+            },
+            {
+              "arguments": [
+                {
+                  "kind": "variable",
+                  "name": "p"
+                }
+              ],
+              "function": "sqrt",
+              "kind": "call"
+            }
+          ],
+          "kind": "operator",
+          "operator": "matrix_multiply"
+        },
+        "operator": "!=",
+        "return_type": "boolean",
+        "right": {
+          "kind": "literal",
+          "value": 0
+        }
+      },
+      "id": "T1b",
+      "rule": "positivity and Parseval normalization; condition is not equivalent to G2c nondegeneracy"
+    },
+    {
+      "formulas": {
+        "p": {
+          "arguments": [
+            {
+              "arguments": [
+                {
+                  "kind": "literal",
+                  "value": 16
+                },
+                {
+                  "kind": "literal",
+                  "value": 4
+                },
+                {
+                  "kind": "literal",
+                  "value": 1
+                },
+                {
+                  "kind": "literal",
+                  "value": 64
+                }
+              ],
+              "function": "vector",
+              "kind": "call"
+            },
+            {
+              "kind": "literal",
+              "value": 85
+            }
+          ],
+          "kind": "operator",
+          "operator": "divide"
+        },
+        "sqrt_p": {
+          "arguments": [
+            {
+              "arguments": [
+                {
+                  "kind": "literal",
+                  "value": 4
+                },
+                {
+                  "kind": "literal",
+                  "value": 2
+                },
+                {
+                  "kind": "literal",
+                  "value": 1
+                },
+                {
+                  "kind": "literal",
+                  "value": 8
+                }
+              ],
+              "function": "vector",
+              "kind": "call"
+            },
+            {
+              "arguments": [
+                {
+                  "kind": "literal",
+                  "value": 85
+                }
+              ],
+              "function": "sqrt",
+              "kind": "call"
+            }
+          ],
+          "kind": "operator",
+          "operator": "divide"
+        }
+      },
+      "id": "T1c_narrow",
+      "rule": "q-full projector invariant and q-diag not basis invariant"
+    },
+    {
+      "id": "classification",
+      "rule": "UNCLAIMED/STATEMENT_GAP"
+    },
+    {
+      "dominance_formula": {
+        "kind": "comparison",
+        "left": {
+          "arguments": [
+            {
+              "arguments": [
+                {
+                  "kind": "variable",
+                  "name": "u_k_s0"
+                },
+                {
+                  "kind": "variable",
+                  "name": "u_k_s1"
+                }
+              ],
+              "kind": "operator",
+              "operator": "multiply"
+            }
+          ],
+          "function": "absolute",
+          "kind": "call"
+        },
+        "operator": ">",
+        "return_type": "boolean",
+        "right": {
+          "arguments": [
+            {
+              "arguments": [
+                {
+                  "arguments": [
+                    {
+                      "kind": "variable",
+                      "name": "u_j_s0"
+                    },
+                    {
+                      "kind": "variable",
+                      "name": "u_j_s1"
+                    }
+                  ],
+                  "kind": "operator",
+                  "operator": "multiply"
+                }
+              ],
+              "function": "absolute",
+              "kind": "call"
+            }
+          ],
+          "kind": "operator",
+          "operator": "sum_over_j_not_k"
+        }
+      },
+      "id": "T1d_i",
+      "projector_formula": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "u_j_s0"
+              },
+              {
+                "kind": "variable",
+                "name": "u_j_s1"
+              }
+            ],
+            "kind": "operator",
+            "operator": "multiply"
+          }
+        ],
+        "kind": "operator",
+        "operator": "sum_over_j"
+      },
+      "rule": "sufficient witness only, not universal converse"
+    },
+    {
+      "id": "Lean",
+      "rule": "WITNESSED_INSTANCES_ONLY for exact finite named and hashed registry"
+    },
+    {
+      "id": "T1d_ii",
+      "rule": "deduplicated underlying-context negativity prevalence on clean G2c grid; raw/pkg views diagnostic"
+    }
+  ],
+  "lambda_grid": [
+    {
+      "denominator": 16,
+      "numerator": 1
+    },
+    {
+      "denominator": 8,
+      "numerator": 1
+    },
+    {
+      "denominator": 4,
+      "numerator": 1
+    },
+    {
+      "denominator": 2,
+      "numerator": 1
+    },
+    {
+      "denominator": 1,
+      "numerator": 1
+    },
+    {
+      "denominator": 1,
+      "numerator": 2
+    },
+    {
+      "denominator": 1,
+      "numerator": 4
+    },
+    {
+      "denominator": 1,
+      "numerator": 8
+    },
+    {
+      "denominator": 1,
+      "numerator": 16
+    }
+  ],
+  "source_sections": [
+    "8",
+    "9",
+    "13"
+  ],
+  "t1d_i": {
+    "arguments": [
+      {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "u_j_s0"
+          },
+          {
+            "kind": "variable",
+            "name": "u_j_s1"
+          }
+        ],
+        "kind": "operator",
+        "operator": "multiply"
+      }
+    ],
+    "kind": "operator",
+    "operator": "sum_over_j"
+  },
+  "wording_ladder": [
+    {
+      "condition": "beats clipped-linear only",
+      "maximum": "q-full outperforms the frozen clipped-linear comparator on the named clean population"
+    },
+    {
+      "condition": "also beats q-diag",
+      "maximum": "cross terms are empirically load-bearing under the frozen nondegenerate estimand"
+    },
+    {
+      "condition": "beats clipped-linear, q-diag, and all q-lambda",
+      "maximum": "q-full is best supported within the complete frozen competitor family"
+    },
+    {
+      "condition": "separately reviewed classification theorem proves uniqueness",
+      "maximum": "selected/forced/must be quadratic/uniqueness only within theorem hypotheses"
+    }
+  ],
+  "zero_fit": true
+}

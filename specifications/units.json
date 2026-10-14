@@ -1,0 +1,42 @@
+{
+  "schema": "born_unit_grids_v1",
+  "amendment_map": "amendments.json",
+  "description": "Unit construction only: no population inference. Registered versions supply all scientific formulas, controls and RNG namespaces.",
+  "evaluations": {
+    "competitor": {
+      "run_grid": "g2a",
+      "version_stage": "g2a_acquisition_and_inference",
+      "unit_order": "lexicographic_invocation_id",
+      "structural_unit_binding": "SHA-256 of canonical manifest without final LF",
+      "units_file": "rb1v2_g2a_units.jsonl"
+    },
+    "cross-term": {
+      "run_grid": "g2c",
+      "version_stage": "g2c_effective_evaluation",
+      "unit_order": "registered_experiment_configuration_seed_scale",
+      "structural_unit_binding": "SHA-256 of canonical structural JSONL row including final LF",
+      "units_file": "rb1v2_g2c_v23_units.jsonl",
+      "controls_file": "rb1v2_g2c_v23_controls.jsonl",
+      "package_reconstruction_file": "rb1v2_g2c_v23_pkg_reconstruction.jsonl"
+    }
+  },
+  "grids": {
+    "competitor": {"evaluation": "competitor", "profile": "registered"},
+    "cross-term": {"evaluation": "cross-term", "profile": "registered"},
+    "smoke": {
+      "profile": "diagnostic; full horizon, selected subset, no registered population verdict",
+      "include_run_grids": ["worked-cases"],
+      "selections": [
+        {"run_grid": "g2c", "seed_index": 7, "experiment": "EXP-105", "configuration": null}
+      ],
+      "evaluations": ["competitor", "cross-term"],
+      "competitor_experiment": "EXP-112"
+    }
+  },
+  "policy": {
+    "threads_per_process": 1,
+    "input_format": "P2a runset.json plus append-only manifest.jsonl, or explicit capture_index.json; hashes checked before construction",
+    "resume": "completed outputs and input bindings must match; retries use new attempt directories",
+    "structural_unit_binding": "version-specific as stated under evaluations; runner wrapper separately hashes without LF"
+  }
+}

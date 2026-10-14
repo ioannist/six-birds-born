@@ -1,0 +1,3053 @@
+{
+  "basis_regression_fixture": {
+    "constant_span_tolerance": 1e-10,
+    "constructor": "prepend normalized constant u_i=1/sqrt(m), then frozen v7 oriented SVD",
+    "expected": {
+      "constant_cutoff": 7.105427357601002e-15,
+      "constant_residual": 4.759089844286815e-16,
+      "original_column_count": 2,
+      "retained_rank": 2,
+      "sqrt_pi_cutoff": 9.802023270256544e-15,
+      "sqrt_pi_residual": 0.814473329107758
+    },
+    "m": 32,
+    "mutation": "replace normalized constant with sqrt(pi); must fail constant-span tolerance",
+    "pi": [
+      1.4750674173902663e-13,
+      2.621678794583406e-13,
+      9.29033837174499e-14,
+      0.5792169493781489,
+      1.3684340127041013e-159,
+      1.4287203217848073e-12,
+      3.1449720674959735e-14,
+      2.034369802026177e-12,
+      1.2797808844353935e-13,
+      5.80875426882981e-13,
+      8.75974651689753e-160,
+      0.0,
+      1.6059170953392133e-12,
+      2.8542885567457423e-13,
+      0.0,
+      0.0,
+      6.242151866888466e-13,
+      3.265279396504123e-12,
+      3.154662653646784e-13,
+      3.736301241907966e-13,
+      4.4688809494311714e-13,
+      2.475947329826575e-13,
+      6.850434593426815e-159,
+      0.42078305060489835,
+      9.480354894506483e-14,
+      1.9087134068007631e-13,
+      1.1419574373480553e-13,
+      5.095967254699636e-13,
+      5.828433606823761e-14,
+      9.351252148522776e-13,
+      7.563449933853373e-14,
+      3.1572383466627033e-12
+    ],
+    "source": "first KEY_BORN_PROBE_JSON record in live EXP-112 seed-0 scale-32 A14_only probe",
+    "source_stdout_sha256": "228535e3c859905274ce7c34f39e4fa6b374801c1876d95dd5ea3356be4c47bf",
+    "sym_eigvec_basis": [
+      [
+        0.010955803783136452,
+        0.019472058102050938,
+        0.006900235411603035,
+        -0.7448449638576202,
+        -2.7066017745572366e-171,
+        0.10611568882829296,
+        0.002335872684103545,
+        0.15109923865561226,
+        0.009505347409875966,
+        0.043143500590873775,
+        -1.732574990624199e-171,
+        0.0,
+        0.11927666750072273,
+        0.021199726195216033,
+        0.0,
+        0.0,
+        0.04636248501723579,
+        0.24252288365578165,
+        0.02343070196512821,
+        0.027750720271114592,
+        0.033191827190370914,
+        0.01838966328125714,
+        -1.3549355142392633e-170,
+        -0.5182562361775205,
+        0.007041366841555705,
+        0.01417663309257302,
+        0.008481687999327907,
+        0.037849400420324246,
+        0.004328966541229273,
+        0.06945478047851344,
+        0.005617619399761323,
+        0.23449832471947984
+      ]
+    ]
+  },
+  "choice_status": "RULED_MANAGER_2026_08_27",
+  "field_derivations": {
+    "M_pkg_or_content_hash": {
+      "dependencies": [
+        "KEY_BORN_PROBE_JSON /packaging",
+        "ordered_state_labels",
+        "ordered_union_outcome_labels"
+      ],
+      "expression": {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "packaging"
+          },
+          {
+            "kind": "variable",
+            "name": "ordered_state_labels"
+          },
+          {
+            "kind": "variable",
+            "name": "pkg_outcome_labels"
+          }
+        ],
+        "function": "indicator_mapping_matrix",
+        "kind": "call"
+      },
+      "formula_pointers": [
+        "/identity/normative_expression_registry/m_k"
+      ],
+      "kind": "typed_derivation"
+    },
+    "M_raw_or_content_hash": {
+      "dependencies": [
+        "KEY_BORN_PROBE_JSON /partition",
+        "ordered_state_labels",
+        "ordered_union_outcome_labels"
+      ],
+      "expression": {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "partition"
+          },
+          {
+            "kind": "variable",
+            "name": "ordered_state_labels"
+          },
+          {
+            "kind": "variable",
+            "name": "raw_outcome_labels"
+          }
+        ],
+        "function": "indicator_mapping_matrix",
+        "kind": "call"
+      },
+      "formula_pointers": [
+        "/identity/normative_expression_registry/m_k"
+      ],
+      "kind": "typed_derivation"
+    },
+    "applicable_control_record_links": {
+      "artifact": "independent g2a control records",
+      "expression": {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "applicable_g2a_controls"
+          }
+        ],
+        "function": "content_addressed_links_in_stage_profile_order",
+        "kind": "call"
+      },
+      "kind": "sealed_artifact_binding"
+    },
+    "attempt_record_sha256": {
+      "artifact": "canonical orchestrator attempt sidecar",
+      "expression": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "sealed_attempt_record"
+              }
+            ],
+            "function": "canonical_json",
+            "kind": "call"
+          }
+        ],
+        "function": "sha256",
+        "kind": "call"
+      },
+      "kind": "sealed_artifact_binding"
+    },
+    "basis_and_projector_inputs": {
+      "dependencies": [
+        "KEY_BORN_PROBE_JSON /p_theory length",
+        "KEY_BORN_PROBE_JSON /sym_eigvec_basis"
+      ],
+      "expression": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [
+                      {
+                        "kind": "variable",
+                        "name": "p_theory"
+                      }
+                    ],
+                    "function": "length",
+                    "kind": "call"
+                  }
+                ],
+                "function": "normalized_constant_vector",
+                "kind": "call"
+              },
+              {
+                "arguments": [
+                  {
+                    "kind": "variable",
+                    "name": "sym_eigvec_basis"
+                  }
+                ],
+                "function": "transpose",
+                "kind": "call"
+              }
+            ],
+            "function": "column_stack",
+            "kind": "call"
+          },
+          {
+            "kind": "variable",
+            "name": "svd_cutoff"
+          }
+        ],
+        "function": "v7_oriented_svd_basis_projector",
+        "kind": "call"
+      },
+      "formula_pointers": [
+        "/thresholds/items/17/value",
+        "/completeness/universal_evidence_shapes/basis_svd_census_consistency"
+      ],
+      "kind": "typed_derivation"
+    },
+    "bootstrap_hierarchy_keys": {
+      "dependencies": [
+        "seed_block_key",
+        "fixed_census_config_or_experiment_key",
+        "source_key"
+      ],
+      "expression": {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "seed_block_key"
+          },
+          {
+            "kind": "variable",
+            "name": "fixed_census_config_or_experiment_key"
+          },
+          {
+            "kind": "variable",
+            "name": "source_key"
+          }
+        ],
+        "function": "ordered_vector",
+        "kind": "call"
+      },
+      "formula_pointers": [],
+      "kind": "typed_derivation"
+    },
+    "brier_score": {
+      "dependencies": [
+        "mapped_outcome_prediction",
+        "selected_unrounded_y"
+      ],
+      "expression": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [
+                      {
+                        "kind": "variable",
+                        "name": "M_k"
+                      },
+                      {
+                        "kind": "variable",
+                        "name": "q"
+                      }
+                    ],
+                    "function": "mapped_probability",
+                    "kind": "call"
+                  },
+                  {
+                    "kind": "variable",
+                    "name": "y_k"
+                  }
+                ],
+                "kind": "operator",
+                "operator": "subtract"
+              },
+              {
+                "kind": "literal",
+                "value": 2
+              }
+            ],
+            "kind": "operator",
+            "operator": "power"
+          }
+        ],
+        "kind": "operator",
+        "operator": "sum"
+      },
+      "formula_pointers": [
+        "/identity/normative_expression_registry/brier"
+      ],
+      "kind": "typed_derivation"
+    },
+    "config_or_null": {
+      "equality_checks": [
+        "equals KEY_AUDIT_JSON /config_name",
+        "equals invocation config"
+      ],
+      "json_paths": [
+        "/cell"
+      ],
+      "kind": "raw_marker_paths",
+      "marker": "KEY_BORN_PROBE_JSON "
+    },
+    "context": {
+      "equality_checks": [
+        "recomputed from frozen v8 context identity formula"
+      ],
+      "json_pointer": "/ordered_structural_manifest/units/*/runner_context_id",
+      "kind": "structural_metadata_path",
+      "marker": "RB1_STRUCTURAL_END_JSON:"
+    },
+    "dtv_loss": {
+      "dependencies": [
+        "mapped_outcome_prediction",
+        "selected_unrounded_y"
+      ],
+      "expression": {
+        "arguments": [
+          {
+            "kind": "literal",
+            "value": 0.5
+          },
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [
+                      {
+                        "kind": "variable",
+                        "name": "y_k_o"
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "kind": "variable",
+                            "name": "M_k"
+                          },
+                          {
+                            "kind": "variable",
+                            "name": "q"
+                          },
+                          {
+                            "kind": "variable",
+                            "name": "o"
+                          }
+                        ],
+                        "function": "mapped_probability",
+                        "kind": "call"
+                      }
+                    ],
+                    "kind": "operator",
+                    "operator": "subtract"
+                  }
+                ],
+                "function": "absolute",
+                "kind": "call"
+              }
+            ],
+            "kind": "operator",
+            "operator": "sum_over_o"
+          }
+        ],
+        "kind": "operator",
+        "operator": "multiply"
+      },
+      "formula_pointers": [
+        "/identity/normative_expression_registry/loss_k"
+      ],
+      "kind": "typed_derivation"
+    },
+    "eligibility": {
+      "dependencies": [
+        "config_or_null",
+        "structural unit",
+        "frozen grid eligibility"
+      ],
+      "expression": {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "config_or_null"
+          },
+          {
+            "kind": "variable",
+            "name": "kind_completeness"
+          },
+          {
+            "kind": "variable",
+            "name": "control_applicability"
+          }
+        ],
+        "kind": "predicate",
+        "name": "g2a_frozen_structural_eligibility",
+        "return_type": "boolean"
+      },
+      "formula_pointers": [],
+      "kind": "typed_derivation"
+    },
+    "exclusion_reason_code": {
+      "dependencies": [
+        "eligibility",
+        "config_or_null"
+      ],
+      "expression": {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "eligibility"
+          },
+          {
+            "kind": "literal",
+            "value": "EMPTY_CONFIG_STRUCTURAL_EXCLUSION"
+          }
+        ],
+        "function": "g2a_exclusion_reason",
+        "kind": "call"
+      },
+      "formula_pointers": [],
+      "kind": "typed_derivation"
+    },
+    "experiment": {
+      "equality_checks": [
+        "equals invocation experiment"
+      ],
+      "json_paths": [
+        "/exp_id"
+      ],
+      "kind": "raw_marker_paths",
+      "marker": "KEY_AUDIT_JSON "
+    },
+    "finite_residuals": {
+      "dependencies": [
+        "all applicable parsed and derived numeric leaves"
+      ],
+      "expression": {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "all_applicable_numeric_leaves"
+          }
+        ],
+        "function": "finite_leaf_audit",
+        "kind": "call"
+      },
+      "formula_pointers": [],
+      "kind": "typed_derivation"
+    },
+    "fixed_census_config_or_experiment_key": {
+      "dependencies": [
+        "config_or_null"
+      ],
+      "expression": {
+        "kind": "variable",
+        "name": "config_or_null"
+      },
+      "formula_pointers": [],
+      "kind": "typed_derivation"
+    },
+    "frozen_inclusion_population": {
+      "dependencies": [],
+      "expression": {
+        "kind": "literal",
+        "value": "EXP-112_FROZEN_69_WITH_68_PRIMARY_ELIGIBLE"
+      },
+      "formula_pointers": [],
+      "kind": "typed_derivation"
+    },
+    "identity_residuals": {
+      "dependencies": [],
+      "expression": {
+        "arguments": [
+          {
+            "kind": "literal",
+            "value": "NOT_G2S_IDENTITY_STAGE"
+          }
+        ],
+        "function": "structural_null",
+        "kind": "call"
+      },
+      "formula_pointers": [
+        "/completeness/universal_evidence_shapes/stage_profiles/g2a/field_applicability/identity_residuals"
+      ],
+      "kind": "typed_derivation"
+    },
+    "integer_counts": {
+      "dependencies": [
+        "KEY_DISCOVERY_GRADE_JSON /rows",
+        "selected_kind",
+        "ordered_union_outcome_labels"
+      ],
+      "expression": {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "discovery_rows"
+          },
+          {
+            "kind": "variable",
+            "name": "ordered_union_outcome_labels"
+          }
+        ],
+        "function": "count_discovery_rows_by_selected_kind_macro_group",
+        "kind": "call"
+      },
+      "formula_pointers": [],
+      "kind": "typed_derivation"
+    },
+    "invocation_id": {
+      "equality_checks": [
+        "equals independently generated pre-run invocation manifest ID"
+      ],
+      "json_pointer": "/ordered_structural_manifest/invocation_id",
+      "kind": "structural_metadata_path",
+      "marker": "RB1_STRUCTURAL_END_JSON:"
+    },
+    "kind_cell_id": {
+      "dependencies": [
+        "unit_id",
+        "selected_kind"
+      ],
+      "expression": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "unit_id"
+              },
+              {
+                "kind": "variable",
+                "name": "kind_utf8"
+              }
+            ],
+            "kind": "operator",
+            "operator": "concat"
+          }
+        ],
+        "function": "sha256",
+        "kind": "call"
+      },
+      "formula_pointers": [
+        "/identity/normative_expression_registry/kind_cell_id"
+      ],
+      "kind": "typed_derivation"
+    },
+    "law_numerators": {
+      "dependencies": [
+        "unrounded_p_full",
+        "basis_and_projector_inputs",
+        "spectral_coefficients"
+      ],
+      "expression": {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "unrounded_p_full"
+          },
+          {
+            "kind": "variable",
+            "name": "projector"
+          },
+          {
+            "kind": "variable",
+            "name": "spectral_coefficients"
+          },
+          {
+            "kind": "variable",
+            "name": "lambda_grid"
+          }
+        ],
+        "function": "all_14_frozen_law_numerators",
+        "kind": "call"
+      },
+      "formula_pointers": [
+        "/laws/definitions",
+        "/laws/lambda_grid",
+        "/identity/normative_expression_registry/L_full",
+        "/identity/normative_expression_registry/L_uniform",
+        "/identity/normative_expression_registry/clipped_linear",
+        "/identity/normative_expression_registry/q_full",
+        "/identity/normative_expression_registry/q_diag",
+        "/identity/normative_expression_registry/q_lambda"
+      ],
+      "kind": "typed_derivation"
+    },
+    "mapped_outcome_prediction": {
+      "dependencies": [
+        "M_raw_or_content_hash",
+        "M_pkg_or_content_hash",
+        "state_space_prediction"
+      ],
+      "expression": {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "M_selected_kind"
+          },
+          {
+            "kind": "variable",
+            "name": "state_space_prediction"
+          }
+        ],
+        "function": "map_each_prediction",
+        "kind": "call"
+      },
+      "formula_pointers": [],
+      "kind": "typed_derivation"
+    },
+    "mass_residuals": {
+      "dependencies": [
+        "unrounded_y_raw",
+        "unrounded_y_pkg",
+        "state_space_prediction"
+      ],
+      "expression": {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "empirical_vectors"
+          },
+          {
+            "kind": "variable",
+            "name": "all_law_predictions"
+          }
+        ],
+        "function": "mass_minus_one_residuals",
+        "kind": "call"
+      },
+      "formula_pointers": [],
+      "kind": "typed_derivation"
+    },
+    "normalization_mass": {
+      "dependencies": [
+        "law_numerators"
+      ],
+      "expression": {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "law_numerators"
+          }
+        ],
+        "function": "sum_each_law_numerator",
+        "kind": "call"
+      },
+      "formula_pointers": [],
+      "kind": "typed_derivation"
+    },
+    "ordered_state_labels": {
+      "dependencies": [
+        "KEY_BORN_PROBE_JSON /p_theory"
+      ],
+      "expression": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "p_theory"
+              }
+            ],
+            "function": "length",
+            "kind": "call"
+          }
+        ],
+        "function": "state_index_labels",
+        "kind": "call"
+      },
+      "formula_pointers": [],
+      "kind": "typed_derivation"
+    },
+    "ordered_union_outcome_labels": {
+      "dependencies": [
+        "KEY_BORN_PROBE_JSON /partition",
+        "KEY_BORN_PROBE_JSON /packaging",
+        "KEY_DISCOVERY_GRADE_JSON /rows/*/observation_label"
+      ],
+      "expression": {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "selected_kind"
+          },
+          {
+            "kind": "variable",
+            "name": "mapping_array"
+          },
+          {
+            "kind": "variable",
+            "name": "discovery_observation_labels"
+          }
+        ],
+        "function": "kind_outcome_index_labels",
+        "kind": "call"
+      },
+      "formula_pointers": [],
+      "kind": "typed_derivation"
+    },
+    "pairwise_contrast": {
+      "dependencies": [
+        "dtv_loss"
+      ],
+      "expression": {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "dtv_loss"
+          }
+        ],
+        "function": "all_15_frozen_contrasts",
+        "kind": "call"
+      },
+      "formula_pointers": [
+        "/identity/normative_expression_registry/d_k",
+        "/identity/normative_expression_registry/s_2_k",
+        "/identity/normative_expression_registry/delta_1_k"
+      ],
+      "kind": "typed_derivation"
+    },
+    "parseval_residuals": {
+      "dependencies": [
+        "unrounded_p_full",
+        "basis_and_projector_inputs",
+        "spectral_coefficients"
+      ],
+      "expression": {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "unrounded_p_full"
+          },
+          {
+            "kind": "variable",
+            "name": "basis_and_projector_inputs"
+          },
+          {
+            "kind": "variable",
+            "name": "spectral_coefficients"
+          }
+        ],
+        "function": "parseval_residuals",
+        "kind": "call"
+      },
+      "formula_pointers": [
+        "/thresholds/items/6/value"
+      ],
+      "kind": "typed_derivation"
+    },
+    "partition": {
+      "equality_checks": [
+        "recomputed from KEY_BORN_PROBE_JSON /partition"
+      ],
+      "json_pointer": "/ordered_structural_manifest/units/*/partition_id",
+      "kind": "structural_metadata_path",
+      "marker": "RB1_STRUCTURAL_END_JSON:"
+    },
+    "pass_boolean_for_each_residual": {
+      "dependencies": [
+        "all residual fields",
+        "tolerance_for_each_residual"
+      ],
+      "expression": {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "residuals"
+          },
+          {
+            "kind": "variable",
+            "name": "tolerance_for_each_residual"
+          }
+        ],
+        "function": "compare_each_residual_with_exact_absolute_and_relative_tolerance",
+        "kind": "call"
+      },
+      "formula_pointers": [],
+      "kind": "typed_derivation"
+    },
+    "raw_pkg_pairing_key": {
+      "dependencies": [
+        "unit_id"
+      ],
+      "expression": {
+        "kind": "variable",
+        "name": "unit_id"
+      },
+      "formula_pointers": [],
+      "kind": "typed_derivation"
+    },
+    "resolution": {
+      "equality_checks": [
+        "equals discovery /contexts/*/k",
+        "equals discovery /rows/*/observation_payload/context_k"
+      ],
+      "json_paths": [
+        "/k"
+      ],
+      "kind": "raw_marker_paths",
+      "marker": "KEY_BORN_PROBE_JSON "
+    },
+    "rotation_residuals": {
+      "dependencies": [
+        "unrounded_p_full",
+        "basis_and_projector_inputs",
+        "law_numerators"
+      ],
+      "expression": {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "unrounded_p_full"
+          },
+          {
+            "kind": "variable",
+            "name": "basis_and_projector_inputs"
+          },
+          {
+            "kind": "variable",
+            "name": "law_numerators"
+          }
+        ],
+        "function": "rotation_residuals",
+        "kind": "call"
+      },
+      "formula_pointers": [
+        "/thresholds/items/7/value"
+      ],
+      "kind": "typed_derivation"
+    },
+    "scale": {
+      "equality_checks": [
+        "equals KEY_AUDIT_JSON /n",
+        "equals invocation scale"
+      ],
+      "json_paths": [
+        "/scale"
+      ],
+      "kind": "raw_marker_paths",
+      "marker": "KEY_BORN_PROBE_JSON "
+    },
+    "seed": {
+      "equality_checks": [
+        "equals KEY_AUDIT_JSON /seed",
+        "equals invocation seed"
+      ],
+      "json_paths": [
+        "/seed"
+      ],
+      "kind": "raw_marker_paths",
+      "marker": "KEY_BORN_PROBE_JSON "
+    },
+    "seed_block_key": {
+      "dependencies": [
+        "seed"
+      ],
+      "expression": {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "seed"
+          }
+        ],
+        "function": "canonical_decimal",
+        "kind": "call"
+      },
+      "formula_pointers": [],
+      "kind": "typed_derivation"
+    },
+    "sequential_residuals": {
+      "dependencies": [],
+      "expression": {
+        "arguments": [
+          {
+            "kind": "literal",
+            "value": "NOT_G2B_TIME_STAGE"
+          }
+        ],
+        "function": "structural_null",
+        "kind": "call"
+      },
+      "formula_pointers": [
+        "/completeness/universal_evidence_shapes/stage_profiles/g2a/field_applicability/sequential_residuals"
+      ],
+      "kind": "typed_derivation"
+    },
+    "source": {
+      "equality_checks": [
+        "exactly EXP-112"
+      ],
+      "json_paths": [
+        "/exp_id"
+      ],
+      "kind": "raw_marker_paths",
+      "marker": "KEY_AUDIT_JSON "
+    },
+    "source_key": {
+      "dependencies": [
+        "source"
+      ],
+      "expression": {
+        "kind": "variable",
+        "name": "source"
+      },
+      "formula_pointers": [],
+      "kind": "typed_derivation"
+    },
+    "spectral_coefficients": {
+      "dependencies": [
+        "unrounded_p_full",
+        "basis_and_projector_inputs",
+        "spectral_mode_ids"
+      ],
+      "expression": {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "P_V"
+          },
+          {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "p"
+              }
+            ],
+            "function": "sqrt",
+            "kind": "call"
+          }
+        ],
+        "kind": "operator",
+        "operator": "matrix_multiply"
+      },
+      "formula_pointers": [
+        "/identity/normative_expression_registry/r"
+      ],
+      "kind": "typed_derivation"
+    },
+    "state_space_prediction": {
+      "dependencies": [
+        "law_numerators",
+        "normalization_mass"
+      ],
+      "expression": {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "law_numerators"
+          },
+          {
+            "kind": "variable",
+            "name": "normalization_mass"
+          }
+        ],
+        "kind": "operator",
+        "operator": "divide"
+      },
+      "formula_pointers": [],
+      "kind": "typed_derivation"
+    },
+    "step": {
+      "equality_checks": [
+        "equals discovery /contexts/*/step_index",
+        "equals discovery /rows/*/step_index"
+      ],
+      "json_paths": [
+        "/step_index"
+      ],
+      "kind": "raw_marker_paths",
+      "marker": "KEY_BORN_PROBE_JSON "
+    },
+    "structural_manifest_sha256": {
+      "equality_checks": [
+        "equals SHA-256 of canonical ordered_structural_manifest bytes"
+      ],
+      "json_pointer": "/structural_manifest_sha256",
+      "kind": "structural_metadata_path",
+      "marker": "RB1_STRUCTURAL_END_JSON:"
+    },
+    "tie_flag": {
+      "dependencies": [
+        "pairwise_contrast"
+      ],
+      "expression": {
+        "kind": "comparison",
+        "left": {
+          "arguments": [
+            {
+              "kind": "variable",
+              "name": "D_contrast"
+            }
+          ],
+          "function": "absolute",
+          "kind": "call"
+        },
+        "operator": "<=",
+        "return_type": "boolean",
+        "right": {
+          "kind": "literal",
+          "value": 1e-12
+        }
+      },
+      "formula_pointers": [
+        "/thresholds/items/5/value"
+      ],
+      "kind": "typed_derivation"
+    },
+    "tolerance_for_each_residual": {
+      "dependencies": [
+        "finite_residuals",
+        "mass_residuals",
+        "parseval_residuals",
+        "rotation_residuals",
+        "identity_residuals",
+        "sequential_residuals"
+      ],
+      "expression": {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "frozen_thresholds"
+          }
+        ],
+        "function": "serve_exact_residual_tolerance_map",
+        "kind": "call"
+      },
+      "formula_pointers": [
+        "/thresholds/items"
+      ],
+      "kind": "typed_derivation"
+    },
+    "total_count": {
+      "dependencies": [
+        "integer_counts",
+        "KEY_DISCOVERY_GRADE_JSON /trajectory_count"
+      ],
+      "expression": {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "integer_counts"
+          }
+        ],
+        "function": "sum",
+        "kind": "call"
+      },
+      "formula_pointers": [],
+      "kind": "typed_derivation"
+    },
+    "trajectory": {
+      "dependencies": [
+        "KEY_DISCOVERY_GRADE_JSON /rows/*/trajectory_id"
+      ],
+      "expression": {
+        "arguments": [
+          {
+            "kind": "literal",
+            "value": "trajectories_sha256:"
+          },
+          {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "ordered_trajectory_slots"
+              }
+            ],
+            "function": "canonical_json",
+            "kind": "call"
+          }
+        ],
+        "function": "prefixed_sha256",
+        "kind": "call"
+      },
+      "formula_pointers": [],
+      "kind": "typed_derivation"
+    },
+    "unit_id": {
+      "dependencies": [
+        "source",
+        "experiment",
+        "config_or_null",
+        "seed",
+        "scale",
+        "context",
+        "resolution",
+        "step",
+        "partition",
+        "ordered_state_labels"
+      ],
+      "expression": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "stable_unit_identity_fields"
+              }
+            ],
+            "function": "canonical_json",
+            "kind": "call"
+          }
+        ],
+        "function": "sha256",
+        "kind": "call"
+      },
+      "formula_pointers": [
+        "/identity/normative_expression_registry/stable_unit_id"
+      ],
+      "kind": "typed_derivation"
+    },
+    "unrounded_p_full": {
+      "equality_checks": [
+        "state-index order",
+        "finite probability controls"
+      ],
+      "json_paths": [
+        "/p_theory"
+      ],
+      "kind": "raw_marker_paths",
+      "marker": "KEY_BORN_PROBE_JSON "
+    },
+    "unrounded_y_pkg": {
+      "dependencies": [
+        "integer_counts",
+        "total_count"
+      ],
+      "expression": {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "pkg_integer_counts"
+          },
+          {
+            "kind": "variable",
+            "name": "pkg_total_count"
+          }
+        ],
+        "kind": "operator",
+        "operator": "divide"
+      },
+      "formula_pointers": [],
+      "kind": "typed_derivation"
+    },
+    "unrounded_y_raw": {
+      "dependencies": [
+        "integer_counts",
+        "total_count"
+      ],
+      "expression": {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "raw_integer_counts"
+          },
+          {
+            "kind": "variable",
+            "name": "raw_total_count"
+          }
+        ],
+        "kind": "operator",
+        "operator": "divide"
+      },
+      "formula_pointers": [],
+      "kind": "typed_derivation"
+    }
+  },
+  "join_contract": {
+    "audit": [
+      "invocation_id",
+      "config_name",
+      "seed",
+      "n",
+      "multi_scale_scan[*].k"
+    ],
+    "born": [
+      "invocation_id",
+      "cell",
+      "seed",
+      "scale",
+      "step_index",
+      "k"
+    ],
+    "config_segment_order": [
+      "one-or-more Born",
+      "exactly one discovery",
+      "exactly one audit"
+    ],
+    "discovery": [
+      "invocation_id",
+      "cell",
+      "seed",
+      "scale",
+      "contexts[*].step_index",
+      "contexts[*].k"
+    ],
+    "discovery_invocation_fields_source": "sealed segment and invocation equalities only",
+    "failure": "INCOMPLETE before scientific decoding"
+  },
+  "non_emitted_representation_choice_status": "RULED_MANAGER_2026_08_27",
+  "non_emitted_representations": {
+    "fixed_census_key": "exact EXP-112 config label",
+    "outcome_labels": {
+      "pkg": "package_<canonical-decimal index>",
+      "raw": "group_<canonical-decimal index>"
+    },
+    "partition_id": "sha256(canonical_json({partition:<ordered integer partition array>}))",
+    "raw_pkg_pairing_key": "unit_id",
+    "runner_context_id": "sha256(canonical_json({config_id,experiment,level_id,protocol_step_id,resolution_id}))",
+    "seed_block_key": "canonical-decimal seed",
+    "source_identifier": "EXP-112",
+    "spectral_mode_ids": "M0..M(r-1) assigned after v7 SVD in actual oriented retained-column order; no mode ID asserts constant-mode identity",
+    "state_labels": "state_<canonical-decimal index>",
+    "step_id": "canonical-decimal step_index under v6 correspondence",
+    "trajectory": "trajectories_sha256:<sha256(canonical JSON ordered trajectory-slot array)>"
+  },
+  "production_api_prohibitions": [
+    "caller-supplied stdout bytes",
+    "caller-supplied stdout paths",
+    "caller-supplied universal record",
+    "caller-supplied unit-artifact hash"
+  ],
+  "raw_marker_descriptors": {
+    "KEY_AUDIT_JSON ": {
+      "cardinality": "exactly one per config segment",
+      "required_derivation_paths": [
+        "/exp_id",
+        "/config_name",
+        "/seed",
+        "/n",
+        "/schema_version",
+        "/multi_scale_scan/*/k"
+      ],
+      "shape": {
+        "kind": "closed_raw_object_variants",
+        "selection_rule": "micro_top_eigenvalues is the sole optional key",
+        "variants": [
+          {
+            "keys": [
+              "active_tau",
+              "block_count",
+              "budget",
+              "config_name",
+              "cyc_max",
+              "cyc_mean",
+              "eff_gap",
+              "exp_id",
+              "frob_from_rank1",
+              "gated_edges",
+              "git_sha",
+              "last_packaging_flip_step",
+              "last_partition_flip_step",
+              "last_tau_change_step",
+              "lens_source",
+              "level1_frob",
+              "macro_gap",
+              "macro_gap_ratio",
+              "macro_n",
+              "max_asym",
+              "micro_eigen_entropy",
+              "micro_gap_ratio",
+              "micro_spectral_participation",
+              "micro_t_rel",
+              "multi_scale_scan",
+              "n",
+              "n_absorb",
+              "n_chiral",
+              "n_trans",
+              "p1_accepted",
+              "p1_rejected",
+              "p2_accepted",
+              "p2_rejected",
+              "p2_repairs",
+              "p2_violations",
+              "p6_cap_mult",
+              "p6_rate_mult",
+              "packaging_flip_count",
+              "packaging_source",
+              "packaging_stats",
+              "partition_flip_count",
+              "partition_stats",
+              "phase",
+              "pica_config",
+              "pica_config_hash",
+              "schema_version",
+              "seed",
+              "sigma",
+              "sigma_ratio",
+              "sigma_u",
+              "step",
+              "tau",
+              "tau_change_count",
+              "tier",
+              "traj_steps",
+              "trans_ep"
+            ],
+            "kind": "closed_raw_object",
+            "properties": {
+              "active_tau": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "block_count": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "budget": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "config_name": {
+                "kind": "scalar",
+                "leaf_type": "UTF-8 string"
+              },
+              "cyc_max": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "cyc_mean": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "eff_gap": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "exp_id": {
+                "kind": "scalar",
+                "leaf_type": "UTF-8 string"
+              },
+              "frob_from_rank1": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "gated_edges": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "git_sha": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "last_packaging_flip_step": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "last_partition_flip_step": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "last_tau_change_step": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "lens_source": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "level1_frob": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "macro_gap": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "macro_gap_ratio": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "macro_n": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "max_asym": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "micro_eigen_entropy": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "micro_gap_ratio": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "micro_spectral_participation": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "micro_t_rel": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "multi_scale_scan": {
+                "items": {
+                  "keys": [
+                    "k",
+                    "macro_gap",
+                    "frob",
+                    "sigma_pi",
+                    "max_asym",
+                    "cyc_mean",
+                    "cyc_max",
+                    "n_chiral",
+                    "step_entropy",
+                    "pla2_gap",
+                    "lagr_geo_r2",
+                    "lagr_diff_kl",
+                    "lagr_diff_alpha",
+                    "t_rel",
+                    "gap_ratio",
+                    "eigen_entropy",
+                    "spectral_participation",
+                    "slow_modes_r50",
+                    "slow_modes_r70",
+                    "slow_modes_r90",
+                    "nontrivial_eigenvalues"
+                  ],
+                  "kind": "closed_raw_object",
+                  "properties": {
+                    "cyc_max": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "cyc_mean": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "eigen_entropy": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "frob": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "gap_ratio": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "k": {
+                      "constraint": ">=0",
+                      "kind": "scalar",
+                      "leaf_type": "JSON integer"
+                    },
+                    "lagr_diff_alpha": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "lagr_diff_kl": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "lagr_geo_r2": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "macro_gap": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "max_asym": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "n_chiral": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "nontrivial_eigenvalues": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "pla2_gap": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "sigma_pi": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "slow_modes_r50": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "slow_modes_r70": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "slow_modes_r90": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "spectral_participation": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "step_entropy": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "t_rel": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    }
+                  },
+                  "unknown_keys": "reject"
+                },
+                "kind": "array"
+              },
+              "n": {
+                "constraint": ">=0",
+                "kind": "scalar",
+                "leaf_type": "JSON integer"
+              },
+              "n_absorb": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "n_chiral": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "n_trans": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "p1_accepted": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "p1_rejected": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "p2_accepted": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "p2_rejected": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "p2_repairs": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "p2_violations": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "p6_cap_mult": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "p6_rate_mult": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "packaging_flip_count": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "packaging_source": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "packaging_stats": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "partition_flip_count": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "partition_stats": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "phase": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "pica_config": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "pica_config_hash": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "schema_version": {
+                "constraint": ">=0",
+                "kind": "scalar",
+                "leaf_type": "JSON integer"
+              },
+              "seed": {
+                "constraint": ">=0",
+                "kind": "scalar",
+                "leaf_type": "JSON integer"
+              },
+              "sigma": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "sigma_ratio": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "sigma_u": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "step": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "tau": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "tau_change_count": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "tier": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "traj_steps": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "trans_ep": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              }
+            },
+            "unknown_keys": "reject"
+          },
+          {
+            "keys": [
+              "active_tau",
+              "block_count",
+              "budget",
+              "config_name",
+              "cyc_max",
+              "cyc_mean",
+              "eff_gap",
+              "exp_id",
+              "frob_from_rank1",
+              "gated_edges",
+              "git_sha",
+              "last_packaging_flip_step",
+              "last_partition_flip_step",
+              "last_tau_change_step",
+              "lens_source",
+              "level1_frob",
+              "macro_gap",
+              "macro_gap_ratio",
+              "macro_n",
+              "max_asym",
+              "micro_eigen_entropy",
+              "micro_gap_ratio",
+              "micro_spectral_participation",
+              "micro_t_rel",
+              "micro_top_eigenvalues",
+              "multi_scale_scan",
+              "n",
+              "n_absorb",
+              "n_chiral",
+              "n_trans",
+              "p1_accepted",
+              "p1_rejected",
+              "p2_accepted",
+              "p2_rejected",
+              "p2_repairs",
+              "p2_violations",
+              "p6_cap_mult",
+              "p6_rate_mult",
+              "packaging_flip_count",
+              "packaging_source",
+              "packaging_stats",
+              "partition_flip_count",
+              "partition_stats",
+              "phase",
+              "pica_config",
+              "pica_config_hash",
+              "schema_version",
+              "seed",
+              "sigma",
+              "sigma_ratio",
+              "sigma_u",
+              "step",
+              "tau",
+              "tau_change_count",
+              "tier",
+              "traj_steps",
+              "trans_ep"
+            ],
+            "kind": "closed_raw_object",
+            "properties": {
+              "active_tau": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "block_count": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "budget": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "config_name": {
+                "kind": "scalar",
+                "leaf_type": "UTF-8 string"
+              },
+              "cyc_max": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "cyc_mean": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "eff_gap": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "exp_id": {
+                "kind": "scalar",
+                "leaf_type": "UTF-8 string"
+              },
+              "frob_from_rank1": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "gated_edges": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "git_sha": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "last_packaging_flip_step": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "last_partition_flip_step": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "last_tau_change_step": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "lens_source": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "level1_frob": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "macro_gap": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "macro_gap_ratio": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "macro_n": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "max_asym": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "micro_eigen_entropy": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "micro_gap_ratio": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "micro_spectral_participation": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "micro_t_rel": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "micro_top_eigenvalues": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "multi_scale_scan": {
+                "items": {
+                  "keys": [
+                    "k",
+                    "macro_gap",
+                    "frob",
+                    "sigma_pi",
+                    "max_asym",
+                    "cyc_mean",
+                    "cyc_max",
+                    "n_chiral",
+                    "step_entropy",
+                    "pla2_gap",
+                    "lagr_geo_r2",
+                    "lagr_diff_kl",
+                    "lagr_diff_alpha",
+                    "t_rel",
+                    "gap_ratio",
+                    "eigen_entropy",
+                    "spectral_participation",
+                    "slow_modes_r50",
+                    "slow_modes_r70",
+                    "slow_modes_r90",
+                    "nontrivial_eigenvalues"
+                  ],
+                  "kind": "closed_raw_object",
+                  "properties": {
+                    "cyc_max": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "cyc_mean": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "eigen_entropy": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "frob": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "gap_ratio": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "k": {
+                      "constraint": ">=0",
+                      "kind": "scalar",
+                      "leaf_type": "JSON integer"
+                    },
+                    "lagr_diff_alpha": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "lagr_diff_kl": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "lagr_geo_r2": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "macro_gap": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "max_asym": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "n_chiral": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "nontrivial_eigenvalues": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "pla2_gap": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "sigma_pi": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "slow_modes_r50": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "slow_modes_r70": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "slow_modes_r90": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "spectral_participation": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "step_entropy": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    },
+                    "t_rel": {
+                      "duplicate_object_names": "reject",
+                      "interpretation": "none; unavailable to G2a derivations",
+                      "kind": "opaque_strict_json_subtree",
+                      "nonfinite_numeric_tokens": "reject",
+                      "original_bytes": "sealed"
+                    }
+                  },
+                  "unknown_keys": "reject"
+                },
+                "kind": "array"
+              },
+              "n": {
+                "constraint": ">=0",
+                "kind": "scalar",
+                "leaf_type": "JSON integer"
+              },
+              "n_absorb": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "n_chiral": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "n_trans": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "p1_accepted": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "p1_rejected": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "p2_accepted": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "p2_rejected": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "p2_repairs": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "p2_violations": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "p6_cap_mult": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "p6_rate_mult": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "packaging_flip_count": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "packaging_source": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "packaging_stats": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "partition_flip_count": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "partition_stats": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "phase": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "pica_config": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "pica_config_hash": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "schema_version": {
+                "constraint": ">=0",
+                "kind": "scalar",
+                "leaf_type": "JSON integer"
+              },
+              "seed": {
+                "constraint": ">=0",
+                "kind": "scalar",
+                "leaf_type": "JSON integer"
+              },
+              "sigma": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "sigma_ratio": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "sigma_u": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "step": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "tau": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "tau_change_count": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "tier": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "traj_steps": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              },
+              "trans_ep": {
+                "duplicate_object_names": "reject",
+                "interpretation": "none; unavailable to G2a derivations",
+                "kind": "opaque_strict_json_subtree",
+                "nonfinite_numeric_tokens": "reject",
+                "original_bytes": "sealed"
+              }
+            },
+            "unknown_keys": "reject"
+          }
+        ]
+      }
+    },
+    "KEY_BORN_PROBE_JSON ": {
+      "cardinality": "one per emitted (cell,seed,scale,step_index,k)",
+      "shape": {
+        "keys": [
+          "cell",
+          "k",
+          "p_theory",
+          "packaging",
+          "partition",
+          "pi",
+          "scale",
+          "seed",
+          "starts",
+          "step_index",
+          "sym_eigvec_basis",
+          "tau"
+        ],
+        "kind": "closed_raw_object",
+        "properties": {
+          "cell": {
+            "kind": "scalar",
+            "leaf_type": "UTF-8 string"
+          },
+          "k": {
+            "constraint": ">=0",
+            "kind": "scalar",
+            "leaf_type": "JSON integer"
+          },
+          "p_theory": {
+            "dimension": "n_state",
+            "items": {
+              "kind": "scalar",
+              "leaf_type": "finite JSON number"
+            },
+            "kind": "array"
+          },
+          "packaging": {
+            "dimension": "n_state",
+            "items": {
+              "constraint": ">=0",
+              "kind": "scalar",
+              "leaf_type": "JSON integer"
+            },
+            "kind": "array"
+          },
+          "partition": {
+            "dimension": "n_state",
+            "items": {
+              "constraint": ">=0",
+              "kind": "scalar",
+              "leaf_type": "JSON integer"
+            },
+            "kind": "array"
+          },
+          "pi": {
+            "dimension": "n_state",
+            "items": {
+              "kind": "scalar",
+              "leaf_type": "finite JSON number"
+            },
+            "kind": "array"
+          },
+          "scale": {
+            "constraint": ">=0",
+            "kind": "scalar",
+            "leaf_type": "JSON integer"
+          },
+          "seed": {
+            "constraint": ">=0",
+            "kind": "scalar",
+            "leaf_type": "JSON integer"
+          },
+          "starts": {
+            "dimension": "trajectory_count",
+            "items": {
+              "constraint": ">=0",
+              "kind": "scalar",
+              "leaf_type": "JSON integer"
+            },
+            "kind": "array"
+          },
+          "step_index": {
+            "constraint": ">=0",
+            "kind": "scalar",
+            "leaf_type": "JSON integer"
+          },
+          "sym_eigvec_basis": {
+            "dimension": "n_cols_original-1 by n_state",
+            "items": {
+              "items": {
+                "kind": "scalar",
+                "leaf_type": "finite JSON number"
+              },
+              "kind": "array"
+            },
+            "kind": "array"
+          },
+          "tau": {
+            "constraint": ">=0",
+            "kind": "scalar",
+            "leaf_type": "JSON integer"
+          }
+        },
+        "unknown_keys": "reject"
+      }
+    },
+    "KEY_DISCOVERY_GRADE_JSON ": {
+      "cardinality": "exactly one per config segment",
+      "shape": {
+        "keys": [
+          "contexts",
+          "rows",
+          "trajectory_count"
+        ],
+        "kind": "closed_raw_object",
+        "properties": {
+          "contexts": {
+            "items": {
+              "keys": [
+                "closure_id",
+                "frob",
+                "k",
+                "lens_id",
+                "level_id",
+                "macro_gap",
+                "macro_n",
+                "max_asym",
+                "protocol_step_id",
+                "resolution_id",
+                "sigma_pi",
+                "step_entropy",
+                "step_index"
+              ],
+              "kind": "closed_raw_object",
+              "properties": {
+                "closure_id": {
+                  "kind": "scalar",
+                  "leaf_type": "UTF-8 string"
+                },
+                "frob": {
+                  "kind": "scalar",
+                  "leaf_type": "finite JSON number"
+                },
+                "k": {
+                  "constraint": ">=0",
+                  "kind": "scalar",
+                  "leaf_type": "JSON integer"
+                },
+                "lens_id": {
+                  "kind": "scalar",
+                  "leaf_type": "UTF-8 string"
+                },
+                "level_id": {
+                  "kind": "scalar",
+                  "leaf_type": "UTF-8 string"
+                },
+                "macro_gap": {
+                  "kind": "scalar",
+                  "leaf_type": "finite JSON number"
+                },
+                "macro_n": {
+                  "constraint": ">=0",
+                  "kind": "scalar",
+                  "leaf_type": "JSON integer"
+                },
+                "max_asym": {
+                  "kind": "scalar",
+                  "leaf_type": "finite JSON number"
+                },
+                "protocol_step_id": {
+                  "kind": "scalar",
+                  "leaf_type": "UTF-8 string"
+                },
+                "resolution_id": {
+                  "kind": "scalar",
+                  "leaf_type": "UTF-8 string"
+                },
+                "sigma_pi": {
+                  "kind": "scalar",
+                  "leaf_type": "finite JSON number"
+                },
+                "step_entropy": {
+                  "kind": "scalar",
+                  "leaf_type": "finite JSON number"
+                },
+                "step_index": {
+                  "constraint": ">=0",
+                  "kind": "scalar",
+                  "leaf_type": "JSON integer"
+                }
+              },
+              "unknown_keys": "reject"
+            },
+            "kind": "array"
+          },
+          "rows": {
+            "items": {
+              "keys": [
+                "closure_id",
+                "lens_id",
+                "level_id",
+                "macrostate_label",
+                "observation_label",
+                "observation_payload",
+                "protocol_step_id",
+                "resolution_id",
+                "step_index",
+                "trajectory_id"
+              ],
+              "kind": "closed_raw_object",
+              "properties": {
+                "closure_id": {
+                  "kind": "scalar",
+                  "leaf_type": "UTF-8 string"
+                },
+                "lens_id": {
+                  "kind": "scalar",
+                  "leaf_type": "UTF-8 string"
+                },
+                "level_id": {
+                  "kind": "scalar",
+                  "leaf_type": "UTF-8 string"
+                },
+                "macrostate_label": {
+                  "kind": "scalar",
+                  "leaf_type": "UTF-8 string"
+                },
+                "observation_label": {
+                  "kind": "scalar",
+                  "leaf_type": "UTF-8 string"
+                },
+                "observation_payload": {
+                  "kind": "closed_raw_object_variants",
+                  "selection_rule": "packaging_source is the sole optional key",
+                  "variants": [
+                    {
+                      "keys": [
+                        "context_k",
+                        "final_state",
+                        "frob",
+                        "macro_gap",
+                        "macro_group",
+                        "macro_n",
+                        "max_asym",
+                        "pi_final_state",
+                        "sigma_pi",
+                        "start_state",
+                        "step_entropy",
+                        "sym_eigvec_components_final_state",
+                        "tau",
+                        "trajectory_length"
+                      ],
+                      "kind": "closed_raw_object",
+                      "properties": {
+                        "context_k": {
+                          "constraint": ">=0",
+                          "kind": "scalar",
+                          "leaf_type": "JSON integer"
+                        },
+                        "final_state": {
+                          "constraint": ">=0",
+                          "kind": "scalar",
+                          "leaf_type": "JSON integer"
+                        },
+                        "frob": {
+                          "kind": "scalar",
+                          "leaf_type": "finite JSON number"
+                        },
+                        "macro_gap": {
+                          "kind": "scalar",
+                          "leaf_type": "finite JSON number"
+                        },
+                        "macro_group": {
+                          "constraint": ">=0",
+                          "kind": "scalar",
+                          "leaf_type": "JSON integer"
+                        },
+                        "macro_n": {
+                          "constraint": ">=0",
+                          "kind": "scalar",
+                          "leaf_type": "JSON integer"
+                        },
+                        "max_asym": {
+                          "kind": "scalar",
+                          "leaf_type": "finite JSON number"
+                        },
+                        "pi_final_state": {
+                          "kind": "scalar",
+                          "leaf_type": "finite JSON number"
+                        },
+                        "sigma_pi": {
+                          "kind": "scalar",
+                          "leaf_type": "finite JSON number"
+                        },
+                        "start_state": {
+                          "constraint": ">=0",
+                          "kind": "scalar",
+                          "leaf_type": "JSON integer"
+                        },
+                        "step_entropy": {
+                          "kind": "scalar",
+                          "leaf_type": "finite JSON number"
+                        },
+                        "sym_eigvec_components_final_state": {
+                          "items": {
+                            "kind": "scalar",
+                            "leaf_type": "finite JSON number"
+                          },
+                          "kind": "array"
+                        },
+                        "tau": {
+                          "constraint": ">=0",
+                          "kind": "scalar",
+                          "leaf_type": "JSON integer"
+                        },
+                        "trajectory_length": {
+                          "constraint": ">=0",
+                          "kind": "scalar",
+                          "leaf_type": "JSON integer"
+                        }
+                      },
+                      "unknown_keys": "reject"
+                    },
+                    {
+                      "keys": [
+                        "context_k",
+                        "final_state",
+                        "frob",
+                        "macro_gap",
+                        "macro_group",
+                        "macro_n",
+                        "max_asym",
+                        "packaging_source",
+                        "pi_final_state",
+                        "sigma_pi",
+                        "start_state",
+                        "step_entropy",
+                        "sym_eigvec_components_final_state",
+                        "tau",
+                        "trajectory_length"
+                      ],
+                      "kind": "closed_raw_object",
+                      "properties": {
+                        "context_k": {
+                          "constraint": ">=0",
+                          "kind": "scalar",
+                          "leaf_type": "JSON integer"
+                        },
+                        "final_state": {
+                          "constraint": ">=0",
+                          "kind": "scalar",
+                          "leaf_type": "JSON integer"
+                        },
+                        "frob": {
+                          "kind": "scalar",
+                          "leaf_type": "finite JSON number"
+                        },
+                        "macro_gap": {
+                          "kind": "scalar",
+                          "leaf_type": "finite JSON number"
+                        },
+                        "macro_group": {
+                          "constraint": ">=0",
+                          "kind": "scalar",
+                          "leaf_type": "JSON integer"
+                        },
+                        "macro_n": {
+                          "constraint": ">=0",
+                          "kind": "scalar",
+                          "leaf_type": "JSON integer"
+                        },
+                        "max_asym": {
+                          "kind": "scalar",
+                          "leaf_type": "finite JSON number"
+                        },
+                        "packaging_source": {
+                          "kind": "scalar",
+                          "leaf_type": "UTF-8 string"
+                        },
+                        "pi_final_state": {
+                          "kind": "scalar",
+                          "leaf_type": "finite JSON number"
+                        },
+                        "sigma_pi": {
+                          "kind": "scalar",
+                          "leaf_type": "finite JSON number"
+                        },
+                        "start_state": {
+                          "constraint": ">=0",
+                          "kind": "scalar",
+                          "leaf_type": "JSON integer"
+                        },
+                        "step_entropy": {
+                          "kind": "scalar",
+                          "leaf_type": "finite JSON number"
+                        },
+                        "sym_eigvec_components_final_state": {
+                          "items": {
+                            "kind": "scalar",
+                            "leaf_type": "finite JSON number"
+                          },
+                          "kind": "array"
+                        },
+                        "tau": {
+                          "constraint": ">=0",
+                          "kind": "scalar",
+                          "leaf_type": "JSON integer"
+                        },
+                        "trajectory_length": {
+                          "constraint": ">=0",
+                          "kind": "scalar",
+                          "leaf_type": "JSON integer"
+                        }
+                      },
+                      "unknown_keys": "reject"
+                    }
+                  ]
+                },
+                "protocol_step_id": {
+                  "kind": "scalar",
+                  "leaf_type": "UTF-8 string"
+                },
+                "resolution_id": {
+                  "kind": "scalar",
+                  "leaf_type": "UTF-8 string"
+                },
+                "step_index": {
+                  "constraint": ">=0",
+                  "kind": "scalar",
+                  "leaf_type": "JSON integer"
+                },
+                "trajectory_id": {
+                  "kind": "scalar",
+                  "leaf_type": "UTF-8 string"
+                }
+              },
+              "unknown_keys": "reject"
+            },
+            "kind": "array"
+          },
+          "trajectory_count": {
+            "constraint": ">=0",
+            "kind": "scalar",
+            "leaf_type": "JSON integer"
+          }
+        },
+        "unknown_keys": "reject"
+      }
+    }
+  },
+  "raw_marker_order": [
+    "KEY_BORN_PROBE_JSON ",
+    "KEY_DISCOVERY_GRADE_JSON ",
+    "KEY_AUDIT_JSON "
+  ],
+  "raw_order_regression_fixtures": {
+    "audit": {
+      "exact_live_payload_evidence": {
+        "accepted_by_strict_shape_parser": true,
+        "canonical_sorted_sha256": "b52b06c393ccaf540dac5bbeec95f476705d8d12f2c4fda4eddefc91a3c031f1",
+        "raw_bytes": 4667,
+        "raw_sha256": "057fd492aefd9326a233a32c2f6b0f0e9cce59820a7eb17ccfb2a5f37ea3464d"
+      },
+      "expected_top_level_order": [
+        "schema_version",
+        "tier",
+        "exp_id",
+        "config_name",
+        "git_sha",
+        "seed",
+        "n",
+        "step",
+        "pica_config_hash",
+        "budget",
+        "phase",
+        "eff_gap",
+        "block_count",
+        "gated_edges",
+        "macro_n",
+        "tau",
+        "frob_from_rank1",
+        "macro_gap",
+        "sigma",
+        "level1_frob",
+        "p1_accepted",
+        "p1_rejected",
+        "p2_accepted",
+        "p2_rejected",
+        "traj_steps",
+        "p2_repairs",
+        "p2_violations",
+        "partition_stats",
+        "packaging_stats",
+        "lens_source",
+        "packaging_source",
+        "active_tau",
+        "p6_rate_mult",
+        "p6_cap_mult",
+        "partition_flip_count",
+        "packaging_flip_count",
+        "tau_change_count",
+        "last_partition_flip_step",
+        "last_packaging_flip_step",
+        "last_tau_change_step",
+        "macro_gap_ratio",
+        "sigma_ratio",
+        "sigma_u",
+        "max_asym",
+        "cyc_mean",
+        "cyc_max",
+        "n_chiral",
+        "trans_ep",
+        "n_trans",
+        "n_absorb",
+        "micro_t_rel",
+        "micro_gap_ratio",
+        "micro_eigen_entropy",
+        "micro_spectral_participation",
+        "multi_scale_scan",
+        "pica_config"
+      ],
+      "marker": "KEY_AUDIT_JSON ",
+      "raw_utf8": "{\"schema_version\":3,\"tier\":\"E1\",\"exp_id\":\"EXP-112\",\"config_name\":\"A14_only\",\"git_sha\":\"49f0be8\",\"seed\":0,\"n\":32,\"step\":null,\"pica_config_hash\":null,\"budget\":null,\"phase\":null,\"eff_gap\":null,\"block_count\":null,\"gated_edges\":null,\"macro_n\":null,\"tau\":null,\"frob_from_rank1\":null,\"macro_gap\":null,\"sigma\":null,\"level1_frob\":null,\"p1_accepted\":null,\"p1_rejected\":null,\"p2_accepted\":null,\"p2_rejected\":null,\"traj_steps\":null,\"p2_repairs\":null,\"p2_violations\":null,\"partition_stats\":null,\"packaging_stats\":null,\"lens_source\":null,\"packaging_source\":null,\"active_tau\":null,\"p6_rate_mult\":null,\"p6_cap_mult\":null,\"partition_flip_count\":null,\"packaging_flip_count\":null,\"tau_change_count\":null,\"last_partition_flip_step\":null,\"last_packaging_flip_step\":null,\"last_tau_change_step\":null,\"macro_gap_ratio\":null,\"sigma_ratio\":null,\"sigma_u\":null,\"max_asym\":null,\"cyc_mean\":null,\"cyc_max\":null,\"n_chiral\":null,\"trans_ep\":null,\"n_trans\":null,\"n_absorb\":null,\"micro_t_rel\":null,\"micro_gap_ratio\":null,\"micro_eigen_entropy\":null,\"micro_spectral_participation\":null,\"multi_scale_scan\":[{\"k\":2,\"macro_gap\":null,\"frob\":null,\"sigma_pi\":null,\"max_asym\":null,\"cyc_mean\":null,\"cyc_max\":null,\"n_chiral\":null,\"step_entropy\":null,\"pla2_gap\":null,\"lagr_geo_r2\":null,\"lagr_diff_kl\":null,\"lagr_diff_alpha\":null,\"t_rel\":null,\"gap_ratio\":null,\"eigen_entropy\":null,\"spectral_participation\":null,\"slow_modes_r50\":null,\"slow_modes_r70\":null,\"slow_modes_r90\":null,\"nontrivial_eigenvalues\":null}],\"pica_config\":null}",
+      "source": "live EXP-112 probe member-order projection",
+      "source_stdout_sha256": "228535e3c859905274ce7c34f39e4fa6b374801c1876d95dd5ea3356be4c47bf"
+    },
+    "discovery": {
+      "exact_live_payload_evidence": {
+        "accepted_by_strict_shape_parser": true,
+        "canonical_sorted_sha256": "4bcc3cd0d80dd32eb1af0133564cb359da3691e07c1bd5a6f1e9c278416e5184",
+        "raw_bytes": 139285,
+        "raw_sha256": "6bb23c5cc146d14f2bb4737e55f224636093dd4cf5878861e9ae474d0e0181b4"
+      },
+      "expected_top_level_order": [
+        "trajectory_count",
+        "contexts",
+        "rows"
+      ],
+      "marker": "KEY_DISCOVERY_GRADE_JSON ",
+      "raw_utf8": "{\"trajectory_count\":1,\"contexts\":[{\"step_index\":0,\"protocol_step_id\":\"protocol_pica_multiscale_scan_step_0\",\"level_id\":\"level_l0\",\"resolution_id\":\"resolution_k_2\",\"closure_id\":\"closure_raw\",\"lens_id\":\"lens_raw\",\"k\":2,\"macro_n\":2,\"macro_gap\":0.5,\"frob\":0.0,\"sigma_pi\":0.0,\"step_entropy\":0.0,\"max_asym\":0.0}],\"rows\":[{\"trajectory_id\":\"trajectory_0\",\"step_index\":0,\"protocol_step_id\":\"protocol_pica_multiscale_scan_step_0\",\"level_id\":\"level_l0\",\"resolution_id\":\"resolution_k_2\",\"closure_id\":\"closure_raw\",\"lens_id\":\"lens_raw\",\"observation_label\":\"group_0\",\"macrostate_label\":\"group_0\",\"observation_payload\":{\"context_k\":2,\"final_state\":0,\"frob\":0.0,\"macro_gap\":0.5,\"macro_group\":0,\"macro_n\":2,\"max_asym\":0.0,\"pi_final_state\":0.5,\"sigma_pi\":0.0,\"start_state\":0,\"step_entropy\":0.0,\"sym_eigvec_components_final_state\":[0.0],\"tau\":2,\"trajectory_length\":1}}]}",
+      "source": "live EXP-112 probe member-order projection",
+      "source_stdout_sha256": "228535e3c859905274ce7c34f39e4fa6b374801c1876d95dd5ea3356be4c47bf"
+    }
+  },
+  "raw_transport_contract": {
+    "canonicalize": "derived artifacts only; never require raw marker member sorting",
+    "duplicate_object_names": "reject at every parsed level",
+    "exact_original_bytes": "seal and content-hash before parsing",
+    "member_order": "arbitrary and preserved only in sealed original bytes",
+    "nonfinite_numeric_tokens": "reject",
+    "text_encoding": "strict UTF-8 JSON with no trailing material"
+  },
+  "scientific_raw_source_exclusivity": true,
+  "source_sections": [
+    "4",
+    "10",
+    "15"
+  ]
+}

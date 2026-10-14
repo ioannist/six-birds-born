@@ -1,0 +1,6 @@
+{
+  "adapted_witness_ast_sha256": "3c6b4cc8affb3b9d487cbc0bcf6a8db01e93e4a1ce7ee7a246264b179103fa2e",
+  "io_adaptation": "Replace witness() loader statement with witness(s) and exact s conversion; rest of original witness body unchanged.",
+  "original_module": "CB/algebraic.py",
+  "original_sha256": "0f9817eaa8287e0d26c25105a8c6d06ef450ca71c333a65e6202be77f412f3b1"
+}

@@ -1,0 +1,18 @@
+{
+  "schema": "born_stage_amendments_v1",
+  "stages": {
+    "g2a_acquisition_and_inference": "v8",
+    "g2c_acquisition": "v21",
+    "g2c_effective_evaluation": "v24",
+    "g2c_prior_evaluation_contract": "v23",
+    "test_b_recipes_and_sampling": "v6",
+    "test_b_fitting_and_inference": "v6.1"
+  },
+  "scientific_rules": [
+    "G2a uses the v8 scientific RNG identity. G2c acquisition, unit identities, rotation and paired bootstrap use the v21 source identity; v24 governs the effective computational contract, not a replacement RNG namespace.",
+    "v24 admits gradual underflow in the exact rotation/error certificate; the registered thresholds are unchanged.",
+    "Test B v6.1 preserves v6 data design and legacy v4/v5 primary/control seed namespaces; it changes the certification/inference protocol, not the 60 recipes.",
+    "The final Test B seal controls require 22 literal relabel refits and 1000 training-only audits; structural erasure remains not computed.",
+    "Census completion applies the registered projector/prediction gate independently of the seven extra SVD-coordinate checks and replaces thirteen symbolic-overflow checks with exact quadratic-ring controls. Preserve original statuses separately."
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "declarations": [
+    {
+      "file": "BornCalculus/Census/Certificate.lean",
+      "kind": "instance",
+      "line": 58,
+      "name": "BornCalculus.Census.instDecidableLexBefore"
+    },
+    {
+      "file": "BornCalculus/Census/Certificate.lean",
+      "kind": "instance",
+      "line": 63,
+      "name": "BornCalculus.Census.instDecidableFrameCheck"
+    },
+    {
+      "file": "BornCalculus/Census/Certificate.lean",
+      "kind": "instance",
+      "line": 69,
+      "name": "BornCalculus.Census.instDecidableMomentCheck"
+    },
+    {
+      "file": "BornCalculus/Census/Certificate.lean",
+      "kind": "instance",
+      "line": 75,
+      "name": "BornCalculus.Census.instDecidablePairCheck"
+    },
+    {
+      "file": "BornCalculus/Census/Certificate.lean",
+      "kind": "instance",
+      "line": 80,
+      "name": "BornCalculus.Census.instDecidableEarlierCheck"
+    },
+    {
+      "file": "BornCalculus/Census/Certificate.lean",
+      "kind": "instance",
+      "line": 90,
+      "name": "BornCalculus.Census.instDecidableAtomCheck"
+    },
+    {
+      "file": "BornCalculus/Census/Certificate.lean",
+      "kind": "instance",
+      "line": 94,
+      "name": "BornCalculus.Census.instDecidableReadCheck"
+    },
+    {
+      "file": "BornCalculus/Census/Certificate.lean",
+      "kind": "instance",
+      "line": 101,
+      "name": "BornCalculus.Census.instDecidableRobustCheck"
+    },
+    {
+      "file": "BornCalculus/Census/Certificate.lean",
+      "kind": "instance",
+      "line": 108,
+      "name": "BornCalculus.Census.instDecidableRangeCheck"
+    },
+    {
+      "file": "BornCalculus/Census/Certificate.lean",
+      "kind": "instance",
+      "line": 113,
+      "name": "BornCalculus.Census.instDecidableTieCheck"
+    }
+  ]
+}

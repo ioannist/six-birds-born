@@ -1,0 +1,24 @@
+{
+  "profile": "predictive_v25",
+  "python_implementation": "CPython",
+  "python_version": "3.12",
+  "numpy_version": "2.5.2",
+  "scipy_version": "1.18.1",
+  "sympy_version": "1.14.0",
+  "mpmath_version": "1.3.0",
+  "numpy_openblas_version": "0.3.34.0.0",
+  "threads": 1,
+  "lock": "predictive_v25.lock",
+  "thread_environment": {
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "RAYON_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "dispatch_environment": {
+    "NPY_DISABLE_CPU_FEATURES": "X86_V4,AVX512_ICL,AVX512_SPR",
+    "OPENBLAS_CORETYPE": "Haswell"
+  }
+}

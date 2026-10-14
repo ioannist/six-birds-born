@@ -1,0 +1,12 @@
+{
+  "status": "RUNNING",
+  "roots": [
+    "BornCalculus.Census.FullWitness",
+    "BornCalculus.Census.AuditFull"
+  ],
+  "jobs_limit": 8,
+  "max_active_compilers": 8,
+  "completed_modules": 286,
+  "wall_seconds": 101.15060756588355,
+  "peak_aggregate_rss_kib": 6489544
+}

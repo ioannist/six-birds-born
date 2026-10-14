@@ -1,0 +1,494 @@
+Lean 4.28.0 output from successful lake build BornCalculus.General.Audit
+Import replay diagnostics omitted; all theorem type/axiom output retained.
+
+BornCalculus.General.basis_isometry {n : ℕ} (F : BornCalculus.General.CenteredFrame n) :
+  (BornCalculus.General.basis F).transpose * BornCalculus.General.basis F = 1
+'BornCalculus.General.basis_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.basis_projector {n : ℕ} (F : BornCalculus.General.CenteredFrame n) :
+  BornCalculus.General.basis F * (BornCalculus.General.basis F).transpose = BornCalculus.General.projector F
+'BornCalculus.General.basis_projector' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.orth_parent {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (i : Fin n) :
+  BornCalculus.toOrth (↑n) F.s (BornCalculus.General.parent F i) =
+    Matrix.vecMulVec ![(√↑n)⁻¹, F.w i / √F.s] ![(√↑n)⁻¹, F.w i / √F.s]
+'BornCalculus.General.orth_parent' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.orth_effect_compression {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (S : Finset (Fin n)) :
+  BornCalculus.toOrth (↑n) F.s (BornCalculus.General.effect F S) =
+    ((BornCalculus.General.basis F).transpose * Matrix.diagonal fun i => if i ∈ S then 1 else 0) *
+      BornCalculus.General.basis F
+'BornCalculus.General.orth_effect_compression' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.orth_effect_coordinates {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (S : Finset (Fin n)) :
+  BornCalculus.toOrth (↑n) F.s (BornCalculus.General.effect F S) =
+    !![↑S.card / ↑n, (∑ i ∈ S, F.w i) / (√↑n * √F.s); (∑ i ∈ S, F.w i) / (√↑n * √F.s), (∑ i ∈ S, F.w i ^ 2) / F.s]
+'BornCalculus.General.orth_effect_coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.encoder_mixing_counterexample {n : ℕ} (F : BornCalculus.General.CenteredFrame n) :
+  ∃ p q,
+    BornCalculus.General.encoding F (BornCalculus.General.mixedPreparation p q (1 / 2) ⋯ ⋯) ≠
+      (1 / 2) • BornCalculus.General.encoding F p + (1 / 2) • BornCalculus.General.encoding F q
+'BornCalculus.General.encoder_mixing_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.frame32_all_set_trace (F : BornCalculus.CenteredFrame32) (p : BornCalculus.Simplex32)
+  (S : Finset (Fin 32)) :
+  BornCalculus.General.projectedSquare (BornCalculus.General.of32 F) p S =
+    BornCalculus.pairing (BornCalculus.frameEncoding F p) (∑ i ∈ S, BornCalculus.frameParent F i)
+'BornCalculus.General.frame32_all_set_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.frame32_point_encoding_eq_iff (F : BornCalculus.CenteredFrame32) (i j : Fin 32) :
+  BornCalculus.frameEncoding F (BornCalculus.simplexPoint i) =
+      BornCalculus.frameEncoding F (BornCalculus.simplexPoint j) ↔
+    F.w i = F.w j
+'BornCalculus.General.frame32_point_encoding_eq_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.effect_coordinates {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (S : Finset (Fin n)) :
+  BornCalculus.General.effect F S =
+    !![↑S.card / ↑n, (∑ i ∈ S, F.w i) / ↑n; (∑ i ∈ S, F.w i) / F.s, (∑ i ∈ S, F.w i ^ 2) / F.s]
+'BornCalculus.General.effect_coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.variance_identity.{u_1} {α : Type u_1} (S : Finset α) (w : α → ℝ) :
+  ∑ i ∈ S, ∑ j ∈ S, (w i - w j) ^ 2 = 2 * (↑S.card * ∑ i ∈ S, w i ^ 2 - (∑ i ∈ S, w i) ^ 2)
+'BornCalculus.General.variance_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.effect_determinant {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (S : Finset (Fin n)) :
+  Matrix.det (BornCalculus.General.effect F S) = (↑S.card * ∑ i ∈ S, F.w i ^ 2 - (∑ i ∈ S, F.w i) ^ 2) / (↑n * F.s)
+'BornCalculus.General.effect_determinant' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.effect_determinant_variance {n : ℕ} (F : BornCalculus.General.CenteredFrame n)
+  (S : Finset (Fin n)) :
+  Matrix.det (BornCalculus.General.effect F S) = (∑ i ∈ S, ∑ j ∈ S, (F.w i - F.w j) ^ 2) / (2 * ↑n * F.s)
+'BornCalculus.General.effect_determinant_variance' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.effect_determinant_nonnegative {n : ℕ} (F : BornCalculus.General.CenteredFrame n)
+  (S : Finset (Fin n)) : 0 ≤ Matrix.det (BornCalculus.General.effect F S)
+'BornCalculus.General.effect_determinant_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.effect_singular_iff_constant {n : ℕ} (F : BornCalculus.General.CenteredFrame n)
+  (S : Finset (Fin n)) : Matrix.det (BornCalculus.General.effect F S) = 0 ↔ ∀ i ∈ S, ∀ j ∈ S, F.w i = F.w j
+'BornCalculus.General.effect_singular_iff_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.active_effect_singular_iff {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (S : Finset (Fin n))
+  (hS : S.Nonempty) : Matrix.det (BornCalculus.General.effect F S) = 0 ↔ ∃ c, ∀ i ∈ S, F.w i = c
+'BornCalculus.General.active_effect_singular_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.lens_singular_iff_constant.{u_1} {n : ℕ} {L : Type u_1} [Fintype L] [DecidableEq L]
+  (F : BornCalculus.General.CenteredFrame n) (q : Fin n → L) (a : L) :
+  Matrix.det (BornCalculus.General.lens F q a) = 0 ↔ ∀ (i j : Fin n), q i = a → q j = a → F.w i = F.w j
+'BornCalculus.General.lens_singular_iff_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.parent_singular_nonzero {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (i : Fin n) :
+  Matrix.det (BornCalculus.General.parent F i) = 0 ∧ BornCalculus.General.parent F i ≠ 0
+'BornCalculus.General.parent_singular_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.frame32_lens_singular_iff {m : ℕ} (F : BornCalculus.CenteredFrame32) (q : Fin 32 → Fin m)
+  (a : Fin m) : Matrix.det (BornCalculus.frameLens F q a) = 0 ↔ ∀ (i j : Fin 32), q i = a → q j = a → F.w i = F.w j
+'BornCalculus.General.frame32_lens_singular_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.det_toOrth {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (A : BornCalculus.M2) :
+  Matrix.det (BornCalculus.toOrth (↑n) F.s A) = Matrix.det A
+'BornCalculus.General.det_toOrth' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.orth_effect_determinant_variance {n : ℕ} (F : BornCalculus.General.CenteredFrame n)
+  (S : Finset (Fin n)) :
+  Matrix.det (BornCalculus.toOrth (↑n) F.s (BornCalculus.General.effect F S)) =
+    (∑ i ∈ S, ∑ j ∈ S, (F.w i - F.w j) ^ 2) / (2 * ↑n * F.s)
+'BornCalculus.General.orth_effect_determinant_variance' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.orth_effect_singular_iff_constant {n : ℕ} (F : BornCalculus.General.CenteredFrame n)
+  (S : Finset (Fin n)) :
+  Matrix.det (BornCalculus.toOrth (↑n) F.s (BornCalculus.General.effect F S)) = 0 ↔ ∀ i ∈ S, ∀ j ∈ S, F.w i = F.w j
+'BornCalculus.General.orth_effect_singular_iff_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.coefficients_formula {n : ℕ} (F : BornCalculus.General.CenteredFrame n)
+  (p : BornCalculus.General.Simplex n) :
+  BornCalculus.General.coefficients F p = ![(∑ i, √(↑p i)) / √↑n, (∑ i, F.w i * √(↑p i)) / √F.s]
+'BornCalculus.General.coefficients_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.coefficients_ne_zero {n : ℕ} (F : BornCalculus.General.CenteredFrame n)
+  (p : BornCalculus.General.Simplex n) : BornCalculus.General.coefficients F p ≠ 0
+'BornCalculus.General.coefficients_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.normalized_coordinates {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (A H : ℝ) (hA : 0 < A) :
+  BornCalculus.toOrth (↑n) F.s (BornCalculus.General.chartDensity n F.s (↑n / F.s * H / A)) =
+    (A ^ 2 / ↑n + H ^ 2 / F.s)⁻¹ • Matrix.vecMulVec ![A / √↑n, H / √F.s] ![A / √↑n, H / √F.s]
+'BornCalculus.General.normalized_coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.encoding_normalized_projection {n : ℕ} (F : BornCalculus.General.CenteredFrame n)
+  (p : BornCalculus.General.Simplex n) :
+  BornCalculus.toOrth (↑n) F.s (BornCalculus.General.encoding F p) =
+    (BornCalculus.General.coefficients F p ⬝ᵥ BornCalculus.General.coefficients F p)⁻¹ •
+      Matrix.vecMulVec (BornCalculus.General.coefficients F p) (BornCalculus.General.coefficients F p)
+'BornCalculus.General.encoding_normalized_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.size_positive {n : ℕ} (F : BornCalculus.General.CenteredFrame n) : 0 < ↑n
+'BornCalculus.General.size_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.parent_of32 (F : BornCalculus.CenteredFrame32) (i : Fin 32) :
+  BornCalculus.General.parent (BornCalculus.General.of32 F) i = BornCalculus.frameParent F i
+'BornCalculus.General.parent_of32' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.lens_of32 {m : ℕ} (F : BornCalculus.CenteredFrame32) (q : Fin 32 → Fin m) (a : Fin m) :
+  BornCalculus.General.lens (BornCalculus.General.of32 F) q a = BornCalculus.frameLens F q a
+'BornCalculus.General.lens_of32' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.encoding_of32 (F : BornCalculus.CenteredFrame32) (p : BornCalculus.Simplex32) :
+  BornCalculus.General.encoding (BornCalculus.General.of32 F) p = BornCalculus.frameEncoding F p
+'BornCalculus.General.encoding_of32' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.parent_metric {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (i : Fin n) :
+  BornCalculus.frameG (↑n) F.s * BornCalculus.General.parent F i = Matrix.vecMulVec ![1, F.w i] ![1, F.w i]
+'BornCalculus.General.parent_metric' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.parent_positive {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (i : Fin n) :
+  BornCalculus.GPositive (↑n) F.s (BornCalculus.General.parent F i)
+'BornCalculus.General.parent_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.parent_sum {n : ℕ} (F : BornCalculus.General.CenteredFrame n) :
+  ∑ i, BornCalculus.General.parent F i = 1
+'BornCalculus.General.parent_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.effect_positive {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (S : Finset (Fin n)) :
+  BornCalculus.GPositive (↑n) F.s (BornCalculus.General.effect F S)
+'BornCalculus.General.effect_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.effect_empty {n : ℕ} (F : BornCalculus.General.CenteredFrame n) :
+  BornCalculus.General.effect F ∅ = 0
+'BornCalculus.General.effect_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.effect_univ {n : ℕ} (F : BornCalculus.General.CenteredFrame n) :
+  BornCalculus.General.effect F Finset.univ = 1
+'BornCalculus.General.effect_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.effect_union {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (S T : Finset (Fin n))
+  (h : Disjoint S T) :
+  BornCalculus.General.effect F (S ∪ T) = BornCalculus.General.effect F S + BornCalculus.General.effect F T
+'BornCalculus.General.effect_union' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.effect_compl {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (S : Finset (Fin n)) :
+  BornCalculus.General.effect F Sᶜ = 1 - BornCalculus.General.effect F S
+'BornCalculus.General.effect_compl' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.effect_domain {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (S : Finset (Fin n)) :
+  BornCalculus.GIsEffect (↑n) F.s (BornCalculus.General.effect F S)
+'BornCalculus.General.effect_domain' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.effect_singleton {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (i : Fin n) :
+  BornCalculus.General.effect F {i} = BornCalculus.General.parent F i
+'BornCalculus.General.effect_singleton' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.lens_effect.{u_1} {n : ℕ} {L : Type u_1} [Fintype L] [DecidableEq L]
+  (F : BornCalculus.General.CenteredFrame n) (q : Fin n → L) (a : L) :
+  BornCalculus.General.lens F q a = BornCalculus.General.effect F {i | q i = a}
+'BornCalculus.General.lens_effect' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.lens_domain.{u_1} {n : ℕ} {L : Type u_1} [Fintype L] [DecidableEq L]
+  (F : BornCalculus.General.CenteredFrame n) (q : Fin n → L) (a : L) :
+  BornCalculus.GIsEffect (↑n) F.s (BornCalculus.General.lens F q a)
+'BornCalculus.General.lens_domain' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.lens_sum.{u_1} {n : ℕ} {L : Type u_1} [Fintype L] [DecidableEq L]
+  (F : BornCalculus.General.CenteredFrame n) (q : Fin n → L) : ∑ a, BornCalculus.General.lens F q a = 1
+'BornCalculus.General.lens_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.chart_density_domain {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (t : ℝ) :
+  BornCalculus.GIsDensity (↑n) F.s (BornCalculus.General.chartDensity n F.s t)
+'BornCalculus.General.chart_density_domain' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.chart_density_pure {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (t : ℝ) :
+  BornCalculus.General.chartDensity n F.s t * BornCalculus.General.chartDensity n F.s t =
+    BornCalculus.General.chartDensity n F.s t
+'BornCalculus.General.chart_density_pure' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.encoding_domain {n : ℕ} (F : BornCalculus.General.CenteredFrame n)
+  (p : BornCalculus.General.Simplex n) : BornCalculus.GIsDensity (↑n) F.s (BornCalculus.General.encoding F p)
+'BornCalculus.General.encoding_domain' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.encoding_pure {n : ℕ} (F : BornCalculus.General.CenteredFrame n)
+  (p : BornCalculus.General.Simplex n) :
+  BornCalculus.General.encoding F p * BornCalculus.General.encoding F p = BornCalculus.General.encoding F p
+'BornCalculus.General.encoding_pure' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.sqrt_sum_positive {n : ℕ} (p : BornCalculus.General.Simplex n) : 0 < ∑ i, √(↑p i)
+'BornCalculus.General.sqrt_sum_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.parent_pairing {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (t : ℝ) (i : Fin n) :
+  BornCalculus.pairing (BornCalculus.General.chartDensity n F.s t) (BornCalculus.General.parent F i) =
+    (1 + t * F.w i) ^ 2 / (↑n + F.s * t ^ 2)
+'BornCalculus.General.parent_pairing' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.effect_pairing {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (S : Finset (Fin n)) (t : ℝ) :
+  BornCalculus.pairing (BornCalculus.General.chartDensity n F.s t) (BornCalculus.General.effect F S) =
+    ∑ i ∈ S, (1 + t * F.w i) ^ 2 / (↑n + F.s * t ^ 2)
+'BornCalculus.General.effect_pairing' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.simplex_square_sum_positive {n : ℕ} (a : BornCalculus.General.Simplex n) : 0 < ∑ i, ↑a i ^ 2
+'BornCalculus.General.simplex_square_sum_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.square_preparation_chart {n : ℕ} (F : BornCalculus.General.CenteredFrame n)
+  (a : BornCalculus.General.Simplex n) :
+  BornCalculus.General.rootChart F (BornCalculus.General.squarePreparation a) = ↑n / F.s * ∑ i, F.w i * ↑a i
+'BornCalculus.General.square_preparation_chart' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.root_chart_bounds {n : ℕ} (F : BornCalculus.General.CenteredFrame n)
+  (p : BornCalculus.General.Simplex n) (lo hi : ℝ) (hl : ∀ (i : Fin n), lo ≤ F.w i) (hu : ∀ (i : Fin n), F.w i ≤ hi) :
+  ↑n / F.s * lo ≤ BornCalculus.General.rootChart F p ∧ BornCalculus.General.rootChart F p ≤ ↑n / F.s * hi
+'BornCalculus.General.root_chart_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.weighted_value_realization {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (i j : Fin n) (x : ℝ)
+  (hij : F.w i < F.w j) (hx : F.w i ≤ x ∧ x ≤ F.w j) : ∃ a, ∑ k, F.w k * ↑a k = x
+'BornCalculus.General.weighted_value_realization' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.root_chart_range {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (lo hi : Fin n)
+  (hl : ∀ (i : Fin n), F.w lo ≤ F.w i) (hu : ∀ (i : Fin n), F.w i ≤ F.w hi) (hlt : F.w lo < F.w hi) (t : ℝ) :
+  (∃ p, BornCalculus.General.rootChart F p = t) ↔ ↑n / F.s * F.w lo ≤ t ∧ t ≤ ↑n / F.s * F.w hi
+'BornCalculus.General.root_chart_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.encoding_non_affine {n : ℕ} (F : BornCalculus.General.CenteredFrame n)
+  (p q : BornCalculus.General.Simplex n) (hpq : BornCalculus.General.encoding F p ≠ BornCalculus.General.encoding F q)
+  (θ : ℝ) (h₀ : 0 < θ) (h₁ : θ < 1) :
+  BornCalculus.General.encoding F (BornCalculus.General.mixedPreparation p q θ ⋯ ⋯) ≠
+    θ • BornCalculus.General.encoding F p + (1 - θ) • BornCalculus.General.encoding F q
+'BornCalculus.General.encoding_non_affine' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.extrema_straddle_zero {n : ℕ} (F : BornCalculus.General.CenteredFrame n) :
+  ∃ lo hi, (∀ (i : Fin n), F.w lo ≤ F.w i) ∧ (∀ (i : Fin n), F.w i ≤ F.w hi) ∧ F.w lo < 0 ∧ 0 < F.w hi
+'BornCalculus.General.extrema_straddle_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.encoder_chart_exact_range {n : ℕ} (F : BornCalculus.General.CenteredFrame n) :
+  ∃ lo hi,
+    (∀ (i : Fin n), F.w lo ≤ F.w i) ∧
+      (∀ (i : Fin n), F.w i ≤ F.w hi) ∧
+        F.w lo < 0 ∧
+          0 < F.w hi ∧
+            ∀ (t : ℝ), (∃ p, BornCalculus.General.rootChart F p = t) ↔ ↑n / F.s * F.w lo ≤ t ∧ t ≤ ↑n / F.s * F.w hi
+'BornCalculus.General.encoder_chart_exact_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.uniform_chart {n : ℕ} (F : BornCalculus.General.CenteredFrame n) :
+  BornCalculus.General.rootChart F (BornCalculus.General.uniform F) = 0
+'BornCalculus.General.uniform_chart' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.uniform_encoding {n : ℕ} (F : BornCalculus.General.CenteredFrame n) :
+  BornCalculus.General.encoding F (BornCalculus.General.uniform F) = !![1, 0; 0, 0]
+'BornCalculus.General.uniform_encoding' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.encoding_omits_orthogonal {n : ℕ} (F : BornCalculus.General.CenteredFrame n)
+  (p : BornCalculus.General.Simplex n) : BornCalculus.General.encoding F p ≠ !![0, 0; 0, 1]
+'BornCalculus.General.encoding_omits_orthogonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.carrier_and_trace.{u_1} {n : ℕ} {L : Type u_1} [Fintype L] [DecidableEq L]
+  (F : BornCalculus.General.CenteredFrame n) (q : Fin n → L) :
+  (∀ (p : BornCalculus.General.Simplex n),
+      BornCalculus.General.coefficients F p ≠ 0 ∧
+        BornCalculus.IsDensity (BornCalculus.toOrth (↑n) F.s (BornCalculus.General.encoding F p)) ∧
+          BornCalculus.toOrth (↑n) F.s (BornCalculus.General.encoding F p) *
+              BornCalculus.toOrth (↑n) F.s (BornCalculus.General.encoding F p) =
+            BornCalculus.toOrth (↑n) F.s (BornCalculus.General.encoding F p)) ∧
+    (∀ (a : L), BornCalculus.IsEffect (BornCalculus.toOrth (↑n) F.s (BornCalculus.General.lens F q a))) ∧
+      ∑ a, BornCalculus.toOrth (↑n) F.s (BornCalculus.General.lens F q a) = 1 ∧
+        (∀ (S : Finset (Fin n)),
+            BornCalculus.IsEffect (BornCalculus.toOrth (↑n) F.s (BornCalculus.General.effect F S))) ∧
+          ∀ (p : BornCalculus.General.Simplex n) (S : Finset (Fin n)),
+            BornCalculus.General.projectedSquare F p S =
+              BornCalculus.pairing (BornCalculus.toOrth (↑n) F.s (BornCalculus.General.encoding F p))
+                (BornCalculus.toOrth (↑n) F.s (BornCalculus.General.effect F S))
+'BornCalculus.General.carrier_and_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.orth_lens_statistics.{u_1} {n : ℕ} {L : Type u_1} [Fintype L] [DecidableEq L]
+  (F : BornCalculus.General.CenteredFrame n) (R : BornCalculus.Density) (q : Fin n → L) (a : L) :
+  BornCalculus.pairing (↑R) (BornCalculus.toOrth (↑n) F.s (BornCalculus.General.lens F q a)) =
+    ∑ i,
+      if q i = a then BornCalculus.pairing (↑R) (BornCalculus.toOrth (↑n) F.s (BornCalculus.General.parent F i)) else 0
+'BornCalculus.General.orth_lens_statistics' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.witness_toOrth {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (ε : ℝ) :
+  BornCalculus.toOrth (↑n) F.s (BornCalculus.fragmentWitness ε) = BornCalculus.fragmentWitness ε
+'BornCalculus.General.witness_toOrth' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.witness_parent_pairing {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (ε : ℝ) (i : Fin n) :
+  BornCalculus.pairing (BornCalculus.fragmentWitness ε) (BornCalculus.General.parent F i) =
+    1 / ↑n + ε * (1 / ↑n - F.w i ^ 2 / F.s)
+'BornCalculus.General.witness_parent_pairing' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.square_le_norm {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (i : Fin n) : F.w i ^ 2 ≤ F.s
+'BornCalculus.General.square_le_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.witness_parent_positive {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (ε : ℝ) (hε : 0 < ε)
+  (hsmall : ε < 1 / ↑n) (i : Fin n) :
+  0 < BornCalculus.pairing (BornCalculus.fragmentWitness ε) (BornCalculus.General.parent F i)
+'BornCalculus.General.witness_parent_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.witness_all_proper_sets {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (ε : ℝ) (hε : 0 < ε)
+  (hsmall : ε < 1 / ↑n) (S : Finset (Fin n)) :
+  S.Nonempty →
+    S ≠ Finset.univ →
+      0 < BornCalculus.pairing (BornCalculus.fragmentWitness ε) (BornCalculus.General.effect F S) ∧
+        BornCalculus.pairing (BornCalculus.fragmentWitness ε) (BornCalculus.General.effect F S) < 1
+'BornCalculus.General.witness_all_proper_sets' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.witness_orth_proper_sets {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (ε : ℝ) (hε : 0 < ε)
+  (hsmall : ε < 1 / ↑n) (S : Finset (Fin n)) (hS : S.Nonempty) (hproper : S ≠ Finset.univ) :
+  0 <
+      BornCalculus.pairing (BornCalculus.fragmentWitness ε)
+        (BornCalculus.toOrth (↑n) F.s (BornCalculus.General.effect F S)) ∧
+    BornCalculus.pairing (BornCalculus.fragmentWitness ε)
+        (BornCalculus.toOrth (↑n) F.s (BornCalculus.General.effect F S)) <
+      1
+'BornCalculus.General.witness_orth_proper_sets' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.witness_inherited_entries {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (ε : ℝ)
+  (S : Finset (Fin n)) :
+  BornCalculus.pairing (BornCalculus.fragmentWitness ε)
+      (BornCalculus.toOrth (↑n) F.s (BornCalculus.General.effect F S)) =
+    ↑S.card / ↑n + ε * (↑S.card / ↑n - (∑ i ∈ S, F.w i ^ 2) / F.s)
+'BornCalculus.General.witness_inherited_entries' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.witness_set_laws {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (ε : ℝ) :
+  BornCalculus.pairing (BornCalculus.fragmentWitness ε) (BornCalculus.General.effect F ∅) = 0 ∧
+    BornCalculus.pairing (BornCalculus.fragmentWitness ε) (BornCalculus.General.effect F Finset.univ) = 1 ∧
+      ∀ (S T : Finset (Fin n)),
+        Disjoint S T →
+          BornCalculus.pairing (BornCalculus.fragmentWitness ε) (BornCalculus.General.effect F (S ∪ T)) =
+            BornCalculus.pairing (BornCalculus.fragmentWitness ε) (BornCalculus.General.effect F S) +
+              BornCalculus.pairing (BornCalculus.fragmentWitness ε) (BornCalculus.General.effect F T)
+'BornCalculus.General.witness_set_laws' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.witness_linear_relations.{u_1} {α : Type u_1} [Fintype α] (ε : ℝ) (E : α → BornCalculus.M2)
+  (c : α → ℝ) (h : ∑ a, c a • E a = 0) : ∑ a, c a * BornCalculus.pairing (BornCalculus.fragmentWitness ε) (E a) = 0
+'BornCalculus.General.witness_linear_relations' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.vandermonde_determinant {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (a : Fin 3 → Fin n) :
+  (BornCalculus.fragmentBasisMatrix fun k => ↑(BornCalculus.General.orthParentEffect F (a k))).det =
+    2 * (F.w (a 1) - F.w (a 0)) * (F.w (a 2) - F.w (a 0)) * (F.w (a 1) - F.w (a 2)) / (↑n * F.s * √↑n * √F.s)
+'BornCalculus.General.vandermonde_determinant' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.inherited_no_density {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (ε : ℝ) (hε : 0 < ε)
+  (i j k : Fin n) (hij : F.w i ≠ F.w j) (hik : F.w i ≠ F.w k) (hjk : F.w j ≠ F.w k) :
+  ¬∃ R,
+      ∀ (a : Fin n),
+        BornCalculus.pairing (↑R) (BornCalculus.toOrth (↑n) F.s (BornCalculus.General.parent F a)) =
+          BornCalculus.pairing (BornCalculus.fragmentWitness ε)
+            (BornCalculus.toOrth (↑n) F.s (BornCalculus.General.parent F a))
+'BornCalculus.General.inherited_no_density' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.witness_not_positive (ε : ℝ) (hε : 0 < ε) : ¬Matrix.PosSemidef (BornCalculus.fragmentWitness ε)
+'BornCalculus.General.witness_not_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.inherited_indefinite_assignments {n : ℕ} (F : BornCalculus.General.CenteredFrame n) :
+  ∃ δ,
+    0 < δ ∧
+      ∀ (ε : ℝ),
+        0 < ε →
+          ε < δ →
+            Matrix.IsHermitian (BornCalculus.fragmentWitness ε) ∧
+              Matrix.trace (BornCalculus.fragmentWitness ε) = 1 ∧
+                ¬Matrix.PosSemidef (BornCalculus.fragmentWitness ε) ∧
+                  (∀ (S : Finset (Fin n)),
+                      S.Nonempty →
+                        S ≠ Finset.univ →
+                          0 <
+                              BornCalculus.pairing (BornCalculus.fragmentWitness ε)
+                                (BornCalculus.toOrth (↑n) F.s (BornCalculus.General.effect F S)) ∧
+                            BornCalculus.pairing (BornCalculus.fragmentWitness ε)
+                                (BornCalculus.toOrth (↑n) F.s (BornCalculus.General.effect F S)) <
+                              1) ∧
+                    ∀ (i j k : Fin n),
+                      F.w i ≠ F.w j →
+                        F.w i ≠ F.w k →
+                          F.w j ≠ F.w k →
+                            ¬∃ R,
+                                ∀ (a : Fin n),
+                                  BornCalculus.pairing (↑R)
+                                      (BornCalculus.toOrth (↑n) F.s (BornCalculus.General.parent F a)) =
+                                    BornCalculus.pairing (BornCalculus.fragmentWitness ε)
+                                      (BornCalculus.toOrth (↑n) F.s (BornCalculus.General.parent F a))
+'BornCalculus.General.inherited_indefinite_assignments' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.orth_chart_scale {n : ℕ} (F : BornCalculus.General.CenteredFrame n)
+  (p : BornCalculus.General.Simplex n) :
+  BornCalculus.General.orthChart F p = √(↑n / F.s) / (↑n / F.s) * BornCalculus.General.rootChart F p
+'BornCalculus.General.orth_chart_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.orth_chart_coefficient_ratio {n : ℕ} (F : BornCalculus.General.CenteredFrame n)
+  (p : BornCalculus.General.Simplex n) :
+  BornCalculus.General.coefficients F p 1 / BornCalculus.General.coefficients F p 0 = BornCalculus.General.orthChart F p
+'BornCalculus.General.orth_chart_coefficient_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.normalized_two_vector (a b : ℝ) (ha : a ≠ 0) :
+  (a ^ 2 + b ^ 2)⁻¹ • Matrix.vecMulVec ![a, b] ![a, b] = BornCalculus.pureMatrix (b / a)
+'BornCalculus.General.normalized_two_vector' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.orth_encoding_chart {n : ℕ} (F : BornCalculus.General.CenteredFrame n)
+  (p : BornCalculus.General.Simplex n) :
+  BornCalculus.toOrth (↑n) F.s (BornCalculus.General.encoding F p) =
+    BornCalculus.pureMatrix (BornCalculus.General.orthChart F p)
+'BornCalculus.General.orth_encoding_chart' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.orth_encoder_exact_range {n : ℕ} (F : BornCalculus.General.CenteredFrame n) :
+  ∃ lo hi,
+    (∀ (i : Fin n), F.w lo ≤ F.w i) ∧
+      (∀ (i : Fin n), F.w i ≤ F.w hi) ∧
+        F.w lo < 0 ∧
+          0 < F.w hi ∧
+            ∀ (t : ℝ),
+              (∃ p, BornCalculus.General.orthChart F p = t) ↔ √(↑n / F.s) * F.w lo ≤ t ∧ t ≤ √(↑n / F.s) * F.w hi
+'BornCalculus.General.orth_encoder_exact_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.orth_encoder_image {n : ℕ} (F : BornCalculus.General.CenteredFrame n) :
+  ∃ lo hi,
+    (∀ (i : Fin n), F.w lo ≤ F.w i) ∧
+      (∀ (i : Fin n), F.w i ≤ F.w hi) ∧
+        F.w lo < 0 ∧
+          0 < F.w hi ∧
+            ∀ (R : BornCalculus.M2),
+              (∃ p, BornCalculus.toOrth (↑n) F.s (BornCalculus.General.encoding F p) = R) ↔
+                ∃ t, √(↑n / F.s) * F.w lo ≤ t ∧ t ≤ √(↑n / F.s) * F.w hi ∧ BornCalculus.pureMatrix t = R
+'BornCalculus.General.orth_encoder_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.orth_uniform_encoding {n : ℕ} (F : BornCalculus.General.CenteredFrame n) :
+  BornCalculus.toOrth (↑n) F.s (BornCalculus.General.encoding F (BornCalculus.General.uniform F)) = !![1, 0; 0, 0]
+'BornCalculus.General.orth_uniform_encoding' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.orth_encoding_omits_orthogonal {n : ℕ} (F : BornCalculus.General.CenteredFrame n)
+  (p : BornCalculus.General.Simplex n) :
+  BornCalculus.toOrth (↑n) F.s (BornCalculus.General.encoding F p) ≠ !![0, 0; 0, 1]
+'BornCalculus.General.orth_encoding_omits_orthogonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.orth_encoding_non_affine {n : ℕ} (F : BornCalculus.General.CenteredFrame n)
+  (p q : BornCalculus.General.Simplex n) (hpq : BornCalculus.General.encoding F p ≠ BornCalculus.General.encoding F q)
+  (θ : ℝ) (h₀ : 0 < θ) (h₁ : θ < 1) :
+  BornCalculus.toOrth (↑n) F.s (BornCalculus.General.encoding F (BornCalculus.General.mixedPreparation p q θ ⋯ ⋯)) ≠
+    θ • BornCalculus.toOrth (↑n) F.s (BornCalculus.General.encoding F p) +
+      (1 - θ) • BornCalculus.toOrth (↑n) F.s (BornCalculus.General.encoding F q)
+'BornCalculus.General.orth_encoding_non_affine' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.point_of32 (i : Fin 32) : BornCalculus.General.point i = BornCalculus.simplexPoint i
+'BornCalculus.General.point_of32' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.record_of32 {m : ℕ} (q : Fin 32 → Fin m) (p : BornCalculus.Simplex32) (a : Fin m) :
+  BornCalculus.General.record q p a = BornCalculus.frameRecord q p a
+'BornCalculus.General.record_of32' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.point_chart {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (i : Fin n) :
+  BornCalculus.General.rootChart F (BornCalculus.General.point i) = ↑n / F.s * F.w i
+'BornCalculus.General.point_chart' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.chart_density_recover {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (t : ℝ) :
+  BornCalculus.General.chartDensity n F.s t 1 0 / BornCalculus.General.chartDensity n F.s t 0 0 = t
+'BornCalculus.General.chart_density_recover' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.chart_density_injective {n : ℕ} (F : BornCalculus.General.CenteredFrame n) :
+  Function.Injective (BornCalculus.General.chartDensity n F.s)
+'BornCalculus.General.chart_density_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.point_encoding_eq_iff {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (i j : Fin n) :
+  BornCalculus.General.encoding F (BornCalculus.General.point i) =
+      BornCalculus.General.encoding F (BornCalculus.General.point j) ↔
+    F.w i = F.w j
+'BornCalculus.General.point_encoding_eq_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.record_point.{u_1} {n : ℕ} {L : Type u_1} [DecidableEq L] (q : Fin n → L) (i : Fin n) (a : L) :
+  BornCalculus.General.record q (BornCalculus.General.point i) a = if q i = a then 1 else 0
+'BornCalculus.General.record_point' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.records_points_eq_iff.{u_1, u_2} {n : ℕ} {ι : Type u_1} {L : ι → Type u_2}
+  [(f : ι) → DecidableEq (L f)] (q : (f : ι) → Fin n → L f) (i j : Fin n) :
+  BornCalculus.General.records q (BornCalculus.General.point i) =
+      BornCalculus.General.records q (BornCalculus.General.point j) ↔
+    ∀ (f : ι), q f i = q f j
+'BornCalculus.General.records_points_eq_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.strict_refinement.{u_1, u_2} {n : ℕ} {ι : Type u_1} {L : ι → Type u_2}
+  [(f : ι) → DecidableEq (L f)] (F : BornCalculus.General.CenteredFrame n) (q : (f : ι) → Fin n → L f) (i j : Fin n)
+  (hq : ∀ (f : ι), q f i = q f j) (hw : F.w i ≠ F.w j) :
+  BornCalculus.General.records q (BornCalculus.General.point i) =
+      BornCalculus.General.records q (BornCalculus.General.point j) ∧
+    BornCalculus.General.encoding F (BornCalculus.General.point i) ≠
+        BornCalculus.General.encoding F (BornCalculus.General.point j) ∧
+      ¬∃ g,
+          ∀ (p : BornCalculus.General.Simplex n),
+            BornCalculus.General.encoding F p = g (BornCalculus.General.records q p)
+'BornCalculus.General.strict_refinement' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.preparation_factors {n : ℕ} (F : BornCalculus.General.CenteredFrame n) :
+  ∃ g, ∀ (p : BornCalculus.General.Simplex n), BornCalculus.General.encoding F p = g p
+'BornCalculus.General.preparation_factors' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.kappa_simplex {n : ℕ} (F : BornCalculus.General.CenteredFrame n)
+  (R : BornCalculus.GDensity (↑n) F.s) :
+  (∀ (i : Fin n), 0 ≤ BornCalculus.General.kappa F R i) ∧ ∑ i, BornCalculus.General.kappa F R i = 1
+'BornCalculus.General.kappa_simplex' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.effect_statistics {n : ℕ} (F : BornCalculus.General.CenteredFrame n)
+  (R : BornCalculus.GDensity (↑n) F.s) (S : Finset (Fin n)) :
+  BornCalculus.pairing (↑R) (BornCalculus.General.effect F S) = ∑ i ∈ S, BornCalculus.General.kappa F R i
+'BornCalculus.General.effect_statistics' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.lens_statistics.{u_1} {n : ℕ} {L : Type u_1} [Fintype L] [DecidableEq L]
+  (F : BornCalculus.General.CenteredFrame n) (R : BornCalculus.GDensity (↑n) F.s) (q : Fin n → L) (a : L) :
+  BornCalculus.pairing (↑R) (BornCalculus.General.lens F q a) =
+    ∑ i, if q i = a then BornCalculus.General.kappa F R i else 0
+'BornCalculus.General.lens_statistics' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.encoded_statistics {n : ℕ} (F : BornCalculus.General.CenteredFrame n)
+  (p : BornCalculus.General.Simplex n) (i : Fin n) :
+  BornCalculus.General.kappa F ⟨BornCalculus.General.encoding F p, ⋯⟩ i = BornCalculus.General.projectedSquare F p {i}
+'BornCalculus.General.encoded_statistics' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.orth_n_point_model {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (R : BornCalculus.Density) :
+  (∀ (i : Fin n), 0 ≤ BornCalculus.pairing (↑R) (BornCalculus.toOrth (↑n) F.s (BornCalculus.General.parent F i))) ∧
+    ∑ i, BornCalculus.pairing (↑R) (BornCalculus.toOrth (↑n) F.s (BornCalculus.General.parent F i)) = 1 ∧
+      ∀ (S : Finset (Fin n)),
+        BornCalculus.pairing (↑R) (BornCalculus.toOrth (↑n) F.s (BornCalculus.General.effect F S)) =
+          ∑ i ∈ S, BornCalculus.pairing (↑R) (BornCalculus.toOrth (↑n) F.s (BornCalculus.General.parent F i))
+'BornCalculus.General.orth_n_point_model' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.projector_transpose {n : ℕ} (F : BornCalculus.General.CenteredFrame n) :
+  (BornCalculus.General.projector F).transpose = BornCalculus.General.projector F
+'BornCalculus.General.projector_transpose' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.projector_idempotent {n : ℕ} (F : BornCalculus.General.CenteredFrame n) :
+  BornCalculus.General.projector F * BornCalculus.General.projector F = BornCalculus.General.projector F
+'BornCalculus.General.projector_idempotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.projector_mulVec {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (v : Fin n → ℝ) (i : Fin n) :
+  (BornCalculus.General.projector F).mulVec v i = (∑ j, v j) / ↑n + (F.w i * ∑ j, F.w j * v j) / F.s
+'BornCalculus.General.projector_mulVec' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.projector_one {n : ℕ} (F : BornCalculus.General.CenteredFrame n) :
+  ((BornCalculus.General.projector F).mulVec fun x => 1) = fun x => 1
+'BornCalculus.General.projector_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.projector_w {n : ℕ} (F : BornCalculus.General.CenteredFrame n) :
+  (BornCalculus.General.projector F).mulVec F.w = F.w
+'BornCalculus.General.projector_w' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.amplitude_formula {n : ℕ} (F : BornCalculus.General.CenteredFrame n)
+  (p : BornCalculus.General.Simplex n) (i : Fin n) :
+  BornCalculus.General.amplitude F p i = (∑ j, √(↑p j)) / ↑n * (1 + BornCalculus.General.rootChart F p * F.w i)
+'BornCalculus.General.amplitude_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.amplitude_norm {n : ℕ} (F : BornCalculus.General.CenteredFrame n)
+  (p : BornCalculus.General.Simplex n) :
+  ∑ i, BornCalculus.General.amplitude F p i ^ 2 =
+    ((∑ j, √(↑p j)) / ↑n) ^ 2 * (↑n + F.s * BornCalculus.General.rootChart F p ^ 2)
+'BornCalculus.General.amplitude_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.amplitude_norm_positive {n : ℕ} (F : BornCalculus.General.CenteredFrame n)
+  (p : BornCalculus.General.Simplex n) : 0 < ∑ i, BornCalculus.General.amplitude F p i ^ 2
+'BornCalculus.General.amplitude_norm_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.amplitude_ne_zero {n : ℕ} (F : BornCalculus.General.CenteredFrame n)
+  (p : BornCalculus.General.Simplex n) : BornCalculus.General.amplitude F p ≠ 0
+'BornCalculus.General.amplitude_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.projected_square_trace {n : ℕ} (F : BornCalculus.General.CenteredFrame n)
+  (p : BornCalculus.General.Simplex n) (S : Finset (Fin n)) :
+  BornCalculus.General.projectedSquare F p S =
+    BornCalculus.pairing (BornCalculus.General.encoding F p) (BornCalculus.General.effect F S)
+'BornCalculus.General.projected_square_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.orth_projected_square_trace {n : ℕ} (F : BornCalculus.General.CenteredFrame n)
+  (p : BornCalculus.General.Simplex n) (S : Finset (Fin n)) :
+  BornCalculus.General.projectedSquare F p S =
+    BornCalculus.pairing (BornCalculus.toOrth (↑n) F.s (BornCalculus.General.encoding F p))
+      (BornCalculus.toOrth (↑n) F.s (BornCalculus.General.effect F S))
+'BornCalculus.General.orth_projected_square_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.projector_fixed_iff {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (v : Fin n → ℝ) :
+  (BornCalculus.General.projector F).mulVec v = v ↔ v ∈ BornCalculus.General.carrier F
+'BornCalculus.General.projector_fixed_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+BornCalculus.General.projector_range {n : ℕ} (F : BornCalculus.General.CenteredFrame n) (v : Fin n → ℝ) :
+  (BornCalculus.General.projector F).mulVec v ∈ BornCalculus.General.carrier F
+'BornCalculus.General.projector_range' depends on axioms: [propext, Classical.choice, Quot.sound]

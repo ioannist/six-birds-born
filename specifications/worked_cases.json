@@ -1,0 +1,46 @@
+{
+  "schema": "born_worked_case_contract_v1",
+  "capture_grid": "worked-cases",
+  "contexts": {
+    "original": {
+      "configuration": "loo_A25",
+      "resolution": 2,
+      "step_index": 0
+    },
+    "selected": {
+      "configuration": "A13_A11",
+      "resolution": 2,
+      "step_index": 0
+    }
+  },
+  "ensemble_frame_charts": [
+    [
+      "-1",
+      "1/2"
+    ],
+    [
+      "-1/2",
+      "1"
+    ]
+  ],
+  "null_direction_amplitude_scale": "1/4",
+  "source_root_bits": 384,
+  "lean_root_bits": {
+    "B04": 40,
+    "B05": 64,
+    "B07": 64
+  },
+  "registered_family": {
+    "maps": [
+      "raw_by_state",
+      "package_by_state",
+      "joint_by_state"
+    ],
+    "program_lengths": [
+      1,
+      2
+    ],
+    "all_words": true,
+    "all_groupings": true
+  }
+}

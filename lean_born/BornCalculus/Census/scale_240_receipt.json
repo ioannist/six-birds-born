@@ -1,0 +1,11 @@
+{
+  "cases_checked": 240,
+  "shards_checked": 30,
+  "summed_wall_seconds": 1464.22,
+  "fresh_compile_mean_seconds": 50.41586206896552,
+  "fresh_compile_median_seconds": 51.07,
+  "peak_rss_kib": 3561828,
+  "source_bytes": 13411866,
+  "full_wall_estimate_seconds": 13410.619310344828,
+  "status": "PASS"
+}

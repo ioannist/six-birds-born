@@ -1,0 +1,12 @@
+{
+  "batches": 39,
+  "copied_missing_proof_modules": [],
+  "max_lean_processes": 1,
+  "max_processes": 2,
+  "modules": 74,
+  "parallelism_limit": 2,
+  "peak_tree_rss_bytes": 7332110336,
+  "sample_interval_seconds": 0.05,
+  "status": "PASS",
+  "wall_seconds": 290.894
+}

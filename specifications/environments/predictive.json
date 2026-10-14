@@ -1,0 +1,70 @@
+{
+  "blas_lapack_build": {
+    "blas": {
+      "name": "scipy-openblas",
+      "openblas configuration": "OpenBLAS 0.3.34.0.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64",
+      "version": "0.3.34.0.0"
+    },
+    "lapack": {
+      "name": "scipy-openblas",
+      "openblas configuration": "OpenBLAS 0.3.34.0.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64",
+      "version": "0.3.34.0.0"
+    }
+  },
+  "byte_order": "little",
+  "dispatch_environment": {
+    "NPY_DISABLE_CPU_FEATURES": "X86_V4,AVX512_ICL,AVX512_SPR",
+    "OPENBLAS_CORETYPE": "Haswell"
+  },
+  "interpreter_binding": "version pinned here; exact interpreter executable hash is additionally recorded in each stage plan and must match on resume",
+  "libraries": [
+    {
+      "name": "_multiarray_umath.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "9369e7ee42af16a2136ec03c7c1d09d5244d028cf327a33b2f072b8893259e11"
+    },
+    {
+      "name": "_umath_linalg.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "de31ad57826aacc0b68a06c134f525daa9329527c5b523786c2e3ae7c75df4df"
+    },
+    {
+      "name": "libgfortran-83c28eba-468e71e5.so.5.0.0",
+      "sha256": "a6a368328d02a5d8a149746f13f6268f8cc9192df5c18777b25c3c9b5ef52160"
+    },
+    {
+      "name": "libquadmath-2284e583-a9307bba.so.0.0.0",
+      "sha256": "6bc3069003caec1f075be3c51ae8355332f081fa9465910c4b5724e7fe7d8ad4"
+    },
+    {
+      "name": "libscipy_openblas64_-61654e39.so",
+      "sha256": "6cad8d2ad994ddc43d2ccdb0fb5d9458373ff1b87ef7ff420f2f94406eb8f082"
+    }
+  ],
+  "lock": "predictive.lock",
+  "lock_sha256": "2e3c0ab35b92568af1fc2ad93af95b3d50bdb659927383e5b293ecbfbbe2bdc6",
+  "machine": "x86_64",
+  "mpmath_version": "1.3.0",
+  "numpy_version": "2.5.2",
+  "profile": "predictive",
+  "python_implementation": "CPython",
+  "python_version": "3.12.3",
+  "required_cpu_dispatch": "X86_V3; higher NumPy vector dispatch disabled; Haswell OpenBLAS selected",
+  "schema": "born_stage_environment_v1",
+  "scope": "Recovered predictive construction stack",
+  "sympy_version": "1.14.0",
+  "thread_environment": {
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "RAYON_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "thread_pools": [
+    {
+      "config": "OpenBLAS 0.3.34.0.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64",
+      "corename": "Haswell",
+      "library": "libscipy_openblas64_-61654e39.so"
+    }
+  ],
+  "threads": 1
+}

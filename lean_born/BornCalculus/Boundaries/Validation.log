@@ -1,0 +1,483 @@
+⚠ [8026/8069] Replayed BornCalculus.Definitions
+warning: BornCalculus/Definitions.lean:19:22: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [8029/8069] Replayed BornCalculus.RIWitness
+warning: BornCalculus/RIWitness.lean:233:37: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [8030/8069] Replayed BornCalculus.RIParents
+warning: BornCalculus/RIParents.lean:62:31: This simp argument is unused:
+  diagonal_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.ite_apply,̵ ̵d̵i̵a̵g̵o̵n̵a̵l̵_̵a̵p̵p̵l̵y̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/RIParents.lean:64:31: This simp argument is unused:
+  diagonal_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.ite_apply, d̵i̵a̵g̵o̵n̵a̵l̵_̵a̵p̵p̵l̵y̵,̵ ̵hia, Ne.symm hia]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/RIParents.lean:64:47: This simp argument is unused:
+  hia
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.ite_apply, diagonal_apply, h̵i̵a̵,̵ ̵Ne.symm hia]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/RIParents.lean:66:47: This simp argument is unused:
+  diagonal_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.sum_apply, Matrix.ite_apply, d̵i̵a̵g̵o̵n̵a̵l̵_̵a̵p̵p̵l̵y̵,̵ ̵hab]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/RIParents.lean:100:37: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [8031/8069] Replayed BornCalculus.Instruments
+warning: BornCalculus/Instruments.lean:72:92: This simp argument is unused:
+  Matrix.mul_smul
+
+Hint: Omit it from the simp argument list.
+  simp [̵b̵r̵a̵n̵c̵h̵,̵M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵_̵s̵m̵u̵l̵,̵M̵a̵t̵r̵i̵x̵.̵s̵m̵u̵l̵_̵m̵u̵l̵]̵[̲b̲r̲a̲n̲c̲h̲,̲
+  ̲ ̲ ̲M̲a̲t̲r̲i̲x̲.̲s̲m̲u̲l̲_̲m̲u̲l̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/Instruments.lean:72:108: This simp argument is unused:
+  Matrix.smul_mul
+
+Hint: Omit it from the simp argument list.
+  simp [̵b̵r̵a̵n̵c̵h̵,̵M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵_̵s̵m̵u̵l̵,̵M̵a̵t̵r̵i̵x̵.̵s̵m̵u̵l̵_̵m̵u̵l̵]̵[̲b̲r̲a̲n̲c̲h̲,̲
+  ̲ ̲ ̲M̲a̲t̲r̲i̲x̲.̲m̲u̲l̲_̲s̲m̲u̲l̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/Instruments.lean:90:54: This simp argument is unused:
+  Matrix.head_cons
+
+Hint: Omit it from the simp argument list.
+  simp only [̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵z̵e̵r̵o̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵o̵n̵e̵,̵M̵a̵t̵r̵i̵x̵.̵h̵e̵a̵d̵_̵c̵o̵n̵s̵]̵[̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲z̲e̲r̲o̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲o̲n̲e̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8032/8069] Replayed BornCalculus.SixStates
+warning: BornCalculus/SixStates.lean:46:196: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BornCalculus/SixStates.lean:46:196: 'exact hct 2' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [8036/8069] Replayed BornCalculus.SmallMatrices
+warning: BornCalculus/SmallMatrices.lean:24:16: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ℹ [8038/8069] Replayed BornCalculus.Boundaries.Encoder
+info: BornCalculus/Boundaries/Encoder.lean:394:0: 'BornCalculus.ri_frameEncoding_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Encoder.lean:395:0: 'BornCalculus.ri_encoder_nonaffine' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Encoder.lean:396:0: 'BornCalculus.ri_encoder_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Encoder.lean:398:0: 'BornCalculus.chartDensity_orthonormal_domain' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Encoder.lean:399:0: 'BornCalculus.paper_encoder_not_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Encoder.lean:400:0: 'BornCalculus.finite_extrema_exist' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Encoder.lean:402:0: 'BornCalculus.paper_encoder_nonaffine' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Encoder.lean:403:0: 'BornCalculus.centered_extrema_straddle' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Encoder.lean:404:0: 'BornCalculus.paper_encoder_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Encoder.lean:405:0: 'BornCalculus.chartDensity_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Encoder.lean:406:0: 'BornCalculus.chartDensity_closed_arc' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Encoder.lean:408:0: 'BornCalculus.paper_encoder_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Encoder.lean:409:0: 'BornCalculus.chartDensity_orthonormal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Encoder.lean:411:0: 'BornCalculus.finite_sqrt_chart_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Encoder.lean:412:0: 'BornCalculus.paper_encoder_chart_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Encoder.lean:414:0: 'BornCalculus.frameEncoding_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Encoder.lean:415:0: 'BornCalculus.chartDensity_pure' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Encoder.lean:416:0: 'BornCalculus.frame_extrema_straddle' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Encoder.lean:417:0: 'BornCalculus.frameEncoding_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Encoder.lean:419:0: 'BornCalculus.normalized_sqrt_weights_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Encoder.lean:420:0: 'BornCalculus.frame_rootChart_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Encoder.lean:422:0: 'BornCalculus.chartDensity_mixture_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Encoder.lean:423:0: 'BornCalculus.chartDensity_det_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Encoder.lean:424:0: 'BornCalculus.chartDensity_ne_proper_mixture' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Encoder.lean:425:0: 'BornCalculus.frameEncoding_nonaffine' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Encoder.lean:426:0: 'BornCalculus.chartDensity_ne_orthogonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8039/8069] Replayed BornCalculus.Boundaries.Lift
+info: BornCalculus/Boundaries/Lift.lean:102:0: 'BornCalculus.normalized_identity_general' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Lift.lean:103:0: 'BornCalculus.normalized_identical_rows_general' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Lift.lean:105:0: 'BornCalculus.factor_on_image_iff' depends on axioms: [Classical.choice]
+info: BornCalculus/Boundaries/Lift.lean:106:0: 'BornCalculus.frame_lift_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Lift.lean:107:0: 'BornCalculus.frame_augmented_lift_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Lift.lean:108:0: 'BornCalculus.normalizedKernel32_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Lift.lean:109:0: 'BornCalculus.normalizedKernel32_identical_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Lift.lean:110:0: 'BornCalculus.normalized_identical_row_simplex' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Lift.lean:111:0: 'BornCalculus.frame_identity_matrix_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Lift.lean:112:0: 'BornCalculus.frame_identical_rows_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [8041/8069] Replayed BornCalculus.PrincipalFormula
+warning: BornCalculus/PrincipalFormula.lean:28:25: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BornCalculus/PrincipalFormula.lean:143:31: This simp argument is unused:
+  Matrix.smul_mul
+
+Hint: Omit it from the simp argument list.
+  simp [principalRadical, hc, M̵a̵t̵r̵i̵x̵.̵s̵m̵u̵l̵_̵m̵u̵l̵,̵ ̵Matrix.mul_smul, Matrix.add_mul, Matrix.mul_add, h]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/PrincipalFormula.lean:143:48: This simp argument is unused:
+  Matrix.mul_smul
+
+Hint: Omit it from the simp argument list.
+  simp [principalRadical, hc, Matrix.smul_mul, M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵_̵s̵m̵u̵l̵,̵Matrix.add_mul, Matrix.mul_add, h]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8042/8069] Replayed BornCalculus.Valuations
+warning: BornCalculus/Valuations.lean:9:65: This simp argument is unused:
+  Matrix.vecMul
+
+Hint: Omit it from the simp argument list.
+  simp [̵M̵a̵t̵r̵i̵x̵.̵v̵e̵c̵M̵u̵l̵,̵ ̵d̵o̵t̵P̵r̵o̵d̵u̵c̵t̵,̵z̵e̵r̵o̵E̵f̵f̵e̵c̵t̵]̵[̲d̲o̲t̲P̲r̲o̲d̲u̲c̲t̲,̲ ̲z̲e̲r̲o̲E̲f̲f̲e̲c̲t̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/Valuations.lean:9:80: This simp argument is unused:
+  dotProduct
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.vecMul, d̵o̵t̵P̵r̵o̵d̵u̵c̵t̵,̵zeroEffect]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/Valuations.lean:16:22: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BornCalculus/Valuations.lean:29:56: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BornCalculus/Valuations.lean:42:30: This simp argument is unused:
+  Matrix.vecMul
+
+Hint: Omit it from the simp argument list.
+  simp [̵M̵a̵t̵r̵i̵x̵.̵v̵e̵c̵M̵u̵l̵,̵ ̵d̵o̵t̵P̵r̵o̵d̵u̵c̵t̵,̵s̵c̵a̵l̵e̵E̵f̵f̵e̵c̵t̵,̵[̲d̲o̲t̲P̲r̲o̲d̲u̲c̲t̲,̲ ̲s̲c̲a̲l̲e̲E̲f̲f̲e̲c̲t̲,̲ zeroEffect]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/Valuations.lean:42:45: This simp argument is unused:
+  dotProduct
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.vecMul, d̵o̵t̵P̵r̵o̵d̵u̵c̵t̵,̵scaleEffect, zeroEffect]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/Valuations.lean:63:80: This simp argument is unused:
+  Matrix.vecMul
+
+Hint: Omit it from the simp argument list.
+  simp [̵M̵a̵t̵r̵i̵x̵.̵v̵e̵c̵M̵u̵l̵,̵ ̵d̵o̵t̵P̵r̵o̵d̵u̵c̵t̵,̵h̵d̵0̵]̵[̲d̲o̲t̲P̲r̲o̲d̲u̲c̲t̲,̲ ̲h̲d̲0̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/Valuations.lean:63:95: This simp argument is unused:
+  dotProduct
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.vecMul, d̵o̵t̵P̵r̵o̵d̵u̵c̵t̵,̵hd0]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/Valuations.lean:64:63: This simp argument is unused:
+  Matrix.vecMul
+
+Hint: Omit it from the simp argument list.
+  simp [̵M̵a̵t̵r̵i̵x̵.̵v̵e̵c̵M̵u̵l̵,̵ ̵d̵o̵t̵P̵r̵o̵d̵u̵c̵t̵,̵h̵d̵0̵]̵[̲d̲o̲t̲P̲r̲o̲d̲u̲c̲t̲,̲ ̲h̲d̲0̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/Valuations.lean:64:78: This simp argument is unused:
+  dotProduct
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.vecMul, d̵o̵t̵P̵r̵o̵d̵u̵c̵t̵,̵hd0]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/Valuations.lean:65:28: This simp argument is unused:
+  Matrix.vecMul
+
+Hint: Omit it from the simp argument list.
+  simp [̵M̵a̵t̵r̵i̵x̵.̵v̵e̵c̵M̵u̵l̵,̵ ̵d̵o̵t̵P̵r̵o̵d̵u̵c̵t̵,̵s̵c̵a̵l̵e̵E̵f̵f̵e̵c̵t̵,̵[̲d̲o̲t̲P̲r̲o̲d̲u̲c̲t̲,̲ ̲s̲c̲a̲l̲e̲E̲f̲f̲e̲c̲t̲,̲ hd0]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/Valuations.lean:65:43: This simp argument is unused:
+  dotProduct
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.vecMul, d̵o̵t̵P̵r̵o̵d̵u̵c̵t̵,̵scaleEffect, hd0]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/Valuations.lean:70:5: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BornCalculus/Valuations.lean:70:5: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BornCalculus/Valuations.lean:98:28: This simp argument is unused:
+  Matrix.vecMul
+
+Hint: Omit it from the simp argument list.
+  simp [̵M̵a̵t̵r̵i̵x̵.̵v̵e̵c̵M̵u̵l̵,̵ ̵d̵o̵t̵P̵r̵o̵d̵u̵c̵t̵,̵s̵c̵a̵l̵e̵E̵f̵f̵e̵c̵t̵]̵[̲d̲o̲t̲P̲r̲o̲d̲u̲c̲t̲,̲ ̲s̲c̲a̲l̲e̲E̲f̲f̲e̲c̲t̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/Valuations.lean:98:43: This simp argument is unused:
+  dotProduct
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.vecMul, d̵o̵t̵P̵r̵o̵d̵u̵c̵t̵,̵scaleEffect]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/Valuations.lean:138:55: This simp argument is unused:
+  conjTranspose_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.vecMul, d̵o̵t̵P̵r̵o̵d̵u̵c̵t̵,̵J̵,̵t̵r̵a̵c̵e̵,̵m̵u̵l̵_̵a̵p̵p̵l̵y̵,̵c̵o̵n̵j̵T̵r̵a̵n̵s̵p̵o̵s̵e̵_̵a̵p̵p̵l̵y̵,̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵t̵w̵o̵,̵h̵s̵]̵d̲o̲t̲P̲r̲o̲d̲u̲c̲t̲,̲ ̲J̲,̲ ̲t̲r̲a̲c̲e̲,̲ ̲m̲u̲l̲_̲a̲p̲p̲l̲y̲,̲ ̲F̲i̲n̲.̲s̲u̲m̲_̲u̲n̲i̲v̲_̲t̲w̲o̲,̲ ̲h̲s̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/Valuations.lean:146:7: This simp argument is unused:
+  Matrix.vecMul
+
+Hint: Omit it from the simp argument list.
+  simp [̵M̵a̵t̵r̵i̵x̵.̵v̵e̵c̵M̵u̵l̵,̵ ̵d̵o̵t̵P̵r̵o̵d̵u̵c̵t̵,̵s̵m̵u̵l̵_̵s̵u̵b̵,̵[̲d̲o̲t̲P̲r̲o̲d̲u̲c̲t̲,̲ ̲s̲m̲u̲l̲_̲s̲u̲b̲,̲ smul_smul, hc.ne']
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/Valuations.lean:146:22: This simp argument is unused:
+  dotProduct
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.vecMul, d̵o̵t̵P̵r̵o̵d̵u̵c̵t̵,̵smul_sub, smul_smul, hc.ne']
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/Valuations.lean:138:100: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: BornCalculus/Valuations.lean:142:22: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BornCalculus/Valuations.lean:142:62: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BornCalculus/Valuations.lean:138:100: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: BornCalculus/Valuations.lean:157:57: unused variable `hX`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: BornCalculus/Valuations.lean:200:22: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BornCalculus/Valuations.lean:203:22: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BornCalculus/Valuations.lean:245:9: This simp argument is unused:
+  Matrix.vecMul
+
+Hint: Omit it from the simp argument list.
+  s̵i̵m̵p̵ ̵[̵M̵a̵t̵r̵i̵x̵.̵v̵e̵c̵M̵u̵l̵,̵ ̵d̵o̵t̵P̵r̵o̵d̵u̵c̵t̵,̵t̵r̵a̵n̵s̵p̵o̵s̵e̵_̵s̵u̵b̵,̵h̵s̵]̵s̲i̲m̲p̲ ̲[̲d̲o̲t̲P̲r̲o̲d̲u̲c̲t̲,̲ ̲t̲r̲a̲n̲s̲p̲o̲s̲e̲_̲s̲u̲b̲,̲ ̲h̲s̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/Valuations.lean:245:24: This simp argument is unused:
+  dotProduct
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.vecMul, d̵o̵t̵P̵r̵o̵d̵u̵c̵t̵,̵t̵r̵a̵n̵s̵p̵o̵s̵e̵_̵s̵u̵b̵,̵h̵s̵]̵t̲r̲a̲n̲s̲p̲o̲s̲e̲_̲s̲u̲b̲,̲ ̲h̲s̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/Valuations.lean:280:13: This simp argument is unused:
+  Matrix.vecMul
+
+Hint: Omit it from the simp argument list.
+  s̵i̵m̵p̵ ̵[̵M̵a̵t̵r̵i̵x̵.̵v̵e̵c̵M̵u̵l̵,̵ ̵d̵o̵t̵P̵r̵o̵d̵u̵c̵t̵,̵b̵a̵s̵i̵s̵E̵f̵f̵e̵c̵t̵0̵,̵P̵a̵,̵c̵o̵m̵p̵l̵e̵m̵e̵n̵t̵E̵f̵f̵e̵c̵t̵,̵b̵a̵s̵i̵s̵E̵f̵f̵e̵c̵t̵P̵l̵u̵s̵,̵b̵a̵s̵i̵s̵P̵l̵u̵s̵,̵h̵s̵]̵s̲i̲m̲p̲ ̲[̲d̲o̲t̲P̲r̲o̲d̲u̲c̲t̲,̲ ̲b̲a̲s̲i̲s̲E̲f̲f̲e̲c̲t̲0̲,̲ ̲P̲a̲,̲ ̲c̲o̲m̲p̲l̲e̲m̲e̲n̲t̲E̲f̲f̲e̲c̲t̲,̲ ̲b̲a̲s̲i̲s̲E̲f̲f̲e̲c̲t̲P̲l̲u̲s̲,̲ ̲b̲a̲s̲i̲s̲P̲l̲u̲s̲,̲ ̲h̲s̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/Valuations.lean:280:28: This simp argument is unused:
+  dotProduct
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.vecMul, d̵o̵t̵P̵r̵o̵d̵u̵c̵t̵,̵basisEffect0, ̲Pa, ̲complementEffect, ̲basisEffectPlus, ̲basisPlus, ̲hs]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/Valuations.lean:299:13: This simp argument is unused:
+  Matrix.vecMul
+
+Hint: Omit it from the simp argument list.
+  s̵i̵m̵p̵ ̵[̵M̵a̵t̵r̵i̵x̵.̵v̵e̵c̵M̵u̵l̵,̵ ̵d̵o̵t̵P̵r̵o̵d̵u̵c̵t̵,̵b̵a̵s̵i̵s̵E̵f̵f̵e̵c̵t̵0̵,̵P̵a̵,̵c̵o̵m̵p̵l̵e̵m̵e̵n̵t̵E̵f̵f̵e̵c̵t̵,̵b̵a̵s̵i̵s̵E̵f̵f̵e̵c̵t̵P̵l̵u̵s̵,̵b̵a̵s̵i̵s̵P̵l̵u̵s̵,̵h̵s̵]̵s̲i̲m̲p̲ ̲[̲d̲o̲t̲P̲r̲o̲d̲u̲c̲t̲,̲ ̲b̲a̲s̲i̲s̲E̲f̲f̲e̲c̲t̲0̲,̲ ̲P̲a̲,̲ ̲c̲o̲m̲p̲l̲e̲m̲e̲n̲t̲E̲f̲f̲e̲c̲t̲,̲ ̲b̲a̲s̲i̲s̲E̲f̲f̲e̲c̲t̲P̲l̲u̲s̲,̲ ̲b̲a̲s̲i̲s̲P̲l̲u̲s̲,̲ ̲h̲s̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/Valuations.lean:299:28: This simp argument is unused:
+  dotProduct
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.vecMul, d̵o̵t̵P̵r̵o̵d̵u̵c̵t̵,̵basisEffect0, ̲Pa, ̲complementEffect, ̲basisEffectPlus, ̲basisPlus, ̲hs]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/Valuations.lean:319:66: This simp argument is unused:
+  mul_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.vecMul, dotProduct, ̲pairing, ̲representingMatrix, ̲trace,m̵u̵l̵_̵a̵p̵p̵l̵y̵,̵ ̲Fin.sum_univ_two, ̲hs]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/Valuations.lean:326:52: This simp argument is unused:
+  Matrix.vecMul
+
+Hint: Omit it from the simp argument list.
+  simp [̵M̵a̵t̵r̵i̵x̵.̵v̵e̵c̵M̵u̵l̵,̵ ̵d̵o̵t̵P̵r̵o̵d̵u̵c̵t̵,̵r̵e̵p̵r̵e̵s̵e̵n̵t̵i̵n̵g̵M̵a̵t̵r̵i̵x̵,̵c̵o̵n̵j̵T̵r̵a̵n̵s̵p̵o̵s̵e̵_̵a̵p̵p̵l̵y̵]̵[̲d̲o̲t̲P̲r̲o̲d̲u̲c̲t̲,̲ ̲r̲e̲p̲r̲e̲s̲e̲n̲t̲i̲n̲g̲M̲a̲t̲r̲i̲x̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲c̲o̲n̲j̲T̲r̲a̲n̲s̲p̲o̲s̲e̲_̲a̲p̲p̲l̲y̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/Valuations.lean:326:67: This simp argument is unused:
+  dotProduct
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.vecMul, d̵o̵t̵P̵r̵o̵d̵u̵c̵t̵,̵r̵e̵p̵r̵e̵s̵e̵n̵t̵i̵n̵g̵M̵a̵t̵r̵i̵x̵,̵c̵o̵n̵j̵T̵r̵a̵n̵s̵p̵o̵s̵e̵_̵a̵p̵p̵l̵y̵]̵r̲e̲p̲r̲e̲s̲e̲n̲t̲i̲n̲g̲M̲a̲t̲r̲i̲x̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲c̲o̲n̲j̲T̲r̲a̲n̲s̲p̲o̲s̲e̲_̲a̲p̲p̲l̲y̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/Valuations.lean:333:83: This simp argument is unused:
+  conjTranspose_apply
+
+Hint: Omit it from the simp argument list.
+  simp [̵M̵a̵t̵r̵i̵x̵.̵v̵e̵c̵M̵u̵l̵,̵d̵o̵t̵P̵r̵o̵d̵u̵c̵t̵,̵A̵,̵p̵a̵i̵r̵i̵n̵g̵,̵r̵e̵p̵r̵e̵s̵e̵n̵t̵i̵n̵g̵M̵a̵t̵r̵i̵x̵,̵t̵r̵a̵c̵e̵,̵m̵u̵l̵_̵a̵p̵p̵l̵y̵,̵c̵o̵n̵j̵T̵r̵a̵n̵s̵p̵o̵s̵e̵_̵a̵p̵p̵l̵y̵,̵m̵u̵l̵V̵e̵c̵,̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵t̵w̵o̵]̵[̲M̲a̲t̲r̲i̲x̲.̲v̲e̲c̲M̲u̲l̲,̲ ̲d̲o̲t̲P̲r̲o̲d̲u̲c̲t̲,̲ ̲A̲,̲ ̲p̲a̲i̲r̲i̲n̲g̲,̲ ̲r̲e̲p̲r̲e̲s̲e̲n̲t̲i̲n̲g̲M̲a̲t̲r̲i̲x̲,̲ ̲t̲r̲a̲c̲e̲,̲ ̲m̲u̲l̲_̲a̲p̲p̲l̲y̲,̲ ̲m̲u̲l̲V̲e̲c̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲F̲i̲n̲.̲s̲u̲m̲_̲u̲n̲i̲v̲_̲t̲w̲o̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/Valuations.lean:334:9: This simp argument is unused:
+  Matrix.vecMul
+
+Hint: Omit it from the simp argument list.
+  s̵i̵m̵p̵ ̵[̵M̵a̵t̵r̵i̵x̵.̵v̵e̵c̵M̵u̵l̵,̵ ̵d̵o̵t̵P̵r̵o̵d̵u̵c̵t̵,̵r̵e̵p̵r̵e̵s̵e̵n̵t̵i̵n̵g̵M̵a̵t̵r̵i̵x̵,̵t̵r̵a̵c̵e̵,̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵t̵w̵o̵]̵s̲i̲m̲p̲ ̲[̲d̲o̲t̲P̲r̲o̲d̲u̲c̲t̲,̲ ̲r̲e̲p̲r̲e̲s̲e̲n̲t̲i̲n̲g̲M̲a̲t̲r̲i̲x̲,̲ ̲t̲r̲a̲c̲e̲,̲ ̲F̲i̲n̲.̲s̲u̲m̲_̲u̲n̲i̲v̲_̲t̲w̲o̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/Valuations.lean:334:24: This simp argument is unused:
+  dotProduct
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.vecMul, d̵o̵t̵P̵ro̵d̵u̵c̵t̵,̵r̵epresentingMatrix, ̲trace, ̲Fin.sum_univ_two]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/Valuations.lean:332:24: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BornCalculus/Valuations.lean:333:128: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: BornCalculus/Valuations.lean:358:24: This simp argument is unused:
+  Matrix.vecMul
+
+Hint: Omit it from the simp argument list.
+  s̵i̵m̵p̵ ̵[̵M̵a̵t̵r̵i̵x̵.̵v̵e̵c̵M̵u̵l̵,̵ ̵d̵o̵t̵P̵r̵o̵d̵u̵c̵t̵,̵p̵a̵i̵r̵i̵n̵g̵,̵h̵,̵M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵_̵a̵d̵d̵,̵M̵a̵t̵r̵i̵x̵.̵t̵r̵a̵c̵e̵_̵a̵d̵d̵]̵s̲i̲m̲p̲ ̲[̲d̲o̲t̲P̲r̲o̲d̲u̲c̲t̲,̲ ̲p̲a̲i̲r̲i̲n̲g̲,̲ ̲h̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲m̲u̲l̲_̲a̲d̲d̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲t̲r̲a̲c̲e̲_̲a̲d̲d̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/Valuations.lean:358:39: This simp argument is unused:
+  dotProduct
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.vecMul, d̵o̵t̵P̵r̵o̵d̵u̵c̵t̵,̵p̵a̵i̵r̵i̵n̵g̵,̵h̵,̵M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵_̵a̵d̵d̵,̵M̵a̵t̵r̵i̵x̵.̵t̵r̵a̵c̵e̵_̵a̵d̵d̵]̵p̲a̲i̲r̲i̲n̲g̲,̲ ̲h̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲m̲u̲l̲_̲a̲d̲d̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲t̲r̲a̲c̲e̲_̲a̲d̲d̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/Valuations.lean:376:47: This simp argument is unused:
+  conjTranspose_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.vecMul, d̵o̵t̵P̵r̵o̵d̵u̵c̵t̵,̵J̵,̵m̵u̵l̵_̵a̵p̵p̵l̵y̵,̵c̵o̵n̵j̵T̵r̵a̵n̵s̵p̵o̵s̵e̵_̵a̵p̵p̵l̵y̵,̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵t̵w̵o̵,̵h̵s̵]̵d̲o̲t̲P̲r̲o̲d̲u̲c̲t̲,̲ ̲J̲,̲ ̲m̲u̲l̲_̲a̲p̲p̲l̲y̲,̲ ̲F̲i̲n̲.̲s̲u̲m̲_̲u̲n̲i̲v̲_̲t̲w̲o̲,̲ ̲h̲s̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/Valuations.lean:386:9: This simp argument is unused:
+  Matrix.vecMul
+
+Hint: Omit it from the simp argument list.
+  s̵i̵m̵p̵ ̵[̵M̵a̵t̵r̵i̵x̵.̵v̵e̵c̵M̵u̵l̵,̵ ̵d̵o̵t̵P̵r̵o̵d̵u̵c̵t̵,̵M̵a̵t̵r̵i̵x̵.̵s̵u̵b̵_̵m̵u̵l̵,̵M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵_̵s̵u̵b̵,̵M̵a̵t̵r̵i̵x̵.̵t̵r̵a̵c̵e̵_̵s̵u̵b̵]̵s̲i̲m̲p̲ ̲[̲d̲o̲t̲P̲r̲o̲d̲u̲c̲t̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲s̲u̲b̲_̲m̲u̲l̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲m̲u̲l̲_̲s̲u̲b̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲t̲r̲a̲c̲e̲_̲s̲u̲b̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/Valuations.lean:386:24: This simp argument is unused:
+  dotProduct
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.vecMul, d̵o̵t̵P̵r̵o̵d̵u̵c̵t̵,̵Matrix.sub_mul, ̲Matrix.mul_sub, ̲Matrix.trace_sub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8044/8069] Replayed BornCalculus.Programs
+warning: BornCalculus/Programs.lean:101:43: This simp argument is unused:
+  hn
+
+Hint: Omit it from the simp argument list.
+  simp [_root_.mul_inv_rev, ̲smul_smul, ̲hp.ne',̵h̵n̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8048/8069] Replayed BornCalculus.FiniteEvents
+warning: BornCalculus/FiniteEvents.lean:28:3: Try `simp at hx` instead of `simpa using hx`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+ℹ [8050/8069] Replayed BornCalculus.Boundaries.SmallTolerance
+info: BornCalculus/Boundaries/SmallTolerance.lean:105:0: 'BornCalculus.fragmentWitness_smaller' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/SmallTolerance.lean:106:0: 'BornCalculus.finite_fragment_all_small' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/SmallTolerance.lean:107:0: 'BornCalculus.finite_program_fragment_all_small' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/SmallTolerance.lean:108:0: 'BornCalculus.b06_all_small_non_density' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/SmallTolerance.lean:109:0: 'BornCalculus.b06_assignment_endpoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/SmallTolerance.lean:110:0: 'BornCalculus.b06_assignment_additive' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [8058/8069] Replayed BornCalculus.OrderFormula
+warning: BornCalculus/OrderFormula.lean:25:39: This simp argument is unused:
+  Matrix.smul_mul
+
+Hint: Omit it from the simp argument list.
+  simp [̵M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵_̵a̵d̵d̵,̵M̵a̵t̵r̵i̵x̵.̵a̵d̵d̵_̵m̵u̵l̵,̵M̵a̵t̵r̵i̵x̵.̵s̵m̵u̵l̵_̵m̵u̵l̵,̵M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵_̵s̵m̵u̵l̵,̵s̵m̵u̵l̵_̵s̵m̵u̵l̵,̵p̵o̵w̵_̵t̵w̵o̵]̵[̲M̲a̲t̲r̲i̲x̲.̲m̲u̲l̲_̲a̲d̲d̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲a̲d̲d̲_̲m̲u̲l̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲m̲u̲l̲_̲s̲m̲u̲l̲,̲ ̲s̲m̲u̲l̲_̲s̲m̲u̲l̲,̲ ̲p̲o̲w̲_̲t̲w̲o̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: BornCalculus/OrderFormula.lean:25:55: This simp argument is unused:
+  Matrix.mul_smul
+
+Hint: Omit it from the simp argument list.
+  simp [̵M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵_̵a̵d̵d̵,̵M̵a̵t̵r̵i̵x̵.̵a̵d̵d̵_̵m̵u̵l̵,̵M̵a̵t̵r̵i̵x̵.̵s̵m̵u̵l̵_̵m̵u̵l̵,̵M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵_̵s̵m̵u̵l̵,̵s̵m̵u̵l̵_̵s̵m̵u̵l̵,̵p̵o̵w̵_̵t̵w̵o̵]̵[̲M̲a̲t̲r̲i̲x̲.̲m̲u̲l̲_̲a̲d̲d̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲a̲d̲d̲_̲m̲u̲l̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲s̲m̲u̲l̲_̲m̲u̲l̲,̲ ̲s̲m̲u̲l̲_̲s̲m̲u̲l̲,̲ ̲p̲o̲w̲_̲t̲w̲o̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8059/8069] Replayed BornCalculus.B07Witness
+warning: BornCalculus/B07Witness.lean:49:34: This simp argument is unused:
+  mul_apply
+
+Hint: Omit it from the simp argument list.
+  simp [pairing, ̲b07Initial, ̲trace,m̵u̵l̵_̵a̵p̵p̵l̵y̵,̵ ̲Matrix.vecMul, ̲dotProduct, ̲Fin.sum_univ_two]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ℹ [8060/8069] Replayed BornCalculus.Boundaries.Channels
+info: BornCalculus/Boundaries/Channels.lean:225:0: 'BornCalculus.worked_equal_effects_unequal_channels' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Channels.lean:226:0: 'BornCalculus.empty_program_forgotten' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Channels.lean:228:0: 'BornCalculus.channel_ratio_checks' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Channels.lean:229:0: 'BornCalculus.channel_C_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Channels.lean:230:0: 'BornCalculus.channel_branch_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Channels.lean:231:0: 'BornCalculus.channel_branch_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Channels.lean:232:0: 'BornCalculus.raw_forgotten_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Channels.lean:233:0: 'BornCalculus.package_forgotten_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Channels.lean:234:0: 'BornCalculus.worked_forgotten_channels_distinct' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Channels.lean:235:0: 'BornCalculus.channel_branch_toOrth' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Channels.lean:236:0: 'BornCalculus.raw_forgotten_existing_test' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/Channels.lean:237:0: 'BornCalculus.package_forgotten_existing_test' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [8062/8069] Replayed BornCalculus.MeasurableSix
+warning: BornCalculus/MeasurableSix.lean:132:35: Try `simp at hf` instead of `simpa using hf`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: BornCalculus/MeasurableSix.lean:133:1: Try `simp at hz` instead of `simpa using hz`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [8065/8069] Replayed BornCalculus.B05Semantics
+warning: BornCalculus/B05Semantics.lean:47:54: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ℹ [8068/8069] Replayed BornCalculus.Boundaries.ExistingAudit
+info: BornCalculus/Boundaries/ExistingAudit.lean:11:0: 'BornCalculus.measurable_table_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/ExistingAudit.lean:12:0: 'BornCalculus.measurable_table_representation_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/ExistingAudit.lean:13:0: 'BornCalculus.measurable_six_no_go' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/ExistingAudit.lean:14:0: 'BornCalculus.six_state_probability_table' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/ExistingAudit.lean:15:0: 'BornCalculus.b05_density_barycenters_equal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/ExistingAudit.lean:16:0: 'BornCalculus.b05_all_lens_first_reads_equal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/ExistingAudit.lean:17:0: 'BornCalculus.b05_completion_word_strict' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/ExistingAudit.lean:18:0: 'BornCalculus.b05_completion_density_no_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/ExistingAudit.lean:19:0: 'BornCalculus.b05_sources_reachable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/ExistingAudit.lean:20:0: 'BornCalculus.b07_probability_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/ExistingAudit.lean:21:0: 'BornCalculus.b07_order_disturbance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/ExistingAudit.lean:22:0: 'BornCalculus.event_descends_iff_saturated' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/ExistingAudit.lean:23:0: 'BornCalculus.event_projection_idempotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/ExistingAudit.lean:24:0: 'BornCalculus.visibilityPushforward_idempotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BornCalculus/Boundaries/ExistingAudit.lean:25:0: 'BornCalculus.visibilityPushforward_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [8069/8069] Built BornCalculus.Boundaries.All (8.8s)
+Build completed successfully (8069 jobs).
+BUILD_SECONDS=13.47

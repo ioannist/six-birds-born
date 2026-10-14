@@ -1,0 +1,193 @@
+{
+  "status": "PASS",
+  "cases": 2122,
+  "shards": 266,
+  "audited_declarations": 4101,
+  "shard_source_bytes": 117815654,
+  "requirements": {
+    "full_exact_premises": {
+      "status": "PROVED",
+      "declaration": "BornCalculus.Census.census_centered_nonzero_rational",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "generalized_pair_order_and_labels": {
+      "status": "PROVED",
+      "declaration": "BornCalculus.Census.census_pair_checks",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "equal_anonymous_initial_laws": {
+      "status": "PROVED",
+      "declaration": "BornCalculus.Census.census_initial_records_equal",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "unequal_encoded_densities": {
+      "status": "PROVED",
+      "declaration": "BornCalculus.Census.census_initial_densities_ne",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "raw_zero_trace_readout_separation": {
+      "status": "PROVED",
+      "declaration": "BornCalculus.Census.census_initial_readouts_ne",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "all_earlier_pair_rejection": {
+      "status": "PROVED",
+      "declaration": "BornCalculus.Census.census_earlier_pair_rejected",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "no_factor_through_initial_laws": {
+      "status": "PROVED",
+      "declaration": "BornCalculus.Census.census_initial_no_factor",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "singular_iff_constant_active_block": {
+      "status": "PROVED",
+      "declaration": "BornCalculus.Census.census_atom_singular_iff_constant",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "active_atom_count_17008": {
+      "status": "PROVED",
+      "declaration": "BornCalculus.Census.census_active_atom_count",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "positive_atom_count_16693": {
+      "status": "PROVED",
+      "declaration": "BornCalculus.Census.census_positive_atom_count",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "singular_atom_count_315": {
+      "status": "PROVED",
+      "declaration": "BornCalculus.Census.census_singular_atom_count",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "singular_context_count_272": {
+      "status": "PROVED",
+      "declaration": "BornCalculus.Census.census_singular_context_count",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "no_negative_determinants": {
+      "status": "PROVED",
+      "declaration": "BornCalculus.Census.census_atom_nonnegative",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "singular_strict_trace_bounds": {
+      "status": "PROVED",
+      "declaration": "BornCalculus.Census.census_singular_trace_bounds",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "singular_nonzero_nonprojectivity": {
+      "status": "PROVED",
+      "declaration": "BornCalculus.Census.census_singular_nonzero_nonprojector",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "uniform_1_over_25_trace_gap": {
+      "status": "PROVED",
+      "declaration": "BornCalculus.Census.census_robust_witness",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "global_same_label_point_pair_maximality": {
+      "status": "PROVED",
+      "declaration": "BornCalculus.Census.census_maximizes",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "lexicographic_maximizing_ties": {
+      "status": "PROVED",
+      "declaration": "BornCalculus.Census.census_maximizing_ties",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "actual_real_minimum_of_all_case_maxima": {
+      "status": "PROVED",
+      "declaration": "BornCalculus.Census.census_minimum_isLeast",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "minimum_interval_enclosure": {
+      "status": "PROVED",
+      "declaration": "BornCalculus.Census.census_minimum_enclosure",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  },
+  "source_and_regenerated_audits_pass": true,
+  "no_forbidden_proof_constructs": true,
+  "shared_integration_owner": "mathy-general",
+  "shared_integration_contract_in_report": true
+}

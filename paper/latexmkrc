@@ -1,0 +1,2 @@
+# Build into paper/build, as the Makefile and the Zenodo toolkit expect.
+$out_dir = 'build';

@@ -1,0 +1,13 @@
+{
+  "schema": "born_p8_agreement_criteria_v1",
+  "absolute_tolerance": "1e-12",
+  "relative_tolerance": "1e-12",
+  "exact": ["complete ordered cohorts", "eligibility and dispositions", "labels, starts, lag, recipe, path identities", "decisions, selectors, gates and verdicts", "source binary64 scientific inputs", "integer and rational certificate fields", "eight Lean mathematical bodies", "persisted bootstrap memberships, sign assignments and RNG bytes"],
+  "computed_floats": "First report binary64 equality; otherwise abs(new-old) <= 1e-12 + 1e-12*abs(old), with unchanged decisions and manuscript displays. No population statistic is recomputed by comparison.",
+  "lean_projection": "Only an initial provenance/comment header; no mathematical body or internal comments are dropped.",
+  "process_projection": "Explicit fields in comparison_policy.PROCESS_FIELDS are separately enumerated in difference JSONL; historical provenance is never substituted into fresh products.",
+  "verdicts": ["protocol executed successfully", "reported results reproduced"],
+  "missing": "UNRESOLVED; not a match",
+  "reduced": "NOT_COMPARABLE with the registered archive",
+  "paper_scope": "The historical full profile does not acquire v25. Corrective-only paper macros require an independent corrective reproduction; they must not be declared reproduced by the historical profile. Documentary chronology is not a new estimator."
+}

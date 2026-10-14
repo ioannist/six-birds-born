@@ -1,0 +1,22 @@
+{
+  "campaign": "g2a",
+  "expected_invocations": 1380,
+  "formula": {
+    "arguments": [
+      {
+        "kind": "literal",
+        "value": 69
+      },
+      {
+        "kind": "literal",
+        "value": 20
+      },
+      {
+        "kind": "literal",
+        "value": 1
+      }
+    ],
+    "kind": "operator",
+    "operator": "multiply"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "profile": "test_b_fitting",
+  "python_implementation": "CPython",
+  "python_version": "3.12.3",
+  "lock": "test_b_fitting.lock",
+  "versions": {
+    "python": "3.12.3",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "torch": "2.13.0"
+  },
+  "blas_versions": {
+    "numpy": "0.3.31.188.0",
+    "scipy": "0.3.30"
+  },
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "RAYON_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "dispatch_environment": {
+    "OPENBLAS_CORETYPE": "Haswell"
+  },
+  "notes": [
+    "CPU-only wheel replaces the CUDA-bearing distribution; all scientific functions and numerical budgets are unchanged.",
+    "Spawned workers validate the scientific runtime after imports; no inherited OpenMP/autograd pools.",
+    "No executable or native-library hash gate. Numerical checkpoint inputs and versions must agree on resume."
+  ],
+  "torch_build": "2.13.0+cpu"
+}

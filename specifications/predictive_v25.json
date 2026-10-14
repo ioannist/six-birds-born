@@ -1,0 +1,946 @@
+{
+  "schema": "born_corrective_predictive_specification_draft_v25",
+  "version": "v25",
+  "status": "IMPLEMENTED_NOT_EXECUTED",
+  "date": "2026-10-07",
+  "scientific": {
+    "purpose": {
+      "primary": "A single corrective primary contrast: the canonical diagonal in a pre-specified basis, evaluated on fresh data. Competitor-family testing retains its other historical comparators.",
+      "only_admissible_headline": "on this registered cohort, the full predictor has lower aggregate empirical-TV loss than the diagonal rule in the pre-specified constant-first, emitted-order basis, exceeding the registered margin on both maps.",
+      "headline_gate": "Only a validated cross-term joint PASS permits this headline; identify the v25 cohort and margin 1/240. Competitor-family outcomes are reported separately, without broadening this claim.",
+      "orientation_recommendation": "No oracle-selected, training-selected or optimized orientation comparator. A prospectively fixed random-orientation report is descriptive only, outside every inference family and verdict.",
+      "known_quantifier_boundary": "For ideal orthonormal B and a=normalized B^T sqrt(p), choose one axis of BR parallel to a. Then the diagonal rule equals the ideal full predictor. Thus superiority over all orientations, intrinsic necessity of cross terms, and basis-independent necessity are impossible claims here. This mathematical inclusion is not an empirical endpoint."
+    },
+    "inheritance": {
+      "precedence": "Explicit v25 replacements below override public v8 competitor and v21/v24 cross-term contracts. Do not inherit old seeds, RNG identities, q_diag, bootstrap domains or status labels. Competitor exact-integer tail arithmetic is an explicit corrective change; historical verification remains untouched.",
+      "unchanged_contracts": [
+        {
+          "version": "v8",
+          "public_index": "specifications/predictive_v8_sections.json",
+          "pointer": "/laws",
+          "scientific_value_sha256": "ed5c813b943f52421e068449c8f4b1e4ae1061fdbf20f55e7c2195592097f53d"
+        },
+        {
+          "version": "v8",
+          "public_index": "specifications/predictive_v8_sections.json",
+          "pointer": "/grid",
+          "scientific_value_sha256": "7e077d01a45ab3eaa5b77c9771112081f27d02d2447a7fc3aaf08480450ad7d8"
+        },
+        {
+          "version": "v8",
+          "public_index": "specifications/predictive_v8_sections.json",
+          "pointer": "/observation_maps",
+          "scientific_value_sha256": "eda9338ba31144d51ae23ccc702819053efb8cd116c7616358dcf36ea82776b9"
+        },
+        {
+          "version": "v8",
+          "public_index": "specifications/predictive_v8_sections.json",
+          "pointer": "/estimands",
+          "scientific_value_sha256": "a7b0543663daee32ebf18cf84c3f468bec06822aea99eb618e56fa816f43ab57"
+        },
+        {
+          "version": "v8",
+          "public_index": "specifications/predictive_v8_sections.json",
+          "pointer": "/inference",
+          "scientific_value_sha256": "2099ba6c09536b80e06bec5c4938431ec972f660f5e1f6529ae2c7b8803068e0"
+        },
+        {
+          "version": "v8",
+          "public_index": "specifications/predictive_v8_sections.json",
+          "pointer": "/thresholds",
+          "scientific_value_sha256": "f22d6ad14e87acc3f3548041f09ec9d6ffed9c42cb62624ce2f4375b98558035"
+        },
+        {
+          "version": "v8",
+          "public_index": "specifications/predictive_v8_sections.json",
+          "pointer": "/completeness/planned_exclusions",
+          "scientific_value_sha256": "db7701b71c2aa75cafe9b7763c5da4dd930eb48cdcbad38e52bbff193fbb3f8d"
+        },
+        {
+          "version": "v8",
+          "public_index": "specifications/predictive_v8_sections.json",
+          "pointer": "/branch_truth_tables/tables/7",
+          "scientific_value_sha256": "bbe89c89513455021d1a2e8eac95b1c01b62ebb0401f528651779631aa7a29a8"
+        },
+        {
+          "version": "v21",
+          "public_index": "specifications/predictive_v21_sections.json",
+          "pointer": "/confirmation_data/campaigns/6",
+          "scientific_value_sha256": "a482f5081e541bd230c8d5ce934cd4992387ec0f11f1d1973e519bd7ae8e24ce"
+        },
+        {
+          "version": "v24",
+          "public_index": "specifications/predictive_v24_sections.json",
+          "pointer": "/inference",
+          "scientific_value_sha256": "03e3b70cff416d848add93d72f9b706890db6bc0d289062bd3ab2fd35f2f3a6b"
+        },
+        {
+          "version": "v24",
+          "public_index": "specifications/predictive_v24_sections.json",
+          "pointer": "/thresholds",
+          "scientific_value_sha256": "d93b1fc8cf245d5d3849a047904fe892cd4c361649c3feafdc9d5eadac099df5"
+        },
+        {
+          "version": "v24",
+          "public_index": "specifications/predictive_v24_sections.json",
+          "pointer": "/estimands",
+          "scientific_value_sha256": "b66bb6f2abcbd3eff4e743afc8c4e0de0bf4d148a107baf050398aa016f6e2a5"
+        }
+      ],
+      "historical_rng_identities_for_disclosure_only": {
+        "v8": "8eee39e3da7044a0bca1ea26b815fbf3aadb3024e2b334ae0a8d577047ba2512",
+        "v21": "65a50c9e56f4aa4ce30478b46463adcf0c46ab4c5c12db821e66b66a9019f39d",
+        "v24": "ba641075c7a3d38a4273172a99e0e92e2927b7acdeb9124886227f5077b61fac"
+      },
+      "unchanged_science": [
+        "runner dispatch, scale and horizon",
+        "configuration inventory and named-family definitions",
+        "emitted order and preparation construction",
+        "q_full and all non-diagonal competitors, including leverage parameters",
+        "raw/package map joining and sample sizes",
+        "planned exclusions, availability accounting and recorded-step grain",
+        "legacy nondegeneracy mask and tie rules",
+        "equal-weight hierarchy, named sensitivity estimands, BCa transform and conditional null; bootstrap domains and competitor tail arithmetic are replaced explicitly",
+        "v24 gradual-underflow numerical control amendment"
+      ],
+      "source_functions": [
+        {
+          "path": "src/born_ladder/snapshot/g2a.py",
+          "sha256": "8326d587a8588434faffb41760f8f445038bfa4289e6072d989b7f1f6dd6c748",
+          "role": "reuse non-diagonal construction, hierarchy and BCa transform; v25 replaces floating sign tails by statistics_helpers exact-integer counts and uses frozen domains below"
+        },
+        {
+          "path": "src/born_ladder/snapshot/g2c_controls.py",
+          "sha256": "750786bb729692f52422ac576101d65e4856e7e963822d036d2ab2ef123883a4",
+          "role": "unchanged admission and existing controls"
+        },
+        {
+          "path": "src/born_ladder/snapshot/g2c_evaluate.py",
+          "sha256": "e1bb7d62f152c30858060cd92b495469a2e7a55986985510b9c57ba843896943",
+          "role": "reuse hierarchy and shared seed-membership pairing; parameterize v25 contrast, family and stream identifiers"
+        },
+        {
+          "path": "src/born_ladder/snapshot/universal_shapes.py",
+          "sha256": "f93c75ac125e0a95f7e394f2fd0df3316e6a616dfddaeca56880c8bb471f8299",
+          "role": "unchanged law formulas except the versioned diagonal replacement"
+        },
+        {
+          "path": "src/born_ladder/snapshot/rng.py",
+          "sha256": "c362456bb0ec5c40df7b5015a7bbe28d8527c9c6c0a9cbbe84c62f95a5fae638",
+          "role": "typed keyed streams and unbiased indexing"
+        }
+      ]
+    },
+    "acquisition": {
+      "configuration_labels": [
+        "empty",
+        "baseline",
+        "full_action",
+        "A14_only",
+        "A16_only",
+        "A17_only",
+        "A18_only",
+        "A20_only",
+        "A22_only",
+        "P1_row",
+        "P2_row",
+        "P3_row",
+        "P4_row",
+        "P5_row",
+        "P6_row",
+        "col_P1",
+        "col_P2",
+        "col_P3",
+        "col_P4",
+        "col_P5",
+        "col_P6",
+        "loo_A1",
+        "loo_A2",
+        "loo_A3",
+        "loo_A4",
+        "loo_A5",
+        "loo_A6",
+        "loo_A7",
+        "loo_A8",
+        "loo_A9",
+        "loo_A11",
+        "loo_A12",
+        "loo_A13",
+        "loo_A14",
+        "loo_A17",
+        "loo_A18",
+        "loo_A19",
+        "loo_A20",
+        "loo_A21",
+        "loo_A22",
+        "loo_A23",
+        "loo_A24",
+        "loo_A25",
+        "A13_A14",
+        "A14_A19",
+        "A18_A19",
+        "A14_A17",
+        "A13_A11",
+        "A12_A25",
+        "A4_A19",
+        "A14_A25",
+        "P1_P3_rows",
+        "P2_P3_rows",
+        "P3_P4_rows",
+        "P4_P5_rows",
+        "full_all",
+        "fa_no_P1row",
+        "fa_no_P2mod",
+        "fa_no_P3row",
+        "fa_no_inf_P3",
+        "fa_no_inf_P4",
+        "fa_no_inf_P5",
+        "fa_no_inf_P6",
+        "gen4_core",
+        "gen3_A13_A14_A19",
+        "gen5_core_A25",
+        "gen6_core_A12_A25",
+        "gen3_A13_A18_A19",
+        "gen2_A14_A13"
+      ],
+      "grids": {
+        "v25-competitor": {
+          "experiments": [
+            "EXP-112"
+          ],
+          "configurations": "configuration_labels in this object, in that order",
+          "seeds": [
+            2000000001000,
+            2000000002000,
+            2000000003000,
+            2000000004000,
+            2000000005000,
+            2000000006000,
+            2000000007000,
+            2000000008000,
+            2000000009000,
+            2000000010000,
+            2000000011000,
+            2000000012000,
+            2000000013000,
+            2000000014000,
+            2000000015000,
+            2000000016000,
+            2000000017000,
+            2000000018000,
+            2000000019000,
+            2000000020000
+          ],
+          "scale": 32,
+          "dispatch_steps": 64000,
+          "horizon_rule": "2000 * scale",
+          "invocations": 1380,
+          "eligible_configuration_count": 68,
+          "horizon_scope": "64000 dispatch steps per internal configuration run; not total across named-family internal runs"
+        },
+        "v25-cross-term": {
+          "experiments": [
+            "EXP-112",
+            "EXP-102",
+            "EXP-103",
+            "EXP-104",
+            "EXP-105",
+            "EXP-106",
+            "EXP-107"
+          ],
+          "systematic_configurations": "configuration_labels in this object, in that order",
+          "named_family_configurations": "one public named-family invocation per experiment per seed; retain every internal context",
+          "seeds": [
+            1000000001000,
+            1000000002000,
+            1000000003000,
+            1000000004000,
+            1000000005000,
+            1000000006000,
+            1000000007000,
+            1000000008000,
+            1000000009000,
+            1000000010000,
+            1000000011000,
+            1000000012000,
+            1000000013000,
+            1000000014000,
+            1000000015000,
+            1000000016000,
+            1000000017000,
+            1000000018000,
+            1000000019000,
+            1000000020000
+          ],
+          "scale": 32,
+          "dispatch_steps": 64000,
+          "horizon_rule": "2000 * scale",
+          "invocations": 1500,
+          "horizon_scope": "64000 dispatch steps per internal configuration run; not total across named-family internal runs"
+        }
+      },
+      "new_seed_policy": "to the best of the author's knowledge, no seeds in these ranges were used before",
+      "sampling": "Unchanged public runner discovery-export sample contract: 24 paired paths per reported unit; score raw and package on the same path endpoints; capture all required fields through reproduce runs. No extra orientation-training draws.",
+      "capture": "stdout, stderr, final matrices, maps, emitted vectors/order, preparations, lags, sampled paths, guard dispositions, argv, hashes and resource journal. No dropped failures or suppressed exports.",
+      "blinding": "A restricted predictor-input extractor supplies state order, emitted vectors, p_theory, maps and complete unit identity. No empirical frequencies, path endpoints, loss, test or verdict field may enter canonical or orientation prediction construction. Commit canonical and all descriptive orientation predictions before the scoring reader opens sampled endpoints.",
+      "resume": "Resume completed invocations and stages; reject changed scientific specification, computing versions or scientific inputs. No attestation, scan, hardware, executable/library hash or freeze-bundle gate.",
+      "output_root": "required explicitly, generated data outside tracked files; never consume retained archives during fresh construction",
+      "population_lock": "all scheduled invocations, every emitted context, dispositions and order locked before any scored contrast is inspected",
+      "seed_design": {
+        "rule": "s = base + spacing*k, k=first_index,...,last_index; explicit seed arrays remain the acquisition source of truth and must equal this recipe",
+        "campaigns": {
+          "cross-term": {
+            "base": 1000000000000,
+            "spacing": 1000,
+            "first_index": 1,
+            "last_index": 20
+          },
+          "competitor": {
+            "base": 2000000000000,
+            "spacing": 1000,
+            "first_index": 1,
+            "last_index": 20
+          }
+        },
+        "path_offset": 50000,
+        "path_count": 24,
+        "distinct_identity_offsets": [
+          0,
+          50000,
+          50001,
+          50002,
+          50003,
+          50004,
+          50005,
+          50006,
+          50007,
+          50008,
+          50009,
+          50010,
+          50011,
+          50012,
+          50013,
+          50014,
+          50015,
+          50016,
+          50017,
+          50018,
+          50019,
+          50020,
+          50021,
+          50022,
+          50023
+        ],
+        "registered_path": "EXP-102–107/112 -> run_exp_100_single -> run_dynamics -> emit_discovery_grade_export. No --sweep, no Test B sidecar, no cascade/multilevel/composition experiment on this path. Capture is I/O only.",
+        "initialization_roles": [
+          {
+            "role": "kernel initialization",
+            "identity": "s",
+            "source": "state.rs:140 -> substrate.rs:20–21"
+          },
+          {
+            "role": "dynamics dispatch",
+            "identity": "s",
+            "source": "mixture.rs:434"
+          },
+          {
+            "role": "discovery path",
+            "identity": "s+50000+j, 0<=j<=23",
+            "source": "main.rs:9522–9533 -> substrate.rs:129–130"
+          }
+        ],
+        "intentional_reuse": "Kernel initialization and dynamics reuse s. Each configuration and named-family internal configuration reuses the block s. The disjointness assertion is for distinct (campaign,k,identity offset), not distinct initialization calls or configurations; it does not assert every invocation has an independent stream.",
+        "proof": [
+          "Within a campaign, equality of two identity seeds implies 1000*(k-k_prime)=o_prime-o with o,o_prime in {0} union [50000,50023].",
+          "If offsets are both zero or both path offsets, the right side has absolute value <=23, so equality forces k=k_prime and o=o_prime. If one offset is zero, the right side has absolute value >=50000 whereas 1000*abs(k-k_prime)<=19000; equality is impossible.",
+          "Cross-term identities lie in [1000000001000,1000000070023]; competitor identities lie in [2000000001000,2000000070023]; the intervals are disjoint. Each campaign has 20*25=500 distinct numeric identities; together 1000.",
+          "The largest identity is 2000000070023 < 2^53 < 2^64. All acquisition seed additions are nonwrapping integers, and any binary64 conversion of these integers is exact.",
+          "Documented historical registered acquisition bases are at most 910000; s and s+50000+j are therefore at most 960023, below the new identity intervals. This arithmetic statement concerns those documented registered paths."
+        ]
+      },
+      "superseded_seed_note": "The earlier consecutive 860001–860020/870001–870020 proposals were replaced because they reused historical discovery-path streams."
+    },
+    "canonical_diagonal": {
+      "input": "n ordered states; finite binary64 emitted vectors u_1,...,u_m in literal emitted order; the preparation and scored data do not choose this basis",
+      "exact_input": "Decode every finite binary64 entry as its exact dyadic rational. Reject non-finite entries. Do not substitute archived SVD left vectors for emitted vectors.",
+      "arithmetic": "Exact rational unnormalized Gram-Schmidt; positive square roots represented by certified rational isolating intervals; correctly rounded binary64 output. No BLAS, SVD or QR routine selects directions or signs.",
+      "spectral_cutoff": {
+        "H": "H = (1/n) 11^T + sum_j u_j u_j^T, an exact rational symmetric matrix",
+        "lambda_max": "largest real eigenvalue of H; exact algebraic comparison using a characteristic polynomial and certified root isolation; trace(H)/n <= lambda_max <= trace(H) is an allowed early decision bound",
+        "tau_squared": "max(n,m+1)^2 * 2^(-104) * lambda_max(H)",
+        "meaning": "constant-preserving ordered numerical dependence rule using the inherited theoretical binary64 cutoff scale; it is not asserted to equal SVD rank truncation",
+        "boundary": "keep only when d_j > tau_squared; exact equality is discarded. An undecided root comparison is numerical-unresolved, never silently treated as dependence."
+      },
+      "algorithm": [
+        "Set v_0 = 1, d_0 = n, e_0 = v_0/sqrt(d_0), with its positive entries. Keep this direction unconditionally.",
+        "For each emitted u_j, compute v = u_j - sum_(h previously kept) v_h (v_h^T u_j)/d_h, exactly; d = v^T v.",
+        "If d <= tau_squared, record the column as numerically dependent and continue. Otherwise append v, d and e = v/sqrt(d), with the positive root. Never pivot or reorder columns.",
+        "The sign convention is e^T u_j = sqrt(d)>0. This preserves the emitted orientation. No maximal-component-positive sign flip is applied.",
+        "Serialize retained/discarded source-column indices, rational directions/norms, cutoff/root certificates, rounded basis, rank and control results."
+      ],
+      "rounding": {
+        "initial_bits": 384,
+        "refinement_bits": [
+          384,
+          768,
+          1536,
+          3072,
+          4096
+        ],
+        "rounding": "IEEE binary64 nearest, ties to even; certify one rounding cell per entry; rational/algebraic equality handles an exact midpoint",
+        "unresolved": "Do not emit an arbitrary rounded value; mark the endpoint numerical-unresolved.",
+        "exact_zero": "emit +0.0"
+      },
+      "rank_two_identity": "With one emitted vector u, w=u-(sum_i u_i/n)1 and s=w^T w>tau_squared, the returned basis is exactly (1/sqrt(n), w/sqrt(s)) = (e_0,e_1). The centering/sign convention is the paper carrier convention.",
+      "span_control": {
+        "rank": "require canonical rank equals the unchanged admitted numerical rank",
+        "projector": "certify ||P_canonical - P_legacy||_F <= 1e-10 and the inherited full-law/Parseval/constant-span controls. Use fresh inputs only. Ordered GS and truncated SVD need not have exactly equal real spans.",
+        "q_full_preservation": "Do not replace the legacy q_full or leverage/linear laws. For mathematical common-span statements use the exact canonical full law; certify its TV distance from the unchanged floating full law at most 1e-10. If not certified, affected v25 endpoints are unresolved.",
+        "failure": "retain the unit and mask; no new exclusion, seed substitution or alternative basis is permitted"
+      },
+      "probability_law": "Let B contain the canonical orthonormal columns, x=sqrt(p), z=B^T x, a=z/||z||. q_diag_canonical(i)=sum_h B_ih^2 a_h^2. The constant direction makes ||z||>0 for any normalized nonnegative p.",
+      "evaluation": "Use the exact formula with certified square-root/sum/division intervals; round each probability uniquely to binary64. Apply the same label map and recorded loss routines as other rules; retain the existing mass/negative-probability gates. Do not clip, rotate or select this law by loss.",
+      "library_invariance_scope": "Conditional on identical emitted input bytes, state order and specified numerical-dependence rule. The exact rational directions and their normalized/sign-selected real values are unique; certified final rounding is unique. Does not assert that different spectral libraries emit the same vectors, or that rotating the input emitted vectors leaves the canonical rule unchanged."
+    },
+    "evaluations": {
+      "competitor": {
+        "competitors_in_registered_order": [
+          "L_clipped_linear",
+          "q_diag_canonical",
+          "q_lambda_1_16",
+          "q_lambda_1_8",
+          "q_lambda_1_4",
+          "q_lambda_1_2",
+          "q_lambda_1",
+          "q_lambda_2",
+          "q_lambda_4",
+          "q_lambda_8",
+          "q_lambda_16"
+        ],
+        "replacements": "q_diag -> q_diag_canonical only. Eleven registered competitors; the ten non-diagonal competitors unchanged. No optimized orientation is added.",
+        "unchanged_descriptive_rules": [
+          "L_full",
+          "L_uniform"
+        ],
+        "contrasts": "C_f,h = ell_f(q_h)-ell_f(q_full), positive favors full",
+        "serviceability": "S_2,f=ell_f(q_full)-2*ell_f(p_theory); S_2<=0 is serviceable. Persist S_2 in that sign. Use -S_2 only for the positive-benefit directional test, explicitly labeled.",
+        "margins": "zero for competitor superiority; original serviceability factor two",
+        "population": "68 nonempty EXP-112 configurations; the empty configuration is executed/certified and planned-excluded exactly as in v8"
+      },
+      "cross_term": {
+        "diagonal_rules": [
+          "q_diag_canonical"
+        ],
+        "contrasts": "D_f=ell_f(q_diag_canonical)-ell_f(q_full), f in raw,package; one comparator only.",
+        "margin": {
+          "numerator": 1,
+          "denominator": 240
+        },
+        "margin_rationale": "Retain the historical load-bearing predictive margin. Numerical/certification tolerances are orders of magnitude smaller; no new sensitivity result is used to select a margin.",
+        "population": "Same v21/v24 eligibility and spectral nondegeneracy population. Systematic-combination source has weight 1/2; named EXP-102..107 source has weight 1/2. Within either source use the registered nonempty-group convention."
+      },
+      "losses": {
+        "primary": "TV(M_f q,nu_hat_f)=1/2 sum_l |(M_f q)_l-nu_hat_f,l|",
+        "brier": "sum_l ((M_f q)_l-nu_hat_f,l)^2, descriptive sensitivity only; no change to membership",
+        "pairing": "all rules and both maps use the same fresh sampled state endpoints and ordering"
+      },
+      "admission": {
+        "planned_exclusions": "unchanged v8/v21 exclusions; losses, coefficient signs and solver success cannot select membership",
+        "legacy_mask": "Preserve inherited SVD-oriented basis for admitted rank, unchanged full/other laws, controls and nondegeneracy coefficients. Its diagonal is evaluated only in the separate prospective descriptive report on fresh v25 data, never as a primary comparator.",
+        "nondegeneracy": "cross-term: at least two inherited original coefficients have abs(a_h)>1e-9. Do not recompute mask in canonical or randomly rotated coordinates. This remains an implementation-defined conditional population under the pinned historical stack, disclosed separately from the comparator correction.",
+        "coefficient_threshold": "1e-9",
+        "tie_threshold": "1e-12",
+        "ties": "Preserve original absolute <= tie rule. In the cross-term population statistic set a TV contrast within the tie band to zero, as the existing evaluator does. Preserve the competitor evaluator original tie use; do not import cross-term zeroing into it.",
+        "empty_groups": "typed undefined where a required seed/source/kind has no spectrally nonempty groups; no zero imputation, denominator swap or half-weight transfer",
+        "failure": "Failed construction/certificate or unavailable evidence is accounted for; it is not a new planned scientific exclusion."
+      }
+    },
+    "inference": {
+      "hierarchy": [
+        "mean recorded steps within underlying context",
+        "raw/package remain paired separate estimands",
+        "equal mean of contexts within invocation",
+        "equal mean of eligible/nonempty configuration or experiment groups within seed",
+        "equal mean of the 20 seed blocks",
+        "cross-term only: combine systematic and named-family source estimates at exactly 1/2 each"
+      ],
+      "bootstrap": {
+        "replicates": 20000,
+        "unit": "whole paired seed block",
+        "jackknife": "20 leave-one-whole-seed-out estimates",
+        "method": "same BCa bias/acceleration transform; half weight for bootstrap ties; Hyndman-Fan type 7; ordinary percentile and equal-tail BCa intervals descriptive only",
+        "degeneracy": "same v8/v24 BCa undefined rules; no percentile fallback; numerical-unresolved endpoint stays unresolved",
+        "pairing": "Cross-term: one 20-seed membership draw per replicate shared across raw/package, EXP-112/named sources, TV/Brier contrasts and Brier law ranking. Competitor: inherited per-map/per-statistic independent streams; all rules use paired endpoints but bootstrap membership is not shared across statistics."
+      },
+      "sign_randomization": {
+        "assignments": 1048576,
+        "method": "Call snapshot.statistics_helpers._conditional_sign_counts (line 20) for all v25 primary tails: decode final binary64 seed contrasts exactly as dyadic integers over a common power-of-two denominator; observed=sum(integers); count signed>=observed and abs(signed)>=abs(observed), including equality. Report integer numerators/2^20; float p-values are exact for that denominator.",
+        "report": "one-sided positive-benefit and two-sided conditional p values",
+        "null": "zero seed-level contrast, as in v8/v24; the 1/240 requirement is an additional interval gate, not an unannounced change of null",
+        "qualification": "Exact enumeration is conditional on joint invariance of the seed contrast vector under the relevant independent sign flips under the zero null, not just exchangeability of seed labels. Does not establish that assumption or finite-sample exact BCa coverage.",
+        "explicit_change": "Competitor v8 used g2a._conditional_sign_p with math.fsum observed and floating recursive additions. v25 replaces that arithmetic; cross-term retains its already exact-integer helper. The conditional null and gates stay fixed; numerical implementation is not claimed unchanged.",
+        "sensitivity_tails": "Competitor Brier-complete-ranking one-/two-sided seed tails also use the exact-integer helper (explicit replacement of its old floating helper). Cross-term inherited named sensitivities have no sign tails, so none are added. If Brier seed tails are displayed alongside cross-term ranking they are not permitted by this version; report ranking/intervals only. Orientation report has no tails."
+      },
+      "multiplicity": {
+        "alpha": "0.05",
+        "competitor": {
+          "members": "raw/package x 11 competitor advantages, plus raw/package serviceability (-S_2 for benefit p-value)",
+          "holm_members": 24,
+          "bca_endpoints": 48
+        },
+        "cross_term": {
+          "members": "raw/package x canonical diagonal contrast only",
+          "holm_members": 2,
+          "bca_endpoints": 4
+        },
+        "endpoint_rule": "simultaneous lower normal order alpha/g; upper 1-alpha/g, with g total endpoints in that evaluation. Repeated comparison of an endpoint to zero and a margin consumes one endpoint. Families remain separate across the two disjoint campaigns, as historically registered; no combined claim of 0.05 control across both.",
+        "unresolved_member": "retain family size; a computable companion endpoint may be reported conservatively using p=1 for an unresolved member, but no joint PASS and no fabricated estimate/interval for that member"
+      },
+      "sensitivities": "Retain all inherited named sensitivity estimands, support/undefined rules and strict unrounded primary*point_or_deletion_atom<0 reversal rules for primary endpoints, with the explicit domains below. Bootstrap replicate signs are not reversal atoms. Orientation sensitivity is a distinct descriptive report and never enters this reversal flag. Brier retains primary membership/hierarchy; no sensitivity rescues a primary failure.",
+      "persistence": [
+        "20 seed estimates",
+        "group/context/step membership and dispositions",
+        "bootstrap indices and keyed RNG audit",
+        "all replicate estimates",
+        "jackknife, z0, acceleration and transformed probabilities",
+        "simultaneous/descriptive intervals",
+        "unadjusted/adjusted p values and family ledger",
+        "tie flags, all numerical bounds/certificates",
+        "per-map and per-rule statuses; no pooled raw/package average"
+      ],
+      "bootstrap_domain_table": [
+        {
+          "evaluation": "cross-term",
+          "name": "primary TV and Brier",
+          "statistic_id": "paired_kinds_sources_metrics",
+          "membership_recipe": "20 unbiased_index(20) draws in registered seed order, with replacement; one vector per replicate",
+          "sharing": "all maps, source partitions, TV/Brier contrasts and Brier law ranking",
+          "sign_tail": "exact-integer helper for primary TV; no Brier sign tails"
+        },
+        {
+          "evaluation": "cross-term",
+          "name": "seed-only fixed census",
+          "statistic_id": "REUSE primary",
+          "membership_recipe": "same saved seed membership",
+          "sharing": "all primary vectors",
+          "sign_tail": "none"
+        },
+        {
+          "evaluation": "cross-term",
+          "name": "config/experiment-only superpopulation",
+          "statistic_id": "paired_kinds_and_metrics::sensitivity::config/experiment-only superpopulation",
+          "membership_recipe": "independent group-index vectors for source EXP-112 then named families; retain inherited full-across-seed support/empty rules",
+          "sharing": "one membership reused across maps and TV/Brier metrics; no metric-specific redraw",
+          "sign_tail": "none"
+        },
+        {
+          "evaluation": "cross-term",
+          "name": "hierarchical seed then config/experiment superpopulation",
+          "statistic_id": "paired_kinds_and_metrics::sensitivity::hierarchical seed then config/experiment superpopulation",
+          "membership_recipe": "Draw 20 seed indices first. Then outer loop over sources EXP-112 followed by G2x (named families); within each source loop over all 20 selected seed occurrences, drawing len(source_groups[source]) indices from its sorted scheduled group union. Retain inherited support/undefined dispositions. Do not interleave sources by seed occurrence.",
+          "sharing": "one membership reused across maps and TV/Brier metrics; no metric-specific redraw",
+          "sign_tail": "none"
+        },
+        {
+          "evaluation": "cross-term",
+          "name": "two-way pigeonhole seed by config/experiment",
+          "statistic_id": "paired_kinds_and_metrics::sensitivity::two-way pigeonhole seed by config/experiment",
+          "membership_recipe": "20 seed indices followed by one group-index vector per source in EXP-112 then named order; Cartesian membership with inherited support rules",
+          "sharing": "one membership reused across maps and TV/Brier metrics; no metric-specific redraw",
+          "sign_tail": "none"
+        },
+        {
+          "evaluation": "cross-term",
+          "name": "leave-one-seed-out",
+          "statistic_id": "NONE",
+          "membership_recipe": "deterministic inherited deletion/source estimates in inherited order",
+          "sharing": "paired maps/sources; no RNG",
+          "sign_tail": "none"
+        },
+        {
+          "evaluation": "cross-term",
+          "name": "leave-one-config/experiment-out",
+          "statistic_id": "NONE",
+          "membership_recipe": "deterministic inherited deletion/source estimates in inherited order",
+          "sharing": "paired maps/sources; no RNG",
+          "sign_tail": "none"
+        },
+        {
+          "evaluation": "cross-term",
+          "name": "separate EXP-112 and G2x",
+          "statistic_id": "NONE",
+          "membership_recipe": "deterministic inherited deletion/source estimates in inherited order",
+          "sharing": "paired maps/sources; no RNG",
+          "sign_tail": "none"
+        },
+        {
+          "evaluation": "cross-term",
+          "name": "Brier complete ranking",
+          "statistic_id": "REUSE primary",
+          "membership_recipe": "same saved 20-seed membership",
+          "sharing": "all maps, sources and law ranking",
+          "sign_tail": "none"
+        },
+        {
+          "evaluation": "competitor",
+          "name": "primary TV",
+          "statistic_id": "{kind}::{contrast_id}",
+          "membership_recipe": "20 unbiased_index(20) draws with replacement",
+          "sharing": "independent stream per raw/package and competitor or serviceability",
+          "sign_tail": "exact-integer helper"
+        },
+        {
+          "evaluation": "competitor",
+          "name": "seed_only_fixed_census",
+          "statistic_id": "REUSE primary",
+          "membership_recipe": "same saved primary membership",
+          "sharing": "per statistic",
+          "sign_tail": "none"
+        },
+        {
+          "evaluation": "competitor",
+          "name": "config_only_superpopulation",
+          "statistic_id": "{kind}::{contrast_id}::sensitivity::config_only_superpopulation",
+          "membership_recipe": "68 unbiased_index(68) configuration draws; all seed means per selected config",
+          "sharing": "independent per statistic; inherit ordered config vector",
+          "sign_tail": "none"
+        },
+        {
+          "evaluation": "competitor",
+          "name": "hierarchical_seed_config_superpopulation",
+          "statistic_id": "{kind}::{contrast_id}::sensitivity::hierarchical_seed_config_superpopulation",
+          "membership_recipe": "20 unbiased_index(20) seed draws first, then 68 config draws per selected seed occurrence",
+          "sharing": "independent per statistic; inherit ordered config vector",
+          "sign_tail": "none"
+        },
+        {
+          "evaluation": "competitor",
+          "name": "two_way_pigeonhole_seed_by_config",
+          "statistic_id": "{kind}::{contrast_id}::sensitivity::two_way_pigeonhole_seed_by_config",
+          "membership_recipe": "20 seed draws then 68 config draws, independent Cartesian product",
+          "sharing": "independent per statistic; inherit ordered config vector",
+          "sign_tail": "none"
+        },
+        {
+          "evaluation": "competitor",
+          "name": "leave_one_seed_out",
+          "statistic_id": "NONE",
+          "membership_recipe": "deterministic inherited deletions in registered seed/config order",
+          "sharing": "per statistic; no RNG",
+          "sign_tail": "none"
+        },
+        {
+          "evaluation": "competitor",
+          "name": "leave_one_config_out",
+          "statistic_id": "NONE",
+          "membership_recipe": "deterministic inherited deletions in registered seed/config order",
+          "sharing": "per statistic; no RNG",
+          "sign_tail": "none"
+        },
+        {
+          "evaluation": "competitor",
+          "name": "brier_complete_ranking",
+          "statistic_id": "{kind}::{contrast_id}::sensitivity::brier_complete_ranking",
+          "membership_recipe": "20 unbiased_index(20) seed draws with replacement",
+          "sharing": "independent per statistic and independent from primary TV",
+          "sign_tail": "exact-integer helper; outside primary Holm"
+        }
+      ]
+    },
+    "rng": {
+      "registration_identity": "SHA256 of canonical JSON of the scientific object: UTF-8, sorted keys, ensure_ascii=False, separators comma/colon, no final newline. The preview digest is outside that object. Reviewed immutable scientific bytes must be frozen before any v25 acquisition; do not use v8/v21 identities for new bootstrap/controls.",
+      "master_prefix": "RB1v25-RNG-v1",
+      "framing": "unchanged snapshot.rng typed framing: tag + u64be length + payload; strict UTF-8; uint64 payload big endian",
+      "bootstrap_domain": [
+        "str:bootstrap-v2",
+        "bytes:scientific digest",
+        "str:stage id (v25-competitor or v25-cross-term)",
+        "str:statistic id from bootstrap_domain_table (collective, without map/comparator/metric for cross-term primary)",
+        "u64:replicate index 0..19999"
+      ],
+      "sampler": "Runner seed blocks unchanged above. No RNG in canonical basis; orientation-report stream is separate from acquisition, samples, controls and inference. No oracle solver.",
+      "controls": "existing v24 control algorithm/number of draws, keyed by the new scientific digest and v25 unit identity; retain all gradual-underflow requirements; no historical reference-draw bytes are claimed for this new registration",
+      "bootstrap_consumption": "Start a fresh RNGStream at counter zero per replicate/domain. unbiased_index uses unchanged rejection sampling; preserve draw order in table. Save indices and counters. Workers/scheduling and report orientation index do not enter bootstrap keys. For competitor contrast_id use literal registered law identifier; serviceability uses serviceability_factor_two, kind is raw or package. Cross-term source keys are literal EXP-112 and G2x; source_groups are the sorted union of scheduled groups for that source across registered seeds; shared membership support must agree across raw/package. Competitor eligible configuration order is acquisition.configuration_labels with planned empty excluded, not alphabetic sorting. Both use registered ascending seed order.",
+      "orientation_domain": [
+        "str:orientation-report-v1",
+        "bytes:scientific digest",
+        "str:stage id (v25-competitor or v25-cross-term)",
+        "u64:orientation seed (872025 or 862025)",
+        "str:complete unit identity compact JSON",
+        "bytes:restricted-input SHA256",
+        "u64:orientation index 0..127",
+        "u64:attempt 0..7"
+      ]
+    },
+    "environment": {
+      "profile": "predictive_v25",
+      "python": "CPython 3.12",
+      "numpy": "2.5.2",
+      "scipy": "1.18.1",
+      "sympy": "1.14.0",
+      "mpmath": "1.3.0",
+      "numpy_openblas": "0.3.34.0.0",
+      "scipy_openblas": "0.3.31.dev (bundled in pinned SciPy wheel)",
+      "threads": 1,
+      "dispatch": "OPENBLAS_CORETYPE=Haswell; NPY_DISABLE_CPU_FEATURES=X86_V4,AVX512_ICL,AVX512_SPR before scientific imports",
+      "routing": "Reuse automatic stage_environment routing, with simple package/version and effective thread/backend checks in the computing process. No executable/native-library hashes or second-CPU gate.",
+      "installation": "Public stage-specific pip lock; BORN_LADDER_WHEELHOUSE supports offline provisioning; CPython 3.12 base environment required."
+    },
+    "outcomes": {
+      "infrastructure_precedence": [
+        "SPEC_MISMATCH / BLOCKED_RUNTIME -> INCONCLUSIVE, no scientific verdict",
+        "INCOMPLETE_ACQUISITION / COMMITMENT_FAILURE -> INCONCLUSIVE, no scientific verdict",
+        "then joint decision cube below"
+      ],
+      "contrast_pass": "Standalone endpoint: applicable controls valid, support and interval/tail defined; lower simultaneous bound > margin, positive-benefit Holm p<=0.05, and all required named sensitivities evaluable with no strict sign reversal. Contrast pair PASS requires both maps. Competitor margin zero; cross-term margin 1/240.",
+      "contrast_fail": "Validated endpoint upper simultaneous bound <= margin establishes exclusion of the registered advantage, independently of p; upper<0 additionally establishes adverse direction. Keep such a local failure visible even if another endpoint is unresolved. Control-invalid values cannot establish failure.",
+      "contrast_neutral": "Complete interval evidence neither passing nor excluding advantage (including lower>margin but Holm p>0.05) is an inconclusive endpoint, not an established FAIL.",
+      "serviceability": "Pass per map iff S_2 upper<=0 with applicable controls/evidence/sensitivities valid; fail if S_2 lower>0; otherwise inconclusive. Retain -S_2 primary benefit tail in fixed Holm family without reversing printed S_2 signs.",
+      "joint_flag_definitions": {
+        "control_failure": "C: any required endpoint has a positively failed applicable control. A missing/undecidable certificate is U rather than C. Descriptive-only O failures are excluded.",
+        "unresolved_evidence": "U: any required endpoint or sensitivity missing, numerical-unresolved, vacuous, non-evaluable or neutral/inconclusive by interval/p criteria. Preserve all valid local pass/fail annotations.",
+        "named_sensitivity_reversal": "R: any inherited required named point/deletion atom strictly reverses its endpoint's unrounded primary sign; zeros and bootstrap replicate signs do not count. Random-orientation signs never count.",
+        "established_endpoint_failure": "F: at least one required validated endpoint has the exclusion/failure gate above; cannot be manufactured from invalid control evidence."
+      },
+      "joint_decision_table": [
+        {
+          "control_failure": false,
+          "unresolved_evidence": false,
+          "named_sensitivity_reversal": false,
+          "established_endpoint_failure": false,
+          "joint_status": "PASS_IF_ALL_REQUIRED_ENDPOINTS_PASS_ELSE_INCONCLUSIVE"
+        },
+        {
+          "control_failure": false,
+          "unresolved_evidence": false,
+          "named_sensitivity_reversal": false,
+          "established_endpoint_failure": true,
+          "joint_status": "FAIL"
+        },
+        {
+          "control_failure": false,
+          "unresolved_evidence": false,
+          "named_sensitivity_reversal": true,
+          "established_endpoint_failure": false,
+          "joint_status": "INCONCLUSIVE_SENSITIVITY_REVERSAL"
+        },
+        {
+          "control_failure": false,
+          "unresolved_evidence": false,
+          "named_sensitivity_reversal": true,
+          "established_endpoint_failure": true,
+          "joint_status": "INCONCLUSIVE_SENSITIVITY_REVERSAL"
+        },
+        {
+          "control_failure": false,
+          "unresolved_evidence": true,
+          "named_sensitivity_reversal": false,
+          "established_endpoint_failure": false,
+          "joint_status": "INCONCLUSIVE_UNRESOLVED"
+        },
+        {
+          "control_failure": false,
+          "unresolved_evidence": true,
+          "named_sensitivity_reversal": false,
+          "established_endpoint_failure": true,
+          "joint_status": "INCONCLUSIVE_UNRESOLVED"
+        },
+        {
+          "control_failure": false,
+          "unresolved_evidence": true,
+          "named_sensitivity_reversal": true,
+          "established_endpoint_failure": false,
+          "joint_status": "INCONCLUSIVE_UNRESOLVED"
+        },
+        {
+          "control_failure": false,
+          "unresolved_evidence": true,
+          "named_sensitivity_reversal": true,
+          "established_endpoint_failure": true,
+          "joint_status": "INCONCLUSIVE_UNRESOLVED"
+        },
+        {
+          "control_failure": true,
+          "unresolved_evidence": false,
+          "named_sensitivity_reversal": false,
+          "established_endpoint_failure": false,
+          "joint_status": "INCONCLUSIVE_CONTROL_FAILURE"
+        },
+        {
+          "control_failure": true,
+          "unresolved_evidence": false,
+          "named_sensitivity_reversal": false,
+          "established_endpoint_failure": true,
+          "joint_status": "INCONCLUSIVE_CONTROL_FAILURE"
+        },
+        {
+          "control_failure": true,
+          "unresolved_evidence": false,
+          "named_sensitivity_reversal": true,
+          "established_endpoint_failure": false,
+          "joint_status": "INCONCLUSIVE_CONTROL_FAILURE"
+        },
+        {
+          "control_failure": true,
+          "unresolved_evidence": false,
+          "named_sensitivity_reversal": true,
+          "established_endpoint_failure": true,
+          "joint_status": "INCONCLUSIVE_CONTROL_FAILURE"
+        },
+        {
+          "control_failure": true,
+          "unresolved_evidence": true,
+          "named_sensitivity_reversal": false,
+          "established_endpoint_failure": false,
+          "joint_status": "INCONCLUSIVE_CONTROL_FAILURE"
+        },
+        {
+          "control_failure": true,
+          "unresolved_evidence": true,
+          "named_sensitivity_reversal": false,
+          "established_endpoint_failure": true,
+          "joint_status": "INCONCLUSIVE_CONTROL_FAILURE"
+        },
+        {
+          "control_failure": true,
+          "unresolved_evidence": true,
+          "named_sensitivity_reversal": true,
+          "established_endpoint_failure": false,
+          "joint_status": "INCONCLUSIVE_CONTROL_FAILURE"
+        },
+        {
+          "control_failure": true,
+          "unresolved_evidence": true,
+          "named_sensitivity_reversal": true,
+          "established_endpoint_failure": true,
+          "joint_status": "INCONCLUSIVE_CONTROL_FAILURE"
+        }
+      ],
+      "decision_table_scope": "The same exhaustive sixteen-row table applies separately to competitor-family and cross-term joint verdicts after infrastructure checks. C then U then R dominates F. No row silently ignores an established local failure; publish all flags and per-endpoint statuses. In the all-false row PASS requires all local pass predicates, otherwise neutral evidence is U and INCONCLUSIVE.",
+      "competitor_joint_required": "11 competitor advantages on both maps plus serviceability on both maps. This family result is ancillary to the single canonical corrective headline.",
+      "cross_term_joint_required": "canonical advantage at 1/240 on both maps only. No oracle, random orientation or historical SVD endpoint is required.",
+      "control_definitions": {
+        "I": "registration/source/runtime/capture integrity, complete scheduled/disposition accounting and commitment/sample binding",
+        "A": "admission/planned-exclusion/tie/support accounting and original nondegeneracy mask",
+        "F": "unchanged full and non-diagonal laws: inherited normalization/Parseval/constant-span and v24 gradual-underflow controls",
+        "C": "exact canonical directions, cutoff equality/root certificate, sign/order/rank, projector proximity and full-law preservation, canonical unique probability rounding/mass controls",
+        "T": "registered seed hierarchy, BCa endpoints/support, exact-integer tails, correct fixed Holm family and bootstrap domain pairing",
+        "S": "inherited named sensitivity support and strict unrounded reversal atoms (not random-orientation report)",
+        "O": "descriptive orientation draw/QR/law/commitment/report checks, including historical-stack SVD reference"
+      },
+      "endpoint_control_dependencies": [
+        {
+          "endpoint": "canonical advantage, each map in either evaluation",
+          "controls": [
+            "I",
+            "A",
+            "F",
+            "C",
+            "T",
+            "S"
+          ]
+        },
+        {
+          "endpoint": "non-diagonal competitor advantage, each map",
+          "controls": [
+            "I",
+            "A",
+            "F",
+            "T",
+            "S"
+          ],
+          "scope": "Only that rule's applicable inherited controls; no canonical-only certificate required for its standalone estimate. Fixed Holm family keeps unavailable companions with p=1."
+        },
+        {
+          "endpoint": "serviceability S_2, each map",
+          "controls": [
+            "I",
+            "A",
+            "F",
+            "T",
+            "S"
+          ],
+          "scope": "Preparation own-label-law controls also required; S_2=ell(full)-2ell(p), p for -S_2 explicitly labeled."
+        },
+        {
+          "endpoint": "cross-term joint headline",
+          "controls": [
+            "I",
+            "A",
+            "F",
+            "C",
+            "T",
+            "S"
+          ],
+          "required": "raw and package canonical advantages at 1/240"
+        },
+        {
+          "endpoint": "competitor-family joint",
+          "controls": [
+            "I",
+            "A",
+            "F",
+            "C",
+            "T",
+            "S"
+          ],
+          "required": "all 11 advantages plus serviceability on raw and package"
+        },
+        {
+          "endpoint": "orientation distribution/historical SVD reference",
+          "controls": [
+            "I",
+            "A",
+            "F",
+            "C",
+            "O"
+          ],
+          "scope": "Own descriptive validity only; O failures or orientation sign differences never veto a primary endpoint; shared I/A/F/C failure may also affect primary endpoints through their own dependencies."
+        }
+      ],
+      "explicit_cases": [
+        "canonical pair PASS plus a failed/incomplete descriptive orientation report -> canonical joint PASS if its own dependencies pass; descriptive report unavailable, no oracle endpoint exists",
+        "canonical validated FAIL plus descriptive report incomplete -> FAIL if all primary evidence/controls/sensitivities complete; otherwise retain local FAIL and apply C/U/R precedence",
+        "one map unresolved and the other validated upper<=margin -> INCONCLUSIVE_UNRESOLVED with the other map exclusion prominently retained",
+        "shared span/full-law control failure -> INCONCLUSIVE_CONTROL_FAILURE for every dependent endpoint, never a favorable or adverse scientific verdict",
+        "canonical-only certificate failure leaves non-diagonal standalone endpoints computable under fixed family adjustment, but both required canonical joint results inconclusive",
+        "orientation-only control failure -> report affected descriptive slots/reference unavailable; no effect on primary gates",
+        "no exclusion but Holm non-rejection or straddling bound -> INCONCLUSIVE, never PASS",
+        "any inherited named sensitivity reversal -> no joint PASS even with otherwise favorable intervals; an orientation-report sign variation has no such effect"
+      ],
+      "paper_policy": "No paper change until authorized fresh execution and independent review. Supersede historical diagonal evidence used for the corrected headline, not the truth of the historical computations. Preserve v21/v24 and competitor diagonal artifacts, historical-stack reproduction and original family adjustments; other historical comparators retain their scope. Chronology records original registrations, basis ambiguity discovery, historical reproduction, corrective freeze, fresh acquisition and all reviewed outcomes."
+    },
+    "orientation_sensitivity": {
+      "role": "Prospectively fixed descriptive report; no p-values, confidence intervals, tests, optimization, inferential families or verdict dependencies. These rotations are never used to choose a comparator or membership.",
+      "random_orientation_count": 128,
+      "justification": "128 independent per-unit rotations provide a fixed exploratory empirical distribution at manageable rank-two-through-six cost. Its order-statistic resolution is 1/128; this is neither exhaustive orientation coverage nor a precision/power guarantee. No expansion or early stopping after looking at contrasts.",
+      "scope": "Each evaluation uses its own unchanged primary admitted unit cohort. All ranks are included. All 128 report slots are scheduled before scoring; the same slot index k aggregates independent per-unit draws, not one shared rotation across differing spans.",
+      "orbit": "For each unit canonical ideal B and normalized a, q_R(i)=sum_h (BR)_ih^2 (R^T a)_h^2, R in O(r). Random rotations may rotate the constant axis; they do not preserve the constant-first canonical basis.",
+      "seeds": {
+        "competitor": 872025,
+        "cross_term": 862025,
+        "meaning": "Domain-only seed constants for orientation streams, not runner seeds or replacement acquisitions."
+      },
+      "identity": "Complete unit identity is the JSON array [experiment, configuration label, acquisition seed, internal context identity, resolution k, recorded step] in unchanged collection order. Encode as UTF-8 sorted-key compact JSON with no newline; include exact restricted-input SHA256 separately. Collision/duplicate identities fail the report.",
+      "draw_algorithm": [
+        "For each unit and zero-based k=0,...,127, create an independent SHA256/RNGStream with the frozen orientation domain below. No NumPy global RNG and no runner/sample RNG are consumed.",
+        "Draw r*r independent standard normal entries in row-major order using Box-Muller pairs. Each open uniform is ((word >> 12)+0.5)/2^52, exactly binary64 in (0,1). For u,v use z0=sqrt(-2 log u) cos(2*pi*v), z1=sqrt(-2 log u) sin(2*pi*v), Python math in that operation order with math.pi; keep both outputs in order and discard the unused second normal only when r*r is odd. Apply the pinned libm/runtime.",
+        "Use numpy.linalg.qr(G, mode=reduced), under the registered numerical worker. For each j multiply Q column j by +1 if R_jj>0, else -1 if R_jj<0. Do not impose determinant +1. This is Haar on O(r) for ideal independent Gaussian inputs; finite-word normals and floating QR approximate that law, and the finite algorithm and actual matrix bytes are the reproducibility contract.",
+        "If a diagonal pivot is zero or any output nonfinite, advance attempt=0,...,7 in the domain and regenerate the whole matrix. After eight failed attempts retain that slot as descriptive-unresolved. Never choose an orientation by its score.",
+        "Serialize normal bytes, Q/R bytes, sign vector, attempt, stream counters and input/runtime hashes. Evaluate q_R in a fixed scalar binary64 sequence: round ideal canonical B entries once by the canonical certificates; compute z=B^T sqrt(p) and normalize in ascending state/column order with math.fsum; b=B R and a_R=R^T a with ascending index math.fsum; q_R(i)=math.fsum(b_ih*b_ih*a_R_h*a_R_h) in ascending h. Retain inherited law mass/negative gates; do not claim these descriptive laws have certified exact rounding."
+      ],
+      "historical_stack_svd": "One additional descriptive law per unit, using the inherited _oriented_basis under the pinned historical NumPy 2.5.2 / OpenBLAS 0.3.34.0.0 stack and its original q_diag operation sequence. Compute only on fresh v25 captures; it is neither a primary competitor nor a Holm member. Serialize basis, singular values, prediction and stack identity.",
+      "scoring": "For raw and package, use the same fresh endpoints and primary TV loss. For each random slot k form D_f,k=ell_f(q_R_k)-ell_f(q_full) with the same equal-weight hierarchy and source-half weights. Apply each evaluation's inherited tie/zeroing convention at the original grain. Also persist unzeroed unit contrasts for description. Historical SVD contrast uses the identical cohort and aggregation. Brier orientation scoring is not registered.",
+      "report": [
+        "all per-unit random and historical-SVD TV contrasts and draw/commit records",
+        "all 128 aggregate D_f,k for each map/evaluation, in k order",
+        "empirical min, Hyndman-Fan type-7 Q1/median/Q3, max, mean, and counts at/below zero and 1/240 of the 128 complete aggregate values",
+        "canonical aggregate and historical-SVD aggregate as separately labeled reference points, not included in random-orientation quantiles"
+      ],
+      "incompleteness": "A missing/failed unit for a slot makes that whole aggregate slot undefined: no changing denominator or recomputing on a convenient subset. Publish slot count and all reasons. Publish quantiles only when all 128 slots are complete; otherwise publish complete slot values but mark distribution summary unavailable. A historical SVD failure affects only that reference. A sensitivity-report-only failure or sign variation does not block, fail or rescue any primary verdict."
+    }
+  },
+  "scientific_digest_preview": "6cd2ecc71a2f0b1b716211b492972157c9aa1e6cc2c49724a52cb23d37ba3577",
+  "revision": 4,
+  "freeze": "The freeze is the git commit of the specification and the code."
+}

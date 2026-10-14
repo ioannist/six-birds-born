@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "profile": "ioannis-tsiokos",
+  "paper": {
+    "title": "An Audited Born Calculus on a Pre-Physical Stochastic Substrate"
+  },
+  "zenodo": {
+    "metadata": {
+      "keywords": [
+        "Born calculus",
+        "pre-physical stochastic substrate",
+        "layered architecture",
+        "quantum foundations",
+        "Born rule",
+        "emergence calculus"
+      ],
+      "custom": {
+        "code:codeRepository": "https://github.com/ioannist/six-birds-born",
+        "code:programmingLanguage": [
+          {
+            "id": "lean",
+            "title": {
+              "en": "Lean"
+            }
+          },
+          {
+            "id": "python",
+            "title": {
+              "en": "Python"
+            }
+          },
+          {
+            "id": "tex",
+            "title": {
+              "en": "TeX"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "citation_policy": {
+    "allowed_entries_without_identifiers": []
+  },
+  "release_policy": {
+    "expected_remote": "https://github.com/ioannist/six-birds-born"
+  }
+}

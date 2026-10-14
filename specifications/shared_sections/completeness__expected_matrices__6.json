@@ -1,0 +1,32 @@
+{
+  "campaign": "g2b",
+  "expected_invocations": 1500,
+  "formula": {
+    "arguments": [
+      {
+        "arguments": [
+          {
+            "kind": "literal",
+            "value": 69
+          },
+          {
+            "kind": "literal",
+            "value": 6
+          }
+        ],
+        "kind": "operator",
+        "operator": "add"
+      },
+      {
+        "kind": "literal",
+        "value": 20
+      },
+      {
+        "kind": "literal",
+        "value": 1
+      }
+    ],
+    "kind": "operator",
+    "operator": "multiply"
+  }
+}

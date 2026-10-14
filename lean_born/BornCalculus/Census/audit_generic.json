@@ -1,0 +1,222 @@
+{
+  "status": "PASS",
+  "declarations": 43,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "dependencies": {
+    "BornCalculus.Census.frame_det_zero_iff_constant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.CertifiedCase.records_equal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.CertifiedCase.coordinates_ne": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.CertifiedCase.densities_ne": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.CertifiedCase.point_read_formula": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.CertifiedCase.point_read_reduced": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.CertifiedCase.read_real": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.CertifiedCase.point_gap_formula": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.CertifiedCase.robust_gap_formula": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.CertifiedCase.readouts_ne": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.CertifiedCase.no_factor": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.CertifiedCase.earlier_pair_rejected": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.CertifiedCase.point_receipts_separate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.CertifiedCase.robust_records_equal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.CertifiedCase.robust_gap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.CertifiedCase.maximum_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.CertifiedCase.range_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.CertifiedCase.maximizes": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.CertifiedCase.maximizing_ties": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.CertifiedCase.atom_det_formula": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.CertifiedCase.atom_trace_formula": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.CertifiedCase.atom_domain": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.CertifiedCase.atomN_eq_card": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.CertifiedCase.atom_active_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.CertifiedCase.atom_positive_iff_integer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.CertifiedCase.atom_nonnegative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.CertifiedCase.atom_singular_iff_integer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.CertifiedCase.atom_singular_iff_constant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.CertifiedCase.singular_trace_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.CertifiedCase.singular_nonzero_nonprojector": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.Shard000.frame": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.Shard000.moments": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.Shard000.pair": [
+      "propext"
+    ],
+    "BornCalculus.Census.Shard000.earlier": [
+      "propext",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.Shard000.atoms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.Shard000.reads": [
+      "propext"
+    ],
+    "BornCalculus.Census.Shard000.robust": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.Shard000.ranges": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.Shard000.earlierMax": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.Shard000.activeCount_total": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.Shard000.positiveCount_total": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.Shard000.singularCount_total": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BornCalculus.Census.Shard000.singularContext_total": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "forbidden": {}
+}

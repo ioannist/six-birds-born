@@ -1,0 +1,260 @@
+[
+  {
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "declarations": [
+      "General.carrier_and_trace",
+      "General.encoding_normalized_projection",
+      "General.orth_effect_compression",
+      "General.projector_fixed_iff",
+      "General.frame32_all_set_trace"
+    ],
+    "difference": "None in mathematical content; construction choices and archive provenance are not derived.",
+    "scope": "General n ≥ 2 and every centered nonzero frame: pure encoded densities, complete inherited finite label tests, common parent/coarsening, and projected-square trace identity for every preparation and subset. Geometric and metric/orthonormal coordinate bridges are proved.",
+    "statement": "Carrier and trace identity"
+  },
+  {
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "declarations": [
+      "General.point_encoding_eq_iff",
+      "General.records_points_eq_iff",
+      "General.strict_refinement",
+      "census_initial_records_equal",
+      "census_initial_densities_ne",
+      "census_initial_readouts_ne",
+      "census_initial_no_factor"
+    ],
+    "difference": "No generality gap in the refinement criterion. The historical declarations do not certify the new 2,122-case cohort. Archive binding remains external; exact gaps do not imply operational discrimination.",
+    "scope": "General n and arbitrary dependent label families: point-density equality iff equal w values; point-record equality iff shared labels; shared-label unequal-w witnesses prove strict refinement and nonfactorization. The census_* declarations concern the historical embedded 120-case cohort and its particular readout witnesses.",
+    "statement": "Strict refinement of records"
+  },
+  {
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "declarations": [
+      "General.orth_n_point_model",
+      "General.orth_lens_statistics",
+      "General.encoded_statistics",
+      "ri_lens_parent_coarsening",
+      "riCoordinateEffect_sum",
+      "riCoordinateEffect_domain",
+      "frame_lens_domain"
+    ],
+    "difference": "None for single-test statistics; no sequential representation follows.",
+    "scope": "Every density and every inherited subset/finite label presentation share one normalized nonnegative n-point singleton law. Label statistics are its pushforwards; encoded singleton values equal the projected-square rule.",
+    "statement": "Single-test finite-state model"
+  },
+  {
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "declarations": [
+      "General.inherited_indefinite_assignments",
+      "General.orth_effect_coordinates",
+      "General.witness_inherited_entries",
+      "General.vandermonde_determinant",
+      "General.inherited_no_density",
+      "General.witness_set_laws",
+      "General.witness_linear_relations"
+    ],
+    "difference": "None; an explicit uniform tolerance is proved. Archive-specific numerical tolerances remain separate.",
+    "scope": "All inherited effects for general n: every 0 < ε < 1/n gives a symmetric trace-one non-PSD witness with strict proper-subset values and normalized additive trace laws respecting linear relations. Entries and three-value Vandermonde separation are proved; three distinct w values exclude every density.",
+    "statement": "Inherited assignments without a density"
+  },
+  {
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "declarations": [
+      "General.orth_effect_determinant_variance",
+      "General.orth_effect_singular_iff_constant",
+      "General.active_effect_singular_iff",
+      "General.frame32_lens_singular_iff",
+      "census_atom_multiple_det_positive",
+      "census_atom_singular_iff_singleton",
+      "atom_total_count",
+      "census_singular_atom_count",
+      "census_singular_context_count",
+      "census_singleton_nonzero_nonprojector"
+    ],
+    "difference": "No general determinant-equality gap. Singularity iff singleton is restricted to the certified historical cohort whose nonsingleton blocks contain unequal w values; it is false for arbitrary cohorts. Singleton non-projectivity and exact counts remain cohort-specific.",
+    "scope": "General n and arbitrary inherited subsets/label blocks: determinant is the pairwise variance divided by 2ns, is nonnegative, and vanishes iff w is constant on the block. Singleton effects are singular and nonzero. The census_* declarations and embedded atom counts concern the historical 120-case cohort only.",
+    "statement": "Inherited atom classification"
+  },
+  {
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "declarations": [
+      "General.orth_chart_coefficient_ratio",
+      "General.orth_encoding_chart",
+      "General.orth_encoder_exact_range",
+      "General.orth_encoder_image",
+      "General.encoding_normalized_projection",
+      "General.orth_uniform_encoding",
+      "General.orth_encoding_omits_orthogonal",
+      "General.orth_encoding_non_affine",
+      "General.encoder_mixing_counterexample",
+      "paper_encoder_chart_range",
+      "paper_encoder_image",
+      "paper_encoder_nonaffine",
+      "paper_encoder_uniform",
+      "paper_encoder_not_surjective",
+      "centered_extrema_straddle",
+      "finite_extrema_exist",
+      "chartDensity_pure",
+      "chartDensity_orthonormal",
+      "chartDensity_orthonormal_domain",
+      "chartDensity_continuous",
+      "chartDensity_closed_arc",
+      "frameEncoding_image",
+      "frameEncoding_nonaffine",
+      "ri_frameEncoding_eq",
+      "ri_encoder_image",
+      "ri_encoder_nonaffine",
+      "riFrameLambda_formula",
+      "riCoordinateDensity_chart"
+    ],
+    "difference": "None in mathematical content. Extremizing indices exist by proof rather than extra substrate assumptions. The 32-point metric eta and orthonormal t scalings are explicit and related by proved identities. Archive binding remains external.",
+    "scope": "Arbitrary finite carrier and the paper’s exact sqrt(n/s) orthonormal chart: normalized projected-root encoder, attained extrema and both directions of the exact interval image; continuous injective parametrization with compact and closed pure-state arc; centered uniform state in its interior, omitted orthogonal density, and non-affinity for every proper mixture of distinct encodings. Attached to all existing CenteredFrame32 encoders and the selected worked-case riCoordinateDensity; the boundary non-affinity result excludes any encoded preparation from a proper mixture of two distinct encodings.",
+    "statement": "Image and non-affinity"
+  },
+  {
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "declarations": [
+      "factor_on_image_iff",
+      "frame_lift_iff",
+      "frame_augmented_lift_iff",
+      "normalized_identity_general",
+      "normalized_identical_rows_general",
+      "frame_identity_matrix_lift",
+      "frame_identical_rows_lift"
+    ],
+    "difference": "None. The identical row is nonnegative and has positive mass so that the paper’s normalization is defined; no regularity or affine structure is imposed on the lift.",
+    "scope": "General factorization on the actual image iff fibre constancy; existing encoder and augmented-description instances for arbitrary simplex self-maps. Identity and identical-row normalized matrix examples, with arbitrary-dimensional normalization identities.",
+    "statement": "Fibre criterion for a lift"
+  },
+  {
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "declarations": [
+      "finite_fragment_all_small",
+      "finite_program_fragment_all_small",
+      "b06_all_small_non_density",
+      "b06_assignment_endpoints",
+      "b06_assignment_additive",
+      "finite_fragment_non_density",
+      "finite_program_fragment_non_density",
+      "g_finite_fragment_no_density_representation",
+      "b06_concrete_finite_witness",
+      "b06_all_event_witness",
+      "b06_non_trace_finite_fragment",
+      "b06_event_count",
+      "b06_proper_event_count"
+    ],
+    "difference": "None in the small-parameter quantifier. The archived numeric ε and margin remain separately retained certificates; no extension to the generated algebra is asserted.",
+    "scope": "One positive δ works for every 0 < ε ≤ δ. General finite interior matrix families and nonempty proper groupings of complete invertible Kraus programs. Original worked case: trace-one G-non-density witness, strict bounds on all 2,316 proper occurrences, closed bounds on all 2,340 occurrences, empty/full values, disjoint additivity, and no density representation.",
+    "statement": "Finite registered family"
+  },
+  {
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "declarations": [
+      "measurable_table_bridge",
+      "measurable_table_representation_impossible",
+      "measurable_six_no_go",
+      "perfect_discrimination_mutuallySingular",
+      "six_states_density_and_projector",
+      "six_state_five_mixtures",
+      "six_state_probability_table",
+      "six_state_g_transfer",
+      "finite_six_no_go"
+    ],
+    "difference": "None. The existing reduction from the full table is freshly audited, including scaled mixture identities and the table’s diagonal response entries; these are existing proof coverage, not a new theorem.",
+    "scope": "Arbitrary measurable space; probability preparations, preserved pair/trine randomization identities, and the full six-state probability table reduce to the core model with perfect responses.",
+    "statement": "Measurable six-state obstruction"
+  },
+  {
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "declarations": [
+      "event_descends_iff_saturated",
+      "event_projection_idempotent",
+      "g_simplex_state_preservation",
+      "packageVisibility_idempotent",
+      "packageVisibility_ledger",
+      "simplex_composition",
+      "simplex_forgetting_preservation",
+      "simplex_state_preservation",
+      "simplex_visibility_normalization",
+      "visibilityPushforward_idempotent",
+      "visibilityPushforward_sum",
+      "worked_equal_effects_unequal_channels",
+      "empty_program_forgotten"
+    ],
+    "difference": "None in content. The unequal-channel example is machine-checked over existing embedded inputs and witnesses separation on a lawful input; archive binding remains external.",
+    "scope": "Finite visibility maps, saturation, idempotence and total-state preservation. Original worked-case raw, package and trivial complete programs have equal total effect I and pairwise unequal forgotten outputs on the encoded uniform density.",
+    "statement": "Visibility and event descent"
+  },
+  {
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "declarations": [
+      "b05_density_barycenters_equal",
+      "b05_all_lens_first_reads_equal",
+      "b05_completion_word_strict",
+      "b05_completion_density_no_factor",
+      "b05_sources_reachable"
+    ],
+    "difference": "No generalization beyond the text is needed. Existing update formulas and endpoints are freshly audited; retained data are bound externally.",
+    "scope": "Original worked-case G-frame pure ensembles; equal density barycenters and all single-label reads, unequal joint-label-0 completion-word probabilities.",
+    "statement": "Alternative two-read rule"
+  },
+  {
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "declarations": [
+      "b07_order_disturbance",
+      "b07_probability_bounds",
+      "principal_two_read_effect"
+    ],
+    "difference": "No generalization beyond the text is needed. Existing endpoints are freshly audited; diagonal frame transfer fixes the state and effect provenance is external.",
+    "scope": "Original worked case, raw label 1 then package label 0 and reverse order; encoded uniform density and certified disjoint intervals.",
+    "statement": "Order dependence"
+  }
+]

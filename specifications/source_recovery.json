@@ -1,0 +1,1300 @@
+{
+  "schema": "born_scientific_recovery_v2",
+  "modules": [
+    {
+      "original": "scripts/rebuild1/artifact_paths.py",
+      "original_sha256": "0dee65aef76b39cc84aa07c342f0cb94c6b3a62925c34a9d27fff4352604e66e",
+      "public": "src/born_ladder/snapshot/artifact_paths.py",
+      "classification": {
+        "summary": "paths/I/O/import packaging only; operational private-root entry functions omitted",
+        "unchanged_definitions": [
+          "authorized_output_path",
+          "reject_symlink_chain"
+        ],
+        "reused_definitions": [],
+        "adapted_definitions": [],
+        "removed_process_definitions": []
+      }
+    },
+    {
+      "original": "scripts/rebuild1/campaign.py",
+      "original_sha256": "43d96fc4e9a0784d6d6297bad64d056aaad88e832b5ce839373277c35e6cb6c5",
+      "public": "src/born_ladder/reproduction/predictive/campaign.py",
+      "classification": {
+        "summary": "paths/I/O/import packaging only; operational private-root entry functions omitted",
+        "unchanged_definitions": [
+          "CampaignArtifacts",
+          "_execute_one",
+          "_production_root",
+          "_published_path",
+          "_published_structural_path",
+          "_raw_emission_families",
+          "_registry_payload",
+          "_utc_now",
+          "_write_new",
+          "_write_or_match",
+          "verify_runner"
+        ],
+        "reused_definitions": [],
+        "adapted_definitions": [],
+        "removed_process_definitions": [
+          "main",
+          "run_g2a_campaign"
+        ]
+      }
+    },
+    {
+      "original": "scripts/rebuild1/collector_structural.py",
+      "original_sha256": "c7cff2af1c15d2d5d53db9576f2964f23c73fa3d034109f9646ce565afb727ad",
+      "public": "src/born_ladder/snapshot/collector_structural.py",
+      "classification": {
+        "summary": "paths/I/O/import packaging only; operational private-root entry functions omitted",
+        "unchanged_definitions": [
+          "CollectorCapture",
+          "_closed_pairs",
+          "_finite_float",
+          "_identity",
+          "_pre_marker_stdout",
+          "_reject_constant",
+          "_unit_from_raw",
+          "_validate_raw_shape",
+          "build_collector_capture",
+          "parse_collector_capture",
+          "parse_collector_capture_bundle",
+          "strict_raw_json_loads"
+        ],
+        "reused_definitions": [
+          "reconstruct_collector_record"
+        ],
+        "adapted_definitions": [],
+        "removed_process_definitions": []
+      }
+    },
+    {
+      "original": "scripts/rebuild1/completeness.py",
+      "original_sha256": "bc6c515a1291f1b7eb83494575d5415228882c79b5b32214e594cbc42c15cdd4",
+      "public": "src/born_ladder/snapshot/completeness.py",
+      "classification": {
+        "summary": "paths/I/O/import packaging only; operational private-root entry functions omitted",
+        "unchanged_definitions": [
+          "CompletenessReport",
+          "RetryIdentity",
+          "_CurrentBuilderAcceptanceEraSpec",
+          "_ProductionGatePaths",
+          "_StructuralAcceptanceTrust",
+          "_StructuralChannel",
+          "_argv_for",
+          "_campaign",
+          "_campaign_name_for_invocation",
+          "_capture_inventory",
+          "_duplicate_counts",
+          "_expected_structural_manifest_path",
+          "_historical_acceptance_identity_key",
+          "_is_g2c_campaign",
+          "_is_g2h_campaign",
+          "_is_g2x_campaign",
+          "_load_invocation_records",
+          "_load_persisted_structural_manifest",
+          "_nested_duplicates",
+          "_require_signed_historical_channel",
+          "_require_spec_hash_only_difference",
+          "_sha256",
+          "_structural_families_for_campaign",
+          "_verify_acceptance_signature",
+          "build_attempt_record",
+          "build_invocation_manifest",
+          "build_structural_acceptance_payload",
+          "invocation_id_for",
+          "invocation_manifest_bytes",
+          "load_structural_gate",
+          "structural_manifest_bytes",
+          "validate_attempt_record"
+        ],
+        "reused_definitions": [
+          "validate_structural_metadata"
+        ],
+        "adapted_definitions": [
+          {
+            "definition": "AttemptRegistry",
+            "public_module": "src/born_ladder/snapshot/completeness.py",
+            "classification": "explicit I/O/evidence admission or packaging adaptation; see local recovery report"
+          },
+          {
+            "definition": "_derive_attempt_summary",
+            "public_module": "src/born_ladder/snapshot/completeness.py",
+            "classification": "explicit I/O/evidence admission or packaging adaptation; see local recovery report"
+          },
+          {
+            "definition": "_production_acceptance_trust",
+            "public_module": "src/born_ladder/snapshot/completeness.py",
+            "classification": "explicit I/O/evidence admission or packaging adaptation; see local recovery report"
+          },
+          {
+            "definition": "_load_acceptance_era_spec",
+            "public_module": "src/born_ladder/snapshot/completeness.py",
+            "classification": "explicit I/O/evidence admission or packaging adaptation; see local recovery report"
+          },
+          {
+            "definition": "_production_gate_paths",
+            "public_module": "src/born_ladder/snapshot/completeness.py",
+            "classification": "explicit I/O/evidence admission or packaging adaptation; see local recovery report"
+          },
+          {
+            "definition": "_load_structural_channel",
+            "public_module": "src/born_ladder/snapshot/completeness.py",
+            "classification": "explicit I/O/evidence admission or packaging adaptation; see local recovery report"
+          },
+          {
+            "definition": "StructuralGate",
+            "public_module": "src/born_ladder/snapshot/completeness.py",
+            "classification": "explicit I/O/evidence admission or packaging adaptation; see local recovery report"
+          },
+          {
+            "definition": "_load_structural_gate_internal",
+            "public_module": "src/born_ladder/snapshot/completeness.py",
+            "classification": "explicit I/O/evidence admission or packaging adaptation; see local recovery report"
+          },
+          {
+            "definition": "assess_completeness",
+            "public_module": "src/born_ladder/snapshot/completeness.py",
+            "classification": "explicit I/O/evidence admission or packaging adaptation; see local recovery report"
+          }
+        ],
+        "removed_process_definitions": [
+          "_load_structural_gate_for_tests",
+          "g2h_v11_interpretation_bytes",
+          "interpret_g2h_v11_attempt_record"
+        ]
+      }
+    },
+    {
+      "original": "scripts/rebuild1/evaluate_g2a_campaign.py",
+      "original_sha256": "4d7fdbcb2f8f4e82aa0ff7f9ff955a121fd13bbb44dafafa62ff182734965a95",
+      "public": "src/born_ladder/reproduction/predictive/evaluate_g2a_campaign.py",
+      "classification": {
+        "summary": "paths/I/O/import packaging only; operational private-root entry functions omitted",
+        "unchanged_definitions": [
+          "G2aEvaluationArtifacts",
+          "_closed_identity",
+          "_load_campaign_inputs",
+          "_production_root",
+          "_read_canonical_object",
+          "_require_bound_file",
+          "_utc_now",
+          "_validate_campaign_bindings",
+          "_write_new"
+        ],
+        "reused_definitions": [],
+        "adapted_definitions": [],
+        "removed_process_definitions": [
+          "evaluate_committed_g2a_campaign",
+          "main"
+        ]
+      }
+    },
+    {
+      "original": "scripts/rebuild1/evaluate_g2c_campaign.py",
+      "original_sha256": "ae53d8155f289644dbea44dcf1723070ea105514c53c892ebd5639599ed333b8",
+      "public": [
+        "src/born_ladder/reproduction/predictive/g2c_entry.py",
+        "src/born_ladder/snapshot/evaluate_g2c_campaign.py"
+      ],
+      "classification": {
+        "summary": "paths/I/O/import packaging only; operational private-root entry functions omitted",
+        "unchanged_definitions": [
+          "G2CBoundInputs",
+          "G2CEvaluationAdmission",
+          "G2CEvaluationArtifacts",
+          "G2CLateFailure",
+          "G2CLoadedAdmission",
+          "G2CPreempted",
+          "G2CPreparedArtifacts",
+          "G2CReceiptIdentity",
+          "_admit_loaded_execution_bindings",
+          "_append_preemption_error",
+          "_bound_path",
+          "_canonical_object",
+          "_contract",
+          "_derive_g2c_drafts_with_findings",
+          "_empty_preemption_findings",
+          "_expected_reference_environment",
+          "_g2c_capture_inventory",
+          "_initial_scientific_findings",
+          "_is_sha256",
+          "_load_receipt",
+          "_merge_preemption_findings",
+          "_prepare_and_evaluate_g2c_drafts",
+          "_prepare_and_evaluate_g2c_science",
+          "_prepare_g2c_drafts_with_findings",
+          "_raise_if_preempted",
+          "_require_execution_input_bindings",
+          "_traceability_binding",
+          "_utc_now",
+          "_validate_archival_identity_rows",
+          "_validate_preflight_inventory",
+          "_validate_receipt_input_map",
+          "_validate_stdout_bindings",
+          "_validate_unit_accounting",
+          "g2c_receipt_contracts",
+          "select_g2c_preemption"
+        ],
+        "reused_definitions": [],
+        "adapted_definitions": [
+          {
+            "definition": "_fixed_identity_rows",
+            "public_module": "src/born_ladder/snapshot/evaluate_g2c_campaign.py",
+            "classification": "explicit I/O/evidence admission or packaging adaptation; see local recovery report"
+          },
+          {
+            "definition": "_v22_guard_forbidden_paths",
+            "public_module": "src/born_ladder/snapshot/evaluate_g2c_campaign.py",
+            "classification": "explicit I/O/evidence admission or packaging adaptation; see local recovery report"
+          },
+          {
+            "definition": "_validate_v22_attempt_guard",
+            "public_module": "src/born_ladder/snapshot/evaluate_g2c_campaign.py",
+            "classification": "explicit I/O/evidence admission or packaging adaptation; see local recovery report"
+          },
+          {
+            "definition": "_validate_receipt_semantics_independent",
+            "public_module": "src/born_ladder/snapshot/evaluate_g2c_campaign.py",
+            "classification": "explicit I/O/evidence admission or packaging adaptation; see local recovery report"
+          },
+          {
+            "definition": "_admit_evaluation_receipts_strict",
+            "public_module": "src/born_ladder/snapshot/evaluate_g2c_campaign.py",
+            "classification": "explicit I/O/evidence admission or packaging adaptation; see local recovery report"
+          }
+        ],
+        "removed_process_definitions": [
+          "_acquire_pre_dispatch_v22_attempt",
+          "_acquire_v22_attempt_guard",
+          "_admit_evaluation_receipts",
+          "_admit_g2c_bound_inputs",
+          "_admit_g2c_campaign_and_inputs",
+          "_admit_g2c_campaign_documents",
+          "_build_v23_prepublication",
+          "_collect_evaluation_receipts",
+          "_collect_g2c_bound_inputs",
+          "_collect_g2c_campaign_documents",
+          "_complete_v22_attempt_guard",
+          "_evaluate_committed_g2c_campaign",
+          "_finalize_v23_outputs_and_execution",
+          "_prepare_g2c_scientific_inputs",
+          "_publish",
+          "_publish_protocol_g2c_admitted",
+          "_write_guard_record_exclusive",
+          "admit_protocol_g2c_campaign",
+          "evaluate_committed_g2c_campaign",
+          "evaluate_protocol_g2c_campaign",
+          "main"
+        ]
+      }
+    },
+    {
+      "original": "scripts/rebuild1/evidence.py",
+      "original_sha256": "d90e8bf96532cc7bc75da3193be02e87f69080ce5cae67a1ed949ae2f726be6b",
+      "public": "src/born_ladder/snapshot/evidence.py",
+      "classification": {
+        "summary": "paths/I/O/import packaging only; operational private-root entry functions omitted",
+        "unchanged_definitions": [
+          "_content_or_numeric",
+          "_finite_tree",
+          "_g2c_exact_projection_equal",
+          "_nonempty_string",
+          "g2c_control_input_projection",
+          "residual_tolerance_contract",
+          "universal_fields",
+          "validate_g2c_control_input_binding",
+          "validate_per_unit_record",
+          "validate_per_unit_records"
+        ],
+        "reused_definitions": [
+          "validate_g2c_rotation_binding"
+        ],
+        "adapted_definitions": [],
+        "removed_process_definitions": []
+      }
+    },
+    {
+      "original": "scripts/rebuild1/finalize_g2a_campaign.py",
+      "original_sha256": "d8fa4319cb130abfdd2f1eb3d23005fb865699a9776de7338217d679e67a801c",
+      "public": "src/born_ladder/reproduction/predictive/finalize_g2a_campaign.py",
+      "classification": {
+        "summary": "paths/I/O/import packaging only; operational private-root entry functions omitted",
+        "unchanged_definitions": [
+          "_bound_path",
+          "_closed_json",
+          "_expected_campaign_root",
+          "_legacy_attempt_paths",
+          "_legacy_binding",
+          "_move_to_superseded",
+          "_require_sha256",
+          "_write_content_addressed_attempt"
+        ],
+        "reused_definitions": [],
+        "adapted_definitions": [],
+        "removed_process_definitions": [
+          "finalize_executed_g2a_campaign",
+          "main"
+        ]
+      }
+    },
+    {
+      "original": "scripts/rebuild1/g2a.py",
+      "original_sha256": "95bb65fa654eb6d955d34f414691cbb74e32335c78d4566b31ce22b79ef9a321",
+      "public": "src/born_ladder/snapshot/g2a.py",
+      "classification": {
+        "summary": "paths/I/O/import packaging only; operational private-root entry functions omitted",
+        "unchanged_definitions": [
+          "G2aDecisionInputs",
+          "G2aStatistic",
+          "SealedG2aFiniteFailure",
+          "SealedG2aUnitArtifact",
+          "_attempt_bindings",
+          "_bca_probability",
+          "_bca_summary",
+          "_bootstrap_result",
+          "_bootstrap_rng_audit",
+          "_conditional_sign_p",
+          "_contract",
+          "_control_failure_artifact",
+          "_controls_pass",
+          "_derive_unit_pair",
+          "_eval_predicate",
+          "_finite_number",
+          "_has_reversal",
+          "_hierarchical_values",
+          "_holm",
+          "_lookup_variable",
+          "_mean",
+          "_oriented_basis",
+          "_percentile_summary",
+          "_raw_marker_contract",
+          "_raw_segments",
+          "_reject_synthetic_campaign_evidence",
+          "_sealed_g2a_unit_artifact",
+          "_sensitivity_atoms",
+          "_type7",
+          "_validate_decision_inputs",
+          "select_g2a_branch"
+        ],
+        "reused_definitions": [],
+        "adapted_definitions": [
+          {
+            "definition": "_validate_provenance_binding",
+            "public_module": "src/born_ladder/snapshot/g2a.py",
+            "classification": "explicit I/O/evidence admission or packaging adaptation; see local recovery report"
+          },
+          {
+            "definition": "_sensitivity_results",
+            "public_module": "src/born_ladder/snapshot/g2a.py",
+            "classification": "v25 optional namespace/label/stage/exact-tail routing; historical defaults restored by explicit AST regression"
+          }
+        ],
+        "removed_process_definitions": [],
+        "io_packaging_adaptations": [
+          "P4: evaluate_g2a delegates its unchanged population body to evaluate_g2a_records; final completeness metadata supplied by the validated caller"
+        ]
+      }
+    },
+    {
+      "original": "scripts/rebuild1/g2c_campaign.py",
+      "original_sha256": "6abfe8b0c3e1ccb8484441bc6e5eb8efa235153a592be677b4b64a19ba4ca270",
+      "public": "src/born_ladder/reproduction/predictive/g2c_campaign.py",
+      "classification": {
+        "summary": "paths/I/O/import packaging only; operational private-root entry functions omitted",
+        "unchanged_definitions": [
+          "G2CCampaignArtifacts",
+          "_authorized",
+          "_contract",
+          "_execute_v21_one",
+          "_registry_bytes",
+          "_v21_timeout_contract",
+          "_validate_v21_timeout_persistence",
+          "build_g2c_invocation_manifest",
+          "validate_g2c_invocation_manifest_records",
+          "validate_v21_campaign_timeout_artifact"
+        ],
+        "reused_definitions": [
+          "_validate_v21_attempt_record"
+        ],
+        "adapted_definitions": [],
+        "removed_process_definitions": [
+          "_build_v21_incomplete_execution",
+          "build_g2c_preflight_report",
+          "main",
+          "run_g2c_campaign"
+        ]
+      }
+    },
+    {
+      "original": "scripts/rebuild1/g2c_collector_structural.py",
+      "original_sha256": "78e98e162612d76c72fd33793214fcdcc62e34dc9e6abcb97c617884f706fae7",
+      "public": "src/born_ladder/snapshot/g2c_collector_structural.py",
+      "classification": {
+        "summary": "paths/I/O/import packaging only; operational private-root entry functions omitted",
+        "unchanged_definitions": [
+          "G2CCollectorCapture",
+          "G2CRawSegment",
+          "_collapse_pairs",
+          "_contract",
+          "_identity",
+          "_roles",
+          "_segment_census",
+          "_selected_core",
+          "build_g2c_collector_capture",
+          "parse_g2c_collector_capture",
+          "parse_g2c_collector_capture_bundle",
+          "parse_g2c_raw_segments",
+          "require_g2c_structural_channel_equality",
+          "segment_census_record"
+        ],
+        "reused_definitions": [
+          "reconstruct_g2c_collector_record"
+        ],
+        "adapted_definitions": [],
+        "removed_process_definitions": []
+      }
+    },
+    {
+      "original": "scripts/rebuild1/g2c_controls.py",
+      "original_sha256": "ff742eedcc6aac9ea8c975bcb94d021ae92e5f86affdefd58e742c79c44d5a7f",
+      "public": "src/born_ladder/snapshot/g2c_controls.py",
+      "classification": {
+        "summary": "paths/I/O/import packaging only; operational private-root entry functions omitted",
+        "unchanged_definitions": [
+          "G2CControlArtifacts",
+          "_certificate_residual_passes",
+          "_contract",
+          "_distribution",
+          "_framed_fields",
+          "_is_nondegenerate",
+          "_kind",
+          "_mapped_dtv",
+          "_require_gradual_underflow",
+          "_rotation_candidate_admissible",
+          "_rotation_evidence",
+          "_validate_empirical_l1_premise",
+          "_validate_v22_operation_envelope",
+          "build_g2c_controls",
+          "gradual_underflow_certificate",
+          "validate_g2c_v22_rotation_evidence",
+          "validate_g2c_v4_rotation_evidence"
+        ],
+        "reused_definitions": [],
+        "adapted_definitions": [],
+        "removed_process_definitions": []
+      }
+    },
+    {
+      "original": "scripts/rebuild1/g2c_evaluate.py",
+      "original_sha256": "c287f2638b162bfbd3b574697a6da7483d5a1879a7215b174738c0acdad66833",
+      "public": "src/born_ladder/snapshot/g2c_evaluate.py",
+      "classification": {
+        "summary": "paths/I/O/import packaging only; operational private-root entry functions omitted",
+        "unchanged_definitions": [
+          "G2CDecision",
+          "_attach_census_binding",
+          "_combined_seed_vector",
+          "_config_only_estimate",
+          "_contract",
+          "_hierarchy_ledger",
+          "_intermediate_references",
+          "_record_kind",
+          "_statistic_census_binding",
+          "_undefined",
+          "select_g2c_branch"
+        ],
+        "reused_definitions": [
+          "_sensitivities"
+        ],
+        "adapted_definitions": [
+          {
+            "definition": "_paired_bootstrap_results",
+            "public_module": "src/born_ladder/snapshot/g2c_evaluate.py",
+            "classification": "v25 optional namespace/label/stage/exact-tail routing; historical defaults restored by explicit AST regression"
+          },
+          {
+            "definition": "_source_seed_values",
+            "public_module": "src/born_ladder/snapshot/g2c_evaluate.py",
+            "classification": "v25 optional namespace/label/stage/exact-tail routing; historical defaults restored by explicit AST regression"
+          }
+        ],
+        "removed_process_definitions": [],
+        "io_packaging_adaptations": [
+          "P4: optional independently checked scheduling callback for the unchanged per-unit rotation reconstruction; original sequential default retained"
+        ]
+      }
+    },
+    {
+      "original": "scripts/rebuild1/g2c_rotation_certificate.py",
+      "original_sha256": "cbc5f20ddc67e7ee24a9ae1b45565994268d8cf343c90e2968820b01cfb7ded9",
+      "public": "src/born_ladder/snapshot/g2c_rotation_certificate.py",
+      "classification": {
+        "summary": "paths/I/O/import packaging only; operational private-root entry functions omitted",
+        "unchanged_definitions": [
+          "_downward",
+          "_evaluate_expression",
+          "_exact_float",
+          "_gamma",
+          "_sqrt_upper",
+          "_underflow_sum",
+          "_upward",
+          "evaluate_gradual_underflow_certificate",
+          "evaluate_rotation_certificate"
+        ],
+        "reused_definitions": [],
+        "adapted_definitions": [],
+        "removed_process_definitions": []
+      }
+    },
+    {
+      "original": "scripts/rebuild1/g2c_units.py",
+      "original_sha256": "05eb7401f0f319bf3c06d68d5ae424850a280cfdd984cef52a78a780a1a9d407",
+      "public": "src/born_ladder/snapshot/g2c_units.py",
+      "classification": {
+        "summary": "paths/I/O/import packaging only; operational private-root entry functions omitted",
+        "unchanged_definitions": [
+          "G2CArtifacts",
+          "SealedG2CUnitDrafts",
+          "_contract",
+          "_pair_and_control_source",
+          "_rekey_pair",
+          "_source_key",
+          "bind_g2c_rotation_result",
+          "derive_sealed_g2c_unit_drafts",
+          "finalize_g2c_artifacts",
+          "require_scientific_g2c_segments",
+          "validate_g2c_artifacts"
+        ],
+        "reused_definitions": [],
+        "adapted_definitions": [],
+        "removed_process_definitions": []
+      }
+    },
+    {
+      "original": "scripts/rebuild1/identities.py",
+      "original_sha256": "c7d70c73cafdddf7d48c74526932e1044dfbaec6b191c6fb849147d08c1f6a49",
+      "public": "src/born_ladder/snapshot/identities.py",
+      "classification": {
+        "summary": "paths/I/O/import packaging only; operational private-root entry functions omitted",
+        "unchanged_definitions": [
+          "_nonempty_string",
+          "canonical_identity_bytes",
+          "kind_cell_id",
+          "stable_unit_id"
+        ],
+        "reused_definitions": [],
+        "adapted_definitions": [],
+        "removed_process_definitions": []
+      }
+    },
+    {
+      "original": "scripts/rebuild1/inventory.py",
+      "original_sha256": "9fbe0e119c999dc1ce95d24a39533b4b0f264d917c4c890a6c90d22dca442ad8",
+      "public": "src/born_ladder/snapshot/inventory.py",
+      "classification": {
+        "summary": "paths/I/O/import packaging only; operational private-root entry functions omitted",
+        "unchanged_definitions": [
+          "InventoryAuthorization",
+          "RustFunction",
+          "_matching_rust_brace",
+          "build_inventory",
+          "extract_rust_function",
+          "parse_exp112_labels",
+          "verify_definition_identities"
+        ],
+        "reused_definitions": [],
+        "adapted_definitions": [],
+        "removed_process_definitions": [
+          "main"
+        ]
+      }
+    },
+    {
+      "original": "scripts/rebuild1/rng.py",
+      "original_sha256": "6402b334ae93fc1395fb98bc2e08f4b72ca143c212a1dddcf035499c5e22b8ea",
+      "public": "src/born_ladder/snapshot/rng.py",
+      "classification": {
+        "summary": "paths/I/O/import packaging only; operational private-root entry functions omitted",
+        "unchanged_definitions": [
+          "RNGStream",
+          "derive_master_key",
+          "h2_permutation",
+          "key_deriver",
+          "master_key",
+          "typed_frame",
+          "uint64_be"
+        ],
+        "reused_definitions": [],
+        "adapted_definitions": [
+          {
+            "definition": "_derive_from_contract",
+            "public_module": "src/born_ladder/snapshot/rng.py",
+            "classification": "v25 optional namespace/label/stage/exact-tail routing; historical defaults restored by explicit AST regression"
+          }
+        ],
+        "removed_process_definitions": []
+      }
+    },
+    {
+      "original": "scripts/rebuild1/runner_structural.py",
+      "original_sha256": "c67694e4a490982cfd67d8bbf205405222b05525fdce0a751729f2398ec471ef",
+      "public": "src/born_ladder/snapshot/runner_structural.py",
+      "classification": {
+        "summary": "paths/I/O/import packaging only; operational private-root entry functions omitted",
+        "unchanged_definitions": [
+          "ParsedStructuralEnd",
+          "RunnerCapture",
+          "_closed_pairs",
+          "_finite_float",
+          "_leaf",
+          "_reject_constant",
+          "_validate_shape",
+          "build_runner_capture",
+          "parse_runner_capture",
+          "parse_runner_capture_bundle",
+          "parse_runner_stdout"
+        ],
+        "reused_definitions": [],
+        "adapted_definitions": [],
+        "removed_process_definitions": []
+      }
+    },
+    {
+      "original": "scripts/rebuild1/status.py",
+      "original_sha256": "dc78a4ac754335a64e9dddf17699ebd762a266f7ee5ddbc82d757c411e9dbdd1",
+      "public": "src/born_ladder/snapshot/status.py",
+      "classification": {
+        "summary": "paths/I/O/import packaging only; operational private-root entry functions omitted",
+        "unchanged_definitions": [
+          "_contract",
+          "preemptive_status",
+          "recognized_statuses",
+          "require_recognized_status",
+          "stage_ids"
+        ],
+        "reused_definitions": [],
+        "adapted_definitions": [],
+        "removed_process_definitions": []
+      }
+    },
+    {
+      "original": "scripts/rebuild1/universal_shapes.py",
+      "original_sha256": "cac68448e1014044883a79bee9798cd4b3c74b23ec0d4513969b3e515171a0cb",
+      "public": "src/born_ladder/snapshot/universal_shapes.py",
+      "classification": {
+        "summary": "paths/I/O/import packaging only; operational private-root entry functions omitted",
+        "unchanged_definitions": [
+          "_canonical_step_id",
+          "_check_scalar",
+          "_closed_object",
+          "_control_fail",
+          "_dimension",
+          "_dimensions",
+          "_fail",
+          "_formula_contract",
+          "_kind",
+          "_matrix_vector",
+          "_max_difference",
+          "_numeric_leaf_count",
+          "_recomputed_laws",
+          "_reject_nonfinite_token",
+          "_residual_contract",
+          "_residual_pass",
+          "_selected_numeric",
+          "_transpose_vector",
+          "_validate_descriptor",
+          "_validate_recomputed_residuals",
+          "_validate_scoring",
+          "_validated_svd_census",
+          "_vector_close",
+          "canonical_jsonl_bytes",
+          "load_canonical_record_artifact"
+        ],
+        "reused_definitions": [
+          "validate_stage_records"
+        ],
+        "adapted_definitions": [],
+        "removed_process_definitions": []
+      }
+    },
+    {
+      "original": "src/born_ladder/record_tests/estimators.py",
+      "original_sha256": "0d96493c663cfc7e92f5e2b54eeef23d1253557d2c34c2418a03acb9abeaf840",
+      "public": "src/born_ladder/record_tests/estimators.py",
+      "classification": {
+        "summary": "paths/I/O/packaging only",
+        "unchanged_definitions": [
+          "CanonicalData",
+          "Fit",
+          "RecordAllowlist",
+          "RecordData",
+          "_Stop",
+          "_control_seed",
+          "_loss",
+          "_optimize",
+          "_pred_torch",
+          "_qr",
+          "_seed",
+          "_size",
+          "_softmax_rows",
+          "_split",
+          "_symmetric_pred",
+          "_v5_fit",
+          "_v5_late_candidates",
+          "_v5_spectral_start",
+          "capped_classical",
+          "diagonal_predict",
+          "fit_diagonal",
+          "fit_family",
+          "fit_model",
+          "parameter_counts",
+          "score_probability",
+          "sha"
+        ],
+        "reused_definitions": [],
+        "adapted_definitions": [],
+        "removed_process_definitions": []
+      }
+    },
+    {
+      "original": "src/born_ladder/record_tests/generators.py",
+      "original_sha256": "a756fc5c215854889506a638af2aa2d06b470ef3a222d303bd9e6a1e02a4f9b4",
+      "public": "src/born_ladder/record_tests/generators.py",
+      "classification": {
+        "summary": "paths/I/O/packaging only",
+        "unchanged_definitions": [
+          "Plant",
+          "amplitude_matrix",
+          "calibration_and_paths",
+          "clipped_law",
+          "clipped_linear",
+          "dimensions",
+          "ed",
+          "hmm",
+          "qr_frame",
+          "quadratic",
+          "rng",
+          "sample_rows",
+          "split_state",
+          "square_law",
+          "stochastic"
+        ],
+        "reused_definitions": [],
+        "adapted_definitions": [],
+        "removed_process_definitions": []
+      }
+    },
+    {
+      "original": "src/born_ladder/record_tests/generators_v6.py",
+      "original_sha256": "eb43531b31fa5245a0cb40d065b5042270468475853894872c0029ceec84c77c",
+      "public": "src/born_ladder/record_tests/generators_v6.py",
+      "classification": {
+        "summary": "paths/I/O/packaging only",
+        "unchanged_definitions": [
+          "V6Plant",
+          "_calibration",
+          "_dimensions",
+          "_paths_chain",
+          "_paths_distribution",
+          "_preparations",
+          "clipped_linear",
+          "ed",
+          "hmm",
+          "path_block_domain",
+          "pseudocampaign_context",
+          "quadratic",
+          "rng",
+          "split_state",
+          "valid_cell"
+        ],
+        "reused_definitions": [],
+        "adapted_definitions": [],
+        "removed_process_definitions": []
+      }
+    },
+    {
+      "original": "src/born_ladder/record_tests/test_b_census.py",
+      "original_sha256": "9e809319d94e7a64eaacd889acb6e5c5dba0656d84b2c2548d0a80cb89ad62be",
+      "public": "src/born_ladder/record_tests/test_b_census.py",
+      "classification": {
+        "summary": "paths/I/O/packaging only",
+        "unchanged_definitions": [
+          "_write_hashed",
+          "canonical_bytes",
+          "census_for_context",
+          "closure_deficit",
+          "lumpability_defect",
+          "main",
+          "nearest_95",
+          "run"
+        ],
+        "reused_definitions": [],
+        "adapted_definitions": [],
+        "removed_process_definitions": []
+      }
+    },
+    {
+      "original": "src/born_ladder/record_tests/test_b_census_v6.py",
+      "original_sha256": "78faa0d4c9cf1dfabf1e511846355f43c412d467c85c76274c5b91001c7542b6",
+      "public": "src/born_ladder/record_tests/test_b_census_v6.py",
+      "classification": {
+        "summary": "paths/I/O/packaging; run adds an explicit reduced-header-count argument with registered default 140, numerical body unchanged",
+        "unchanged_definitions": [
+          "_context_census",
+          "_unit",
+          "_write_hashed",
+          "main",
+          "recipes_v6",
+          "source_header"
+        ],
+        "reused_definitions": [],
+        "adapted_definitions": [
+          "run"
+        ],
+        "removed_process_definitions": []
+      }
+    },
+    {
+      "original": "src/born_ladder/record_tests/record_view_v6.py",
+      "original_sha256": "ced896d80355cffa0afbadb290aa6272e9dbb7f4d8cbbc70c726821bebbcdb71",
+      "public": "src/born_ladder/record_tests/record_view_v6.py",
+      "classification": {
+        "summary": "paths/I/O/packaging only",
+        "unchanged_definitions": [
+          "build",
+          "canonical",
+          "main"
+        ],
+        "reused_definitions": [],
+        "adapted_definitions": [],
+        "removed_process_definitions": []
+      }
+    },
+    {
+      "original": "src/born_ladder/record_tests/scorer.py",
+      "original_sha256": "73645f0fb75656cb20570e5ec96053ba1772223bd67d535342a9cb6a092775d8",
+      "public": "src/born_ladder/record_tests/generation_scorer.py",
+      "classification": {
+        "summary": "packaging (separate scorer module)",
+        "unchanged_definitions": [
+          "bootstrap_indices",
+          "centered_p",
+          "equal_context_mean",
+          "excess_log_loss",
+          "family_inference",
+          "holm",
+          "lower_bound",
+          "nearest_95",
+          "open_sealed_predictions",
+          "oracle_law",
+          "paired_block_statistic",
+          "sampled_loss",
+          "scope_audit",
+          "scoring_probability",
+          "seal_predictions",
+          "signal_audit"
+        ],
+        "reused_definitions": [],
+        "adapted_definitions": [],
+        "removed_process_definitions": []
+      }
+    },
+    {
+      "original": "src/born_ladder/record_tests/scorer_v6.py",
+      "original_sha256": "f87be94f3e14189951dc9b957d0f08449a746a9b64df8eb1d0749ddc7dd6db93",
+      "public": "src/born_ladder/record_tests/scorer_v6.py",
+      "classification": {
+        "summary": "paths/I/O/packaging only",
+        "unchanged_definitions": [
+          "bootstrap_indices",
+          "inference",
+          "sampled_loss",
+          "signal"
+        ],
+        "reused_definitions": [],
+        "adapted_definitions": [],
+        "removed_process_definitions": []
+      }
+    },
+    {
+      "original": "src/born_ladder/record_tests/cert_v6.py",
+      "original_sha256": "bc6e7d8cc266dd782188d14f51b7a9ad0de8da358d7230ebcee984fa5f30398c",
+      "public": "src/born_ladder/record_tests/cert_v6.py",
+      "classification": {
+        "summary": "paths/I/O/packaging only",
+        "unchanged_definitions": [
+          "append",
+          "assemble_pseudo_fits",
+          "cannot_reach_minimum",
+          "canonical_document",
+          "commit_domain",
+          "complete_canonical_rows",
+          "complete_ordered_rows",
+          "control_census",
+          "draw_digest",
+          "encoded",
+          "expected_excess",
+          "false_square_pass",
+          "fidelity_case",
+          "fidelity_gate",
+          "fidelity_pass",
+          "fit_failure",
+          "fit_seal_case",
+          "fixed_census",
+          "fold_contrast",
+          "fold_record",
+          "inventory_orphan_seals",
+          "label_loss",
+          "main_case_fit_package",
+          "main_case_score_package",
+          "plant",
+          "plant_marginals",
+          "plant_readings",
+          "pooled_false_square",
+          "pseudo_fit_package",
+          "pseudo_fit_scheduler",
+          "pseudo_pass",
+          "pseudo_rank_claim",
+          "pseudo_rank_task",
+          "pseudo_score_package",
+          "pseudo_task_arguments",
+          "pseudocampaigns",
+          "rank_claim",
+          "read_prefix",
+          "read_sealed_margins",
+          "record",
+          "score_sealed_case",
+          "seal_or_verify_prediction",
+          "seal_rank_margins",
+          "sha_array",
+          "split_control",
+          "split_pass",
+          "synthetic_census_commit",
+          "verify_fidelity_verdict",
+          "verify_pooled_verdict",
+          "verify_pseudo_verdict",
+          "verify_split_verdict",
+          "write_once",
+          "write_or_verify"
+        ],
+        "reused_definitions": [],
+        "adapted_definitions": [],
+        "removed_process_definitions": [
+          "code_freeze",
+          "main",
+          "record_resume_manifest",
+          "resume_run",
+          "verify_existing_draw_commitments",
+          "verify_resume_freeze"
+        ]
+      }
+    },
+    {
+      "original": "src/born_ladder/record_tests/real_v6.py",
+      "original_sha256": "c7282b455edac3c5b3ab7f37ae7b8e5e6f3a8d92548e901a5e6f34a899ff718a",
+      "public": "src/born_ladder/record_tests/real_v6.py",
+      "classification": {
+        "summary": "paths/I/O/packaging only",
+        "unchanged_definitions": [
+          "P5RecordLoader",
+          "calibration_census",
+          "canonical_signature",
+          "commit_phase",
+          "control_seed",
+          "eligible_entries",
+          "erasure_not_computed",
+          "fit",
+          "fit_identity",
+          "fit_record_job",
+          "job_name",
+          "legacy_hashes",
+          "literal_relabel_case",
+          "literal_relabel_refits",
+          "load_bundle",
+          "normalized",
+          "predictions",
+          "put",
+          "put_bytes",
+          "record_alphabet",
+          "runner_command",
+          "sha",
+          "training_audit",
+          "training_audit_case",
+          "training_audit_initialize",
+          "tree_hashes",
+          "unit_key",
+          "validate_control_rules",
+          "validate_sample",
+          "verify_files",
+          "verify_phase"
+        ],
+        "reused_definitions": [],
+        "adapted_definitions": [
+          {
+            "definition": "phase_start",
+            "public_module": "src/born_ladder/record_tests/real_v6.py",
+            "classification": "explicit I/O/evidence admission or packaging adaptation; see local recovery report"
+          }
+        ],
+        "removed_process_definitions": [
+          "approved_driver_amendment",
+          "finalize_seal",
+          "gates",
+          "invoke",
+          "main",
+          "register_seal_amendment",
+          "sample",
+          "seal",
+          "setup_run",
+          "stage_census"
+        ]
+      }
+    },
+    {
+      "original": "src/born_ladder/record_tests/fresh_v6.py",
+      "original_sha256": "1dc436903d9e4daba35c9b7bfd7aaabd9b11fd254bdee4256b63796339746989",
+      "public": "src/born_ladder/record_tests/fresh_v6.py",
+      "classification": {
+        "summary": "paths/I/O/packaging only",
+        "unchanged_definitions": [
+          "_sample",
+          "calibration_sensitivity",
+          "campaign",
+          "check_out",
+          "commit",
+          "copy_once",
+          "evaluate_context",
+          "exact_arrow",
+          "fresh_command",
+          "identity",
+          "oracle_laws",
+          "read_header",
+          "record_failure",
+          "reversal_kl",
+          "sample",
+          "sample_job",
+          "score",
+          "validate_census",
+          "validate_sidecars",
+          "verify_commit"
+        ],
+        "reused_definitions": [],
+        "adapted_definitions": [
+          {
+            "definition": "phase_start",
+            "public_module": "src/born_ladder/record_tests/fresh_v6.py",
+            "classification": "explicit I/O/evidence admission or packaging adaptation; see local recovery report"
+          }
+        ],
+        "removed_process_definitions": [
+          "main",
+          "prepare",
+          "runtime",
+          "verify_p5"
+        ]
+      }
+    },
+    {
+      "original": "CENSUS/common.py",
+      "original_sha256": "669303d4edff96fa26e6b7c8e6a13a4fa15ae8fc3e7ad7f5c7a1a3a84c8038f2",
+      "public": "src/born_ladder/reproduction/census_writers/common.py",
+      "classification": {
+        "summary": "extract unchanged scientific definitions; remove private freeze/ledger/launch I/O",
+        "unchanged_definitions": [
+          "canonical",
+          "hb",
+          "put",
+          "qs",
+          "quantiles",
+          "sha"
+        ],
+        "reused_definitions": [],
+        "adapted_definitions": [],
+        "removed_process_definitions": [
+          "eligible",
+          "line",
+          "module",
+          "order",
+          "seal",
+          "verify"
+        ]
+      }
+    },
+    {
+      "original": "CENSUS/structural_completion.py",
+      "original_sha256": "9212bb76402313523248750eab9288170af59945288a6e8d3cb7683938d2c479",
+      "public": "src/born_ladder/reproduction/census_writers/structural_completion.py",
+      "classification": {
+        "summary": "extract unchanged scientific definitions; remove private freeze/ledger/launch I/O",
+        "unchanged_definitions": [
+          "Quad",
+          "add",
+          "certify_G",
+          "dump",
+          "mm",
+          "scale",
+          "sub",
+          "trace"
+        ],
+        "reused_definitions": [],
+        "adapted_definitions": [],
+        "removed_process_definitions": [
+          "main"
+        ]
+      }
+    },
+    {
+      "original": "CENSUS/structural.py",
+      "original_sha256": "a05834319fc4c775e1556c5364fecdc5565a9a20cb4a26162d2bbe2005778005",
+      "public": "src/born_ladder/reproduction/census_writers/structural.py",
+      "classification": {
+        "summary": "extract unchanged scientific definitions; remove private freeze/ledger/launch I/O",
+        "unchanged_definitions": [
+          "diffs",
+          "native_step",
+          "old_view",
+          "point_search"
+        ],
+        "reused_definitions": [],
+        "adapted_definitions": [],
+        "removed_process_definitions": [
+          "FormulaView",
+          "context_worker",
+          "instrument",
+          "main"
+        ]
+      }
+    },
+    {
+      "original": "src/born_ladder/certificates.py",
+      "original_sha256": "0710f4ba6985cc1f855272bf5a4c22aeef31233a8d63b8317d9189caa11bce2f",
+      "public": "src/born_ladder/reproduction/census_writers/certificates.py",
+      "classification": {
+        "summary": "existing R1 scientific extraction; public specification loader/import packaging only",
+        "unchanged_definitions": [
+          "_require",
+          "construct_context",
+          "diffs",
+          "native_step",
+          "old_view",
+          "point_search",
+          "registered_correspondence"
+        ],
+        "reused_definitions": [],
+        "adapted_definitions": [
+          {
+            "definition": "FormulaView",
+            "public_module": "src/born_ladder/reproduction/census_writers/certificates.py",
+            "classification": "explicit I/O/evidence admission or packaging adaptation; see local recovery report"
+          }
+        ],
+        "removed_process_definitions": []
+      }
+    },
+    {
+      "original": "scripts/rebuild1/provenance.py",
+      "original_sha256": "1703bc02f98978d617dffb4716c67dc8a90ef9fe47fa69cc222445e2bbe1064e",
+      "public": "src/born_ladder/snapshot/provenance.py",
+      "classification": {
+        "summary": "unchanged explicit artifact identity class/validators; Git/environment launch measurement omitted",
+        "unchanged_definitions": [
+          "ProvenanceFiles",
+          "_measured_file",
+          "_require_sha256",
+          "file_sha256",
+          "validate_provenance"
+        ],
+        "reused_definitions": [],
+        "adapted_definitions": [],
+        "removed_process_definitions": [
+          "BlockedIdentity",
+          "_dirty_tree_paths",
+          "_first_line",
+          "_measure_static",
+          "_os_identity",
+          "_read_os_release",
+          "_run_identity",
+          "build_provenance",
+          "measure_reference_environment"
+        ]
+      }
+    },
+    {
+      "original": "CENSUS/freeze.py",
+      "original_sha256": "6832f03de03a4978df63e2175bf1653a6f6e1d49663c368520741c72e924132b",
+      "public": "src/born_ladder/reproduction/census_writers/freeze.py",
+      "classification": {
+        "summary": "explicit inventory/output I/O; same eligibility and complete-key SHA ordering; ledger/protected-tree freeze omitted",
+        "unchanged_definitions": [],
+        "reused_definitions": [],
+        "adapted_definitions": [],
+        "removed_process_definitions": [
+          "main"
+        ]
+      }
+    },
+    {
+      "original": "CENSUS/attach.py",
+      "original_sha256": "f98e96aa51bdda4ae4d687cc1c595cb75354fc27b96f3b8f22692d8478687dde",
+      "public": "src/born_ladder/reproduction/census_writers/attachments.py",
+      "classification": {
+        "summary": "packaging alias to reviewed public R1 attachment/summary/independent bodies",
+        "unchanged_definitions": [],
+        "reused_definitions": [],
+        "adapted_definitions": [],
+        "removed_process_definitions": [
+          "gate",
+          "join",
+          "main",
+          "summarise"
+        ]
+      }
+    },
+    {
+      "original": "CB2/build_inventory.py",
+      "original_sha256": "6de11c2a3445b4e76420ad84875b01f2ff6ef69845c2e6605572cd682801e33b",
+      "public": "src/born_ladder/reproduction/census_writers/build_inventory.py",
+      "classification": {
+        "summary": "explicit input/output paths; remove review/pre-run receipts; unchanged lexical join/selection algorithm; separate checked storage correspondence; P3a adds checked logical-to-execution path resolution and binds exponent-one P2a full captures (I/O only)",
+        "unchanged_definitions": [],
+        "reused_definitions": [],
+        "adapted_definitions": [],
+        "removed_process_definitions": [
+          "out",
+          "rel",
+          "verify"
+        ]
+      }
+    },
+    {
+      "classification": {
+        "adapted_definitions": [
+          "witness"
+        ],
+        "removed_process_definitions": [
+          "load_L",
+          "main"
+        ],
+        "reused_definitions": [],
+        "summary": "P3a: original symbolic witness, explicit exact metric input replaces fixture/scratch loader; used only for original implementation diagnostics, not completion gates; this is a witness-path recovery, not a claim that the entire original module is reproduced",
+        "unchanged_definitions": [
+          "clean",
+          "eq"
+        ],
+        "omitted_other_scientific_definitions": [
+          "barycenter",
+          "contextual_branch",
+          "controls",
+          "dense_branch",
+          "validate_density"
+        ]
+      },
+      "original": "CB/algebraic.py",
+      "original_sha256": "0f9817eaa8287e0d26c25105a8c6d06ef450ca71c333a65e6202be77f412f3b1",
+      "public": "src/born_ladder/reproduction/census_writers/legacy_trine.py"
+    }
+  ]
+}

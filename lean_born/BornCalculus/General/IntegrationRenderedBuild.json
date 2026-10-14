@@ -1,0 +1,32 @@
+{
+  "batches": 39,
+  "copied_missing_proof_modules": [
+    "BornCalculus/General/Audit.lean",
+    "BornCalculus/General/Basis.lean",
+    "BornCalculus/General/Corollaries.lean",
+    "BornCalculus/General/Determinant.lean",
+    "BornCalculus/General/Encoder.lean",
+    "BornCalculus/General/Frame.lean",
+    "BornCalculus/General/Image.lean",
+    "BornCalculus/General/Inherited.lean",
+    "BornCalculus/General/NonDensity.lean",
+    "BornCalculus/General/OrthImage.lean",
+    "BornCalculus/General/Records.lean",
+    "BornCalculus/General/Statistics.lean",
+    "BornCalculus/General/Trace.lean",
+    "BornCalculus/Boundaries/All.lean",
+    "BornCalculus/Boundaries/Channels.lean",
+    "BornCalculus/Boundaries/Encoder.lean",
+    "BornCalculus/Boundaries/ExistingAudit.lean",
+    "BornCalculus/Boundaries/Lift.lean",
+    "BornCalculus/Boundaries/SmallTolerance.lean"
+  ],
+  "max_lean_processes": 2,
+  "max_processes": 3,
+  "modules": 74,
+  "parallelism_limit": 2,
+  "peak_tree_rss_bytes": 18087309312,
+  "sample_interval_seconds": 0.05,
+  "status": "PASS",
+  "wall_seconds": 1366.578
+}

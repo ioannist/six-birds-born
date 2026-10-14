@@ -1,0 +1,282 @@
+{
+  "metadata": {
+    "access_right": "open",
+    "creators": [
+      {
+        "affiliation": "Automorph Inc.",
+        "name": "Tsiokos, Ioannis",
+        "orcid": "0009-0009-7659-5964"
+      }
+    ],
+    "custom": {
+      "code:codeRepository": "https://github.com/ioannist/six-birds-born",
+      "code:programmingLanguage": [
+        {
+          "id": "lean",
+          "title": {
+            "en": "Lean"
+          }
+        },
+        {
+          "id": "python",
+          "title": {
+            "en": "Python"
+          }
+        },
+        {
+          "id": "tex",
+          "title": {
+            "en": "TeX"
+          }
+        }
+      ]
+    },
+    "description": "<p>Can a Born-type probability structure arise on a substrate that is only a finite stochastic process? A stochastic program built from six primitive operations supplies the final matrix; a specified layered architecture constructs, from its outputs, a record layer, a two-dimensional real carrier and a quadratic law, and supports an adopted Born calculus. The six operations alone do not give this structure, and the square-root encoding and the projection are construction choices. Our main contribution is the architecture: a directed acyclic graph whose arrows are each marked as derived, chosen, adopted or standard mathematics, with the kind of check behind each.</p>\n<p>On registered populations, a snapshot predictor whose rank-two case is the law predicts the substrate's sampled label frequencies with lower aggregate loss than named competitors, and, in the construction's canonical basis, its cross terms carry its advantage over the diagonal rule. In each of 2,122 census cases the encoded state is not a function of the anonymous initial record description: two point preparations sharing all three labels differ by at least 1/25 in the trace probability of raw label 0, a statement about exact data, not operational access. This bound is retrospective: the registered bound 3/20 fails in 117 cases of the full census. On the original worked case the updates by the final matrix and its square do not lift to the carrier.</p>\n<p>The measurement rules are adopted: Lüders tests, all densities and effects, and additivity; on them the trace rule is unique, and finite ontic models with additive responses, and measurable preparation-noncontextual representations preserving the specified mixtures, are excluded. We do not claim that the substrate produces the measurement rule, that the layer forms in the run, or a derivation of quantum theory.</p>\n<p>The source code of the stochastic program, the constructions, the reproduction pipeline, the verification commands and the Lean 4 proofs are available at <a href=\"https://github.com/ioannist/six-birds-born\">https://github.com/ioannist/six-birds-born</a> (release v1.0). AI systems were used throughout this work, as the manuscript describes; the author directed the research, made the scientific decisions and is responsible for the content.</p>",
+    "imprint_publisher": "Zenodo",
+    "keywords": [
+      "Born calculus",
+      "pre-physical stochastic substrate",
+      "layered architecture",
+      "quantum foundations",
+      "Born rule",
+      "emergence calculus"
+    ],
+    "language": "eng",
+    "license": "cc-by-4.0",
+    "prereserve_doi": {
+      "doi": "10.5281/zenodo.23261473",
+      "recid": 23261473
+    },
+    "publication_date": "2026-10-14",
+    "publication_type": "preprint",
+    "related_identifiers": [
+      {
+        "identifier": "10.31389/pop.186",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "arXiv:2608.04354",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.1103/PhysRevA.75.032304",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1103/RevModPhys.38.447",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1088/0305-4470/28/12/007",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1103/PhysRevLett.72.3439",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1214/aoms/1177706444",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1007/978-3-662-13844-1",
+        "relation": "cites",
+        "resource_type": "publication-book"
+      },
+      {
+        "identifier": "10.1007/978-3-540-49239-9",
+        "relation": "cites",
+        "resource_type": "publication-book"
+      },
+      {
+        "identifier": "10.1103/PhysRevLett.91.120403",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.22331/q-2023-09-25-1119",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1023/B:FOOP.0000019581.00318.a5",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1007/BF01647093",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1007/BF02283036",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.22331/q-2017-07-14-15",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.22331/q-2022-06-07-732",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1512/iumj.1957.6.56050",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1038/ncomms1761",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1007/s10701-011-9616-6",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1007/s10701-009-9347-0",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1007/978-88-7642-378-9",
+        "relation": "cites",
+        "resource_type": "publication-book"
+      },
+      {
+        "identifier": "10.1512/iumj.1968.17.17004",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1007/3-540-12732-1",
+        "relation": "cites",
+        "resource_type": "publication-book"
+      },
+      {
+        "identifier": "10.1002/andp.19504430510",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1002/andp.20065180904",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1038/s41467-019-09348-x",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1145/3372885.3373824",
+        "relation": "cites",
+        "resource_type": "publication-conferencepaper"
+      },
+      {
+        "identifier": "arXiv:2510.08672",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.1007/978-3-030-79876-5_37",
+        "relation": "cites",
+        "resource_type": "publication-conferencepaper"
+      },
+      {
+        "identifier": "10.1103/PhysRev.150.1079",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1038/nphys2309",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1038/s41586-021-04160-4",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1103/PRXQuantum.2.010331",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.22331/q-2025-10-13-1880",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1103/PhysRevA.107.062203",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1103/PhysRevA.71.052108",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1103/PhysRevA.75.032110",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.48550/arXiv.2602.00134",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.5281/zenodo.23120465",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.1016/j.aop.2009.12.006",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1016/j.aop.2010.03.010",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1103/PhysRevD.23.357",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1088/1751-8121/aaf93d",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.22331/q-2021-11-25-588",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "arXiv:2608.01317",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      }
+    ],
+    "title": "An Audited Born Calculus on a Pre-Physical Stochastic Substrate",
+    "upload_type": "publication"
+  }
+}

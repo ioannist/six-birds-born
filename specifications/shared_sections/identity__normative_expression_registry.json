@@ -1,0 +1,2212 @@
+{
+  "L_full": {
+    "kind": "variable",
+    "name": "p_s"
+  },
+  "L_uniform": {
+    "arguments": [
+      {
+        "kind": "literal",
+        "value": 1
+      },
+      {
+        "kind": "variable",
+        "name": "m"
+      }
+    ],
+    "kind": "operator",
+    "operator": "divide"
+  },
+  "adverse_loss": {
+    "arguments": [
+      {
+        "kind": "variable",
+        "name": "D_k"
+      }
+    ],
+    "kind": "operator",
+    "operator": "negate"
+  },
+  "bca_acceleration": {
+    "arguments": [
+      {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "kind": "variable",
+                    "name": "jackknife_mean"
+                  },
+                  {
+                    "kind": "variable",
+                    "name": "jackknife_i"
+                  }
+                ],
+                "kind": "operator",
+                "operator": "subtract"
+              },
+              {
+                "kind": "literal",
+                "value": 3
+              }
+            ],
+            "kind": "operator",
+            "operator": "power"
+          }
+        ],
+        "kind": "operator",
+        "operator": "sum_over_i"
+      },
+      {
+        "arguments": [
+          {
+            "kind": "literal",
+            "value": 6
+          },
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "kind": "variable",
+                            "name": "jackknife_mean"
+                          },
+                          {
+                            "kind": "variable",
+                            "name": "jackknife_i"
+                          }
+                        ],
+                        "kind": "operator",
+                        "operator": "subtract"
+                      },
+                      {
+                        "kind": "literal",
+                        "value": 2
+                      }
+                    ],
+                    "kind": "operator",
+                    "operator": "power"
+                  }
+                ],
+                "kind": "operator",
+                "operator": "sum_over_i"
+              },
+              {
+                "kind": "literal",
+                "value": 1.5
+              }
+            ],
+            "kind": "operator",
+            "operator": "power"
+          }
+        ],
+        "kind": "operator",
+        "operator": "multiply"
+      }
+    ],
+    "kind": "operator",
+    "operator": "divide"
+  },
+  "bca_adjusted_probability": {
+    "arguments": [
+      {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "z0"
+          },
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "kind": "variable",
+                    "name": "z0"
+                  },
+                  {
+                    "kind": "variable",
+                    "name": "z_alpha"
+                  }
+                ],
+                "kind": "operator",
+                "operator": "add"
+              },
+              {
+                "arguments": [
+                  {
+                    "kind": "literal",
+                    "value": 1
+                  },
+                  {
+                    "arguments": [
+                      {
+                        "kind": "variable",
+                        "name": "acceleration"
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "kind": "variable",
+                            "name": "z0"
+                          },
+                          {
+                            "kind": "variable",
+                            "name": "z_alpha"
+                          }
+                        ],
+                        "kind": "operator",
+                        "operator": "add"
+                      }
+                    ],
+                    "kind": "operator",
+                    "operator": "multiply"
+                  }
+                ],
+                "kind": "operator",
+                "operator": "subtract"
+              }
+            ],
+            "kind": "operator",
+            "operator": "divide"
+          }
+        ],
+        "kind": "operator",
+        "operator": "add"
+      }
+    ],
+    "function": "normal_cdf",
+    "kind": "call"
+  },
+  "bca_lower_normal_order": {
+    "arguments": [
+      {
+        "kind": "variable",
+        "name": "alpha"
+      },
+      {
+        "kind": "variable",
+        "name": "g"
+      }
+    ],
+    "kind": "operator",
+    "operator": "divide"
+  },
+  "bca_upper_normal_order": {
+    "arguments": [
+      {
+        "kind": "literal",
+        "value": 1
+      },
+      {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "alpha"
+          },
+          {
+            "kind": "variable",
+            "name": "g"
+          }
+        ],
+        "kind": "operator",
+        "operator": "divide"
+      }
+    ],
+    "kind": "operator",
+    "operator": "subtract"
+  },
+  "box_muller_first": {
+    "arguments": [
+      {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "kind": "literal",
+                "value": -2
+              },
+              {
+                "arguments": [
+                  {
+                    "kind": "variable",
+                    "name": "u1"
+                  }
+                ],
+                "function": "ln",
+                "kind": "call"
+              }
+            ],
+            "kind": "operator",
+            "operator": "multiply"
+          }
+        ],
+        "function": "sqrt",
+        "kind": "call"
+      },
+      {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "kind": "literal",
+                "value": 2
+              },
+              {
+                "kind": "variable",
+                "name": "pi"
+              },
+              {
+                "kind": "variable",
+                "name": "u2"
+              }
+            ],
+            "kind": "operator",
+            "operator": "multiply"
+          }
+        ],
+        "function": "cos",
+        "kind": "call"
+      }
+    ],
+    "kind": "operator",
+    "operator": "multiply"
+  },
+  "box_muller_second": {
+    "arguments": [
+      {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "kind": "literal",
+                "value": -2
+              },
+              {
+                "arguments": [
+                  {
+                    "kind": "variable",
+                    "name": "u1"
+                  }
+                ],
+                "function": "ln",
+                "kind": "call"
+              }
+            ],
+            "kind": "operator",
+            "operator": "multiply"
+          }
+        ],
+        "function": "sqrt",
+        "kind": "call"
+      },
+      {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "kind": "literal",
+                "value": 2
+              },
+              {
+                "kind": "variable",
+                "name": "pi"
+              },
+              {
+                "kind": "variable",
+                "name": "u2"
+              }
+            ],
+            "kind": "operator",
+            "operator": "multiply"
+          }
+        ],
+        "function": "sin",
+        "kind": "call"
+      }
+    ],
+    "kind": "operator",
+    "operator": "multiply"
+  },
+  "brier": {
+    "arguments": [
+      {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "kind": "variable",
+                    "name": "M_k"
+                  },
+                  {
+                    "kind": "variable",
+                    "name": "q"
+                  }
+                ],
+                "function": "mapped_probability",
+                "kind": "call"
+              },
+              {
+                "kind": "variable",
+                "name": "y_k"
+              }
+            ],
+            "kind": "operator",
+            "operator": "subtract"
+          },
+          {
+            "kind": "literal",
+            "value": 2
+          }
+        ],
+        "kind": "operator",
+        "operator": "power"
+      }
+    ],
+    "kind": "operator",
+    "operator": "sum"
+  },
+  "clipped_linear": {
+    "arguments": [
+      {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "P_V"
+              },
+              {
+                "kind": "variable",
+                "name": "p"
+              }
+            ],
+            "kind": "operator",
+            "operator": "matrix_multiply"
+          },
+          {
+            "kind": "literal",
+            "value": 0
+          }
+        ],
+        "function": "componentwise_max",
+        "kind": "call"
+      }
+    ],
+    "function": "normalize",
+    "kind": "call"
+  },
+  "d_k": {
+    "arguments": [
+      {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "C"
+              },
+              {
+                "kind": "variable",
+                "name": "p"
+              },
+              {
+                "kind": "variable",
+                "name": "V"
+              }
+            ],
+            "function": "competitor",
+            "kind": "call"
+          }
+        ],
+        "function": "loss_k",
+        "kind": "call"
+      },
+      {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "L"
+              },
+              {
+                "kind": "variable",
+                "name": "p"
+              },
+              {
+                "kind": "variable",
+                "name": "V"
+              }
+            ],
+            "function": "law",
+            "kind": "call"
+          }
+        ],
+        "function": "loss_k",
+        "kind": "call"
+      }
+    ],
+    "kind": "operator",
+    "operator": "subtract"
+  },
+  "delta_1_k": {
+    "arguments": [
+      {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "q_full"
+          }
+        ],
+        "function": "loss_k",
+        "kind": "call"
+      },
+      {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "p_full"
+          }
+        ],
+        "function": "loss_k",
+        "kind": "call"
+      }
+    ],
+    "kind": "operator",
+    "operator": "subtract"
+  },
+  "e_k": {
+    "arguments": [
+      {
+        "kind": "variable",
+        "name": "D_k"
+      },
+      {
+        "arguments": [
+          {
+            "kind": "literal",
+            "value": 1
+          },
+          {
+            "kind": "literal",
+            "value": 24
+          }
+        ],
+        "kind": "operator",
+        "operator": "divide"
+      }
+    ],
+    "kind": "operator",
+    "operator": "add"
+  },
+  "g2b_conditioning_failure": {
+    "kind": "comparison",
+    "left": {
+      "kind": "variable",
+      "name": "conditioning_mass"
+    },
+    "operator": "<=",
+    "return_type": "boolean",
+    "right": {
+      "kind": "literal",
+      "value": 1e-15
+    }
+  },
+  "g2b_q1_conditioned": {
+    "arguments": [
+      {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "q1_s"
+          },
+          {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "s_in_A"
+              }
+            ],
+            "function": "indicator",
+            "kind": "call"
+          }
+        ],
+        "kind": "operator",
+        "operator": "multiply"
+      },
+      {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "q1_t"
+              },
+              {
+                "arguments": [
+                  {
+                    "kind": "variable",
+                    "name": "t_in_A"
+                  }
+                ],
+                "function": "indicator",
+                "kind": "call"
+              }
+            ],
+            "kind": "operator",
+            "operator": "multiply"
+          }
+        ],
+        "kind": "operator",
+        "operator": "sum_over_t"
+      }
+    ],
+    "kind": "operator",
+    "operator": "divide"
+  },
+  "g2b_q2_conditioned": {
+    "arguments": [
+      {
+        "kind": "variable",
+        "name": "q1_A"
+      },
+      {
+        "kind": "variable",
+        "name": "K2"
+      }
+    ],
+    "kind": "operator",
+    "operator": "matrix_multiply"
+  },
+  "g2c_coefficient": {
+    "arguments": [
+      {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "p"
+          }
+        ],
+        "function": "sqrt",
+        "kind": "call"
+      },
+      {
+        "kind": "variable",
+        "name": "v_j"
+      }
+    ],
+    "function": "inner_product",
+    "kind": "call"
+  },
+  "g2c_d": {
+    "arguments": [
+      {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "q_diag"
+          }
+        ],
+        "function": "dTV",
+        "kind": "call"
+      },
+      {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "q_full"
+          }
+        ],
+        "function": "dTV",
+        "kind": "call"
+      }
+    ],
+    "kind": "operator",
+    "operator": "subtract"
+  },
+  "g2c_nondegenerate": {
+    "kind": "comparison",
+    "left": {
+      "arguments": [
+        {
+          "kind": "comparison",
+          "left": {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "a_j"
+              }
+            ],
+            "function": "absolute",
+            "kind": "call"
+          },
+          "operator": ">",
+          "return_type": "boolean",
+          "right": {
+            "kind": "literal",
+            "value": 1e-09
+          }
+        }
+      ],
+      "function": "count",
+      "kind": "call"
+    },
+    "operator": ">=",
+    "return_type": "boolean",
+    "right": {
+      "kind": "literal",
+      "value": 2
+    }
+  },
+  "g2c_tie": {
+    "kind": "comparison",
+    "left": {
+      "arguments": [
+        {
+          "kind": "variable",
+          "name": "D_unit"
+        }
+      ],
+      "function": "absolute",
+      "kind": "call"
+    },
+    "operator": "<=",
+    "return_type": "boolean",
+    "right": {
+      "kind": "literal",
+      "value": 1e-12
+    }
+  },
+  "g2s_a_k": {
+    "arguments": [
+      {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "u_1_through_u_k"
+              }
+            ],
+            "function": "column_stack",
+            "kind": "call"
+          }
+        ],
+        "function": "transpose",
+        "kind": "call"
+      },
+      {
+        "kind": "variable",
+        "name": "W_0"
+      }
+    ],
+    "kind": "operator",
+    "operator": "matrix_multiply"
+  },
+  "g2s_candidate_rank": {
+    "arguments": [
+      {
+        "kind": "literal",
+        "value": 1
+      },
+      {
+        "kind": "variable",
+        "name": "k"
+      },
+      {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "d"
+          },
+          {
+            "kind": "variable",
+            "name": "k"
+          }
+        ],
+        "kind": "operator",
+        "operator": "subtract"
+      }
+    ],
+    "kind": "operator",
+    "operator": "add"
+  },
+  "g2s_dimension_w": {
+    "kind": "comparison",
+    "left": {
+      "arguments": [
+        {
+          "kind": "variable",
+          "name": "W_k"
+        }
+      ],
+      "function": "dimension",
+      "kind": "call"
+    },
+    "operator": "==",
+    "return_type": "boolean",
+    "right": {
+      "arguments": [
+        {
+          "kind": "variable",
+          "name": "d"
+        },
+        {
+          "kind": "variable",
+          "name": "k"
+        }
+      ],
+      "kind": "operator",
+      "operator": "subtract"
+    }
+  },
+  "g2s_dose_endpoint_ledger_size": {
+    "arguments": [
+      {
+        "kind": "literal",
+        "value": 2
+      },
+      {
+        "kind": "variable",
+        "name": "m_dose"
+      }
+    ],
+    "kind": "operator",
+    "operator": "multiply"
+  },
+  "g2s_dose_k": {
+    "arguments": [
+      {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "rho"
+          },
+          {
+            "kind": "variable",
+            "name": "d"
+          }
+        ],
+        "kind": "operator",
+        "operator": "multiply"
+      }
+    ],
+    "function": "round_half_up",
+    "kind": "call"
+  },
+  "g2s_nesting_residual": {
+    "kind": "comparison",
+    "left": {
+      "arguments": [
+        {
+          "kind": "variable",
+          "name": "W_k_plus_1"
+        },
+        {
+          "kind": "variable",
+          "name": "W_k"
+        }
+      ],
+      "function": "projection_residual",
+      "kind": "call"
+    },
+    "operator": "<=",
+    "return_type": "boolean",
+    "right": {
+      "kind": "literal",
+      "value": 1e-10
+    }
+  },
+  "g2s_nonconstant_dimension": {
+    "arguments": [
+      {
+        "kind": "variable",
+        "name": "r"
+      },
+      {
+        "kind": "literal",
+        "value": 1
+      }
+    ],
+    "kind": "operator",
+    "operator": "subtract"
+  },
+  "g2s_orthogonality_residual": {
+    "kind": "comparison",
+    "left": {
+      "arguments": [
+        {
+          "arguments": [
+            {
+              "arguments": [
+                {
+                  "arguments": [
+                    {
+                      "kind": "variable",
+                      "name": "u_1_through_u_k"
+                    }
+                  ],
+                  "function": "column_stack",
+                  "kind": "call"
+                }
+              ],
+              "function": "transpose",
+              "kind": "call"
+            },
+            {
+              "kind": "variable",
+              "name": "W_k"
+            }
+          ],
+          "kind": "operator",
+          "operator": "matrix_multiply"
+        }
+      ],
+      "function": "max_absolute",
+      "kind": "call"
+    },
+    "operator": "<=",
+    "return_type": "boolean",
+    "right": {
+      "kind": "literal",
+      "value": 1e-10
+    }
+  },
+  "g2s_rank_a": {
+    "kind": "comparison",
+    "left": {
+      "arguments": [
+        {
+          "kind": "variable",
+          "name": "A_k"
+        }
+      ],
+      "function": "rank",
+      "kind": "call"
+    },
+    "operator": "==",
+    "return_type": "boolean",
+    "right": {
+      "kind": "variable",
+      "name": "k"
+    }
+  },
+  "g2s_rank_one": {
+    "arguments": [
+      {
+        "kind": "comparison",
+        "left": {
+          "kind": "variable",
+          "name": "r"
+        },
+        "operator": "==",
+        "return_type": "boolean",
+        "right": {
+          "kind": "literal",
+          "value": 1
+        }
+      },
+      {
+        "kind": "comparison",
+        "left": {
+          "kind": "variable",
+          "name": "d"
+        },
+        "operator": "==",
+        "return_type": "boolean",
+        "right": {
+          "kind": "literal",
+          "value": 0
+        }
+      }
+    ],
+    "kind": "boolean_operator",
+    "operator": "and",
+    "return_type": "boolean"
+  },
+  "g2v_mutated_donor": {
+    "arguments": [
+      {
+        "kind": "variable",
+        "name": "q_j"
+      },
+      {
+        "kind": "variable",
+        "name": "delta"
+      }
+    ],
+    "kind": "operator",
+    "operator": "subtract"
+  },
+  "g2v_mutated_recipient": {
+    "arguments": [
+      {
+        "kind": "variable",
+        "name": "q_i"
+      },
+      {
+        "kind": "variable",
+        "name": "delta"
+      }
+    ],
+    "kind": "operator",
+    "operator": "add"
+  },
+  "g2v_mutation_delta": {
+    "arguments": [
+      {
+        "kind": "literal",
+        "value": 1e-06
+      },
+      {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "q_j"
+          },
+          {
+            "kind": "literal",
+            "value": 2
+          }
+        ],
+        "kind": "operator",
+        "operator": "divide"
+      }
+    ],
+    "function": "min",
+    "kind": "call"
+  },
+  "g2v_selector_nontrivial": {
+    "arguments": [
+      {
+        "kind": "comparison",
+        "left": {
+          "arguments": [
+            {
+              "kind": "variable",
+              "name": "q_path_b"
+            }
+          ],
+          "function": "count_components",
+          "kind": "call"
+        },
+        "operator": ">=",
+        "return_type": "boolean",
+        "right": {
+          "kind": "literal",
+          "value": 2
+        }
+      },
+      {
+        "kind": "comparison",
+        "left": {
+          "arguments": [
+            {
+              "kind": "variable",
+              "name": "q_path_b"
+            }
+          ],
+          "function": "max",
+          "kind": "call"
+        },
+        "operator": ">",
+        "return_type": "boolean",
+        "right": {
+          "kind": "literal",
+          "value": 2e-12
+        }
+      }
+    ],
+    "kind": "boolean_operator",
+    "operator": "and",
+    "return_type": "boolean"
+  },
+  "g2x_h0": {
+    "kind": "comparison",
+    "left": {
+      "kind": "variable",
+      "name": "A_k"
+    },
+    "operator": ">=",
+    "return_type": "boolean",
+    "right": {
+      "arguments": [
+        {
+          "kind": "literal",
+          "value": 1
+        },
+        {
+          "kind": "literal",
+          "value": 24
+        }
+      ],
+      "kind": "operator",
+      "operator": "divide"
+    }
+  },
+  "g2x_h1": {
+    "kind": "comparison",
+    "left": {
+      "kind": "variable",
+      "name": "A_k"
+    },
+    "operator": "<",
+    "return_type": "boolean",
+    "right": {
+      "arguments": [
+        {
+          "kind": "literal",
+          "value": 1
+        },
+        {
+          "kind": "literal",
+          "value": 24
+        }
+      ],
+      "kind": "operator",
+      "operator": "divide"
+    }
+  },
+  "g2x_noninferiority_pass": {
+    "kind": "comparison",
+    "left": {
+      "kind": "variable",
+      "name": "E_lower[kind]"
+    },
+    "operator": ">=",
+    "return_type": "boolean",
+    "right": {
+      "kind": "literal",
+      "value": 0
+    }
+  },
+  "g2x_reversal": {
+    "kind": "comparison",
+    "left": {
+      "kind": "variable",
+      "name": "E_upper[kind]"
+    },
+    "operator": "<",
+    "return_type": "boolean",
+    "right": {
+      "kind": "literal",
+      "value": 0
+    }
+  },
+  "h1_orthogonal_projector": {
+    "arguments": [
+      {
+        "kind": "variable",
+        "name": "I"
+      },
+      {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "u"
+          },
+          {
+            "kind": "variable",
+            "name": "u"
+          }
+        ],
+        "kind": "operator",
+        "operator": "outer_product"
+      }
+    ],
+    "kind": "operator",
+    "operator": "subtract"
+  },
+  "h1_p_value": {
+    "arguments": [
+      {
+        "arguments": [
+          {
+            "kind": "literal",
+            "value": 1
+          },
+          {
+            "arguments": [
+              {
+                "kind": "comparison",
+                "left": {
+                  "kind": "variable",
+                  "name": "null_advantage"
+                },
+                "operator": ">=",
+                "return_type": "boolean",
+                "right": {
+                  "kind": "variable",
+                  "name": "observed_advantage"
+                }
+              }
+            ],
+            "function": "count",
+            "kind": "call"
+          }
+        ],
+        "kind": "operator",
+        "operator": "add"
+      },
+      {
+        "kind": "literal",
+        "value": 1000
+      }
+    ],
+    "kind": "operator",
+    "operator": "divide"
+  },
+  "h2_accept_word": {
+    "kind": "comparison",
+    "left": {
+      "kind": "variable",
+      "name": "word"
+    },
+    "operator": "<",
+    "return_type": "boolean",
+    "right": {
+      "kind": "variable",
+      "name": "acceptance_threshold"
+    }
+  },
+  "h2_acceptance_threshold": {
+    "arguments": [
+      {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "kind": "literal",
+                    "value": 2
+                  },
+                  {
+                    "kind": "literal",
+                    "value": 64
+                  }
+                ],
+                "kind": "operator",
+                "operator": "power"
+              },
+              {
+                "kind": "variable",
+                "name": "b"
+              }
+            ],
+            "kind": "operator",
+            "operator": "divide"
+          }
+        ],
+        "function": "floor",
+        "kind": "call"
+      },
+      {
+        "kind": "variable",
+        "name": "b"
+      }
+    ],
+    "kind": "operator",
+    "operator": "multiply"
+  },
+  "h2_bound": {
+    "arguments": [
+      {
+        "kind": "variable",
+        "name": "i"
+      },
+      {
+        "kind": "literal",
+        "value": 1
+      }
+    ],
+    "kind": "operator",
+    "operator": "add"
+  },
+  "h2_selected_index": {
+    "arguments": [
+      {
+        "kind": "variable",
+        "name": "word"
+      },
+      {
+        "kind": "variable",
+        "name": "b"
+      }
+    ],
+    "kind": "operator",
+    "operator": "modulo"
+  },
+  "kind_cell_id": {
+    "arguments": [
+      {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "unit_id"
+          },
+          {
+            "kind": "variable",
+            "name": "kind_utf8"
+          }
+        ],
+        "kind": "operator",
+        "operator": "concat"
+      }
+    ],
+    "function": "sha256",
+    "kind": "call"
+  },
+  "loss_k": {
+    "arguments": [
+      {
+        "kind": "literal",
+        "value": 0.5
+      },
+      {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "kind": "variable",
+                    "name": "y_k_o"
+                  },
+                  {
+                    "arguments": [
+                      {
+                        "kind": "variable",
+                        "name": "M_k"
+                      },
+                      {
+                        "kind": "variable",
+                        "name": "q"
+                      },
+                      {
+                        "kind": "variable",
+                        "name": "o"
+                      }
+                    ],
+                    "function": "mapped_probability",
+                    "kind": "call"
+                  }
+                ],
+                "kind": "operator",
+                "operator": "subtract"
+              }
+            ],
+            "function": "absolute",
+            "kind": "call"
+          }
+        ],
+        "kind": "operator",
+        "operator": "sum_over_o"
+      }
+    ],
+    "kind": "operator",
+    "operator": "multiply"
+  },
+  "m_k": {
+    "arguments": [
+      {
+        "kind": "variable",
+        "name": "outcome_o"
+      },
+      {
+        "kind": "variable",
+        "name": "state_s"
+      }
+    ],
+    "function": "conditional_probability",
+    "kind": "call"
+  },
+  "q_diag": {
+    "arguments": [
+      {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "kind": "variable",
+                            "name": "p"
+                          }
+                        ],
+                        "function": "sqrt",
+                        "kind": "call"
+                      },
+                      {
+                        "kind": "variable",
+                        "name": "v_j"
+                      }
+                    ],
+                    "function": "inner_product",
+                    "kind": "call"
+                  },
+                  {
+                    "kind": "literal",
+                    "value": 2
+                  }
+                ],
+                "kind": "operator",
+                "operator": "power"
+              },
+              {
+                "arguments": [
+                  {
+                    "kind": "variable",
+                    "name": "v_j_s"
+                  },
+                  {
+                    "kind": "literal",
+                    "value": 2
+                  }
+                ],
+                "kind": "operator",
+                "operator": "power"
+              }
+            ],
+            "kind": "operator",
+            "operator": "multiply"
+          }
+        ],
+        "kind": "operator",
+        "operator": "sum_over_j"
+      }
+    ],
+    "function": "normalize",
+    "kind": "call"
+  },
+  "q_full": {
+    "arguments": [
+      {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "r_s"
+          },
+          {
+            "kind": "literal",
+            "value": 2
+          }
+        ],
+        "kind": "operator",
+        "operator": "power"
+      },
+      {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "r_t"
+              },
+              {
+                "kind": "literal",
+                "value": 2
+              }
+            ],
+            "kind": "operator",
+            "operator": "power"
+          }
+        ],
+        "kind": "operator",
+        "operator": "sum_over_t"
+      }
+    ],
+    "kind": "operator",
+    "operator": "divide"
+  },
+  "q_lambda": {
+    "arguments": [
+      {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "r_s"
+              },
+              {
+                "kind": "literal",
+                "value": 2
+              }
+            ],
+            "kind": "operator",
+            "operator": "power"
+          },
+          {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "lambda"
+              },
+              {
+                "arguments": [
+                  {
+                    "arguments": [
+                      {
+                        "kind": "variable",
+                        "name": "r"
+                      }
+                    ],
+                    "function": "l2_norm",
+                    "kind": "call"
+                  },
+                  {
+                    "kind": "literal",
+                    "value": 2
+                  }
+                ],
+                "kind": "operator",
+                "operator": "power"
+              },
+              {
+                "kind": "variable",
+                "name": "h_s"
+              }
+            ],
+            "kind": "operator",
+            "operator": "multiply"
+          }
+        ],
+        "kind": "operator",
+        "operator": "add"
+      }
+    ],
+    "function": "normalize",
+    "kind": "call"
+  },
+  "r": {
+    "arguments": [
+      {
+        "kind": "variable",
+        "name": "P_V"
+      },
+      {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "p"
+          }
+        ],
+        "function": "sqrt",
+        "kind": "call"
+      }
+    ],
+    "kind": "operator",
+    "operator": "matrix_multiply"
+  },
+  "rng_expand": {
+    "arguments": [
+      {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "master_key"
+          },
+          {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "counter"
+              }
+            ],
+            "function": "uint64_be",
+            "kind": "call"
+          }
+        ],
+        "kind": "operator",
+        "operator": "concat"
+      }
+    ],
+    "function": "sha256",
+    "kind": "call"
+  },
+  "rng_frame": {
+    "arguments": [
+      {
+        "kind": "variable",
+        "name": "type_tag"
+      },
+      {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "raw_bytes"
+              }
+            ],
+            "function": "raw_byte_length",
+            "kind": "call"
+          }
+        ],
+        "function": "uint64_be",
+        "kind": "call"
+      },
+      {
+        "kind": "variable",
+        "name": "raw_bytes"
+      }
+    ],
+    "kind": "operator",
+    "operator": "concat"
+  },
+  "rng_master_key": {
+    "arguments": [
+      {
+        "arguments": [
+          {
+            "kind": "literal",
+            "value": "RB1v2-RNG-v1"
+          },
+          {
+            "kind": "variable",
+            "name": "semantic_fields"
+          }
+        ],
+        "function": "concat_framed_fields",
+        "kind": "call"
+      }
+    ],
+    "function": "sha256",
+    "kind": "call"
+  },
+  "rng_uniform": {
+    "arguments": [
+      {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "word"
+          },
+          {
+            "kind": "literal",
+            "value": 0.5
+          }
+        ],
+        "kind": "operator",
+        "operator": "add"
+      },
+      {
+        "arguments": [
+          {
+            "kind": "literal",
+            "value": 2
+          },
+          {
+            "kind": "literal",
+            "value": 64
+          }
+        ],
+        "kind": "operator",
+        "operator": "power"
+      }
+    ],
+    "kind": "operator",
+    "operator": "divide"
+  },
+  "s_2_k": {
+    "arguments": [
+      {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "q_full"
+          }
+        ],
+        "function": "loss_k",
+        "kind": "call"
+      },
+      {
+        "arguments": [
+          {
+            "kind": "literal",
+            "value": 2
+          },
+          {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "p_full"
+              }
+            ],
+            "function": "loss_k",
+            "kind": "call"
+          }
+        ],
+        "kind": "operator",
+        "operator": "multiply"
+      }
+    ],
+    "kind": "operator",
+    "operator": "subtract"
+  },
+  "sensitivity_reversal": {
+    "kind": "comparison",
+    "left": {
+      "arguments": [
+        {
+          "kind": "variable",
+          "name": "theta_primary"
+        },
+        {
+          "kind": "variable",
+          "name": "theta_sensitivity"
+        }
+      ],
+      "kind": "operator",
+      "operator": "multiply"
+    },
+    "operator": "<",
+    "return_type": "boolean",
+    "right": {
+      "kind": "literal",
+      "value": 0
+    }
+  },
+  "serviceability_fail": {
+    "kind": "comparison",
+    "left": {
+      "kind": "variable",
+      "name": "S_2_lower[kind]"
+    },
+    "operator": ">",
+    "return_type": "boolean",
+    "right": {
+      "kind": "literal",
+      "value": 0
+    }
+  },
+  "serviceability_pass": {
+    "kind": "comparison",
+    "left": {
+      "kind": "variable",
+      "name": "S_2_upper[kind]"
+    },
+    "operator": "<=",
+    "return_type": "boolean",
+    "right": {
+      "kind": "literal",
+      "value": 0
+    }
+  },
+  "stable_unit_id": {
+    "arguments": [
+      {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "stable_unit_identity_fields"
+          }
+        ],
+        "function": "canonical_json",
+        "kind": "call"
+      }
+    ],
+    "function": "sha256",
+    "kind": "call"
+  },
+  "step_id_correspondence": {
+    "kind": "comparison",
+    "left": {
+      "kind": "variable",
+      "name": "step_id"
+    },
+    "operator": "==",
+    "return_type": "boolean",
+    "right": {
+      "arguments": [
+        {
+          "kind": "variable",
+          "name": "step"
+        }
+      ],
+      "function": "canonical_decimal",
+      "kind": "call"
+    }
+  },
+  "svd_census_descending": {
+    "arguments": [
+      {
+        "kind": "variable",
+        "name": "singular_values_all"
+      }
+    ],
+    "kind": "predicate",
+    "name": "nonincreasing_binary64_order",
+    "return_type": "boolean"
+  },
+  "svd_census_length": {
+    "kind": "comparison",
+    "left": {
+      "arguments": [
+        {
+          "kind": "variable",
+          "name": "singular_values_all"
+        }
+      ],
+      "function": "length",
+      "kind": "call"
+    },
+    "operator": "==",
+    "return_type": "boolean",
+    "right": {
+      "arguments": [
+        {
+          "kind": "variable",
+          "name": "m"
+        },
+        {
+          "kind": "variable",
+          "name": "n_cols_original"
+        }
+      ],
+      "function": "min",
+      "kind": "call"
+    }
+  },
+  "svd_census_nonnegative": {
+    "arguments": [
+      {
+        "kind": "variable",
+        "name": "singular_values_all"
+      }
+    ],
+    "kind": "predicate",
+    "name": "all_finite_nonnegative_binary64",
+    "return_type": "boolean"
+  },
+  "svd_cutoff": {
+    "arguments": [
+      {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "m"
+          },
+          {
+            "kind": "variable",
+            "name": "n_cols_original"
+          }
+        ],
+        "function": "max",
+        "kind": "call"
+      },
+      {
+        "kind": "variable",
+        "name": "eps_binary64"
+      },
+      {
+        "kind": "variable",
+        "name": "sigma_max"
+      }
+    ],
+    "kind": "operator",
+    "operator": "multiply"
+  },
+  "svd_effective_rank": {
+    "kind": "comparison",
+    "left": {
+      "kind": "variable",
+      "name": "r"
+    },
+    "operator": "==",
+    "return_type": "boolean",
+    "right": {
+      "arguments": [
+        {
+          "kind": "variable",
+          "name": "singular_values_all"
+        },
+        {
+          "kind": "variable",
+          "name": "svd_cutoff"
+        }
+      ],
+      "function": "count_strictly_greater",
+      "kind": "call"
+    }
+  },
+  "svd_retained_members": {
+    "kind": "comparison",
+    "left": {
+      "kind": "variable",
+      "name": "singular_values"
+    },
+    "operator": "==",
+    "return_type": "boolean",
+    "right": {
+      "arguments": [
+        {
+          "kind": "variable",
+          "name": "singular_values_all"
+        },
+        {
+          "kind": "variable",
+          "name": "svd_cutoff"
+        }
+      ],
+      "function": "filter_strictly_greater",
+      "kind": "call"
+    }
+  },
+  "svd_retained_nonnegative": {
+    "arguments": [
+      {
+        "kind": "variable",
+        "name": "singular_values"
+      }
+    ],
+    "kind": "predicate",
+    "name": "all_finite_nonnegative_binary64",
+    "return_type": "boolean"
+  },
+  "svd_retained_prefix": {
+    "kind": "comparison",
+    "left": {
+      "kind": "variable",
+      "name": "singular_values"
+    },
+    "operator": "==",
+    "return_type": "boolean",
+    "right": {
+      "arguments": [
+        {
+          "kind": "variable",
+          "name": "singular_values_all"
+        },
+        {
+          "kind": "variable",
+          "name": "r"
+        }
+      ],
+      "function": "prefix",
+      "kind": "call"
+    }
+  },
+  "svd_sigma_max": {
+    "kind": "comparison",
+    "left": {
+      "kind": "variable",
+      "name": "sigma_max"
+    },
+    "operator": "==",
+    "return_type": "boolean",
+    "right": {
+      "arguments": [
+        {
+          "kind": "variable",
+          "name": "singular_values_all"
+        }
+      ],
+      "function": "first",
+      "kind": "call"
+    }
+  },
+  "t1a_domain": {
+    "kind": "comparison",
+    "left": {
+      "kind": "variable",
+      "name": "t"
+    },
+    "operator": ">=",
+    "return_type": "boolean",
+    "right": {
+      "kind": "literal",
+      "value": 0
+    }
+  },
+  "t1a_nonnegative": {
+    "kind": "comparison",
+    "left": {
+      "kind": "variable",
+      "name": "psi_t"
+    },
+    "operator": ">=",
+    "return_type": "boolean",
+    "right": {
+      "kind": "variable",
+      "name": "psi_0"
+    }
+  },
+  "t1a_solution": {
+    "kind": "comparison",
+    "left": {
+      "kind": "variable",
+      "name": "psi_t"
+    },
+    "operator": "==",
+    "return_type": "boolean",
+    "right": {
+      "arguments": [
+        {
+          "kind": "variable",
+          "name": "t"
+        }
+      ],
+      "function": "sqrt",
+      "kind": "call"
+    }
+  },
+  "t1b_condition": {
+    "kind": "comparison",
+    "left": {
+      "arguments": [
+        {
+          "kind": "variable",
+          "name": "P_V"
+        },
+        {
+          "arguments": [
+            {
+              "kind": "variable",
+              "name": "p"
+            }
+          ],
+          "function": "sqrt",
+          "kind": "call"
+        }
+      ],
+      "kind": "operator",
+      "operator": "matrix_multiply"
+    },
+    "operator": "!=",
+    "return_type": "boolean",
+    "right": {
+      "kind": "literal",
+      "value": 0
+    }
+  },
+  "t1c_witness_p": {
+    "arguments": [
+      {
+        "arguments": [
+          {
+            "kind": "literal",
+            "value": 16
+          },
+          {
+            "kind": "literal",
+            "value": 4
+          },
+          {
+            "kind": "literal",
+            "value": 1
+          },
+          {
+            "kind": "literal",
+            "value": 64
+          }
+        ],
+        "function": "vector",
+        "kind": "call"
+      },
+      {
+        "kind": "literal",
+        "value": 85
+      }
+    ],
+    "kind": "operator",
+    "operator": "divide"
+  },
+  "t1c_witness_sqrt": {
+    "arguments": [
+      {
+        "arguments": [
+          {
+            "kind": "literal",
+            "value": 4
+          },
+          {
+            "kind": "literal",
+            "value": 2
+          },
+          {
+            "kind": "literal",
+            "value": 1
+          },
+          {
+            "kind": "literal",
+            "value": 8
+          }
+        ],
+        "function": "vector",
+        "kind": "call"
+      },
+      {
+        "arguments": [
+          {
+            "kind": "literal",
+            "value": 85
+          }
+        ],
+        "function": "sqrt",
+        "kind": "call"
+      }
+    ],
+    "kind": "operator",
+    "operator": "divide"
+  },
+  "t1di_dominance": {
+    "kind": "comparison",
+    "left": {
+      "arguments": [
+        {
+          "arguments": [
+            {
+              "kind": "variable",
+              "name": "u_k_s0"
+            },
+            {
+              "kind": "variable",
+              "name": "u_k_s1"
+            }
+          ],
+          "kind": "operator",
+          "operator": "multiply"
+        }
+      ],
+      "function": "absolute",
+      "kind": "call"
+    },
+    "operator": ">",
+    "return_type": "boolean",
+    "right": {
+      "arguments": [
+        {
+          "arguments": [
+            {
+              "arguments": [
+                {
+                  "kind": "variable",
+                  "name": "u_j_s0"
+                },
+                {
+                  "kind": "variable",
+                  "name": "u_j_s1"
+                }
+              ],
+              "kind": "operator",
+              "operator": "multiply"
+            }
+          ],
+          "function": "absolute",
+          "kind": "call"
+        }
+      ],
+      "kind": "operator",
+      "operator": "sum_over_j_not_k"
+    }
+  },
+  "t1di_mode_negative": {
+    "kind": "comparison",
+    "left": {
+      "arguments": [
+        {
+          "kind": "variable",
+          "name": "u_k_s0"
+        },
+        {
+          "kind": "variable",
+          "name": "u_k_s1"
+        }
+      ],
+      "kind": "operator",
+      "operator": "multiply"
+    },
+    "operator": "<",
+    "return_type": "boolean",
+    "right": {
+      "kind": "literal",
+      "value": 0
+    }
+  },
+  "t1di_projector_entry": {
+    "arguments": [
+      {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "u_j_s0"
+          },
+          {
+            "kind": "variable",
+            "name": "u_j_s1"
+          }
+        ],
+        "kind": "operator",
+        "operator": "multiply"
+      }
+    ],
+    "kind": "operator",
+    "operator": "sum_over_j"
+  },
+  "tau_eligibility": {
+    "kind": "comparison",
+    "left": {
+      "kind": "variable",
+      "name": "tau"
+    },
+    "operator": ">=",
+    "return_type": "boolean",
+    "right": {
+      "kind": "literal",
+      "value": 2
+    }
+  },
+  "tau_structural_exclusion": {
+    "kind": "comparison",
+    "left": {
+      "kind": "variable",
+      "name": "tau"
+    },
+    "operator": "==",
+    "return_type": "boolean",
+    "right": {
+      "kind": "literal",
+      "value": 1
+    }
+  },
+  "w_k": {
+    "arguments": [
+      {
+        "kind": "variable",
+        "name": "W_0"
+      },
+      {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "u_1_through_u_k"
+              }
+            ],
+            "function": "span",
+            "kind": "call"
+          }
+        ],
+        "function": "orthogonal_complement",
+        "kind": "call"
+      }
+    ],
+    "function": "intersection",
+    "kind": "call"
+  }
+}

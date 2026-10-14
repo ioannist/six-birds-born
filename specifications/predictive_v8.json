@@ -1,0 +1,2682 @@
+{
+  "schema": "born_readable_scientific_version_v1",
+  "version": "v8",
+  "scientific_rng_identity": "8eee39e3da7044a0bca1ea26b815fbf3aadb3024e2b334ae0a8d577047ba2512",
+  "large_sections_directory": "shared_sections",
+  "source_json_pointers": {
+    "observation_maps": "/observation_maps",
+    "canonicalization": "/identity/canonicalization",
+    "step_correspondence": "/identity/step_correspondence",
+    "rng": "/rng",
+    "inference": "/inference",
+    "estimands": "/estimands",
+    "grid": "/grid",
+    "thresholds": "/thresholds",
+    "competitor_family_campaign": "/confirmation_data/campaigns/0",
+    "cross_term_campaign": "/confirmation_data/campaigns/6",
+    "seed_blocks_per_campaign": "/confirmation_data/seed_blocks_per_campaign",
+    "exploratory_debug_prefix": "/confirmation_data/exploratory/post_freeze_debug_prefix",
+    "status_sets": "/status_sets",
+    "claim_mapping": "/claim_mapping/rows",
+    "structural_output_schema": "/completeness/structural_end_record"
+  },
+  "grid": {
+    "authoritative_sources": [
+      "ordered configs vector in run_exp_112",
+      "independent runner --list-configs EXP-112 inventory"
+    ],
+    "definition_identities": [
+      {
+        "experiment": "EXP-102",
+        "inclusive_lines": [
+          10476,
+          10520
+        ],
+        "sha256": "427387f01152ff2f48a35ae6bc40a6ef44203a138659d3bff3690956eaa15dc8"
+      },
+      {
+        "experiment": "EXP-103",
+        "inclusive_lines": [
+          10528,
+          10577
+        ],
+        "sha256": "518d98d0f08291f673d0f1bd8540f537615fa24e455fd38983da982336b144a1"
+      },
+      {
+        "experiment": "EXP-104",
+        "inclusive_lines": [
+          10589,
+          10647
+        ],
+        "sha256": "f602e3477f975bb77dbefc665ec880a05003b50851f67c084672c8e5f7146a8f"
+      },
+      {
+        "experiment": "EXP-105",
+        "inclusive_lines": [
+          10666,
+          10765
+        ],
+        "sha256": "8b7ba3d6151d2eedcac005dd7318c509990b2e3b4acb020e8531c1aaec664cf9"
+      },
+      {
+        "experiment": "EXP-106",
+        "inclusive_lines": [
+          10778,
+          10882
+        ],
+        "sha256": "2c71c1bcec7770a943cd29fb3dafdb84038d3d7be8ef7cb07249d7f212ca3fac"
+      },
+      {
+        "experiment": "EXP-107",
+        "inclusive_lines": [
+          10894,
+          10982
+        ],
+        "sha256": "bfc6fe7d07cd23d7c5a0c34961dbdc62f9d6cae3425dee9fe8ccb6852b6ec965"
+      },
+      {
+        "experiment": "EXP-112",
+        "inclusive_lines": [
+          11325,
+          11511
+        ],
+        "sha256": "3cbaebc289e20a639a9217920bb1ec4d05e4c0d4f0f39d1bcf1a412a34db5beb"
+      }
+    ],
+    "definition_relocation_rule": "locate each Rust function by item name, confirm boundary content and digest, and reject mere line-number agreement",
+    "eligibility": {
+      "eligible_count": 68,
+      "predicate": "label is in frozen runner inventory, label is not empty, KEY_BORN_PROBE_JSON is supported, and for G2b KEY_SEQUENTIAL_PROBE_JSON is supported",
+      "quality_is_not_selector": true
+    },
+    "ineligible": [
+      {
+        "action": "execute and certify separately; exclude from scientific means",
+        "labels": [
+          "empty"
+        ],
+        "reason": "PicaConfig::none() is the declared inert control, not a nonempty PICA config"
+      },
+      {
+        "action": "never schedule, substitute, or count as missing",
+        "labels": [
+          "A26_only",
+          "A27_only",
+          "A28_only",
+          "A29_only",
+          "A30_only",
+          "A31_only",
+          "A32_only",
+          "A33_only",
+          "A34_only"
+        ],
+        "reason": "absent from EXP-112 valid_labels; CLI rejects with return code 2"
+      }
+    ],
+    "inventory_failure_status": "GRID_INVENTORY_MISMATCH",
+    "inventory_mode_amendment": {
+      "digest_change": "EXP-112 only, because the seven-line inventory-only branch is inside run_exp_112",
+      "line_shift": "one import shifts EXP-102..107 by one line; source-additive helper before EXP-112 shifts its range further",
+      "source_additive_inserted_lines": 35
+    },
+    "labels": [
+      "empty",
+      "baseline",
+      "full_action",
+      "A14_only",
+      "A16_only",
+      "A17_only",
+      "A18_only",
+      "A20_only",
+      "A22_only",
+      "P1_row",
+      "P2_row",
+      "P3_row",
+      "P4_row",
+      "P5_row",
+      "P6_row",
+      "col_P1",
+      "col_P2",
+      "col_P3",
+      "col_P4",
+      "col_P5",
+      "col_P6",
+      "loo_A1",
+      "loo_A2",
+      "loo_A3",
+      "loo_A4",
+      "loo_A5",
+      "loo_A6",
+      "loo_A7",
+      "loo_A8",
+      "loo_A9",
+      "loo_A11",
+      "loo_A12",
+      "loo_A13",
+      "loo_A14",
+      "loo_A17",
+      "loo_A18",
+      "loo_A19",
+      "loo_A20",
+      "loo_A21",
+      "loo_A22",
+      "loo_A23",
+      "loo_A24",
+      "loo_A25",
+      "A13_A14",
+      "A14_A19",
+      "A18_A19",
+      "A14_A17",
+      "A13_A11",
+      "A12_A25",
+      "A4_A19",
+      "A14_A25",
+      "P1_P3_rows",
+      "P2_P3_rows",
+      "P3_P4_rows",
+      "P4_P5_rows",
+      "full_all",
+      "fa_no_P1row",
+      "fa_no_P2mod",
+      "fa_no_P3row",
+      "fa_no_inf_P3",
+      "fa_no_inf_P4",
+      "fa_no_inf_P5",
+      "fa_no_inf_P6",
+      "gen4_core",
+      "gen3_A13_A14_A19",
+      "gen5_core_A25",
+      "gen6_core_A12_A25",
+      "gen3_A13_A18_A19",
+      "gen2_A14_A13"
+    ],
+    "labels_count": 69,
+    "non_authoritative_sources": [
+      "ticket33c",
+      "old campaign registry",
+      "old verdict",
+      "row counts",
+      "observed success",
+      "stale 62-config source comment"
+    ],
+    "source_sections": [
+      "1"
+    ],
+    "v8_structural_observer_relocation": {
+      "definition_digest_changes": [],
+      "line_shift": 329,
+      "source_diff": {
+        "deleted_lines": 2,
+        "inserted_lines": 331
+      }
+    }
+  },
+  "competitor_family_campaign": {
+    "experiments": [
+      "EXP-112"
+    ],
+    "name": "g2a_v2",
+    "scales": [
+      32
+    ],
+    "seeds": [
+      810001,
+      810002,
+      810003,
+      810004,
+      810005,
+      810006,
+      810007,
+      810008,
+      810009,
+      810010,
+      810011,
+      810012,
+      810013,
+      810014,
+      810015,
+      810016,
+      810017,
+      810018,
+      810019,
+      810020
+    ]
+  },
+  "cross_term_campaign": {
+    "experiments": [
+      "EXP-112",
+      "EXP-102",
+      "EXP-103",
+      "EXP-104",
+      "EXP-105",
+      "EXP-106",
+      "EXP-107"
+    ],
+    "name": "g2b_v2",
+    "scales": [
+      32
+    ],
+    "seeds": [
+      850001,
+      850002,
+      850003,
+      850004,
+      850005,
+      850006,
+      850007,
+      850008,
+      850009,
+      850010,
+      850011,
+      850012,
+      850013,
+      850014,
+      850015,
+      850016,
+      850017,
+      850018,
+      850019,
+      850020
+    ]
+  },
+  "seed_blocks_per_campaign": 20,
+  "thresholds": {
+    "items": [
+      {
+        "comparison": "S_2,k upper <=0 pass; lower >0 fail; else inconclusive",
+        "id": "factor2_serviceability",
+        "value": 2
+      },
+      {
+        "comparison": "descriptive only",
+        "id": "secondary_additive_quantum",
+        "value": {
+          "denominator": 24,
+          "numerator": 1
+        }
+      },
+      {
+        "comparison": "G2c load-bearing lower bound must exceed",
+        "id": "m_cross",
+        "value": {
+          "denominator": 240,
+          "numerator": 1
+        }
+      },
+      {
+        "comparison": "strict absolute coefficient greater than",
+        "id": "g2c_coefficient",
+        "value": 1e-09
+      },
+      {
+        "comparison": "at least",
+        "id": "g2c_active_coefficients",
+        "value": 2
+      },
+      {
+        "comparison": "absolute difference <=",
+        "id": "dtv_tie",
+        "value": 1e-12
+      },
+      {
+        "comparison": "per unit <=",
+        "id": "parseval_residual",
+        "value": 1e-10
+      },
+      {
+        "comparison": "per component and dTV absolute <=",
+        "id": "qfull_rotation_residual",
+        "value": 1e-10
+      },
+      {
+        "comparison": "componentwise absolute <=",
+        "id": "distribution_absolute",
+        "value": 1e-12
+      },
+      {
+        "comparison": "componentwise relative <=",
+        "id": "distribution_relative",
+        "value": 1e-10
+      },
+      {
+        "comparison": "adverse dTV margin",
+        "id": "g2x_noninferiority",
+        "value": {
+          "denominator": 24,
+          "numerator": 1
+        }
+      },
+      {
+        "comparison": "seed-hierarchical prevalence lower bound >",
+        "id": "negativity_witness",
+        "value": 0.3
+      },
+      {
+        "comparison": "control failure when <=",
+        "id": "clipped_linear_mass",
+        "value": 1e-15
+      },
+      {
+        "comparison": "control failure when <=",
+        "id": "conditioning_mass",
+        "value": 1e-15
+      },
+      {
+        "comparison": "probability below this fails",
+        "id": "negative_probability",
+        "value": -5e-13
+      },
+      {
+        "comparison": "mass error above fails",
+        "id": "probability_mass_error",
+        "value": 1e-12
+      },
+      {
+        "comparison": "constant-in-span residual <=",
+        "id": "constant_span",
+        "value": 1e-10
+      },
+      {
+        "comparison": "SVD cutoff",
+        "id": "svd_cutoff",
+        "value": {
+          "arguments": [
+            {
+              "arguments": [
+                {
+                  "kind": "variable",
+                  "name": "m"
+                },
+                {
+                  "kind": "variable",
+                  "name": "n_cols_original"
+                }
+              ],
+              "function": "max",
+              "kind": "call"
+            },
+            {
+              "kind": "variable",
+              "name": "eps_binary64"
+            },
+            {
+              "kind": "variable",
+              "name": "sigma_max"
+            }
+          ],
+          "kind": "operator",
+          "operator": "multiply"
+        }
+      },
+      {
+        "comparison": "H1/H2 adjusted p <=",
+        "id": "h1_h2_adjusted_p",
+        "value": 0.01
+      },
+      {
+        "comparison": "observed/unpermuted beats at least this many of 999",
+        "id": "h1_h2_tail_count",
+        "value": 990
+      },
+      {
+        "comparison": "H1/H2 draws",
+        "id": "h1_h2_draw_count",
+        "value": 999
+      },
+      {
+        "comparison": "MGS sign scan absolute component >",
+        "id": "mgs_sign_component",
+        "value": 1e-15
+      },
+      {
+        "comparison": "discard projected H1 column norm <=",
+        "id": "h1_projected_column_norm",
+        "value": 1e-12
+      },
+      {
+        "comparison": "RREF pivot accepted only when absolute >",
+        "id": "g2s_rref_pivot",
+        "value": 1e-12
+      },
+      {
+        "comparison": "nested orthogonality and projection residual <=",
+        "id": "g2s_nested_residual",
+        "value": 1e-10
+      },
+      {
+        "comparison": "G2s dose replicates",
+        "id": "g2s_dose_replicates",
+        "value": 64
+      },
+      {
+        "comparison": "planted transfer cap",
+        "id": "g2v_transfer_cap",
+        "value": 1e-06
+      },
+      {
+        "comparison": "planted transfer must exceed comparison tolerance",
+        "id": "g2v_transfer_minimum",
+        "value": 1e-12
+      },
+      {
+        "comparison": "G2v Path B selector requires maximum component strictly greater than",
+        "id": "g2v_path_b_max_component",
+        "value": 2e-12
+      },
+      {
+        "comparison": "first-time and second-time trajectory entries each",
+        "id": "g2b_trajectory_length",
+        "value": 24
+      },
+      {
+        "comparison": "worker maximum",
+        "id": "workers",
+        "value": 16
+      },
+      {
+        "comparison": "per-attempt seconds",
+        "id": "timeout_seconds",
+        "value": 180
+      }
+    ],
+    "source_sections": [
+      "0",
+      "5",
+      "6",
+      "7",
+      "10",
+      "11",
+      "13",
+      "16"
+    ],
+    "unrounded_decisions": true
+  },
+  "rng": {
+    "algorithms": {
+      "bootstrap": {
+        "key_fields": [
+          "str:bootstrap-v2",
+          "bytes:attested JSON SHA-256",
+          "str:stage_id",
+          "str:statistic_id",
+          "u64:replicate_index"
+        ],
+        "replicates": 20000
+      },
+      "g2s_dose": {
+        "attempts": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "key_fields": [
+          "str:G2S_DOSE",
+          "bytes:attested JSON SHA-256",
+          "str:unit_id",
+          "u64:replicate",
+          "u64:attempt"
+        ],
+        "replicates": 64
+      },
+      "h1": {
+        "attempts": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "draws": 999,
+        "fill_order": "column-major",
+        "key_fields": [
+          "str:H1",
+          "bytes:attested JSON SHA-256",
+          "str:unit_id",
+          "u64:draw",
+          "u64:attempt"
+        ],
+        "orthonormalization": "unpivoted two-pass modified Gram-Schmidt",
+        "projector": {
+          "arguments": [
+            {
+              "kind": "variable",
+              "name": "I"
+            },
+            {
+              "arguments": [
+                {
+                  "kind": "variable",
+                  "name": "u"
+                },
+                {
+                  "kind": "variable",
+                  "name": "u"
+                }
+              ],
+              "kind": "operator",
+              "operator": "outer_product"
+            }
+          ],
+          "kind": "operator",
+          "operator": "subtract"
+        },
+        "rank_failure": {
+          "kind": "comparison",
+          "left": {
+            "kind": "variable",
+            "name": "post_projection_column_norm"
+          },
+          "operator": "<=",
+          "return_type": "boolean",
+          "right": {
+            "kind": "literal",
+            "value": 1e-12
+          }
+        },
+        "sign_rule": {
+          "kind": "comparison",
+          "left": {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "first_scanned_component"
+              }
+            ],
+            "function": "absolute",
+            "kind": "call"
+          },
+          "operator": ">",
+          "return_type": "boolean",
+          "right": {
+            "kind": "literal",
+            "value": 1e-15
+          }
+        }
+      },
+      "h2": {
+        "attempts": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "draws": 999,
+        "key_fields": [
+          "str:H2",
+          "bytes:attested JSON SHA-256",
+          "str:unit_id",
+          "u64:draw",
+          "u64:attempt"
+        ],
+        "permutation": {
+          "accept_word": {
+            "kind": "comparison",
+            "left": {
+              "kind": "variable",
+              "name": "word"
+            },
+            "operator": "<",
+            "return_type": "boolean",
+            "right": {
+              "kind": "variable",
+              "name": "acceptance_threshold"
+            }
+          },
+          "bound": {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "i"
+              },
+              {
+                "kind": "literal",
+                "value": 1
+              }
+            ],
+            "kind": "operator",
+            "operator": "add"
+          },
+          "identity_action": "restart with separately keyed next retry",
+          "index": {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "word"
+              },
+              {
+                "kind": "variable",
+                "name": "b"
+              }
+            ],
+            "kind": "operator",
+            "operator": "modulo"
+          },
+          "iteration_order": "i from m-1 down to 1",
+          "rejected_word_action": "consume next word from the same permutation stream",
+          "threshold": {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "kind": "literal",
+                            "value": 2
+                          },
+                          {
+                            "kind": "literal",
+                            "value": 64
+                          }
+                        ],
+                        "kind": "operator",
+                        "operator": "power"
+                      },
+                      {
+                        "kind": "variable",
+                        "name": "b"
+                      }
+                    ],
+                    "kind": "operator",
+                    "operator": "divide"
+                  }
+                ],
+                "function": "floor",
+                "kind": "call"
+              },
+              {
+                "kind": "variable",
+                "name": "b"
+              }
+            ],
+            "kind": "operator",
+            "operator": "multiply"
+          }
+        }
+      }
+    },
+    "counter": {
+      "digest_split": "four unsigned uint64 big-endian words in byte order",
+      "start": 0
+    },
+    "formula_trees": {
+      "rng_expand": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "master_key"
+              },
+              {
+                "arguments": [
+                  {
+                    "kind": "variable",
+                    "name": "counter"
+                  }
+                ],
+                "function": "uint64_be",
+                "kind": "call"
+              }
+            ],
+            "kind": "operator",
+            "operator": "concat"
+          }
+        ],
+        "function": "sha256",
+        "kind": "call"
+      },
+      "rng_frame": {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "type_tag"
+          },
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "kind": "variable",
+                    "name": "raw_bytes"
+                  }
+                ],
+                "function": "raw_byte_length",
+                "kind": "call"
+              }
+            ],
+            "function": "uint64_be",
+            "kind": "call"
+          },
+          {
+            "kind": "variable",
+            "name": "raw_bytes"
+          }
+        ],
+        "kind": "operator",
+        "operator": "concat"
+      },
+      "rng_master_key": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "kind": "literal",
+                "value": "RB1v2-RNG-v1"
+              },
+              {
+                "kind": "variable",
+                "name": "semantic_fields"
+              }
+            ],
+            "function": "concat_framed_fields",
+            "kind": "call"
+          }
+        ],
+        "function": "sha256",
+        "kind": "call"
+      },
+      "rng_uniform": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "word"
+              },
+              {
+                "kind": "literal",
+                "value": 0.5
+              }
+            ],
+            "kind": "operator",
+            "operator": "add"
+          },
+          {
+            "arguments": [
+              {
+                "kind": "literal",
+                "value": 2
+              },
+              {
+                "kind": "literal",
+                "value": 64
+              }
+            ],
+            "kind": "operator",
+            "operator": "power"
+          }
+        ],
+        "kind": "operator",
+        "operator": "divide"
+      }
+    },
+    "framing": {
+      "format": "type_tag || uint64_be(raw_byte_length) || raw_bytes",
+      "integer_raw": "exactly 8-byte unsigned big-endian",
+      "master_prefix": "RB1v2-RNG-v1",
+      "tags": {
+        "bytes": "0x03",
+        "string": "0x01",
+        "u64": "0x02"
+      },
+      "utf8": "strict"
+    },
+    "normal_transform": {
+      "input_pair_order": [
+        "u1",
+        "u2"
+      ],
+      "output_order": [
+        {
+          "arguments": [
+            {
+              "arguments": [
+                {
+                  "arguments": [
+                    {
+                      "kind": "literal",
+                      "value": -2
+                    },
+                    {
+                      "arguments": [
+                        {
+                          "kind": "variable",
+                          "name": "u1"
+                        }
+                      ],
+                      "function": "ln",
+                      "kind": "call"
+                    }
+                  ],
+                  "kind": "operator",
+                  "operator": "multiply"
+                }
+              ],
+              "function": "sqrt",
+              "kind": "call"
+            },
+            {
+              "arguments": [
+                {
+                  "arguments": [
+                    {
+                      "kind": "literal",
+                      "value": 2
+                    },
+                    {
+                      "kind": "variable",
+                      "name": "pi"
+                    },
+                    {
+                      "kind": "variable",
+                      "name": "u2"
+                    }
+                  ],
+                  "kind": "operator",
+                  "operator": "multiply"
+                }
+              ],
+              "function": "cos",
+              "kind": "call"
+            }
+          ],
+          "kind": "operator",
+          "operator": "multiply"
+        },
+        {
+          "arguments": [
+            {
+              "arguments": [
+                {
+                  "arguments": [
+                    {
+                      "kind": "literal",
+                      "value": -2
+                    },
+                    {
+                      "arguments": [
+                        {
+                          "kind": "variable",
+                          "name": "u1"
+                        }
+                      ],
+                      "function": "ln",
+                      "kind": "call"
+                    }
+                  ],
+                  "kind": "operator",
+                  "operator": "multiply"
+                }
+              ],
+              "function": "sqrt",
+              "kind": "call"
+            },
+            {
+              "arguments": [
+                {
+                  "arguments": [
+                    {
+                      "kind": "literal",
+                      "value": 2
+                    },
+                    {
+                      "kind": "variable",
+                      "name": "pi"
+                    },
+                    {
+                      "kind": "variable",
+                      "name": "u2"
+                    }
+                  ],
+                  "kind": "operator",
+                  "operator": "multiply"
+                }
+              ],
+              "function": "sin",
+              "kind": "call"
+            }
+          ],
+          "kind": "operator",
+          "operator": "multiply"
+        }
+      ]
+    },
+    "persistence": [
+      "framed fields",
+      "master key",
+      "highest counter",
+      "implementation version"
+    ],
+    "source_sections": [
+      "5",
+      "6",
+      "10"
+    ]
+  },
+  "inference": {
+    "bca": {
+      "acceleration_formula": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [
+                      {
+                        "kind": "variable",
+                        "name": "jackknife_mean"
+                      },
+                      {
+                        "kind": "variable",
+                        "name": "jackknife_i"
+                      }
+                    ],
+                    "kind": "operator",
+                    "operator": "subtract"
+                  },
+                  {
+                    "kind": "literal",
+                    "value": 3
+                  }
+                ],
+                "kind": "operator",
+                "operator": "power"
+              }
+            ],
+            "kind": "operator",
+            "operator": "sum_over_i"
+          },
+          {
+            "arguments": [
+              {
+                "kind": "literal",
+                "value": 6
+              },
+              {
+                "arguments": [
+                  {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "arguments": [
+                              {
+                                "kind": "variable",
+                                "name": "jackknife_mean"
+                              },
+                              {
+                                "kind": "variable",
+                                "name": "jackknife_i"
+                              }
+                            ],
+                            "kind": "operator",
+                            "operator": "subtract"
+                          },
+                          {
+                            "kind": "literal",
+                            "value": 2
+                          }
+                        ],
+                        "kind": "operator",
+                        "operator": "power"
+                      }
+                    ],
+                    "kind": "operator",
+                    "operator": "sum_over_i"
+                  },
+                  {
+                    "kind": "literal",
+                    "value": 1.5
+                  }
+                ],
+                "kind": "operator",
+                "operator": "power"
+              }
+            ],
+            "kind": "operator",
+            "operator": "multiply"
+          }
+        ],
+        "kind": "operator",
+        "operator": "divide"
+      },
+      "acceleration_zero_only_when_denominator_exactly_zero": true,
+      "adjusted_probability_formula": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "z0"
+              },
+              {
+                "arguments": [
+                  {
+                    "arguments": [
+                      {
+                        "kind": "variable",
+                        "name": "z0"
+                      },
+                      {
+                        "kind": "variable",
+                        "name": "z_alpha"
+                      }
+                    ],
+                    "kind": "operator",
+                    "operator": "add"
+                  },
+                  {
+                    "arguments": [
+                      {
+                        "kind": "literal",
+                        "value": 1
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "kind": "variable",
+                            "name": "acceleration"
+                          },
+                          {
+                            "arguments": [
+                              {
+                                "kind": "variable",
+                                "name": "z0"
+                              },
+                              {
+                                "kind": "variable",
+                                "name": "z_alpha"
+                              }
+                            ],
+                            "kind": "operator",
+                            "operator": "add"
+                          }
+                        ],
+                        "kind": "operator",
+                        "operator": "multiply"
+                      }
+                    ],
+                    "kind": "operator",
+                    "operator": "subtract"
+                  }
+                ],
+                "kind": "operator",
+                "operator": "divide"
+              }
+            ],
+            "kind": "operator",
+            "operator": "add"
+          }
+        ],
+        "function": "normal_cdf",
+        "kind": "call"
+      },
+      "alpha_quantiles": [
+        0.025,
+        0.975
+      ],
+      "bootstrap_tie_weight": 0.5,
+      "branch_driver": "simultaneous BCa endpoints only",
+      "degeneracy": {
+        "defined": [
+          "zero jackknife quadratic denominator gives acceleration zero",
+          "zero bootstrap variance",
+          "fewer than two distinct bootstrap values"
+        ],
+        "percentile_fallback": false,
+        "undefined_action": "mark only that gate unresolved; retain higher-priority branches established by other computable gates",
+        "undefined_endpoint_only": [
+          "half-tie bias-correction proportion exactly 0 or 1",
+          "1-a*(z0+z_alpha) exactly zero",
+          "transform produces NaN"
+        ]
+      },
+      "descriptive_intervals": [
+        "ordinary percentile 0.025/0.975",
+        "BCa 0.025/0.975"
+      ],
+      "jackknife_unit": "whole seed block",
+      "jackknife_values": 20,
+      "persist": [
+        "z0",
+        "acceleration",
+        "adjusted_probabilities",
+        "jackknife_values",
+        "replicate_estimates"
+      ],
+      "probability_clamp": [
+        0,
+        1
+      ],
+      "quantile_method": "Hyndman-Fan type 7",
+      "simultaneous_normal_orders": {
+        "lower": {
+          "arguments": [
+            {
+              "kind": "variable",
+              "name": "alpha"
+            },
+            {
+              "kind": "variable",
+              "name": "g"
+            }
+          ],
+          "kind": "operator",
+          "operator": "divide"
+        },
+        "upper": {
+          "arguments": [
+            {
+              "kind": "literal",
+              "value": 1
+            },
+            {
+              "arguments": [
+                {
+                  "kind": "variable",
+                  "name": "alpha"
+                },
+                {
+                  "kind": "variable",
+                  "name": "g"
+                }
+              ],
+              "kind": "operator",
+              "operator": "divide"
+            }
+          ],
+          "kind": "operator",
+          "operator": "subtract"
+        }
+      }
+    },
+    "bootstrap": {
+      "primary_resample_unit": "seed block",
+      "replicates": 20000,
+      "retained_census": "all configs or experiments and all paired context/step/kind records",
+      "source_weights": [
+        0.5,
+        0.5
+      ],
+      "use": "percentile and BCa 95% intervals, never null p-value"
+    },
+    "conditional_sign_randomization": {
+      "assignments": 1048576,
+      "directional_one_sided_reported": true,
+      "exactness_qualification": "enumeration-exact conditional on seed-contrast sign exchangeability",
+      "seed_blocks": 20,
+      "two_sided_reported": true,
+      "zero_differences_retained": true
+    },
+    "formulas": {
+      "e_k": {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "D_k"
+          },
+          {
+            "arguments": [
+              {
+                "kind": "literal",
+                "value": 1
+              },
+              {
+                "kind": "literal",
+                "value": 24
+              }
+            ],
+            "kind": "operator",
+            "operator": "divide"
+          }
+        ],
+        "kind": "operator",
+        "operator": "add"
+      },
+      "sensitivity_reversal": {
+        "kind": "comparison",
+        "left": {
+          "arguments": [
+            {
+              "kind": "variable",
+              "name": "theta_primary"
+            },
+            {
+              "kind": "variable",
+              "name": "theta_sensitivity"
+            }
+          ],
+          "kind": "operator",
+          "operator": "multiply"
+        },
+        "operator": "<",
+        "return_type": "boolean",
+        "right": {
+          "kind": "literal",
+          "value": 0
+        }
+      }
+    },
+    "g2s_dose": {
+      "adjacent_members": "one distinct (kind,d,k_left,k_right) per structurally applicable adjacent unique-k pair",
+      "choice_status": "RULED_MANAGER_2026_08_27",
+      "collapsed_duplicate_weight": 1,
+      "d_equals_one_deduplication": "identical adjacent and endpoint tuple has one family member",
+      "endpoint_adjustment": "V5-R2 BCa alpha/g_dose per lower or upper endpoint",
+      "endpoint_ledger_size": {
+        "arguments": [
+          {
+            "kind": "literal",
+            "value": 2
+          },
+          {
+            "kind": "variable",
+            "name": "m_dose"
+          }
+        ],
+        "kind": "operator",
+        "operator": "multiply"
+      },
+      "endpoint_members": "one (kind,d,0,d) per applicable kind-rank stratum",
+      "fallback": "G2S_DOSE_INCONCLUSIVE",
+      "family_sealed_before_advantages": true,
+      "member_identity": [
+        "kind",
+        "d",
+        "k_left",
+        "k_right"
+      ],
+      "monotone": "all adjacent lower endpoints >=0 with adjusted p<=0.05 and both kind endpoint lower endpoints >0 with adjusted p<=0.05",
+      "nonmonotone": "any adjacent upper endpoint <0 with adjusted p<=0.05",
+      "p_value_adjustment": "Holm alpha=0.05",
+      "p_value_family_size": "m_dose = cardinality of sealed distinct applicable rank-aware comparison tuples",
+      "rank_pooling_prohibited": true
+    },
+    "g2s_sensitivity_support": {
+      "atomic_sets": {
+        "brier_complete_ranking": [
+          "full_census_perturbed_estimand"
+        ],
+        "config_only": [
+          "full_census_perturbed_estimand"
+        ],
+        "hierarchical_seed_config": [
+          "full_census_perturbed_estimand"
+        ],
+        "leave_one_config_out": [
+          "EXP-112::baseline",
+          "EXP-112::full_action",
+          "EXP-112::A14_only",
+          "EXP-112::A16_only",
+          "EXP-112::A17_only",
+          "EXP-112::A18_only",
+          "EXP-112::A20_only",
+          "EXP-112::A22_only",
+          "EXP-112::P1_row",
+          "EXP-112::P2_row",
+          "EXP-112::P3_row",
+          "EXP-112::P4_row",
+          "EXP-112::P5_row",
+          "EXP-112::P6_row",
+          "EXP-112::col_P1",
+          "EXP-112::col_P2",
+          "EXP-112::col_P3",
+          "EXP-112::col_P4",
+          "EXP-112::col_P5",
+          "EXP-112::col_P6",
+          "EXP-112::loo_A1",
+          "EXP-112::loo_A2",
+          "EXP-112::loo_A3",
+          "EXP-112::loo_A4",
+          "EXP-112::loo_A5",
+          "EXP-112::loo_A6",
+          "EXP-112::loo_A7",
+          "EXP-112::loo_A8",
+          "EXP-112::loo_A9",
+          "EXP-112::loo_A11",
+          "EXP-112::loo_A12",
+          "EXP-112::loo_A13",
+          "EXP-112::loo_A14",
+          "EXP-112::loo_A17",
+          "EXP-112::loo_A18",
+          "EXP-112::loo_A19",
+          "EXP-112::loo_A20",
+          "EXP-112::loo_A21",
+          "EXP-112::loo_A22",
+          "EXP-112::loo_A23",
+          "EXP-112::loo_A24",
+          "EXP-112::loo_A25",
+          "EXP-112::A13_A14",
+          "EXP-112::A14_A19",
+          "EXP-112::A18_A19",
+          "EXP-112::A14_A17",
+          "EXP-112::A13_A11",
+          "EXP-112::A12_A25",
+          "EXP-112::A4_A19",
+          "EXP-112::A14_A25",
+          "EXP-112::P1_P3_rows",
+          "EXP-112::P2_P3_rows",
+          "EXP-112::P3_P4_rows",
+          "EXP-112::P4_P5_rows",
+          "EXP-112::full_all",
+          "EXP-112::fa_no_P1row",
+          "EXP-112::fa_no_P2mod",
+          "EXP-112::fa_no_P3row",
+          "EXP-112::fa_no_inf_P3",
+          "EXP-112::fa_no_inf_P4",
+          "EXP-112::fa_no_inf_P5",
+          "EXP-112::fa_no_inf_P6",
+          "EXP-112::gen4_core",
+          "EXP-112::gen3_A13_A14_A19",
+          "EXP-112::gen5_core_A25",
+          "EXP-112::gen6_core_A12_A25",
+          "EXP-112::gen3_A13_A18_A19",
+          "EXP-112::gen2_A14_A13",
+          "G2x::EXP-102",
+          "G2x::EXP-103",
+          "G2x::EXP-104",
+          "G2x::EXP-105",
+          "G2x::EXP-106",
+          "G2x::EXP-107"
+        ],
+        "leave_one_seed_out": [
+          "840001",
+          "840002",
+          "840003",
+          "840004",
+          "840005",
+          "840006",
+          "840007",
+          "840008",
+          "840009",
+          "840010",
+          "840011",
+          "840012",
+          "840013",
+          "840014",
+          "840015",
+          "840016",
+          "840017",
+          "840018",
+          "840019",
+          "840020"
+        ],
+        "separate_sources": [
+          "EXP-112",
+          "G2x"
+        ],
+        "two_way_pigeonhole": [
+          "full_census_perturbed_estimand"
+        ]
+      },
+      "brier_orientation": "competitor minus candidate",
+      "choice_status": "RULED_MANAGER_2026_08_27",
+      "descriptive_full_census_point_estimate": {
+        "branch_driving": false,
+        "formula": "Section 3 estimand recomputed on the complete frozen census under the named sensitivity perturbation"
+      },
+      "named_sensitivity": "every branch-driving atomic unrounded estimate is strictly positive",
+      "negative_atom_equivalence": "atom < 0 is equivalent to reversal only after positive primary establishment",
+      "primary": "simultaneous BCa lower endpoint >0 and Holm-adjusted conditional p<=0.05",
+      "reversal": "theta_primary * theta_atom < 0 selects earlier G2S_V2_FRAGILE_OR_REVERSED",
+      "reversal_expression": {
+        "kind": "comparison",
+        "left": {
+          "arguments": [
+            {
+              "kind": "variable",
+              "name": "theta_primary"
+            },
+            {
+              "kind": "variable",
+              "name": "theta_sensitivity"
+            }
+          ],
+          "kind": "operator",
+          "operator": "multiply"
+        },
+        "operator": "<",
+        "return_type": "boolean",
+        "right": {
+          "kind": "literal",
+          "value": 0
+        }
+      },
+      "robust_support": "primary established and every named-sensitivity atom strictly positive",
+      "zero": "any exactly zero atom is unresolved and prevents a robust branch without becoming adverse"
+    },
+    "g2x_noninferiority": {
+      "adverse_loss": {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "D_k"
+          }
+        ],
+        "kind": "operator",
+        "operator": "negate"
+      },
+      "established_reversal": {
+        "kind": "comparison",
+        "left": {
+          "kind": "variable",
+          "name": "E_upper[kind]"
+        },
+        "operator": "<",
+        "return_type": "boolean",
+        "right": {
+          "kind": "literal",
+          "value": 0
+        }
+      },
+      "h0": {
+        "kind": "comparison",
+        "left": {
+          "kind": "variable",
+          "name": "A_k"
+        },
+        "operator": ">=",
+        "return_type": "boolean",
+        "right": {
+          "arguments": [
+            {
+              "kind": "literal",
+              "value": 1
+            },
+            {
+              "kind": "literal",
+              "value": 24
+            }
+          ],
+          "kind": "operator",
+          "operator": "divide"
+        }
+      },
+      "h1": {
+        "kind": "comparison",
+        "left": {
+          "kind": "variable",
+          "name": "A_k"
+        },
+        "operator": "<",
+        "return_type": "boolean",
+        "right": {
+          "arguments": [
+            {
+              "kind": "literal",
+              "value": 1
+            },
+            {
+              "kind": "literal",
+              "value": 24
+            }
+          ],
+          "kind": "operator",
+          "operator": "divide"
+        }
+      },
+      "pass": {
+        "kind": "comparison",
+        "left": {
+          "kind": "variable",
+          "name": "E_lower[kind]"
+        },
+        "operator": ">=",
+        "return_type": "boolean",
+        "right": {
+          "kind": "literal",
+          "value": 0
+        }
+      }
+    },
+    "h3_multiplicity_closure": {
+      "endpoint_ledger_size": 32,
+      "endpoint_members": "lower and upper for clipped-linear D_k and S_2,k at each scale-kind member",
+      "holm_family_size": 8,
+      "holm_members": "four scales by two kinds clipped-linear comparisons",
+      "s2_adds_p_values": false
+    },
+    "multiplicity": {
+      "alpha": 0.05,
+      "endpoint_ledgers": {
+        "g2a": 48,
+        "g2b": 48,
+        "g2c": 4,
+        "g2s_primary": 44,
+        "g2u_t1dii": 2,
+        "g2x": 28,
+        "h1": 4,
+        "h2": 4,
+        "h3": 32,
+        "h4": 48
+      },
+      "endpoint_rule": {
+        "directions_share_budget": true,
+        "lower_normal_order": "alpha/g",
+        "repeated_margin_endpoint_count": 1,
+        "upper_normal_order": "1-alpha/g"
+      },
+      "families": {
+        "g2a": "2 kinds * 11 q-full competitors plus 2 S_2,k",
+        "g2b": "2 kinds * 11 competitors plus 2 S_2,k",
+        "g2c": "q-full versus q-diag for 2 kinds",
+        "g2s": "q-full versus 11 competitors for 2 kinds",
+        "g2u_t1dii": "one deduplicated underlying-context prevalence hypothesis",
+        "g2x": "6 experiments * 2 kinds noninferiority plus 2 family-mean clipped-linear superiority",
+        "h1": "2 kinds",
+        "h2": "2 kinds",
+        "h3": "4 scales * 2 kinds",
+        "h4": "G2a family"
+      },
+      "intervals": "V5-R2 simultaneous one-sided BCa endpoint ledgers",
+      "p_value_family_sizes": {
+        "g2a": 24,
+        "g2b": 24,
+        "g2c": 2,
+        "g2s": 22,
+        "g2u_t1dii": 1,
+        "g2x": 14,
+        "h1": 2,
+        "h2": 2,
+        "h3": 8,
+        "h4": 24
+      },
+      "p_values": "Holm familywise control"
+    },
+    "primary_sampling_unit": "seed block",
+    "sensitivities": [
+      "seed-only fixed census",
+      "config/experiment-only superpopulation",
+      "hierarchical seed then config/experiment superpopulation",
+      "leave-one-seed-out",
+      "leave-one-config/experiment-out",
+      "separate EXP-112 and G2x",
+      "two-way pigeonhole seed by config/experiment",
+      "Brier complete ranking"
+    ],
+    "sensitivity_orientation": {
+      "competitors": "D_k",
+      "factor2": "-S_2,k",
+      "g2c": "D_k",
+      "g2x_noninferiority": "D_k+1/24",
+      "g2x_superiority": "family-mean D_k"
+    },
+    "source_sections": [
+      "5"
+    ]
+  },
+  "estimands": {
+    "formulas": {
+      "d_k": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "kind": "variable",
+                    "name": "C"
+                  },
+                  {
+                    "kind": "variable",
+                    "name": "p"
+                  },
+                  {
+                    "kind": "variable",
+                    "name": "V"
+                  }
+                ],
+                "function": "competitor",
+                "kind": "call"
+              }
+            ],
+            "function": "loss_k",
+            "kind": "call"
+          },
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "kind": "variable",
+                    "name": "L"
+                  },
+                  {
+                    "kind": "variable",
+                    "name": "p"
+                  },
+                  {
+                    "kind": "variable",
+                    "name": "V"
+                  }
+                ],
+                "function": "law",
+                "kind": "call"
+              }
+            ],
+            "function": "loss_k",
+            "kind": "call"
+          }
+        ],
+        "kind": "operator",
+        "operator": "subtract"
+      },
+      "delta_1_k": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "q_full"
+              }
+            ],
+            "function": "loss_k",
+            "kind": "call"
+          },
+          {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "p_full"
+              }
+            ],
+            "function": "loss_k",
+            "kind": "call"
+          }
+        ],
+        "kind": "operator",
+        "operator": "subtract"
+      },
+      "s_2_k": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "kind": "variable",
+                "name": "q_full"
+              }
+            ],
+            "function": "loss_k",
+            "kind": "call"
+          },
+          {
+            "arguments": [
+              {
+                "kind": "literal",
+                "value": 2
+              },
+              {
+                "arguments": [
+                  {
+                    "kind": "variable",
+                    "name": "p_full"
+                  }
+                ],
+                "function": "loss_k",
+                "kind": "call"
+              }
+            ],
+            "kind": "operator",
+            "operator": "multiply"
+          }
+        ],
+        "kind": "operator",
+        "operator": "subtract"
+      }
+    },
+    "hierarchy": [
+      "average recorded steps within stable underlying context",
+      "retain raw and pkg as separate paired kind estimands",
+      "average contexts equally within runner invocation",
+      "average eligible configs or named experiments equally within seed",
+      "average seed blocks equally",
+      "for combined EXP-112 and G2x use source weights exactly 1/2 each"
+    ],
+    "populations": {
+      "g2a": "68 eligible EXP-112 configs; q-full advantage over every competitor and S_2,k",
+      "g2b": "eligible tau>=2 units; source weight 1/2; sequential-law differences and S_2,k",
+      "g2c": "nondegenerate underlying contexts; q-full minus q-diag; source weight 1/2",
+      "g2h_h1_h2": "68 eligible EXP-112 configs; spectral advantage over matched-null and erasure controls",
+      "g2h_h3": "separate G2a estimand at scales 16,32,48,64",
+      "g2h_h4": "G2a estimands on independent seeds",
+      "g2s": "G2c source-weighted population; seed primary cluster",
+      "g2u_t1dii": "one underlying-context vote, hierarchical within invocation/source/seed",
+      "g2v": "one deterministic eligible unit; certificate, not population inference",
+      "g2x": "six named experiments separately and equal-experiment family mean"
+    },
+    "raw_pkg_gate": "conjunctive unless branch explicitly names one-kind partial support",
+    "serviceability": {
+      "fail": {
+        "kind": "comparison",
+        "left": {
+          "kind": "variable",
+          "name": "S_2_lower[kind]"
+        },
+        "operator": ">",
+        "return_type": "boolean",
+        "right": {
+          "kind": "literal",
+          "value": 0
+        }
+      },
+      "inconclusive": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "kind": "comparison",
+                "left": {
+                  "kind": "variable",
+                  "name": "S_2_upper[kind]"
+                },
+                "operator": "<=",
+                "return_type": "boolean",
+                "right": {
+                  "kind": "literal",
+                  "value": 0
+                }
+              }
+            ],
+            "kind": "boolean_operator",
+            "operator": "not",
+            "return_type": "boolean"
+          },
+          {
+            "arguments": [
+              {
+                "kind": "comparison",
+                "left": {
+                  "kind": "variable",
+                  "name": "S_2_lower[kind]"
+                },
+                "operator": ">",
+                "return_type": "boolean",
+                "right": {
+                  "kind": "literal",
+                  "value": 0
+                }
+              }
+            ],
+            "kind": "boolean_operator",
+            "operator": "not",
+            "return_type": "boolean"
+          }
+        ],
+        "kind": "boolean_operator",
+        "operator": "and",
+        "return_type": "boolean"
+      },
+      "pass": {
+        "kind": "comparison",
+        "left": {
+          "kind": "variable",
+          "name": "S_2_upper[kind]"
+        },
+        "operator": "<=",
+        "return_type": "boolean",
+        "right": {
+          "kind": "literal",
+          "value": 0
+        }
+      }
+    },
+    "source_sections": [
+      "3"
+    ],
+    "target_population_type": "finite named config and experiment inventories"
+  },
+  "observation_maps": {
+    "formulas": {
+      "brier": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [
+                      {
+                        "kind": "variable",
+                        "name": "M_k"
+                      },
+                      {
+                        "kind": "variable",
+                        "name": "q"
+                      }
+                    ],
+                    "function": "mapped_probability",
+                    "kind": "call"
+                  },
+                  {
+                    "kind": "variable",
+                    "name": "y_k"
+                  }
+                ],
+                "kind": "operator",
+                "operator": "subtract"
+              },
+              {
+                "kind": "literal",
+                "value": 2
+              }
+            ],
+            "kind": "operator",
+            "operator": "power"
+          }
+        ],
+        "kind": "operator",
+        "operator": "sum"
+      },
+      "loss_k": {
+        "arguments": [
+          {
+            "kind": "literal",
+            "value": 0.5
+          },
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [
+                      {
+                        "kind": "variable",
+                        "name": "y_k_o"
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "kind": "variable",
+                            "name": "M_k"
+                          },
+                          {
+                            "kind": "variable",
+                            "name": "q"
+                          },
+                          {
+                            "kind": "variable",
+                            "name": "o"
+                          }
+                        ],
+                        "function": "mapped_probability",
+                        "kind": "call"
+                      }
+                    ],
+                    "kind": "operator",
+                    "operator": "subtract"
+                  }
+                ],
+                "function": "absolute",
+                "kind": "call"
+              }
+            ],
+            "kind": "operator",
+            "operator": "sum_over_o"
+          }
+        ],
+        "kind": "operator",
+        "operator": "multiply"
+      },
+      "m_k": {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "outcome_o"
+          },
+          {
+            "kind": "variable",
+            "name": "state_s"
+          }
+        ],
+        "function": "conditional_probability",
+        "kind": "call"
+      }
+    },
+    "kind_set": [
+      "raw",
+      "pkg"
+    ],
+    "map": "M_k[o,s] = Pr(outcome label o | state s)",
+    "map_column_sum": 1,
+    "outcome_order": "UTF-8 byte-order union of empirical labels and every label emitted by M_k",
+    "prediction_scored": "M_k q",
+    "source_sections": [
+      "0",
+      "4"
+    ],
+    "state_space_q_never_scored_directly": true,
+    "unit_evidence_required": [
+      "ordered state labels",
+      "ordered union outcome labels",
+      "M_raw",
+      "M_pkg",
+      "map hashes",
+      "unrounded y_raw",
+      "unrounded y_pkg"
+    ]
+  },
+  "canonicalization": {
+    "encoding": "UTF-8",
+    "final_lf": true,
+    "insignificant_whitespace": false,
+    "object_keys": "sorted",
+    "ordered_arrays_preserve_order": true
+  },
+  "step_correspondence": {
+    "choice_status": "RULED_MANAGER_2026_08_27",
+    "equality_expression": {
+      "kind": "comparison",
+      "left": {
+        "kind": "variable",
+        "name": "step_id"
+      },
+      "operator": "==",
+      "return_type": "boolean",
+      "right": {
+        "arguments": [
+          {
+            "kind": "variable",
+            "name": "step"
+          }
+        ],
+        "function": "canonical_decimal",
+        "kind": "call"
+      }
+    },
+    "evidence_field": {
+      "name": "step",
+      "type": "nonnegative JSON integer"
+    },
+    "identity_field": {
+      "name": "step_id",
+      "type": "nonempty UTF-8 string"
+    },
+    "mismatch_disposition": "INCOMPLETE structural; never a scientific branch input",
+    "string_encoding": {
+      "base": 10,
+      "leading_zeros_allowed": false,
+      "sign_allowed": false,
+      "zero_encoding": "0"
+    },
+    "validator_rule": "step_id equals the canonical decimal encoding of step on every record carrying both"
+  },
+  "exploratory_debug_prefix": "SYNTHETIC_",
+  "status_sets": {
+    "auxiliary": [
+      "GRID_INVENTORY_MISMATCH",
+      "CROSS_ENV_BRANCH_DRIFT",
+      "BYTE_EXACT",
+      "EXACT_JSON",
+      "EXACT_FROZEN_SCHEMA_PROJECTION",
+      "TOLERANCE_EQUAL",
+      "MISMATCH",
+      "INCOMPLETE",
+      "BLOCKED"
+    ],
+    "global_preemptive_by_stage": {
+      "G2A": [
+        "G2A_V2_SPEC_MISMATCH",
+        "G2A_V2_BLOCKED_INFRASTRUCTURE",
+        "G2A_V2_INCOMPLETE",
+        "G2A_V2_CONTROL_FAILURE"
+      ],
+      "G2B": [
+        "G2B_V2_SPEC_MISMATCH",
+        "G2B_V2_BLOCKED_INFRASTRUCTURE",
+        "G2B_V2_INCOMPLETE",
+        "G2B_V2_CONTROL_FAILURE"
+      ],
+      "G2C": [
+        "G2C_V2_SPEC_MISMATCH",
+        "G2C_V2_BLOCKED_INFRASTRUCTURE",
+        "G2C_V2_INCOMPLETE",
+        "G2C_V2_CONTROL_FAILURE"
+      ],
+      "G2H": [
+        "G2H_V2_SPEC_MISMATCH",
+        "G2H_V2_BLOCKED_INFRASTRUCTURE",
+        "G2H_V2_INCOMPLETE",
+        "G2H_V2_CONTROL_FAILURE"
+      ],
+      "G2S": [
+        "G2S_V2_SPEC_MISMATCH",
+        "G2S_V2_BLOCKED_INFRASTRUCTURE",
+        "G2S_V2_INCOMPLETE",
+        "G2S_V2_CONTROL_FAILURE"
+      ],
+      "G2U": [
+        "G2U_V2_SPEC_MISMATCH",
+        "G2U_V2_BLOCKED_INFRASTRUCTURE",
+        "G2U_V2_INCOMPLETE",
+        "G2U_V2_CONTROL_FAILURE"
+      ],
+      "G2V": [
+        "G2V_V2_SPEC_MISMATCH",
+        "G2V_V2_BLOCKED_INFRASTRUCTURE",
+        "G2V_V2_INCOMPLETE",
+        "G2V_V2_CONTROL_FAILURE"
+      ],
+      "G2X": [
+        "G2X_V2_SPEC_MISMATCH",
+        "G2X_V2_BLOCKED_INFRASTRUCTURE",
+        "G2X_V2_INCOMPLETE",
+        "G2X_V2_CONTROL_FAILURE"
+      ]
+    },
+    "global_preemptive_templates": [
+      "<STAGE>_SPEC_MISMATCH",
+      "<STAGE>_BLOCKED_INFRASTRUCTURE",
+      "<STAGE>_INCOMPLETE",
+      "<STAGE>_CONTROL_FAILURE"
+    ],
+    "recognized": {
+      "g2a": [
+        "G2A_V2_INCONCLUSIVE_SENSITIVITY",
+        "G2A_V2_LINEAR_NOT_BEATEN",
+        "G2A_V2_FROZEN_COMPETITOR_ADVERSE",
+        "G2A_V2_FULL_COMPETITOR_LANDING",
+        "G2A_V2_PARTIAL_COMPETITOR_LANDING",
+        "G2A_V2_FACTOR2_SERVICEABILITY_FAILS",
+        "G2A_V2_INCONCLUSIVE_MIXED_OR_LOW_POWER"
+      ],
+      "g2b": [
+        "G2B_V2_INCONCLUSIVE_SENSITIVITY",
+        "G2B_V2_TWO_TIME_LAW_EXTENDS",
+        "G2B_V2_CORE_EXTENSION_ONLY",
+        "G2B_V2_FROZEN_COMPETITOR_ADVERSE",
+        "G2B_V2_FACTOR2_SERVICEABILITY_FAILS",
+        "G2B_V2_INCONCLUSIVE_MIXED_OR_LOW_POWER"
+      ],
+      "g2c": [
+        "G2C_V2_VACUOUS",
+        "G2C_V2_INCONCLUSIVE_SENSITIVITY",
+        "G2C_V2_CROSS_TERMS_LOAD_BEARING",
+        "G2C_V2_CROSS_TERMS_POSITIVE_BELOW_PRACTICAL_MARGIN",
+        "G2C_V2_CROSS_TERMS_NEGLIGIBLE",
+        "G2C_V2_DIAGONAL_BETTER",
+        "G2C_V2_DIAGONAL_ADVANTAGE_BELOW_PRACTICAL_MARGIN",
+        "G2C_V2_INCONCLUSIVE_MIXED_OR_LOW_POWER"
+      ],
+      "g2h": [
+        "G2H_V2_GENERIC_MATH_ONLY",
+        "G2H_V2_ERASURE_NOT_LOAD_BEARING",
+        "G2H_V2_SCALE_FRAGILE",
+        "G2H_V2_RECONFIRMATION_FAILS",
+        "G2H_V2_INCONCLUSIVE",
+        "G2H_V2_HARDENED"
+      ],
+      "g2r": [
+        "G2R_V2_SPEC_MISMATCH",
+        "G2R_V2_BLOCKED_INFRASTRUCTURE",
+        "G2R_V2_INCOMPLETE",
+        "G2R_V2_CONTROL_FAILURE",
+        "G2R_V2_UNKNOWN_STATUS",
+        "G2R_V2_MISMATCH",
+        "G2R_V2_REPRODUCES"
+      ],
+      "g2s": [
+        "G2S_V2_FRAGILE_OR_REVERSED",
+        "G2S_V2_ROBUST_FULL_COMPETITOR",
+        "G2S_V2_ROBUST_CORE_ONLY",
+        "G2S_V2_PARTIAL_ONE_KIND",
+        "G2S_V2_INCONCLUSIVE_MIXED_OR_LOW_POWER"
+      ],
+      "g2s_dose": [
+        "G2S_DOSE_NOT_EVALUABLE_RANK_ONE",
+        "G2S_DOSE_MONOTONE",
+        "G2S_DOSE_NONMONOTONE",
+        "G2S_DOSE_INCONCLUSIVE"
+      ],
+      "g2u_analytic": [
+        "PROVED",
+        "STATEMENT_GAP",
+        "NOT_PROVED"
+      ],
+      "g2u_empirical": [
+        "WITNESS_RATE_ABOVE_30",
+        "WITNESS_RATE_BELOW_OR_EQUAL_30",
+        "WITNESS_RATE_INCONCLUSIVE",
+        "WITNESS_POPULATION_VACUOUS"
+      ],
+      "g2u_lean": [
+        "WITNESSED_INSTANCES_ONLY",
+        "LEAN_WITNESS_FAILURE"
+      ],
+      "g2v": [
+        "G2V_V2_PATHS_AGREE_WITHIN_FROZEN_TOLERANCE",
+        "G2V_V2_DISCREPANCY_FOUND",
+        "G2V_V2_NO_ELIGIBLE_SELECTION"
+      ],
+      "g2x": [
+        "G2X_V2_INCONCLUSIVE_SENSITIVITY",
+        "G2X_V2_GENERALIZES_ACROSS_NAMED_FAMILY",
+        "G2X_V2_PARTIAL_NAMED_FAMILY_SUPPORT",
+        "G2X_V2_EXPERIMENT_SPECIFIC_REVERSAL",
+        "G2X_V2_NO_FAMILY_ADVANTAGE",
+        "G2X_V2_INCONCLUSIVE_MIXED_OR_LOW_POWER"
+      ],
+      "h1": [
+        "H1_PASS",
+        "H1_NOT_MODE_SPECIFIC",
+        "H1_INCONCLUSIVE"
+      ],
+      "h2": [
+        "H2_PASS",
+        "H2_ERASURE_NOT_LOAD_BEARING",
+        "H2_INCONCLUSIVE"
+      ],
+      "h3_aggregate": [
+        "H3_SCALE_ROBUST",
+        "H3_SCALE_FRAGILE",
+        "H3_INCONCLUSIVE"
+      ],
+      "h3_scale": [
+        "H3_SCALE_PASS",
+        "H3_SCALE_ADVERSE",
+        "H3_SCALE_INCONCLUSIVE"
+      ],
+      "h4": [
+        "H4_PASS",
+        "H4_RECONFIRMATION_FAILS",
+        "H4_INCONCLUSIVE"
+      ]
+    },
+    "sensitivity_preemption_stages": [
+      "G2A",
+      "G2X",
+      "G2C",
+      "G2B"
+    ],
+    "source_sections": [
+      "6",
+      "7",
+      "12"
+    ],
+    "unknown_status_policy": "failure; never default"
+  },
+  "claim_mapping": [
+    {
+      "historical_claim_id": "a1_edge_substrate_nine_edges",
+      "v2_slots": [
+        "REMAIN_QUARANTINED_OUT_OF_RB1_SCOPE"
+      ]
+    },
+    {
+      "historical_claim_id": "a2_instrument_pair_axis_nonvacuous",
+      "v2_slots": [
+        "REMAIN_QUARANTINED_OUT_OF_RB1_SCOPE"
+      ]
+    },
+    {
+      "historical_claim_id": "b3_accepted_event_records",
+      "v2_slots": [
+        "REMAIN_QUARANTINED_OUT_OF_RB1_SCOPE"
+      ]
+    },
+    {
+      "historical_claim_id": "b3_controls_and_certificates_pass",
+      "v2_slots": [
+        "REMAIN_QUARANTINED_OUT_OF_RB1_SCOPE"
+      ]
+    },
+    {
+      "historical_claim_id": "c1_accepted_families",
+      "v2_slots": [
+        "REMAIN_QUARANTINED_OUT_OF_RB1_SCOPE"
+      ]
+    },
+    {
+      "historical_claim_id": "c2_promoted_packages",
+      "v2_slots": [
+        "REMAIN_QUARANTINED_OUT_OF_RB1_SCOPE"
+      ]
+    },
+    {
+      "historical_claim_id": "c2_zero_additivity_failures",
+      "v2_slots": [
+        "REMAIN_QUARANTINED_OUT_OF_RB1_SCOPE"
+      ]
+    },
+    {
+      "historical_claim_id": "d1_promoted_sector_deterministic",
+      "v2_slots": [
+        "REMAIN_QUARANTINED_OUT_OF_RB1_SCOPE"
+      ]
+    },
+    {
+      "historical_claim_id": "e2_classical_pushforward_holds_out_of_sample",
+      "v2_slots": [
+        "REMAIN_QUARANTINED_OUT_OF_RB1_SCOPE"
+      ]
+    },
+    {
+      "historical_claim_id": "e5_no_intrinsic_law_supported",
+      "v2_slots": [
+        "REMAIN_QUARANTINED_OUT_OF_RB1_SCOPE"
+      ]
+    },
+    {
+      "historical_claim_id": "g2a_born_type_law_lands",
+      "v2_slots": [
+        "g2a_v2_frozen_competitor_landing"
+      ]
+    },
+    {
+      "historical_claim_id": "g2a_serviceable_vs_full",
+      "v2_slots": [
+        "g2a_v2_factor2_serviceability"
+      ]
+    },
+    {
+      "historical_claim_id": "g2h_hardening_holds",
+      "v2_slots": [
+        "g2h_v2_h1_h2_h3_h4_hardening",
+        "g2h_v2_h5_invariant"
+      ]
+    },
+    {
+      "historical_claim_id": "g2h_mode_specificity_pass",
+      "v2_slots": [
+        "g2h_v2_h1_matched_mode_specificity"
+      ]
+    },
+    {
+      "historical_claim_id": "g2x_generalizes_across_platform_family",
+      "v2_slots": [
+        "g2x_v2_named_exp102_107_family_confirmation"
+      ]
+    },
+    {
+      "historical_claim_id": "g2x_no_reversal",
+      "v2_slots": [
+        "g2x_v2_per_experiment_noninferiority"
+      ]
+    },
+    {
+      "historical_claim_id": "g2c_cross_terms_load_bearing",
+      "v2_slots": [
+        "g2c_v2_nondegenerate_cross_term_effect"
+      ]
+    },
+    {
+      "historical_claim_id": "g2c_primary_scope_is_nondegenerate",
+      "v2_slots": [
+        "g2c_v2_frozen_nondegenerate_estimand"
+      ]
+    },
+    {
+      "historical_claim_id": "g2s_partial_honest_verdict",
+      "v2_slots": [
+        "g2s_v2_dependence_corrected_branch",
+        "g2s_v2_dose_response"
+      ]
+    },
+    {
+      "historical_claim_id": "g2s_born_linear_survives_clustering_raw",
+      "v2_slots": [
+        "g2s_v2_qfull_competitors_raw"
+      ]
+    },
+    {
+      "historical_claim_id": "g2s_born_linear_survives_clustering_pkg",
+      "v2_slots": [
+        "g2s_v2_qfull_competitors_pkg"
+      ]
+    },
+    {
+      "historical_claim_id": "g2s_born_compressed_identical_to_quadratic_full",
+      "v2_slots": [
+        "g2s_v2_distribution_identity_certificate"
+      ]
+    },
+    {
+      "historical_claim_id": "g2u_theorem_proved_and_witnessed",
+      "v2_slots": [
+        "g2u_v2_t1a",
+        "g2u_v2_t1b",
+        "g2u_v2_t1c_narrow",
+        "g2u_v2_classification",
+        "g2u_v2_t1di",
+        "g2u_v2_lean_scope",
+        "g2u_v2_t1dii"
+      ]
+    },
+    {
+      "historical_claim_id": "g2u_negativity_witnessed_above_threshold",
+      "v2_slots": [
+        "g2u_v2_t1dii_clean_witness_rate"
+      ]
+    },
+    {
+      "historical_claim_id": "g2v_paths_agree",
+      "v2_slots": [
+        "g2v_v2_distribution_paths_agree"
+      ]
+    },
+    {
+      "historical_claim_id": "g2v_max_abs_delta_is_zero",
+      "v2_slots": [
+        "g2v_v2_max_distribution_residual_within_tolerance"
+      ]
+    },
+    {
+      "historical_claim_id": "g2r_reproduces",
+      "v2_slots": [
+        "g2r_v2_closed_route_reproduces"
+      ]
+    },
+    {
+      "historical_claim_id": "g2r_e1_golden_gate_exact",
+      "v2_slots": [
+        "g2r_v2_clean_e1_golden_reproduces"
+      ]
+    },
+    {
+      "historical_claim_id": "g2b_law_extends_to_two_time",
+      "v2_slots": [
+        "g2b_v2_two_time_frozen_competitor_factor2_extension"
+      ]
+    },
+    {
+      "historical_claim_id": "g2b_zero_self_check_violations",
+      "v2_slots": [
+        "g2b_v2_complete_implementation_invariants"
+      ]
+    }
+  ],
+  "structural_output_schema": {
+    "choice_status": "RULED_MANAGER_2026_08_27",
+    "collector_reconstruction": {
+      "inputs": [
+        "exact sealed pre-marker stdout bytes",
+        "frozen invocation manifest"
+      ],
+      "required_equality": [
+        "collector reconstructed manifest equals runner manifest",
+        "SHA-256 of canonical reconstructed manifest equals runner-carried hash"
+      ],
+      "runner_payload_use": "prohibited"
+    },
+    "final_line": {
+      "line_ending": "single LF",
+      "marker": "RB1_STRUCTURAL_END_JSON:",
+      "position": "exactly one final line after every successful scientific invocation"
+    },
+    "hash_semantics": {
+      "algorithm": "SHA-256",
+      "bytes": "canonical JSON bytes of ordered_structural_manifest alone, without final LF",
+      "excluded": [
+        "wrapper",
+        "schema",
+        "structural_manifest_sha256"
+      ]
+    },
+    "identity_hashing": {
+      "algorithm": "SHA-256",
+      "canonical_bytes": "UTF-8 sorted compact JSON plus final LF",
+      "final_lf_included": true,
+      "known_vectors": [
+        {
+          "canonical_text_without_final_lf": "{\"partition\":[0,1,1]}",
+          "identity": "partition",
+          "sha256": "58545bd6f3a0d6cebee2149df9e8fa8de20d4a4ac0b12a273cd9dae8a7bbe335",
+          "value": {
+            "partition": [
+              0,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "canonical_text_without_final_lf": "{\"config_id\":\"A14_only\",\"experiment\":\"EXP-112\",\"level_id\":\"level_l0\",\"protocol_step_id\":\"protocol_pica_multiscale_scan_step_0\",\"resolution_id\":\"resolution_k_2\"}",
+          "identity": "runner_context",
+          "sha256": "0172b28002f3b4dd0a5c5d6101c6db14506ee2c5446d8962183ce692ff2c5284",
+          "value": {
+            "config_id": "A14_only",
+            "experiment": "EXP-112",
+            "level_id": "level_l0",
+            "protocol_step_id": "protocol_pica_multiscale_scan_step_0",
+            "resolution_id": "resolution_k_2"
+          }
+        },
+        {
+          "canonical_text_without_final_lf": "{\"config_or_null\":\"A14_only\",\"experiment\":\"EXP-112\",\"scale\":32,\"seed\":0}",
+          "identity": "invocation",
+          "sha256": "8263a2a1eca3a4f32362d520a75b470d329473768a0b5334e1cbce1c160cd29d",
+          "value": {
+            "config_or_null": "A14_only",
+            "experiment": "EXP-112",
+            "scale": 32,
+            "seed": 0
+          }
+        }
+      ]
+    },
+    "ordered_structural_manifest": {
+      "keys": [
+        "emitted_families",
+        "engine_declared_counts",
+        "invocation_id",
+        "required_families",
+        "units"
+      ],
+      "kind": "closed_object",
+      "properties": {
+        "emitted_families": {
+          "allowed": [
+            "KEY_BORN_PROBE_JSON",
+            "KEY_SEQUENTIAL_PROBE_JSON",
+            "KEY_DISCOVERY_GRADE_JSON",
+            "KEY_AUDIT_JSON"
+          ],
+          "items": {
+            "leaf_type": "nonempty UTF-8 string"
+          },
+          "kind": "array",
+          "ordering": "first-emission order; unique"
+        },
+        "engine_declared_counts": {
+          "keys": [
+            "audit_records",
+            "born_probe_records",
+            "discovery_contexts",
+            "discovery_grade_records",
+            "discovery_rows",
+            "sequential_probe_records",
+            "units"
+          ],
+          "kind": "closed_object",
+          "properties": {
+            "audit_records": {
+              "leaf_type": "nonnegative JSON integer"
+            },
+            "born_probe_records": {
+              "leaf_type": "nonnegative JSON integer"
+            },
+            "discovery_contexts": {
+              "leaf_type": "nonnegative JSON integer"
+            },
+            "discovery_grade_records": {
+              "leaf_type": "nonnegative JSON integer"
+            },
+            "discovery_rows": {
+              "leaf_type": "nonnegative JSON integer"
+            },
+            "sequential_probe_records": {
+              "leaf_type": "nonnegative JSON integer"
+            },
+            "units": {
+              "leaf_type": "nonnegative JSON integer"
+            }
+          },
+          "serialization_order": "UTF-8 byte lexicographic"
+        },
+        "invocation_id": {
+          "leaf_type": "exactly 64 lowercase hexadecimal characters"
+        },
+        "required_families": {
+          "exact": [
+            "KEY_BORN_PROBE_JSON",
+            "KEY_DISCOVERY_GRADE_JSON",
+            "KEY_AUDIT_JSON"
+          ],
+          "items": {
+            "leaf_type": "nonempty UTF-8 string"
+          },
+          "kind": "array"
+        },
+        "units": {
+          "items": {
+            "keys": [
+              "config_id",
+              "kind_availability",
+              "mapping_dimensions_by_kind",
+              "ordered_outcome_labels_by_kind",
+              "ordered_state_labels",
+              "partition_id",
+              "resolution",
+              "runner_context_id",
+              "schema_versions",
+              "source_identifier",
+              "step_id",
+              "trajectory_slots"
+            ],
+            "kind": "closed_object",
+            "properties": {
+              "config_id": {
+                "leaf_type": "nonempty UTF-8 string"
+              },
+              "kind_availability": {
+                "items": {
+                  "leaf_type": "nonempty UTF-8 string"
+                },
+                "kind": "array",
+                "ordering": "applicable subsequence of raw, pkg"
+              },
+              "mapping_dimensions_by_kind": {
+                "key_set": [
+                  "raw",
+                  "pkg"
+                ],
+                "kind": "applicability_closed_map",
+                "ordering": "UTF-8 byte lexicographic",
+                "value": {
+                  "keys": [
+                    "columns",
+                    "rows"
+                  ],
+                  "kind": "closed_object",
+                  "properties": {
+                    "columns": {
+                      "leaf_type": "nonnegative JSON integer"
+                    },
+                    "rows": {
+                      "leaf_type": "nonnegative JSON integer"
+                    }
+                  },
+                  "serialization_order": "UTF-8 byte lexicographic"
+                }
+              },
+              "ordered_outcome_labels_by_kind": {
+                "key_set": [
+                  "raw",
+                  "pkg"
+                ],
+                "kind": "applicability_closed_map",
+                "ordering": "kind map lexicographic; label arrays numeric outcome order",
+                "value": {
+                  "items": {
+                    "leaf_type": "nonempty UTF-8 string"
+                  },
+                  "kind": "array"
+                }
+              },
+              "ordered_state_labels": {
+                "items": {
+                  "leaf_type": "nonempty UTF-8 string"
+                },
+                "kind": "array",
+                "ordering": "state index order"
+              },
+              "partition_id": {
+                "leaf_type": "exactly 64 lowercase hexadecimal characters"
+              },
+              "resolution": {
+                "leaf_type": "nonnegative JSON integer"
+              },
+              "runner_context_id": {
+                "leaf_type": "exactly 64 lowercase hexadecimal characters"
+              },
+              "schema_versions": {
+                "keys": [
+                  "audit",
+                  "born_probe",
+                  "discovery_grade"
+                ],
+                "kind": "closed_object",
+                "properties": {
+                  "audit": {
+                    "leaf_type": "exact string 3"
+                  },
+                  "born_probe": {
+                    "leaf_type": "exact string UNVERSIONED_PRE_V8"
+                  },
+                  "discovery_grade": {
+                    "leaf_type": "exact string UNVERSIONED_PRE_V8"
+                  }
+                },
+                "serialization_order": "UTF-8 byte lexicographic"
+              },
+              "source_identifier": {
+                "leaf_type": "nonempty UTF-8 string"
+              },
+              "step_id": {
+                "constraint": "nonempty canonical decimal encoding of step; base 10; no sign; no leading zeros; \"0\" for zero",
+                "kind": "scalar",
+                "leaf_type": "UTF-8 string"
+              },
+              "trajectory_slots": {
+                "items": {
+                  "leaf_type": "nonempty UTF-8 string"
+                },
+                "kind": "array",
+                "ordering": "trajectory index order"
+              }
+            },
+            "serialization_order": "UTF-8 byte lexicographic"
+          },
+          "kind": "array",
+          "ordering": "config execution order then discovery step_index order"
+        }
+      },
+      "serialization_order": "UTF-8 byte lexicographic"
+    },
+    "schema": "RB1_STRUCTURAL_END_V1",
+    "synthesized_identity_choice_status": "RULED_MANAGER_2026_08_27",
+    "wrapper": {
+      "keys": [
+        "ordered_structural_manifest",
+        "schema",
+        "structural_manifest_sha256"
+      ],
+      "kind": "closed_object",
+      "serialization_order": "UTF-8 byte lexicographic"
+    }
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "exhaustive": true,
+  "id": "global_preemptive",
+  "ordered": true,
+  "rows": [
+    {
+      "ordered_fallback": false,
+      "predicate": {
+        "arguments": [],
+        "kind": "predicate",
+        "name": "any_spec_binding_disagreement",
+        "return_type": "boolean"
+      },
+      "predicate_description": "any spec, hash, constant, or branch disagreement",
+      "priority": 1,
+      "status": "<STAGE>_SPEC_MISMATCH"
+    },
+    {
+      "ordered_fallback": false,
+      "predicate": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "kind": "predicate",
+                    "name": "any_spec_binding_disagreement",
+                    "return_type": "boolean"
+                  }
+                ],
+                "kind": "boolean_operator",
+                "operator": "or",
+                "return_type": "boolean"
+              }
+            ],
+            "kind": "boolean_operator",
+            "operator": "not",
+            "return_type": "boolean"
+          },
+          {
+            "arguments": [],
+            "kind": "predicate",
+            "name": "execution_cannot_begin",
+            "return_type": "boolean"
+          }
+        ],
+        "kind": "boolean_operator",
+        "operator": "and",
+        "return_type": "boolean"
+      },
+      "predicate_description": "execution cannot begin",
+      "priority": 2,
+      "status": "<STAGE>_BLOCKED_INFRASTRUCTURE"
+    },
+    {
+      "ordered_fallback": false,
+      "predicate": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "kind": "predicate",
+                    "name": "any_spec_binding_disagreement",
+                    "return_type": "boolean"
+                  },
+                  {
+                    "arguments": [],
+                    "kind": "predicate",
+                    "name": "execution_cannot_begin",
+                    "return_type": "boolean"
+                  }
+                ],
+                "kind": "boolean_operator",
+                "operator": "or",
+                "return_type": "boolean"
+              }
+            ],
+            "kind": "boolean_operator",
+            "operator": "not",
+            "return_type": "boolean"
+          },
+          {
+            "arguments": [],
+            "kind": "predicate",
+            "name": "any_completeness_failure",
+            "return_type": "boolean"
+          }
+        ],
+        "kind": "boolean_operator",
+        "operator": "and",
+        "return_type": "boolean"
+      },
+      "predicate_description": "any nonzero unplanned missingness, duplicate ID, failed job, unknown extra, parse error, or incomplete join",
+      "priority": 3,
+      "status": "<STAGE>_INCOMPLETE"
+    },
+    {
+      "ordered_fallback": false,
+      "predicate": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "kind": "predicate",
+                    "name": "any_spec_binding_disagreement",
+                    "return_type": "boolean"
+                  },
+                  {
+                    "arguments": [],
+                    "kind": "predicate",
+                    "name": "execution_cannot_begin",
+                    "return_type": "boolean"
+                  },
+                  {
+                    "arguments": [],
+                    "kind": "predicate",
+                    "name": "any_completeness_failure",
+                    "return_type": "boolean"
+                  }
+                ],
+                "kind": "boolean_operator",
+                "operator": "or",
+                "return_type": "boolean"
+              }
+            ],
+            "kind": "boolean_operator",
+            "operator": "not",
+            "return_type": "boolean"
+          },
+          {
+            "arguments": [],
+            "kind": "predicate",
+            "name": "any_control_failure",
+            "return_type": "boolean"
+          }
+        ],
+        "kind": "boolean_operator",
+        "operator": "and",
+        "return_type": "boolean"
+      },
+      "predicate_description": "any invariant, finite/probability, H5, Parseval, rotation, or stage negative-control failure",
+      "priority": 4,
+      "status": "<STAGE>_CONTROL_FAILURE"
+    }
+  ]
+}

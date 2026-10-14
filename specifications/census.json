@@ -1,0 +1,22 @@
+{
+  "schema": "born_census_structural_protocol_v1",
+  "availability": {
+    "state_count": 32,
+    "effective_rank": 2,
+    "source_span_available": true,
+    "matrix_exponent": 1,
+    "immutable_raw_package_join_verified": true,
+    "missing_matrix_policy": "Higher powers cannot supply the final matrix. Public full-capture matrices can supply it, with an explicit checked I/O envelope."
+  },
+  "ordering": "SHA-256 of complete canonical provenance key, then unit identifier",
+  "logical_identity": "By default the closed public collection's relative input names; an optional hash-checked acquisition logical-name map preserves earlier selection identities without asserting a new historical execution.",
+  "constructor": "born_ladder.reproduction.census_writers.certificates.construct_context",
+  "original_implementation": "Execute the extra SVD-coordinate gate from the recorded threshold and the original SymPy witness on explicit exact s. Preserve its failures independently.",
+  "completion": "Registered projector/own-input correspondence gates and exact quadratic-ring six-state certificate. No changed threshold, prediction, budget or comparator.",
+  "lexicographic_witness": "First i < j, ascending lexicographic order, equal anonymous initial records, unequal exact densities; first separating map/atom in registered order.",
+  "maximal_gap_witness": "Maximize the absolute raw-label-zero point trace gap over i < j sharing all three labels; ties lexicographic. Check 3/20, without assuming it on new data.",
+  "atom_classification": "Every active raw/package/joint atom: exact effect, exact Gram determinant, positive or singular; check no negative determinants. Empty labels excluded.",
+  "performance_fields": "Not decoded. Population inference and descriptive attachments are downstream.",
+  "proof_binding": "No scratch proof notes required. These are constructor certificates, not a new Lean endpoint audit. Lean input rendering/audit is downstream P3c.",
+  "numerical_environment": "environments/verification.json"
+}

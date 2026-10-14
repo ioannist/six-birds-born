@@ -1,0 +1,144 @@
+{
+  "schema": "born_run_grids_v1",
+  "description": "Run grids reference the registered scientific specifications. Diagnostic subsets change neither horizon nor scientific parameters.",
+  "runner_policy": {
+    "timeout_seconds": 1800,
+    "threads_per_process": 1,
+    "header_phase": "header",
+    "capture_default": "on",
+    "horizon_rule": "runner's unchanged scale * 2000 steps"
+  },
+  "grids": {
+    "g2a": {
+      "kind": "predictive",
+      "version": "v8",
+      "campaign_pointer": "/confirmation_data/campaigns/0",
+      "description": "Competitor-family acquisition, including the empty control"
+    },
+    "g2c": {
+      "kind": "predictive",
+      "version": "v21",
+      "campaign_pointer": "/confirmation_data/campaigns/6",
+      "description": "Cross-term acquisition; v21 supplies its registered source RNG identity"
+    },
+    "test-b": {
+      "kind": "test_b",
+      "campaign_grid": "g2c",
+      "contract": "test_b.json",
+      "description": "The same experiment/configuration grid, at the Test B kernel seed and scale"
+    },
+    "worked-cases": {
+      "kind": "worked_cases",
+      "cases": [
+        {
+          "name": "selected",
+          "grid": "g2c",
+          "experiment": "EXP-112",
+          "configuration": "A13_A11",
+          "seed": 840007
+        },
+        {
+          "name": "original",
+          "grid": "test-b",
+          "experiment": "EXP-112",
+          "configuration": "loo_A25"
+        }
+      ]
+    },
+    "smoke": {
+      "kind": "subset",
+      "description": "Two worked cases and the empty control; full scale and horizon, not a reduced scientific claim",
+      "include_grids": [
+        "worked-cases"
+      ],
+      "selections": [
+        {
+          "grid": "g2c",
+          "seed_index": 0,
+          "experiments": [
+            "EXP-112"
+          ],
+          "configurations": [
+            "empty"
+          ]
+        }
+      ]
+    },
+    "benchmark": {
+      "kind": "subset",
+      "description": "Stratified throughput measurement: 26 systematic configurations and all six named families, at the Test B kernel seed. Named-family strata are deliberately oversampled; weight extrapolations by the full grids.",
+      "include_grids": [],
+      "selections": [
+        {
+          "grid": "test-b",
+          "seed_index": 0,
+          "experiments": [
+            "EXP-112"
+          ],
+          "configurations": [
+            "empty",
+            "baseline",
+            "full_action",
+            "full_all",
+            "A14_only",
+            "A16_only",
+            "A17_only",
+            "A18_only",
+            "A20_only",
+            "A22_only",
+            "P1_row",
+            "P2_row",
+            "P3_row",
+            "P4_row",
+            "P5_row",
+            "P6_row",
+            "col_P1",
+            "col_P4",
+            "loo_A13",
+            "loo_A25",
+            "A13_A11",
+            "A14_A19",
+            "P1_P3_rows",
+            "gen4_core",
+            "gen6_core_A12_A25",
+            "fa_no_P2mod"
+          ]
+        },
+        {
+          "grid": "test-b",
+          "seed_index": 0,
+          "experiments": [
+            "EXP-102",
+            "EXP-103",
+            "EXP-104",
+            "EXP-105",
+            "EXP-106",
+            "EXP-107"
+          ],
+          "configurations": [
+            null
+          ]
+        }
+      ]
+    },
+    "e2e-smoke": {
+      "kind": "subset",
+      "description": "End-to-end reduced capture grid aligned with specifications/units.json smoke: both worked cases and EXP-105",
+      "include_grids": [
+        "worked-cases"
+      ],
+      "selections": [
+        {
+          "grid": "g2c",
+          "seed_index": 7,
+          "experiments": [
+            "EXP-105"
+          ],
+          "configurations": [
+            null
+          ]
+        }
+      ]
+    }
+  }
+}

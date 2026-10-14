@@ -1,0 +1,18 @@
+[package]
+name = "test_b_sampler"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "test-b-sampler"
+path = "src/main.rs"
+
+[dependencies]
+six_primitives_core = { path = "../six_primitives_core" }
+six_dynamics = { path = "../dynamics" }
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["float_roundtrip"] }
+rand = "0.8"
+rand_chacha = "0.3"
+sha2 = "0.10"
+clap = { version = "4", features = ["derive"] }

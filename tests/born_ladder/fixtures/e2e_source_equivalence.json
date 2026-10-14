@@ -1,0 +1,2492 @@
+{
+  "schema": "born_source_equivalence_v2",
+  "normalization": "Relocated imports and diagnostic ledger -> record wording only; no arithmetic normalization.",
+  "modules": [
+    {
+      "original_module": "scripts/rebuild1/artifact_paths.py",
+      "original_sha256": "0dee65aef76b39cc84aa07c342f0cb94c6b3a62925c34a9d27fff4352604e66e",
+      "public_module": "src/born_ladder/snapshot/artifact_paths.py",
+      "definitions": {
+        "reject_symlink_chain": {
+          "normalized_ast_sha256": "5b8bba5ba3f03801be64a45319ca10d7651751f8a023d58c8a8e4b3cd5bae1a6",
+          "comparison": "exact AST"
+        },
+        "authorized_output_path": {
+          "normalized_ast_sha256": "1a13de8f41ca6fc7089d9a3036e273ab54b3e254b030029d91ca6499b848803d",
+          "comparison": "exact AST"
+        }
+      }
+    },
+    {
+      "original_module": "scripts/rebuild1/campaign.py",
+      "original_sha256": "43d96fc4e9a0784d6d6297bad64d056aaad88e832b5ce839373277c35e6cb6c5",
+      "public_module": "src/born_ladder/reproduction/predictive/campaign.py",
+      "definitions": {
+        "CampaignArtifacts": {
+          "normalized_ast_sha256": "696e83ed68571e295a15f7c8329f919834ad0e10e909f0ed2e7d8d39663f0e42",
+          "comparison": "exact AST"
+        },
+        "_utc_now": {
+          "normalized_ast_sha256": "57cb3c99a2924e350461a073680e99aedae8d0a71cbd414a74d982d57f66c612",
+          "comparison": "exact AST"
+        },
+        "_raw_emission_families": {
+          "normalized_ast_sha256": "ed42eb306fa3cf060ede9ab40b7892328ce947d8adecb293e9883c531f00fb8b",
+          "comparison": "exact AST"
+        },
+        "_write_new": {
+          "normalized_ast_sha256": "cb9dd58b9341a7f69114b159e691c662287956421af0a0ae61a8baf394dd9882",
+          "comparison": "exact AST"
+        },
+        "_write_or_match": {
+          "normalized_ast_sha256": "0fd87e55840756da6271dc9c2f8d944b00d3866cf35afb80e108e152f06e9345",
+          "comparison": "exact AST"
+        },
+        "_production_root": {
+          "normalized_ast_sha256": "c0ca09ff3d94d61747c4aa923247199b63639a01fbe7e00f5473568b7f5992fa",
+          "comparison": "exact AST"
+        },
+        "_published_path": {
+          "normalized_ast_sha256": "746ebfa1c10596daf87411b08ebd3a05f2f83d25d70f8c51deacdec95c539b6d",
+          "comparison": "exact AST"
+        },
+        "_published_structural_path": {
+          "normalized_ast_sha256": "db6fd548158901c24912cdefda5b336f2578c5fb10ae3e480a710e030a3e2807",
+          "comparison": "exact AST"
+        },
+        "verify_runner": {
+          "normalized_ast_sha256": "087a35f326f89aba15f2ea2384ca69460a45ac01de8c2de5bc8243d0c7c7c468",
+          "comparison": "exact AST"
+        },
+        "_execute_one": {
+          "normalized_ast_sha256": "f65b2849d034790cf9af66e8a77af11d58464a5b88c97f5eb40459d66475d411",
+          "comparison": "exact AST"
+        },
+        "_registry_payload": {
+          "normalized_ast_sha256": "1c4e55462589dbb80d624f000fcbc09e0b981f3a15c92cbd3a6baa2bc0055e30",
+          "comparison": "exact AST"
+        }
+      }
+    },
+    {
+      "original_module": "scripts/rebuild1/collector_structural.py",
+      "original_sha256": "c7cff2af1c15d2d5d53db9576f2964f23c73fa3d034109f9646ce565afb727ad",
+      "public_module": "src/born_ladder/snapshot/collector_structural.py",
+      "definitions": {
+        "CollectorCapture": {
+          "normalized_ast_sha256": "ba92b115ffdda69084b0d2b27a33f65d2fb925ac9976ed34f9765eca4fa7bae0",
+          "comparison": "exact AST"
+        },
+        "_closed_pairs": {
+          "normalized_ast_sha256": "f749567d5e85c21ed7e1e21eb2af5136522d9b6949fe48fa6a9eaef68347946a",
+          "comparison": "exact AST"
+        },
+        "_finite_float": {
+          "normalized_ast_sha256": "019d472e097fc94a074a7a54739ee003abe75c696cdfea4d4781ece4fc13472b",
+          "comparison": "exact AST"
+        },
+        "_reject_constant": {
+          "normalized_ast_sha256": "188ffa6d254755785983c9afe2e980d623a0b50872cc812a44e5b9b9df193b53",
+          "comparison": "exact AST"
+        },
+        "strict_raw_json_loads": {
+          "normalized_ast_sha256": "a69593e894bf96fb22b51ad18cc554a4c247ddf1bd4bf66ef0b46c701f6d7991",
+          "comparison": "exact AST"
+        },
+        "_validate_raw_shape": {
+          "normalized_ast_sha256": "5c8ec46f421b1db7c2ee6979bbdceacb77c39cb95dc3e45af35558f5edadcd0c",
+          "comparison": "exact AST"
+        },
+        "_identity": {
+          "normalized_ast_sha256": "fb1854d4706bb5fc3bedd8559b827efc1c69188c26c7b45abf4ebbb139436e42",
+          "comparison": "exact AST"
+        },
+        "_pre_marker_stdout": {
+          "normalized_ast_sha256": "8d748e47e885e3fdd827b028e33fbeb70b6acf0c91489743950b8ef1f1054d9a",
+          "comparison": "exact AST"
+        },
+        "_unit_from_raw": {
+          "normalized_ast_sha256": "53a8451084b8a1d4c173cc6a340e5dded8f4c995debc1990da56039de25352ce",
+          "comparison": "exact AST"
+        },
+        "reconstruct_collector_record": {
+          "normalized_ast_sha256": "5a21f263f8589a4e96614a4b007d9c9c6a398641285ed1cfa9c93bb4599ae606",
+          "comparison": "import relocation/diagnostic record wording only"
+        },
+        "build_collector_capture": {
+          "normalized_ast_sha256": "bd63d4efd071275053783805caa6d61bcb207dff46b07dbf2b24d45af9eb4aa0",
+          "comparison": "exact AST"
+        },
+        "parse_collector_capture_bundle": {
+          "normalized_ast_sha256": "0b1efbcfeb8eef2e0ffc6e28f2d5177103f5ffddbb341df8811c5e6435fe4d25",
+          "comparison": "exact AST"
+        },
+        "parse_collector_capture": {
+          "normalized_ast_sha256": "860cb47f7c80b2662bdcf6ab77bd03f499a1c803a597a16daa8886e75f174b8d",
+          "comparison": "exact AST"
+        }
+      }
+    },
+    {
+      "original_module": "scripts/rebuild1/completeness.py",
+      "original_sha256": "bc6c515a1291f1b7eb83494575d5415228882c79b5b32214e594cbc42c15cdd4",
+      "public_module": "src/born_ladder/snapshot/completeness.py",
+      "definitions": {
+        "_sha256": {
+          "normalized_ast_sha256": "bb5f6e053e67193e5e82ff31977c6d2bd9e9f3c6c932a93a6fc505722c6a7687",
+          "comparison": "exact AST"
+        },
+        "_campaign": {
+          "normalized_ast_sha256": "c803f6b82536f68382f3ebdfdf8ccf2e60f907f2419de20d531fa25c97e45011",
+          "comparison": "exact AST"
+        },
+        "_campaign_name_for_invocation": {
+          "normalized_ast_sha256": "7e470f95c04ec89e5842e6577144ac530c147e6441e678c6e18cf0a5c8f8d664",
+          "comparison": "exact AST"
+        },
+        "_is_g2h_campaign": {
+          "normalized_ast_sha256": "16639113ec495ef1feff73e6604a6ea494ee9315ab2a4ba1649b5e88a5783f60",
+          "comparison": "exact AST"
+        },
+        "_is_g2x_campaign": {
+          "normalized_ast_sha256": "f1d09498ea7cbf255f4d33b3935e273be75a7093c019fcae3a1d1d7f0515d81c",
+          "comparison": "exact AST"
+        },
+        "_is_g2c_campaign": {
+          "normalized_ast_sha256": "c993a743e0e681daca5f2c9754a782eca9565be344aa97996eefb6c09442adde",
+          "comparison": "exact AST"
+        },
+        "_argv_for": {
+          "normalized_ast_sha256": "fd3c4905792ec28d80b38a9534c2eea6f9230553631fe089f6d3c4ee605f8317",
+          "comparison": "exact AST"
+        },
+        "invocation_id_for": {
+          "normalized_ast_sha256": "05802cbf529acc2365a804c2613228eeaad88a2c9140c36fa2f36e3a4d2f2541",
+          "comparison": "exact AST"
+        },
+        "build_invocation_manifest": {
+          "normalized_ast_sha256": "eb217b8fbe9777dc70a482616204f9a94e8cbc73d3de797ec22edaafd6c84311",
+          "comparison": "exact AST"
+        },
+        "invocation_manifest_bytes": {
+          "normalized_ast_sha256": "8a247f37d13a15ba8047eb9dd023bd3f2aba303dbce6b66e08028f59def75b6e",
+          "comparison": "exact AST"
+        },
+        "RetryIdentity": {
+          "normalized_ast_sha256": "e369574bd1b78463431c12aabc43e2da17c58bc44c24d2107ac37b31488521a8",
+          "comparison": "exact AST"
+        },
+        "validate_attempt_record": {
+          "normalized_ast_sha256": "82b68b4afa8cc05ef80687513b59de25b3a3f1fc6a6d51e8b62f9fc914077dac",
+          "comparison": "exact AST"
+        },
+        "_duplicate_counts": {
+          "normalized_ast_sha256": "3674e962341eedacc5cae43544dee4fca6b0a94171da5d1eb2f67225880bef58",
+          "comparison": "exact AST"
+        },
+        "_structural_families_for_campaign": {
+          "normalized_ast_sha256": "3821d30fc17d61b089cd38bf0fb12c951c1352e79d9eea1080bfc039fa933799",
+          "comparison": "exact AST"
+        },
+        "build_attempt_record": {
+          "normalized_ast_sha256": "83a2c53726322e09763938e41772dc019bcfde4d6b1be89c6d0574f6f9550d12",
+          "comparison": "exact AST"
+        },
+        "validate_structural_metadata": {
+          "normalized_ast_sha256": "b4a57611a4b55011bcb13cb530e9c3aca320c6c12a86acc0110a2181d88d7f84",
+          "comparison": "import relocation/diagnostic record wording only"
+        },
+        "structural_manifest_bytes": {
+          "normalized_ast_sha256": "58f1152783e4c9c1e90d2eb535add2b5aad87319d34a2dfea18045e3205aa61a",
+          "comparison": "exact AST"
+        },
+        "_StructuralAcceptanceTrust": {
+          "normalized_ast_sha256": "1e7d49a07beaba6714bb1e36f43d00c6036f8385d527b626b18ea31ca7ddc044",
+          "comparison": "exact AST"
+        },
+        "_StructuralChannel": {
+          "normalized_ast_sha256": "2905670bb2dd0422780b7754b3f656052bfd53df10ebc2cb550e68aa12ef2b69",
+          "comparison": "exact AST"
+        },
+        "_CurrentBuilderAcceptanceEraSpec": {
+          "normalized_ast_sha256": "51a761a9a2f6c0bd8cba16a1a7cd7ff3d89125c014849d3d1d67d95bb8883016",
+          "comparison": "exact AST"
+        },
+        "_capture_inventory": {
+          "normalized_ast_sha256": "94b8e202d73afa022524b39c7479c8a5756091d7853998dcb2a96eaae8bfdf28",
+          "comparison": "exact AST"
+        },
+        "_historical_acceptance_identity_key": {
+          "normalized_ast_sha256": "d61538acc3cd96d062853795ee076b745dce33e4b94b210163c5a7a0aa1d7934",
+          "comparison": "exact AST"
+        },
+        "_require_spec_hash_only_difference": {
+          "normalized_ast_sha256": "a29abee00eb185ec9c8ba5232a5f7aef23774c2b15554f96ea18c15716a40d36",
+          "comparison": "exact AST"
+        },
+        "_require_signed_historical_channel": {
+          "normalized_ast_sha256": "e268edb0521480d2f539743035801b506351db315c6328cf1b46345fd062c020",
+          "comparison": "exact AST"
+        },
+        "_load_persisted_structural_manifest": {
+          "normalized_ast_sha256": "a7485b97ef8a12964625024ff5066ff24e259aaeb6d41b9b52700f51c7909c18",
+          "comparison": "exact AST"
+        },
+        "_expected_structural_manifest_path": {
+          "normalized_ast_sha256": "11b787dae8f50b779dfcd3b65d00ee6d40f64f63d14e1ca9722b9429298c959d",
+          "comparison": "exact AST"
+        },
+        "_ProductionGatePaths": {
+          "normalized_ast_sha256": "6707590bc72119674b0e72e3011320cf5a47cfeee478fe109ddcb1ba192de1dc",
+          "comparison": "exact AST"
+        },
+        "_load_invocation_records": {
+          "normalized_ast_sha256": "dddf09acd20772ede586813df78e4ee57f7d56f315b0521c25d9ccfa10d587a5",
+          "comparison": "exact AST"
+        },
+        "_verify_acceptance_signature": {
+          "normalized_ast_sha256": "fa698e86b8dc987315307a1e5037a9407f640252bde476308d75fa83b28f39ef",
+          "comparison": "exact AST"
+        },
+        "build_structural_acceptance_payload": {
+          "normalized_ast_sha256": "71ada25bc836ca6e16193b5b2d3ec60ab99a291fb7633bea46740e37c49ae222",
+          "comparison": "exact AST"
+        },
+        "load_structural_gate": {
+          "normalized_ast_sha256": "d4725865cab6db67aeda3335529c75599bfc11ed483906d5300d170bdc801ebf",
+          "comparison": "exact AST"
+        },
+        "CompletenessReport": {
+          "normalized_ast_sha256": "c86e9f97f8d81266ca5ab6458a8266213b0e0beefdc1235470fef9fc46dd6a78",
+          "comparison": "exact AST"
+        },
+        "_nested_duplicates": {
+          "normalized_ast_sha256": "4c38909e9b1d326692847dc50cf797f8fcf4be9b267866c359754041e67129de",
+          "comparison": "exact AST"
+        },
+        "StructuralGate.__init__": {
+          "normalized_ast_sha256": "05158589d5957ba339ec10abb3326f427dde88366583fe45bb05cf6dfc67952f",
+          "comparison": "class method AST; imports/diagnostic wording normalized only"
+        },
+        "StructuralGate.__setattr__": {
+          "normalized_ast_sha256": "203aa4e0509a45e3f385bf459549f66c8c06ae58c1a2f25c5987c4f11dcad4ee",
+          "comparison": "class method AST; imports/diagnostic wording normalized only"
+        },
+        "StructuralGate.manifest_sha256": {
+          "normalized_ast_sha256": "ab0bbefbcc5dab1f4c36ebe10012947b4227a71e5bd44805e2386857c0b475ec",
+          "comparison": "class method AST; imports/diagnostic wording normalized only"
+        },
+        "StructuralGate.records_and_runner_record_sha256s_for": {
+          "normalized_ast_sha256": "c7579019a58aa9571913d561a453bf437cf7133bdae12b70e883b81f28b07d9c",
+          "comparison": "class method AST; imports/diagnostic wording normalized only"
+        },
+        "AttemptRegistry.__init__": {
+          "normalized_ast_sha256": "e1cb476415d18e60a99f0baadd53cc508c947d268ca0c18f3f6197f470e0ffb4",
+          "comparison": "class method AST; imports/diagnostic wording normalized only"
+        },
+        "AttemptRegistry.__setattr__": {
+          "normalized_ast_sha256": "e218e2f80c6e008c8115cda60736ed3ab48c1ac3303fb8ca818c3b36a6523191",
+          "comparison": "class method AST; imports/diagnostic wording normalized only"
+        },
+        "AttemptRegistry.attempts_for": {
+          "normalized_ast_sha256": "fcb3cc03a4e670377dd5f74837cf491a54e22b8ca3ea702dff1cffa7f990d761",
+          "comparison": "class method AST; imports/diagnostic wording normalized only"
+        },
+        "AttemptRegistry.census_sha256": {
+          "normalized_ast_sha256": "211ea4c677f4b540fc5fd2315a033dd6aebc835c576c911ed00316b9b8b4208c",
+          "comparison": "class method AST; imports/diagnostic wording normalized only"
+        },
+        "AttemptRegistry.evidence_path": {
+          "normalized_ast_sha256": "1dc2822a6b1d7d92efaf8d11843b02d1d6bbeaabece738b2d22cd2095e0236e9",
+          "comparison": "class method AST; imports/diagnostic wording normalized only"
+        },
+        "AttemptRegistry.historical_evidence_sha256": {
+          "normalized_ast_sha256": "1f4ab3a5cc17b081ce738da2fea9e31d361bfac88afff308f140e38e1224612d",
+          "comparison": "class method AST; imports/diagnostic wording normalized only"
+        },
+        "AttemptRegistry.interpretation_sha256": {
+          "normalized_ast_sha256": "f486e593d30f208e1892d9639a249dee7a980cdbd1be5e0b035be1d1a62504ac",
+          "comparison": "class method AST; imports/diagnostic wording normalized only"
+        },
+        "AttemptRegistry.invocation_ids": {
+          "normalized_ast_sha256": "3208524f385d4a577b754590f6ebe62d9fc3c0adc322a570c2436e23f1d75d3f",
+          "comparison": "class method AST; imports/diagnostic wording normalized only"
+        },
+        "AttemptRegistry.invocation_record": {
+          "normalized_ast_sha256": "7c5153cc51610ec4b5fcbec67c377a548f799473d9815efe72909331f08307d5",
+          "comparison": "class method AST; imports/diagnostic wording normalized only"
+        },
+        "AttemptRegistry.invocation_records": {
+          "normalized_ast_sha256": "107fbf9a3e07b7f92a9671db31e1fa74632b03e7631448e2f9046a30574ce887",
+          "comparison": "class method AST; imports/diagnostic wording normalized only"
+        },
+        "AttemptRegistry.load": {
+          "normalized_ast_sha256": "85b78ce8098d7f0a959d6d0fb1852c386fdb7581b65023a7255b3cc14b413237",
+          "comparison": "class method AST; imports/diagnostic wording normalized only"
+        },
+        "AttemptRegistry.require_binding": {
+          "normalized_ast_sha256": "63a2a3cf2a34a229612508fb743615e77d14ae9bae15884d2e0cc2bc3ec25a4c",
+          "comparison": "class method AST; imports/diagnostic wording normalized only"
+        },
+        "AttemptRegistry.require_binding_identity_only": {
+          "normalized_ast_sha256": "07cefc773ba1fbcdfe5bd943d07962ca72df2aec8db72da37d2e99473f8f3c76",
+          "comparison": "class method AST; imports/diagnostic wording normalized only"
+        },
+        "AttemptRegistry.retry_identity_for": {
+          "normalized_ast_sha256": "b960ddffc772e6f1920316e1a92a8742baa5f9e0150be70171a21c6e08157bc9",
+          "comparison": "class method AST; imports/diagnostic wording normalized only"
+        },
+        "AttemptRegistry.successful_attempt_record_sha256": {
+          "normalized_ast_sha256": "805fa805b990d376e912b6da8568df2ef5f486956756dbbdf46f4494b338a609",
+          "comparison": "class method AST; imports/diagnostic wording normalized only"
+        },
+        "AttemptRegistry.successful_capture_identity": {
+          "normalized_ast_sha256": "abe47bc908eeb3f4946624acd1f5f829877509538c3046ded1f424ae81bc7970",
+          "comparison": "class method AST; imports/diagnostic wording normalized only"
+        },
+        "AttemptRegistry.successful_stdout": {
+          "normalized_ast_sha256": "8d91cd010f82c285fddfb33773f2f4f7f180eb253b1409f5a77e145c7a3da281",
+          "comparison": "class method AST; imports/diagnostic wording normalized only"
+        }
+      }
+    },
+    {
+      "original_module": "scripts/rebuild1/evaluate_g2a_campaign.py",
+      "original_sha256": "4d7fdbcb2f8f4e82aa0ff7f9ff955a121fd13bbb44dafafa62ff182734965a95",
+      "public_module": "src/born_ladder/reproduction/predictive/evaluate_g2a_campaign.py",
+      "definitions": {
+        "G2aEvaluationArtifacts": {
+          "normalized_ast_sha256": "10132b553473e391bdf340f09e472376531e1339c5a06784a8f290bfa8dc44f1",
+          "comparison": "exact AST"
+        },
+        "_utc_now": {
+          "normalized_ast_sha256": "57cb3c99a2924e350461a073680e99aedae8d0a71cbd414a74d982d57f66c612",
+          "comparison": "exact AST"
+        },
+        "_production_root": {
+          "normalized_ast_sha256": "b95742d12ac59702ffa2f18b356d7aa8a4f5b281fdb7e8dabe185857f6341702",
+          "comparison": "exact AST"
+        },
+        "_read_canonical_object": {
+          "normalized_ast_sha256": "9e5448db09055657098762ec8906ea1e978e6ac91c1fbd89949fbe104f45c951",
+          "comparison": "exact AST"
+        },
+        "_closed_identity": {
+          "normalized_ast_sha256": "9d5a3c9613ae6f57f3e979a8fca73222b043fba350b9d03f9f81f33c16af2937",
+          "comparison": "exact AST"
+        },
+        "_require_bound_file": {
+          "normalized_ast_sha256": "747224c050da3fb19481a9789c3739857455551dff1ee49c154f0a7aac327bda",
+          "comparison": "exact AST"
+        },
+        "_write_new": {
+          "normalized_ast_sha256": "b5742ae6f89ae793b94fd28a85d57779df040cf3e35989d0f5783ac244628fcf",
+          "comparison": "exact AST"
+        },
+        "_validate_campaign_bindings": {
+          "normalized_ast_sha256": "36b46690d67b1d766307cb6f0e82519df34f17d337db9e04887b1e2915349116",
+          "comparison": "exact AST"
+        },
+        "_load_campaign_inputs": {
+          "normalized_ast_sha256": "0500cfdf5bf7704e8d5cd8fd80c21f93d70735dcf545e579e8b97f6664b40f48",
+          "comparison": "exact AST"
+        }
+      }
+    },
+    {
+      "original_module": "scripts/rebuild1/evaluate_g2c_campaign.py",
+      "original_sha256": "ae53d8155f289644dbea44dcf1723070ea105514c53c892ebd5639599ed333b8",
+      "public_module": "src/born_ladder/reproduction/predictive/g2c_entry.py",
+      "definitions": {
+        "G2CEvaluationArtifacts": {
+          "normalized_ast_sha256": "154984257c82010d757efc77f160be8125f3765e76595ef194c3c00ca1f37d17",
+          "comparison": "exact AST"
+        },
+        "G2CLoadedAdmission": {
+          "normalized_ast_sha256": "b375f489f8db6ed49fa236d813acbf6fed520e050f9714e437a7031182e3e9ed",
+          "comparison": "exact AST"
+        },
+        "G2CBoundInputs": {
+          "normalized_ast_sha256": "f20e3103992f1677d30d3ad660054b46312e2c24125877387647eb52180c54aa",
+          "comparison": "exact AST"
+        },
+        "g2c_receipt_contracts": {
+          "normalized_ast_sha256": "f32bad9fa24f263fc6252451f8b55ad0560335830e02245cc2c8b74c7e9b8b24",
+          "comparison": "exact AST"
+        },
+        "_g2c_capture_inventory": {
+          "normalized_ast_sha256": "f58908ec8e7b98606b434d71b844e311c9aa5d0196ea82c6e4d2c9c676d13d5c",
+          "comparison": "exact AST"
+        },
+        "_utc_now": {
+          "normalized_ast_sha256": "57cb3c99a2924e350461a073680e99aedae8d0a71cbd414a74d982d57f66c612",
+          "comparison": "exact AST"
+        },
+        "_contract": {
+          "normalized_ast_sha256": "a97753f9025160cbd0f33d680a0b7ea4e94a0e1dc88d53915a0642062a6a154e",
+          "comparison": "exact AST"
+        },
+        "_canonical_object": {
+          "normalized_ast_sha256": "b4a6ad9882fd4dca3e8eb24956a4fb4726c303201694dd1d4c1c9ce56c896934",
+          "comparison": "exact AST"
+        },
+        "_empty_preemption_findings": {
+          "normalized_ast_sha256": "2fd08bfa17438e7c8e9f2ff75e4246432de89e3e8f5e67cfc1d6f3e85c0e925f",
+          "comparison": "exact AST"
+        },
+        "_merge_preemption_findings": {
+          "normalized_ast_sha256": "ec53506bf078a737fa95871ad02ca2e17657c8621fd61ee6fb237ee5c15cd082",
+          "comparison": "exact AST"
+        },
+        "_require_execution_input_bindings": {
+          "normalized_ast_sha256": "5480c1532cfa036111dd9fbb8be46fefad3776d96890597e70f86a6c4f54df28",
+          "comparison": "exact AST"
+        },
+        "_admit_loaded_execution_bindings": {
+          "normalized_ast_sha256": "7aeb163586e4bf07a0a17c65fec604aa6beabce35d7123f1168c9f4750cd0872",
+          "comparison": "exact AST"
+        },
+        "_append_preemption_error": {
+          "normalized_ast_sha256": "ace83c22eee92af04139be6042154d677719fd0f1454c8ad78bf5303e676407f",
+          "comparison": "exact AST"
+        },
+        "_bound_path": {
+          "normalized_ast_sha256": "fad1579dab16c1367f5a1d976c0fdbf2c3899b2cf8cc5a864b1f67bb6dfea0bc",
+          "comparison": "exact AST"
+        },
+        "_traceability_binding": {
+          "normalized_ast_sha256": "b4eb65262943d87a0811cae1c0acedca622121f4d3b26062795d5d41cf3f066a",
+          "comparison": "exact AST"
+        },
+        "_validate_stdout_bindings": {
+          "normalized_ast_sha256": "2efa8ba56943a91e28f5bd68e9555b0e4ca12cdbb87f10ce566dc08c0d79e7d2",
+          "comparison": "exact AST"
+        }
+      }
+    },
+    {
+      "original_module": "scripts/rebuild1/evaluate_g2c_campaign.py",
+      "original_sha256": "ae53d8155f289644dbea44dcf1723070ea105514c53c892ebd5639599ed333b8",
+      "public_module": "src/born_ladder/snapshot/evaluate_g2c_campaign.py",
+      "definitions": {
+        "G2CPreparedArtifacts": {
+          "normalized_ast_sha256": "4ea9a63f04ecf6a7cff859c42b39c5537704009936b4311f73b0005421cc5038",
+          "comparison": "exact AST"
+        },
+        "G2CReceiptIdentity": {
+          "normalized_ast_sha256": "022cb92f82c8b487640280791944e90d04990d70f1d19f6f6eb1b8fe0188d00b",
+          "comparison": "exact AST"
+        },
+        "G2CEvaluationAdmission": {
+          "normalized_ast_sha256": "e85927704614bc02df29b0e0b7dc33c1086d26b77cc65fa03656c71fec5e02d3",
+          "comparison": "exact AST"
+        },
+        "G2CPreempted": {
+          "normalized_ast_sha256": "dc5e41834557a9955417c431fd5eea94501ad2bb3286afd0784b207c4ec890b1",
+          "comparison": "exact AST"
+        },
+        "G2CLateFailure": {
+          "normalized_ast_sha256": "686d2d724d960c59848a2267b21c65eb4c89d9be4cb62fd2e3bb2f3c0e981968",
+          "comparison": "exact AST"
+        },
+        "_load_receipt": {
+          "normalized_ast_sha256": "bb5bc805f8163e5c6cb828a4ed2a71d627d1943f262a8a4ec69bf9703c15ba00",
+          "comparison": "exact AST"
+        },
+        "_expected_reference_environment": {
+          "normalized_ast_sha256": "ea389f041c5b22e5ce4207d9401a99fcc61c3ed9b99c7c3a10b821c69785b639",
+          "comparison": "exact AST"
+        },
+        "_validate_preflight_inventory": {
+          "normalized_ast_sha256": "2314a2b863822df417e1c66a698868d2471c1c50f9aafbc96c971eb0ab8c8deb",
+          "comparison": "exact AST"
+        },
+        "_validate_unit_accounting": {
+          "normalized_ast_sha256": "4c6992bbe32cd8472bf3cdb3ed1ea361dc3fe345ec8426e268a0bb247e93b1f7",
+          "comparison": "exact AST"
+        },
+        "_is_sha256": {
+          "normalized_ast_sha256": "325daa65a9543ff6420eb9c63c2aefdadd8fcc8b728fe78a30ac6bed88712241",
+          "comparison": "exact AST"
+        },
+        "_validate_receipt_input_map": {
+          "normalized_ast_sha256": "86fb2e316584212e22d5644a1c2c96a9991138b313054ba31931cd0d682e609d",
+          "comparison": "exact AST"
+        },
+        "_validate_archival_identity_rows": {
+          "normalized_ast_sha256": "765f53f4cf0ce08ca846304b091139a58693b5b35780cad5a5f8d06a57ce96d9",
+          "comparison": "exact AST"
+        },
+        "select_g2c_preemption": {
+          "normalized_ast_sha256": "7cbad58461d4ab54343f67baaf136675828217ca3d9ef0c7b05cbc515f1e8134",
+          "comparison": "exact AST"
+        },
+        "_raise_if_preempted": {
+          "normalized_ast_sha256": "d9e48a3353e3b3631f7842aa19c9138a0088f398ac5639a0437f8cd579f05f85",
+          "comparison": "exact AST"
+        },
+        "_initial_scientific_findings": {
+          "normalized_ast_sha256": "1420a86746942eb8a57ad4f37a63dabcdae491797aa92f35d2a9d74ea8a71183",
+          "comparison": "exact AST"
+        },
+        "_derive_g2c_drafts_with_findings": {
+          "normalized_ast_sha256": "f14fcbf639a5285ea9c86b8b001247ec16aaa17b0476bc5c66ab8fcf93fbc0b9",
+          "comparison": "exact AST"
+        },
+        "_prepare_g2c_drafts_with_findings": {
+          "normalized_ast_sha256": "3553cf473594fd5fd9048f46e310b5d457233f0387b91addb89cd6b175f92c38",
+          "comparison": "exact AST"
+        },
+        "_prepare_and_evaluate_g2c_science": {
+          "normalized_ast_sha256": "7cb8737af71d0a19ed5626b9f7ea815113806e8afaf0c08b128dea111c172d45",
+          "comparison": "exact AST"
+        },
+        "_prepare_and_evaluate_g2c_drafts": {
+          "normalized_ast_sha256": "e31aaccac5a202d0ad2917e521f345b3858cc6da999b346294bd74a53dbb8c03",
+          "comparison": "exact AST"
+        }
+      }
+    },
+    {
+      "original_module": "scripts/rebuild1/evidence.py",
+      "original_sha256": "d90e8bf96532cc7bc75da3193be02e87f69080ce5cae67a1ed949ae2f726be6b",
+      "public_module": "src/born_ladder/snapshot/evidence.py",
+      "definitions": {
+        "g2c_control_input_projection": {
+          "normalized_ast_sha256": "6a43d159b74777ab3eae33a41ca64c940988f26860f181bc8b34945f5000b35b",
+          "comparison": "exact AST"
+        },
+        "_g2c_exact_projection_equal": {
+          "normalized_ast_sha256": "9b1c8af2794634a187f7fe28a9cc8a26113fcfca139f5c96dba2f6da23f5e90c",
+          "comparison": "exact AST"
+        },
+        "validate_g2c_control_input_binding": {
+          "normalized_ast_sha256": "82c0737c73c23afdd4133523b8df7ce2bdd8c73f3c31ee6b0e0d64e68f60c735",
+          "comparison": "exact AST"
+        },
+        "universal_fields": {
+          "normalized_ast_sha256": "d729422c16d531e08fb6d2a08ec5f50908938e1c046887cd7a0fb894515c9d2d",
+          "comparison": "exact AST"
+        },
+        "residual_tolerance_contract": {
+          "normalized_ast_sha256": "c2bb588286279f6319e84f992cd37ad5417b494ab795ec0bf43b8e6875756a9f",
+          "comparison": "exact AST"
+        },
+        "validate_g2c_rotation_binding": {
+          "normalized_ast_sha256": "8c75631e876266b7e53ff3ef8ee5eaca6087f792dde8d7151abd9bbec736a86a",
+          "comparison": "import relocation/diagnostic record wording only"
+        },
+        "_nonempty_string": {
+          "normalized_ast_sha256": "f911ca376a7c79753565a4c475ec2c43e08ccdb748555db6358304173f413846",
+          "comparison": "exact AST"
+        },
+        "_finite_tree": {
+          "normalized_ast_sha256": "44ac9d208edeb3a5c0f0f4d0b1538f68b4e88618187c283a4b0b9b3fbb53ce03",
+          "comparison": "exact AST"
+        },
+        "_content_or_numeric": {
+          "normalized_ast_sha256": "63d1ef8f9514737951bfe9d4be90b479940e762174d0767e989e2916c7ee7880",
+          "comparison": "exact AST"
+        },
+        "validate_per_unit_record": {
+          "normalized_ast_sha256": "c9e03aa7e147bb81c1c5ee22bfbaa3de2fb657503a730f7a53fa53644441aa0f",
+          "comparison": "exact AST"
+        },
+        "validate_per_unit_records": {
+          "normalized_ast_sha256": "f5eff5c745413daabf03b7e04c00e452e4073c33bf5129d7b5ab6385a70fb756",
+          "comparison": "exact AST"
+        }
+      }
+    },
+    {
+      "original_module": "scripts/rebuild1/finalize_g2a_campaign.py",
+      "original_sha256": "d8fa4319cb130abfdd2f1eb3d23005fb865699a9776de7338217d679e67a801c",
+      "public_module": "src/born_ladder/reproduction/predictive/finalize_g2a_campaign.py",
+      "definitions": {
+        "_closed_json": {
+          "normalized_ast_sha256": "57338f573657974fdd4bdf7021b281048912c730da260ff348221acdbb606299",
+          "comparison": "exact AST"
+        },
+        "_bound_path": {
+          "normalized_ast_sha256": "3689cac1979906e2e1752c48bd9f175782a1ba1d369ba7d1d4275d43f7170803",
+          "comparison": "exact AST"
+        },
+        "_require_sha256": {
+          "normalized_ast_sha256": "bce3cde036dc4e9df09e4c066382c0c489d9b55ca08b57877bfca8924eebf050",
+          "comparison": "exact AST"
+        },
+        "_legacy_binding": {
+          "normalized_ast_sha256": "dc3b9b1cbe5595d8acce9a29f94d335e52fc805c5d8c2761848e34674ddc3053",
+          "comparison": "exact AST"
+        },
+        "_legacy_attempt_paths": {
+          "normalized_ast_sha256": "0c4b4644b2c1000a8ecc4427eb560816b79958e4a26f67f2e1193ca4a37230db",
+          "comparison": "exact AST"
+        },
+        "_write_content_addressed_attempt": {
+          "normalized_ast_sha256": "1ac82a237ee3a3d12e3a07f36e71e006fa8c1c345a0cade2b4ca83c8dfcd33f8",
+          "comparison": "exact AST"
+        },
+        "_move_to_superseded": {
+          "normalized_ast_sha256": "312836c471b26c02d44ade9c56bed5109a1bda14db97efed0bd65f7a24cc2c65",
+          "comparison": "exact AST"
+        },
+        "_expected_campaign_root": {
+          "normalized_ast_sha256": "52957070d471a6a39937411e167dd1c06bc7d44528e192375790a917ef18e087",
+          "comparison": "exact AST"
+        }
+      }
+    },
+    {
+      "original_module": "scripts/rebuild1/g2a.py",
+      "original_sha256": "95bb65fa654eb6d955d34f414691cbb74e32335c78d4566b31ce22b79ef9a321",
+      "public_module": "src/born_ladder/snapshot/g2a.py",
+      "definitions": {
+        "G2aDecisionInputs": {
+          "normalized_ast_sha256": "8e11653212f705811fe79787cb06a5f5ea2d723f33930d93e01334f1fa28fb8c",
+          "comparison": "exact AST"
+        },
+        "G2aStatistic": {
+          "normalized_ast_sha256": "e06096ad79f99b64d0e51f3aaf3f38119e5bc464af9ba7592d7f0f1898b0b183",
+          "comparison": "exact AST"
+        },
+        "SealedG2aUnitArtifact": {
+          "normalized_ast_sha256": "b6b2ebd4ec2779d483d2b1d11b21993af7df4394df5c2099dca90a52a16ecd71",
+          "comparison": "exact AST"
+        },
+        "SealedG2aFiniteFailure": {
+          "normalized_ast_sha256": "2b4a38a90b20b374c0a94405c86500842ddb551e42ab724b9deb26eba18f5aa0",
+          "comparison": "exact AST"
+        },
+        "_raw_marker_contract": {
+          "normalized_ast_sha256": "127fdf746fb69b97a9666665731ebe15936e7e7986fddfa6ed6320c85b206b7e",
+          "comparison": "exact AST"
+        },
+        "_raw_segments": {
+          "normalized_ast_sha256": "107516ed65c0b5e02ab80adcccfc155f1cc40e8ef3b2f08f340d0a15ce65daa0",
+          "comparison": "exact AST"
+        },
+        "_oriented_basis": {
+          "normalized_ast_sha256": "142f0cffedae98071c627c42cb91993cd66255b3839d6c8c48fe14cca73cbb4c",
+          "comparison": "exact AST"
+        },
+        "_derive_unit_pair": {
+          "normalized_ast_sha256": "8136e044467b21f90d47a05936961b98bb9e6bb410dcdf22538ddb99331358f1",
+          "comparison": "exact AST"
+        },
+        "_sealed_g2a_unit_artifact": {
+          "normalized_ast_sha256": "9fc73394e6283a17690bd959fff0b5abd16b4f42a4c7539dde2e6106f67cb449",
+          "comparison": "exact AST"
+        },
+        "_contract": {
+          "normalized_ast_sha256": "4c3986ee271db7335253b447fc62018794bdffd2cd340e62bc187049d0bcf058",
+          "comparison": "exact AST"
+        },
+        "_finite_number": {
+          "normalized_ast_sha256": "f90c1323bc8b5c2695a059166567c39bd6e5cd26676198f4f7ab4db7af054042",
+          "comparison": "exact AST"
+        },
+        "_validate_decision_inputs": {
+          "normalized_ast_sha256": "6efc1bbe9926b3ba673192831ad5c89e1f8e24ea938258f52b3344f4fd1d4091",
+          "comparison": "exact AST"
+        },
+        "_lookup_variable": {
+          "normalized_ast_sha256": "39277e85f3287617654b48bbd8b25c512bb4c16d1477c0588ee7d85c98a3fcee",
+          "comparison": "exact AST"
+        },
+        "_eval_predicate": {
+          "normalized_ast_sha256": "3586d23804e17cc7c9513d6ad331e05484f6f24766fe0ed0e4a2c2e5bf2b4678",
+          "comparison": "exact AST"
+        },
+        "select_g2a_branch": {
+          "normalized_ast_sha256": "2841cca78b346344ca3b82fc16110ea3f7aa18924d5c714811dd04d365184727",
+          "comparison": "exact AST"
+        },
+        "_mean": {
+          "normalized_ast_sha256": "109bbb1fd1687ddba1fd0400085603183782c4f195f765ace9c216537e41dcc4",
+          "comparison": "exact AST"
+        },
+        "_type7": {
+          "normalized_ast_sha256": "bf1e8d58f9b3365d72fe009f6780633c5f0e8d85d46b2e9e56582a121b9a41e8",
+          "comparison": "exact AST"
+        },
+        "_conditional_sign_p": {
+          "normalized_ast_sha256": "33d49a1c8b7d246a19c60c67ada8ce7b1d915ed91a0095abecf362b36f8c4102",
+          "comparison": "exact AST"
+        },
+        "_holm": {
+          "normalized_ast_sha256": "dd35f47e8c65dbe534aa33e8aaebfd14a11cd20c17738e1f53db7cd097c5f33b",
+          "comparison": "exact AST"
+        },
+        "_bca_probability": {
+          "normalized_ast_sha256": "203d0d40c61aa842c036e74f7e2985528e5c492e1b682725859ac9cdd85b0d62",
+          "comparison": "exact AST"
+        },
+        "_bootstrap_rng_audit": {
+          "normalized_ast_sha256": "d1be2eb1b051a7dbb6069f5b95ea2372853e79912d76fad9361f9817bb6750f6",
+          "comparison": "exact AST"
+        },
+        "_bootstrap_result": {
+          "normalized_ast_sha256": "b348842d8b5b26d86492dac2290c60ff622e317dd662438811d74a8e45fbd691",
+          "comparison": "exact AST"
+        },
+        "_bca_summary": {
+          "normalized_ast_sha256": "bc2e1a0ffc849d385c87b37a4333cbdf4a9ffd449a6246af862ba3775f4aa31b",
+          "comparison": "exact AST"
+        },
+        "_hierarchical_values": {
+          "normalized_ast_sha256": "11debe199c581402385e95c46ae5518dc964cba72aa2e1d977d0a2627be9e3f5",
+          "comparison": "exact AST"
+        },
+        "_sensitivity_atoms": {
+          "normalized_ast_sha256": "a1ca138af077210fcfacf257ec94cd03c6de66c30cd67d62644e8446b2b869b1",
+          "comparison": "exact AST"
+        },
+        "_percentile_summary": {
+          "normalized_ast_sha256": "7c72dbb7540a7eea3e570e2a9217f01e2f09f04d3c764edc6facf34a47091fa8",
+          "comparison": "exact AST"
+        },
+        "_sensitivity_results": {
+          "normalized_ast_sha256": "b17b289b6947f48e5d1b576b27df0a5ef1ecfcba57d5dc7c6f4ac311a7b744d7",
+          "comparison": "v25 explicit optional adapter; default-body restoration checked by test_v25",
+          "historical_normalized_ast_sha256": "0a0251b6711de7df9669354307174670c79c6199f5394996baa2dae19c87584b"
+        },
+        "_has_reversal": {
+          "normalized_ast_sha256": "0c0333b4c644580ab22b09016a3bd70075859ef9142e4780938fd140a6a4f092",
+          "comparison": "exact AST"
+        },
+        "_controls_pass": {
+          "normalized_ast_sha256": "6708799f7fb25589a09012c6cdba7af8ac8f21ef9cfcb964464c158d99161d98",
+          "comparison": "exact AST"
+        },
+        "_reject_synthetic_campaign_evidence": {
+          "normalized_ast_sha256": "1b8521a615743f63005d71a4cf6e4d187e1ac949d244833e2ac261b256614291",
+          "comparison": "exact AST"
+        },
+        "_attempt_bindings": {
+          "normalized_ast_sha256": "a5053135bbc1b1042d1f6e930c8e8a4dc212ae85639d2ba897a0fbbb99e74ae8",
+          "comparison": "exact AST"
+        },
+        "_control_failure_artifact": {
+          "normalized_ast_sha256": "db43d5cdb22c7e0cc4ac491dd8573373d47211a2d365a76170ff7bf7213e634e",
+          "comparison": "exact AST"
+        },
+        "evaluate_g2a": {
+          "normalized_ast_sha256": "4bf10133d7f73a88c9f979ad437b16fc0ab77b55765c825091c1970796862b2b",
+          "comparison": "historical receipt wrapper preserved; population body extracted without arithmetic changes (P4 test)",
+          "historical_normalized_ast_sha256": "b6e65664528eff0a20c7f7918aff9de8bba6ed07b66e18d57429568d588902be"
+        }
+      }
+    },
+    {
+      "original_module": "scripts/rebuild1/g2c_campaign.py",
+      "original_sha256": "6abfe8b0c3e1ccb8484441bc6e5eb8efa235153a592be677b4b64a19ba4ca270",
+      "public_module": "src/born_ladder/reproduction/predictive/g2c_campaign.py",
+      "definitions": {
+        "G2CCampaignArtifacts": {
+          "normalized_ast_sha256": "c4a058d14d8f148fcde1cff9d0645b1f04d5708ebaf61d1b1ed3bac01f5f2b80",
+          "comparison": "exact AST"
+        },
+        "_contract": {
+          "normalized_ast_sha256": "ac7df7412f579d1bb13611e73b9b5b8e8af7a1115778bba2f259d87991c4deb1",
+          "comparison": "exact AST"
+        },
+        "_v21_timeout_contract": {
+          "normalized_ast_sha256": "35e3005129b3ecf3dcda365cc4705b0a99fb89b691fb4ed82f411685e90a2dae",
+          "comparison": "exact AST"
+        },
+        "build_g2c_invocation_manifest": {
+          "normalized_ast_sha256": "2f94adaf043bdb07e12eed30a38c85dc0480658980fb6a53ad6638203d102213",
+          "comparison": "exact AST"
+        },
+        "validate_g2c_invocation_manifest_records": {
+          "normalized_ast_sha256": "275ae35e832d1e327e5f59e13dbc3fbe258d52da0dccf096b3022f5cd84dc01b",
+          "comparison": "exact AST"
+        },
+        "_validate_v21_attempt_record": {
+          "normalized_ast_sha256": "e853ec5fce8ea466bc76204d10a9cf6d6a202687f1550e0f6c2ef18ee7cd0b65",
+          "comparison": "import relocation/diagnostic record wording only"
+        },
+        "_execute_v21_one": {
+          "normalized_ast_sha256": "918ca521c50e3eb0a02a5c4cfdb9638b3a8e5dcbc662f8bfea40edb93e366f55",
+          "comparison": "exact AST"
+        },
+        "_registry_bytes": {
+          "normalized_ast_sha256": "0baa5b7c7f8e79fcc3eb778fed80093b647b9333aff33bb7f3ca89784f4e302d",
+          "comparison": "exact AST"
+        },
+        "_authorized": {
+          "normalized_ast_sha256": "389c652373262946169d755fcc2f91476fec3469392b764753ecde2e6dc16e7e",
+          "comparison": "exact AST"
+        },
+        "_validate_v21_timeout_persistence": {
+          "normalized_ast_sha256": "3e127700f6775c1671c909b7f53efb1fae5c76dce1d40331e08bb6120ff91818",
+          "comparison": "exact AST"
+        },
+        "validate_v21_campaign_timeout_artifact": {
+          "normalized_ast_sha256": "7f533e2b37e0eec612873933959d1ebfece4a012eb473e6daff3dfb42f2b1fbb",
+          "comparison": "exact AST"
+        }
+      }
+    },
+    {
+      "original_module": "scripts/rebuild1/g2c_collector_structural.py",
+      "original_sha256": "78e98e162612d76c72fd33793214fcdcc62e34dc9e6abcb97c617884f706fae7",
+      "public_module": "src/born_ladder/snapshot/g2c_collector_structural.py",
+      "definitions": {
+        "G2CRawSegment": {
+          "normalized_ast_sha256": "9500dea2f866e624192aef303e595a6062e6d1b2192f1a91eedf0a26ad2c4c47",
+          "comparison": "exact AST"
+        },
+        "G2CCollectorCapture": {
+          "normalized_ast_sha256": "dd878d4ddaeb4a2c566a3cd5aa4995be7e4e5ba68886914c75167a29b6f89a4d",
+          "comparison": "exact AST"
+        },
+        "_contract": {
+          "normalized_ast_sha256": "70f90cf82a5e13ffa71331121ff2f8e096ce119d50b51e347322bf1bd36e45b2",
+          "comparison": "exact AST"
+        },
+        "_selected_core": {
+          "normalized_ast_sha256": "969f8ada05a87106491fe780dd30c1dbd319c28cc64b8c20b982327d4d8ab85f",
+          "comparison": "exact AST"
+        },
+        "_roles": {
+          "normalized_ast_sha256": "1d35d2065c6647e5028f5be81ad980bde390fe956a2352dbd8ace706da68fd63",
+          "comparison": "exact AST"
+        },
+        "_collapse_pairs": {
+          "normalized_ast_sha256": "49e3fd1ad599959f2dd879218475ca3fefaef6c3f101b953c0ec57e08ebbc437",
+          "comparison": "exact AST"
+        },
+        "_segment_census": {
+          "normalized_ast_sha256": "7bc25d14d8c286d9cf8ad1a2db22b6334ddd9de85bd7b14419723203fe6833e5",
+          "comparison": "exact AST"
+        },
+        "_identity": {
+          "normalized_ast_sha256": "9f509c09336f3a4b0b7875a33f5937e3887f53e541571d4348d9da4fd4fe9387",
+          "comparison": "exact AST"
+        },
+        "parse_g2c_raw_segments": {
+          "normalized_ast_sha256": "4a6d5aafb5d4da715c26609c4dc5c8ad9bce533f4ca7b2109591cc127f4a63ee",
+          "comparison": "exact AST"
+        },
+        "segment_census_record": {
+          "normalized_ast_sha256": "a6cc31547a5105849ac8ae7b51898907f64496820d457089678f0fd976e01f08",
+          "comparison": "exact AST"
+        },
+        "reconstruct_g2c_collector_record": {
+          "normalized_ast_sha256": "9a382646bc19fb3b6125615c5547b44ed0ed57ab573f59c178ae17d2ffa58a05",
+          "comparison": "import relocation/diagnostic record wording only"
+        },
+        "build_g2c_collector_capture": {
+          "normalized_ast_sha256": "5acda29eb1109a0a9a687e7880a40e501362ddb486aeb6c66d65f36aaf010f05",
+          "comparison": "exact AST"
+        },
+        "parse_g2c_collector_capture_bundle": {
+          "normalized_ast_sha256": "db67db0fffe4d447e16eb81ead70c87ff4270a5d8c0c6aaeeddb329e5180fd2b",
+          "comparison": "exact AST"
+        },
+        "require_g2c_structural_channel_equality": {
+          "normalized_ast_sha256": "cfc60022c6313cf6ef7c2bd6b6ae1f3eac15790361cfcbf19d28055df3b2b46d",
+          "comparison": "exact AST"
+        },
+        "parse_g2c_collector_capture": {
+          "normalized_ast_sha256": "fee149f61ec16367631b2bd244062d547f1f33b8a9f560a1d1caa8f1b353f8c1",
+          "comparison": "exact AST"
+        }
+      }
+    },
+    {
+      "original_module": "scripts/rebuild1/g2c_controls.py",
+      "original_sha256": "ff742eedcc6aac9ea8c975bcb94d021ae92e5f86affdefd58e742c79c44d5a7f",
+      "public_module": "src/born_ladder/snapshot/g2c_controls.py",
+      "definitions": {
+        "gradual_underflow_certificate": {
+          "normalized_ast_sha256": "eb9865b47e6df8db22572085bd86fba84c365a64ad29cb5eca5695e067a97f42",
+          "comparison": "exact AST"
+        },
+        "_require_gradual_underflow": {
+          "normalized_ast_sha256": "8d6acb6de2f7ce5e355db4da754a6bbf7677680c8861686de1d562f813496bfe",
+          "comparison": "exact AST"
+        },
+        "G2CControlArtifacts": {
+          "normalized_ast_sha256": "b246e5ca8afe33611ecfefc4e92d50aac1205886b0dfbf191c3874ff7322e381",
+          "comparison": "exact AST"
+        },
+        "_contract": {
+          "normalized_ast_sha256": "e6ac3f21bd86f18a0e7848cd5584e507080390c172bac861d2407817a3df8a0b",
+          "comparison": "exact AST"
+        },
+        "_kind": {
+          "normalized_ast_sha256": "0d84d18ba598c1ca7abac0288f0abbc10c36b58886c04567d251ca3a38222cc8",
+          "comparison": "exact AST"
+        },
+        "_is_nondegenerate": {
+          "normalized_ast_sha256": "1a0eee1fdb894dfe760dd3ac2e9b0280f259ca19cb6819ec7cc0a9b57aabcb85",
+          "comparison": "exact AST"
+        },
+        "_distribution": {
+          "normalized_ast_sha256": "b99ef17a85871b08060533c6d6089e3d9c8cc75485c9271eac9c7b82e399d85b",
+          "comparison": "exact AST"
+        },
+        "_mapped_dtv": {
+          "normalized_ast_sha256": "0c4eb84999a5bc6e58cb43c2d5f8b58c52de4f9bccbefff5faaab033bab6e439",
+          "comparison": "exact AST"
+        },
+        "_rotation_candidate_admissible": {
+          "normalized_ast_sha256": "03da63e88e493e8df7b6fbe07659377953078699bcccb5d8bc5f33a81ee378d1",
+          "comparison": "exact AST"
+        },
+        "_certificate_residual_passes": {
+          "normalized_ast_sha256": "e56f11c528abc986970b0fa90f763cfae714a4f91e05fc3da9ba2b7aec0cd892",
+          "comparison": "exact AST"
+        },
+        "_validate_empirical_l1_premise": {
+          "normalized_ast_sha256": "067f3bf83a269765751f18a5f3ce714092f9361f79896ab6a29c26ccc188deab",
+          "comparison": "exact AST"
+        },
+        "_validate_v22_operation_envelope": {
+          "normalized_ast_sha256": "3b80d929d8a78d31549632665a500ebed02ce07dd47d50fd32136803687c971f",
+          "comparison": "exact AST"
+        },
+        "_framed_fields": {
+          "normalized_ast_sha256": "d0e6bf1d711b7082ea1a821daabb9ae5844ae859c70578c47670f9c4e8f12b85",
+          "comparison": "exact AST"
+        },
+        "_rotation_evidence": {
+          "normalized_ast_sha256": "ebe2e94bda0bea9ed583ad7ab0366d9f06ed11e842e50496dac49b0d91e39136",
+          "comparison": "exact AST"
+        },
+        "validate_g2c_v22_rotation_evidence": {
+          "normalized_ast_sha256": "0159f84492fad8139496abb25615ab8a81b30ed21ab8ff09086371a79d36d532",
+          "comparison": "exact AST"
+        },
+        "validate_g2c_v4_rotation_evidence": {
+          "normalized_ast_sha256": "2f4aa624e9a09f297af194f501290c3595cbbd552565d9c0fbd82c590188b7ea",
+          "comparison": "exact AST"
+        },
+        "build_g2c_controls": {
+          "normalized_ast_sha256": "f521f64780e8277045073699e71452ce94797bb521fdaefed94a826021667a77",
+          "comparison": "exact AST"
+        }
+      }
+    },
+    {
+      "original_module": "scripts/rebuild1/g2c_evaluate.py",
+      "original_sha256": "c287f2638b162bfbd3b574697a6da7483d5a1879a7215b174738c0acdad66833",
+      "public_module": "src/born_ladder/snapshot/g2c_evaluate.py",
+      "definitions": {
+        "G2CDecision": {
+          "normalized_ast_sha256": "382ea0dd4fc2949a33cc24501c172449a83236e82c586c7bdd51a659fc1e0b85",
+          "comparison": "exact AST"
+        },
+        "_contract": {
+          "normalized_ast_sha256": "7149565f9e251e6033380efccf1df9bcd3582de8027e7a0bbb1b00bf1fe0888b",
+          "comparison": "exact AST"
+        },
+        "select_g2c_branch": {
+          "normalized_ast_sha256": "7bf306a27ea05cd5d79227522ff10235c219857957ac25132e9c3cad35caf836",
+          "comparison": "exact AST"
+        },
+        "_record_kind": {
+          "normalized_ast_sha256": "7e27728539e3f0e07e76ad1d8667bcddc1cfade2a2a32e846687df7f5c7a9929",
+          "comparison": "exact AST"
+        },
+        "_source_seed_values": {
+          "normalized_ast_sha256": "cc80af514f7efb9be94b9bd3f97e450c6f04d6474f4e9f40c6c2ec589dc0bcaf",
+          "comparison": "v25 explicit optional adapter; default-body restoration checked by test_v25",
+          "historical_normalized_ast_sha256": "cafce6757b61b7c7de4d552bfdcb18069b78a8df3de1084387f8519ac343b936"
+        },
+        "_combined_seed_vector": {
+          "normalized_ast_sha256": "5c9fd848612cba92eb078282a540f04a13b46b666e46b9d8d020eff776e74f57",
+          "comparison": "exact AST"
+        },
+        "_undefined": {
+          "normalized_ast_sha256": "01f13cf84e9db64e3da127133084468e9c3f2d3576e026a4dd54ef1a8935510b",
+          "comparison": "exact AST"
+        },
+        "_paired_bootstrap_results": {
+          "normalized_ast_sha256": "8f7096f8caf775e679d102b46a703902d234492d9d23fa43ecb4b878fec0541e",
+          "comparison": "v25 explicit optional adapter; default-body restoration checked by test_v25",
+          "historical_normalized_ast_sha256": "cb7a94353089ae100511582765be39a7f053fe17a84f56addf5677f14830c0f4"
+        },
+        "_config_only_estimate": {
+          "normalized_ast_sha256": "7cee4d6721a6ed32269c8baa5f23e54236c8bb8cc26d1c55b7c9977b31f002a9",
+          "comparison": "exact AST"
+        },
+        "_sensitivities": {
+          "normalized_ast_sha256": "33758fa5196820dcb060e8ddb7a6d3148ee0f895c4827ac470df3b221660920f",
+          "comparison": "v25 explicit optional adapter; default-body restoration checked by test_v25",
+          "historical_normalized_ast_sha256": "1498178b387f8fef32459aa52613ed867abf064f97ad43e46e123051c116136c"
+        },
+        "_hierarchy_ledger": {
+          "normalized_ast_sha256": "4d91bfbed253e9c00ea9956397da832a6b157f5a2d32a314473db2d6f6e13446",
+          "comparison": "exact AST"
+        },
+        "_statistic_census_binding": {
+          "normalized_ast_sha256": "07d9d1757f273d588a87b0c5e37ecdc3a1f2bff18551be16d136d41536c05db1",
+          "comparison": "exact AST"
+        },
+        "_attach_census_binding": {
+          "normalized_ast_sha256": "10f631f8a9264b4818ca766c43b6147877489c558e5984cf9acb5978d9fd6636",
+          "comparison": "exact AST"
+        },
+        "_intermediate_references": {
+          "normalized_ast_sha256": "28b5c94b7b893f6c17451ed0c8ea69a5ae34427b90aebf8bebef153d9485feff",
+          "comparison": "exact AST"
+        },
+        "evaluate_g2c_records": {
+          "normalized_ast_sha256": "01267613704a1e3b63ce7fd1a6d7ec3354f9d7ef6bc65044dc540df90055abcd",
+          "comparison": "P4 optional scheduling callback only; original AST restored by regression normalization",
+          "historical_normalized_ast_sha256": "5d0a119705850ccc9f6242399de7a81b8ea11d7cea1ab6d1e397b4b9880f4567"
+        }
+      }
+    },
+    {
+      "original_module": "scripts/rebuild1/g2c_rotation_certificate.py",
+      "original_sha256": "cbc5f20ddc67e7ee24a9ae1b45565994268d8cf343c90e2968820b01cfb7ded9",
+      "public_module": "src/born_ladder/snapshot/g2c_rotation_certificate.py",
+      "definitions": {
+        "_exact_float": {
+          "normalized_ast_sha256": "7e4b59a9b5a5bec8bc177d06333d6586efa88f79bf4fb2f2db4d5574d09fd822",
+          "comparison": "exact AST"
+        },
+        "_gamma": {
+          "normalized_ast_sha256": "f91e74a4d4c4a9c86118661f4e84afb85dba3f03e353a028f1123a18bcc76c47",
+          "comparison": "exact AST"
+        },
+        "_underflow_sum": {
+          "normalized_ast_sha256": "63ae8c372dfaf78fc7883f6d28488ddaadde217548366478a86ac9fb60db581e",
+          "comparison": "exact AST"
+        },
+        "evaluate_gradual_underflow_certificate": {
+          "normalized_ast_sha256": "f5bf9bbe0ebd120a3ceafaaf8bcff82873adf65c5a562bf95d4ae385c9e7a854",
+          "comparison": "exact AST"
+        },
+        "_sqrt_upper": {
+          "normalized_ast_sha256": "7a8cf16e7b520b3768d26a8daad4f9341885e5ad7293ae633fbb0735945928c5",
+          "comparison": "exact AST"
+        },
+        "_upward": {
+          "normalized_ast_sha256": "29ed6b46855b69dae022848e6533138be7d7e82f98c4b965e5f6fba204f37c8f",
+          "comparison": "exact AST"
+        },
+        "_downward": {
+          "normalized_ast_sha256": "92c4b2fc7f4887ac05bec6bd3c242fd61f820510eff3000ccf443c4a5f0481c9",
+          "comparison": "exact AST"
+        },
+        "_evaluate_expression": {
+          "normalized_ast_sha256": "b0928e5171df11ec4da4393492135807e3f04841c826656064efc1c57d1afdd0",
+          "comparison": "exact AST"
+        },
+        "evaluate_rotation_certificate": {
+          "normalized_ast_sha256": "5c46bb21bbae8a87bbbbdf56d23f795c1af502c1f47ca71b03a5cc4ba3decb17",
+          "comparison": "exact AST"
+        }
+      }
+    },
+    {
+      "original_module": "scripts/rebuild1/g2c_units.py",
+      "original_sha256": "05eb7401f0f319bf3c06d68d5ae424850a280cfdd984cef52a78a780a1a9d407",
+      "public_module": "src/born_ladder/snapshot/g2c_units.py",
+      "definitions": {
+        "SealedG2CUnitDrafts": {
+          "normalized_ast_sha256": "53a4fa0aa474ddd6cee1c160e36d2532b3f4de9217756d0717f42a4db1f0eaa7",
+          "comparison": "exact AST"
+        },
+        "G2CArtifacts": {
+          "normalized_ast_sha256": "5e16001f2cf24b098841f11f43ba1ef902cd61c4759b808d88f1bb26d8fd0e65",
+          "comparison": "exact AST"
+        },
+        "_contract": {
+          "normalized_ast_sha256": "cdeb3086c958d454bf487584be4664e3d4f9311ba2cee06d52e746f6823c0f0d",
+          "comparison": "exact AST"
+        },
+        "_source_key": {
+          "normalized_ast_sha256": "8bf4f394063da82cba6a3be650dc30aa2c9d448d1567e6fbf2fe15a6046d9e62",
+          "comparison": "exact AST"
+        },
+        "_rekey_pair": {
+          "normalized_ast_sha256": "0679265db7550879787af9cbc0661750440fc407461853d5651286447864666b",
+          "comparison": "exact AST"
+        },
+        "_pair_and_control_source": {
+          "normalized_ast_sha256": "eecd4cc42da77d72895e73ae405a0635af252454abf99ce4043cbdc289f07a2d",
+          "comparison": "exact AST"
+        },
+        "require_scientific_g2c_segments": {
+          "normalized_ast_sha256": "01affe78e3bad7d635f442da0ea2b2743e7cef2240553edeb17a053beb4b0beb",
+          "comparison": "exact AST"
+        },
+        "derive_sealed_g2c_unit_drafts": {
+          "normalized_ast_sha256": "cc0d7868713a36b85d2db699170c49d77de4d8f50dc93bd5b200a380206a042b",
+          "comparison": "exact AST"
+        },
+        "bind_g2c_rotation_result": {
+          "normalized_ast_sha256": "8339e50893d2228ecf64131f5b30344e2a4af6ea1c944ba3a6540beac6e231b1",
+          "comparison": "exact AST"
+        },
+        "finalize_g2c_artifacts": {
+          "normalized_ast_sha256": "b903153a312ac6452ec228c61a92117bb72b71eef4a5397e12e443906204f098",
+          "comparison": "exact AST"
+        },
+        "validate_g2c_artifacts": {
+          "normalized_ast_sha256": "d77afa119a6a80fddf7a90c2821df233b65bd0411703dc32cdba3979000f7fa4",
+          "comparison": "exact AST"
+        }
+      }
+    },
+    {
+      "original_module": "scripts/rebuild1/identities.py",
+      "original_sha256": "c7d70c73cafdddf7d48c74526932e1044dfbaec6b191c6fb849147d08c1f6a49",
+      "public_module": "src/born_ladder/snapshot/identities.py",
+      "definitions": {
+        "canonical_identity_bytes": {
+          "normalized_ast_sha256": "79a0cd776333d7b85a973cf1e82691295479cfd54b270a4bc31c71d91f14fb0c",
+          "comparison": "exact AST"
+        },
+        "_nonempty_string": {
+          "normalized_ast_sha256": "f57c320b41699243d2ac1cf5e7c0aabb28cf4417723d16e0662b4f573bae3910",
+          "comparison": "exact AST"
+        },
+        "stable_unit_id": {
+          "normalized_ast_sha256": "8565843dc1413f0273062a1b6eab4bf782babc4b460cb9a5d7bbc68c35e2a323",
+          "comparison": "exact AST"
+        },
+        "kind_cell_id": {
+          "normalized_ast_sha256": "7fc510dc1b97b3bd19f6cd3f70b7be27217b7f66e2565a60912c584e4999271c",
+          "comparison": "exact AST"
+        }
+      }
+    },
+    {
+      "original_module": "scripts/rebuild1/inventory.py",
+      "original_sha256": "9fbe0e119c999dc1ce95d24a39533b4b0f264d917c4c890a6c90d22dca442ad8",
+      "public_module": "src/born_ladder/snapshot/inventory.py",
+      "definitions": {
+        "RustFunction": {
+          "normalized_ast_sha256": "6533aefc4c73639f2d41281e1a0fda6a4b05efa4d41dba9ff3fc9f25d77bcc17",
+          "comparison": "exact AST"
+        },
+        "InventoryAuthorization": {
+          "normalized_ast_sha256": "07b51ce60103cb357f311c5df84ef8aebf17c37bc5f5a0ebe8c98d313f11968c",
+          "comparison": "exact AST"
+        },
+        "_matching_rust_brace": {
+          "normalized_ast_sha256": "dbdda7f27f72b6edf5e6853384cc75469d269aa3e6e6f991011256276e87194c",
+          "comparison": "exact AST"
+        },
+        "extract_rust_function": {
+          "normalized_ast_sha256": "e071a5506a3ee6322f9bc0194e79b2d034b68344f36877f0f80640b2f9dd32f7",
+          "comparison": "exact AST"
+        },
+        "parse_exp112_labels": {
+          "normalized_ast_sha256": "a5fafd6156b9e4fd64c16c044e0a4e58e726801642b0a57f8efef7e4fc405bbb",
+          "comparison": "exact AST"
+        },
+        "verify_definition_identities": {
+          "normalized_ast_sha256": "e77a901e29cd30d5fdcc3ce4fb608c4bff74fcf85c2658c5e43225947e35302b",
+          "comparison": "exact AST"
+        },
+        "build_inventory": {
+          "normalized_ast_sha256": "01764e981da54252fb1c30f6955c63a24199a8f075e1fa80734d404a7ecc3784",
+          "comparison": "exact AST"
+        }
+      }
+    },
+    {
+      "original_module": "scripts/rebuild1/rng.py",
+      "original_sha256": "6402b334ae93fc1395fb98bc2e08f4b72ca143c212a1dddcf035499c5e22b8ea",
+      "public_module": "src/born_ladder/snapshot/rng.py",
+      "definitions": {
+        "uint64_be": {
+          "normalized_ast_sha256": "470a22f6e746c462662136ca8000c5a80b5360c06bde8f633d8523574798ff2f",
+          "comparison": "exact AST"
+        },
+        "typed_frame": {
+          "normalized_ast_sha256": "27159cf7678b8d17d8302e2fcfffef27cb97918bc4c1294ce9bb865ec5c5ae14",
+          "comparison": "exact AST"
+        },
+        "master_key": {
+          "normalized_ast_sha256": "f036f5072a2a7b29759e16e65a209a0e0fbe59b840f7b48c34e08d12fa450cfe",
+          "comparison": "exact AST"
+        },
+        "derive_master_key": {
+          "normalized_ast_sha256": "60c0f607ebc78ea7bf565f4602a77c3e9dab73ae9e9be705a3cc60e7c88abdfb",
+          "comparison": "exact AST"
+        },
+        "_derive_from_contract": {
+          "normalized_ast_sha256": "ec0071000b83820cb9bf2c30455446ec188145a4c810cf5cd2ee1810d3099b08",
+          "comparison": "v25 explicit optional adapter; default-body restoration checked by test_v25",
+          "historical_normalized_ast_sha256": "6de33121de6565b87c9333c8f261171e7dfd67d6ddfa56f4c2c2ffaff5590a50"
+        },
+        "key_deriver": {
+          "normalized_ast_sha256": "8482a5997c29bd174d3712d211dd20628b6137a9e9a59f6b622d92edbc9e53ee",
+          "comparison": "exact AST"
+        },
+        "RNGStream": {
+          "normalized_ast_sha256": "56a1624321fca29a74d834915abfeddab7f9edc5a599c33cbbb55539bb064774",
+          "comparison": "exact AST"
+        },
+        "h2_permutation": {
+          "normalized_ast_sha256": "2ef67ffc2d8bdbc89e3d143d25a7d4377a8207a11d16018e20089673e2b7d6fc",
+          "comparison": "exact AST"
+        }
+      }
+    },
+    {
+      "original_module": "scripts/rebuild1/runner_structural.py",
+      "original_sha256": "c67694e4a490982cfd67d8bbf205405222b05525fdce0a751729f2398ec471ef",
+      "public_module": "src/born_ladder/snapshot/runner_structural.py",
+      "definitions": {
+        "ParsedStructuralEnd": {
+          "normalized_ast_sha256": "66473b75447d2ac061c206ae80909d022c863a5d2e2d2f15a8f196e2d5061597",
+          "comparison": "exact AST"
+        },
+        "RunnerCapture": {
+          "normalized_ast_sha256": "29c0e54c9f6a6e20b7faf993b8adab216b004008962efd7e642f78941fbc36f4",
+          "comparison": "exact AST"
+        },
+        "_closed_pairs": {
+          "normalized_ast_sha256": "1135c36e72064b24e5cad594511d58f742c667aa850321d005d6f1429e2ff11d",
+          "comparison": "exact AST"
+        },
+        "_finite_float": {
+          "normalized_ast_sha256": "e2c9038fddf7f64bc0a9de18bc4ec3788f735da4e5cae80ba8a5e1b4203cab55",
+          "comparison": "exact AST"
+        },
+        "_reject_constant": {
+          "normalized_ast_sha256": "7c02a6f0e09b373fa4a74ad94a4ba943af26b3ded83e1f921ef243820be31da9",
+          "comparison": "exact AST"
+        },
+        "_leaf": {
+          "normalized_ast_sha256": "d5e36847158ecceaa4cfd1957345b491f1fee8a954090056de47a0ddc24912be",
+          "comparison": "exact AST"
+        },
+        "_validate_shape": {
+          "normalized_ast_sha256": "81c0db7ab169dff716684cb93af7959b09012f9c3563e7f36e2c68dde0e1c05d",
+          "comparison": "exact AST"
+        },
+        "parse_runner_stdout": {
+          "normalized_ast_sha256": "1a9b45f655ad22df57da5e087afa16d22cfc8a9d0744b02d4d3585cea41f4f0c",
+          "comparison": "exact AST"
+        },
+        "build_runner_capture": {
+          "normalized_ast_sha256": "32855612f2cdef8a7db2a939cde27dc598aea87728c0e5bbf810ef58b0a5398e",
+          "comparison": "exact AST"
+        },
+        "parse_runner_capture_bundle": {
+          "normalized_ast_sha256": "2a84dc8b77e5890d4624a781d12ff1094d52c247cca4fcd7508f444b8ad2d5eb",
+          "comparison": "exact AST"
+        },
+        "parse_runner_capture": {
+          "normalized_ast_sha256": "4059d7bf360e278bb57e45012a2be64b81e7f2b3e30220e4b5b89f5aa772204f",
+          "comparison": "exact AST"
+        }
+      }
+    },
+    {
+      "original_module": "scripts/rebuild1/status.py",
+      "original_sha256": "dc78a4ac754335a64e9dddf17699ebd762a266f7ee5ddbc82d757c411e9dbdd1",
+      "public_module": "src/born_ladder/snapshot/status.py",
+      "definitions": {
+        "_contract": {
+          "normalized_ast_sha256": "703cdef5f11d65f6c2cea895e174dc5a700358e09a241155b838444b59d76398",
+          "comparison": "exact AST"
+        },
+        "stage_ids": {
+          "normalized_ast_sha256": "e0e56e529aa81f62f4e857cd6a18c6dfed43513ba87d44607031d7183bd5f73c",
+          "comparison": "exact AST"
+        },
+        "preemptive_status": {
+          "normalized_ast_sha256": "7926a7eb024741fbe6f9cd457faabb1f94f08d0ada2f6c6a404cd2754c285aab",
+          "comparison": "exact AST"
+        },
+        "recognized_statuses": {
+          "normalized_ast_sha256": "b5170d9545946f5b672cc70261149a6e11a269f09afcdc54a9cec2674bc392d0",
+          "comparison": "exact AST"
+        },
+        "require_recognized_status": {
+          "normalized_ast_sha256": "e5c26df5db60593c259ae851a7d3fa5cf75e5bccb832e9154a7690c85280185a",
+          "comparison": "exact AST"
+        }
+      }
+    },
+    {
+      "original_module": "scripts/rebuild1/universal_shapes.py",
+      "original_sha256": "cac68448e1014044883a79bee9798cd4b3c74b23ec0d4513969b3e515171a0cb",
+      "public_module": "src/born_ladder/snapshot/universal_shapes.py",
+      "definitions": {
+        "canonical_jsonl_bytes": {
+          "normalized_ast_sha256": "5b7b97230087fe1eb294c7592f8c4c0554aab83ea360e212e75486aecc62e748",
+          "comparison": "exact AST"
+        },
+        "_closed_object": {
+          "normalized_ast_sha256": "42c39dc02ff26e29ebc90c7e50396f39ecdf2b4744bd734ee57f20371c23fce7",
+          "comparison": "exact AST"
+        },
+        "_reject_nonfinite_token": {
+          "normalized_ast_sha256": "30bed7da42e389830662d6afaae2637c6de3b42e655d5b404a5f0195564be82e",
+          "comparison": "exact AST"
+        },
+        "load_canonical_record_artifact": {
+          "normalized_ast_sha256": "bf77b19eff456b529945ed4dde5282a56b3eac05e7ddf189c7eae41694a52b58",
+          "comparison": "exact AST"
+        },
+        "_fail": {
+          "normalized_ast_sha256": "bd0f56bcc1e1147baaa0035e7bf2fafebb20c9409963cd3a340eea6a8d416aad",
+          "comparison": "exact AST"
+        },
+        "_canonical_step_id": {
+          "normalized_ast_sha256": "d2227d90ddb1b9e45da66ca0f0c02967ff6ae99eb8a19d78dca42fb65bef15d0",
+          "comparison": "exact AST"
+        },
+        "_dimensions": {
+          "normalized_ast_sha256": "74ba0d51db91764e4777c88892996237a91ff04b54031287da2db68351b76634",
+          "comparison": "exact AST"
+        },
+        "_dimension": {
+          "normalized_ast_sha256": "0524ce7f5af89f38d9c24fda30fc1f7b8f7dd4482e784a7e10b87f0c4dba8994",
+          "comparison": "exact AST"
+        },
+        "_check_scalar": {
+          "normalized_ast_sha256": "522ad8e7926e2aae021fdfd959f2e83f3edd5ffcb1f0ed1b28f2aff1fb03b265",
+          "comparison": "exact AST"
+        },
+        "_validate_descriptor": {
+          "normalized_ast_sha256": "6b9409786d3ac762bc9abd1ba8ddf9cc052a394a298316178eccba7f5a040434",
+          "comparison": "exact AST"
+        },
+        "_kind": {
+          "normalized_ast_sha256": "1324eb223dec5e9eb683c5aff8f087fb57f070fd771664d2d488721f2ea0db28",
+          "comparison": "exact AST"
+        },
+        "_selected_numeric": {
+          "normalized_ast_sha256": "99e3267c26673bdf2cf0e33d01fcd0d5e49aec7fb4a0bc2e206b5659d49b7ef7",
+          "comparison": "exact AST"
+        },
+        "_control_fail": {
+          "normalized_ast_sha256": "ee95ac0ba32002ac14af1b983fe259ca1b8b98bc24799e7464517a715f686540",
+          "comparison": "exact AST"
+        },
+        "_max_difference": {
+          "normalized_ast_sha256": "073592fd0e1d03d67d0ad08583f7af8b7b9ffc2380d2ba82ab00b1aebab65caf",
+          "comparison": "exact AST"
+        },
+        "_vector_close": {
+          "normalized_ast_sha256": "6ee633d4324722e90e5d6366a87432dbb191ec0e77e2e5624013e0473f8e9b76",
+          "comparison": "exact AST"
+        },
+        "_matrix_vector": {
+          "normalized_ast_sha256": "a04161592dcf6d351ff8654d454495146434c8b41a1763790bd91c389f45cd0a",
+          "comparison": "exact AST"
+        },
+        "_transpose_vector": {
+          "normalized_ast_sha256": "c1c9a5b09f0d260ac5c53a5be7a4a2de9c0e334398f88bb19d53d87d4ac4ad40",
+          "comparison": "exact AST"
+        },
+        "_formula_contract": {
+          "normalized_ast_sha256": "8b83ecf8cadbbb74df412fa5315369f75c57ebe6d80ed812089375d0f1d81d6f",
+          "comparison": "exact AST"
+        },
+        "_validated_svd_census": {
+          "normalized_ast_sha256": "8f00231cb9967ad5208ae3084047862eba8ad8abe4c00d12a36346fa2b379b5b",
+          "comparison": "exact AST"
+        },
+        "_recomputed_laws": {
+          "normalized_ast_sha256": "aadb600a0781ca8434194a44ae2e72cd503a0e49bdd55a108858cb4a4e273f21",
+          "comparison": "exact AST"
+        },
+        "_residual_contract": {
+          "normalized_ast_sha256": "72e90ca37c08611f5467eecf2f54c740df6316572d614a6d10aaf6c2a6103728",
+          "comparison": "exact AST"
+        },
+        "_residual_pass": {
+          "normalized_ast_sha256": "c52568692c9c10ba6a35261103593a2f2220c42b4226288e99245efaf8931bc9",
+          "comparison": "exact AST"
+        },
+        "_validate_scoring": {
+          "normalized_ast_sha256": "a0f78edfda9e64e3ab39d4a9528e7879f75f515855ad9964f4f82a94c5d4b31e",
+          "comparison": "exact AST"
+        },
+        "_validate_recomputed_residuals": {
+          "normalized_ast_sha256": "ea7c33a386ee56b1c8fa39f46425ccc55fa3b14f8d82b8db99611a027370f77f",
+          "comparison": "exact AST"
+        },
+        "_numeric_leaf_count": {
+          "normalized_ast_sha256": "1d845a98e9ef7b54c791918e9b992727b403050fdb0f958588df26833973be8a",
+          "comparison": "exact AST"
+        },
+        "validate_stage_records": {
+          "normalized_ast_sha256": "4f368a973fff1370ffb476fa5b8d172bffe2d8323b3b6f478bb2ab4370361419",
+          "comparison": "import relocation/diagnostic record wording only"
+        }
+      }
+    },
+    {
+      "original_module": "src/born_ladder/record_tests/estimators.py",
+      "original_sha256": "0d96493c663cfc7e92f5e2b54eeef23d1253557d2c34c2418a03acb9abeaf840",
+      "public_module": "src/born_ladder/record_tests/estimators.py",
+      "definitions": {
+        "sha": {
+          "normalized_ast_sha256": "dea79c6f27569a38d82038122b2cae9bc0632df0be3d9e9dba2c9e9b7187659e",
+          "comparison": "exact AST"
+        },
+        "_split": {
+          "normalized_ast_sha256": "0311eecb5aa390ccd54a260c54e587024c81ed8459605f455d2c5bcb6177f934",
+          "comparison": "exact AST"
+        },
+        "RecordAllowlist": {
+          "normalized_ast_sha256": "190430a421cd979d0df6ee146c17d7a3d5ec47b15af7b2db3eac77a6f86c875c",
+          "comparison": "exact AST"
+        },
+        "RecordData": {
+          "normalized_ast_sha256": "16d6a8af5603761a2a304aa518172f59cdedfb23088799f42a8c4d4964a88a5b",
+          "comparison": "exact AST"
+        },
+        "CanonicalData": {
+          "normalized_ast_sha256": "19adfaa5e09c07fb6bd475834403c81552750d95647c13765bd6a466bb914b29",
+          "comparison": "exact AST"
+        },
+        "parameter_counts": {
+          "normalized_ast_sha256": "a009670f82e3d43b905cf9f5b9cf60e09ea4977f215f5bab2f92fb8b488b32e7",
+          "comparison": "exact AST"
+        },
+        "capped_classical": {
+          "normalized_ast_sha256": "1190f41d00cf3bc45b1a6d9b71de3a8bc44b37736340cd2f3c959ad40fe6a827",
+          "comparison": "exact AST"
+        },
+        "_seed": {
+          "normalized_ast_sha256": "0826c7f0114609d9fe4488b25e51d0e957e6e23811c0fbad6217994911604cc1",
+          "comparison": "exact AST"
+        },
+        "_control_seed": {
+          "normalized_ast_sha256": "d5ba1d799112d144923b69db24e56c045d5fe1ba3acdbb7e904075354ffe4faf",
+          "comparison": "exact AST"
+        },
+        "_qr": {
+          "normalized_ast_sha256": "dc648a43e0ec0003fd2f3341fe9bae78076ad0c6eab3164a4202243d9ceff1f0",
+          "comparison": "exact AST"
+        },
+        "_softmax_rows": {
+          "normalized_ast_sha256": "34471c4282308c77de170c1153035697dc8068387c55215659fff5e74d8e1968",
+          "comparison": "exact AST"
+        },
+        "_size": {
+          "normalized_ast_sha256": "bca097890b965192d68074463e46f48f77f2e8a833ca37816f3ad92f4c45100e",
+          "comparison": "exact AST"
+        },
+        "_pred_torch": {
+          "normalized_ast_sha256": "d002ba9134bee2d3e37360d2b428777d5cff9254027dd09b8062f0fc27f674e2",
+          "comparison": "exact AST"
+        },
+        "score_probability": {
+          "normalized_ast_sha256": "b081ca176863ede9625a2afaff2348382becf6dd50aed316964b45388a0b69c1",
+          "comparison": "exact AST"
+        },
+        "_loss": {
+          "normalized_ast_sha256": "5e1de9a4f36045e6196551c5c2a00136ca6383f6301fa3997851b3658b80aeb1",
+          "comparison": "exact AST"
+        },
+        "Fit": {
+          "normalized_ast_sha256": "cfa5826d6e8e49410475f4ecaf3c6670858616d52d00b808e2207ce1f16b025f",
+          "comparison": "exact AST"
+        },
+        "_optimize": {
+          "normalized_ast_sha256": "72dd3a7c7c8c2043e21cedb7127d624db59f46d73b1b2f2c7827535085cc7bf4",
+          "comparison": "exact AST"
+        },
+        "_symmetric_pred": {
+          "normalized_ast_sha256": "7dea89002ee748e80ff6186c3ace67d08e8982e5a7a157746c27ff2200d9772e",
+          "comparison": "exact AST"
+        },
+        "_v5_late_candidates": {
+          "normalized_ast_sha256": "2bcaaeafa6657ad8225e6ac827bd9a4c7faef197c709da7957d5878f8c832c8f",
+          "comparison": "exact AST"
+        },
+        "_v5_spectral_start": {
+          "normalized_ast_sha256": "a29fb091725ae153ed84564962729daf3087ba410b375ab914f44eaa44f9f051",
+          "comparison": "exact AST"
+        },
+        "_v5_fit": {
+          "normalized_ast_sha256": "381017a3df4211441d1aa44dda61812acdd3b5fbcbe03f8b6a90426a577fc688",
+          "comparison": "exact AST"
+        },
+        "_Stop": {
+          "normalized_ast_sha256": "8d6d0e559a72b20d9cb6a6dd0d3e9ff66b260b0e43c712d179d6ccc9c42f9af9",
+          "comparison": "exact AST"
+        },
+        "fit_model": {
+          "normalized_ast_sha256": "314865ab88b3e7a85d56a0bf193ff6aef591aed2d7c56411a4934eb5e9f16901",
+          "comparison": "exact AST"
+        },
+        "diagonal_predict": {
+          "normalized_ast_sha256": "c0751cbfdaa17fa51ad6e03b08f47136c8e2bbd0d63eefd0471ac157cde97e74",
+          "comparison": "exact AST"
+        },
+        "fit_diagonal": {
+          "normalized_ast_sha256": "eda95a443f7bd0575f36ee98e9e824de25aacf9502d911842ef6ea9669d85c46",
+          "comparison": "exact AST"
+        },
+        "fit_family": {
+          "normalized_ast_sha256": "2ee470798660a4e52c91ee2ae42dcc213d9fea361cf2e7d75e9a90c2ce571fc9",
+          "comparison": "exact AST"
+        }
+      }
+    },
+    {
+      "original_module": "src/born_ladder/record_tests/generators.py",
+      "original_sha256": "a756fc5c215854889506a638af2aa2d06b470ef3a222d303bd9e6a1e02a4f9b4",
+      "public_module": "src/born_ladder/record_tests/generators.py",
+      "definitions": {
+        "rng": {
+          "normalized_ast_sha256": "2025d52fab421f23e82350911ea6cbeade99b03d30f861eaf85e198d7a9d051b",
+          "comparison": "exact AST"
+        },
+        "stochastic": {
+          "normalized_ast_sha256": "4a77a2b87d4028a4b8ce60cf1bc4ec4d67bc15cdbdd64a00913ffcff6ebff3b9",
+          "comparison": "exact AST"
+        },
+        "sample_rows": {
+          "normalized_ast_sha256": "b1065ec3057c9e3b71571083400eaf60dabf559017a26be9ab076c9a1dcd7066",
+          "comparison": "exact AST"
+        },
+        "dimensions": {
+          "normalized_ast_sha256": "74e38d03001c155656348b128b368e062c2eb9a537e12e9a1c04fcd5e6d88e3e",
+          "comparison": "exact AST"
+        },
+        "qr_frame": {
+          "normalized_ast_sha256": "b93baab02f1daf9e6e23671e5487d5caa531c2f8e8b447eab94e59ecd5bfc6ac",
+          "comparison": "exact AST"
+        },
+        "amplitude_matrix": {
+          "normalized_ast_sha256": "601488dde04f5d154457aa1e578d136bbc1b5e80e11872943fd914190ddff527",
+          "comparison": "exact AST"
+        },
+        "square_law": {
+          "normalized_ast_sha256": "0f681fd41b58c0df4715c57d4784e74f26e394d8d93a414f3cd7b7a31bfa7d7c",
+          "comparison": "exact AST"
+        },
+        "clipped_law": {
+          "normalized_ast_sha256": "a8fc68d770576b9f0b2eafaf91245558dad1ee02541b026bddd3221dd6c5d10b",
+          "comparison": "exact AST"
+        },
+        "calibration_and_paths": {
+          "normalized_ast_sha256": "179596a83fa610a281efc9642a73417af215a5f5ce5ce11e2eea864d900ac752",
+          "comparison": "exact AST"
+        },
+        "Plant": {
+          "normalized_ast_sha256": "66d14af49b6aba27d3efe34495d2710e793acec5b6e7fe53acbe6f59f3e5f0fd",
+          "comparison": "exact AST"
+        },
+        "quadratic": {
+          "normalized_ast_sha256": "bec9ffe64799843d9a687381198063770827d41980b67849282b80ca0a239ee4",
+          "comparison": "exact AST"
+        },
+        "clipped_linear": {
+          "normalized_ast_sha256": "356244bee9e36b2b2cd1f0ecc1b427ce802ad7cc7638fe2057c455ae593b73e9",
+          "comparison": "exact AST"
+        },
+        "ed": {
+          "normalized_ast_sha256": "1950d4f042e36670666fbf183aecd72d7a34e275d83c3b1d2147824d3bb395d6",
+          "comparison": "exact AST"
+        },
+        "hmm": {
+          "normalized_ast_sha256": "6740ea48e917414cddf72566de36c03363a300c36e545bf03b6bddc7b68e3a00",
+          "comparison": "exact AST"
+        },
+        "split_state": {
+          "normalized_ast_sha256": "8a13934a984326f216124d2b24d036e6f17e4af76a068e577bbf10e7830b45ca",
+          "comparison": "exact AST"
+        }
+      }
+    },
+    {
+      "original_module": "src/born_ladder/record_tests/generators_v6.py",
+      "original_sha256": "eb43531b31fa5245a0cb40d065b5042270468475853894872c0029ceec84c77c",
+      "public_module": "src/born_ladder/record_tests/generators_v6.py",
+      "definitions": {
+        "valid_cell": {
+          "normalized_ast_sha256": "bfc5da8864a28d689b88cbb7c6ba19fe188ee9534f19db678f8e11e0df2d1c24",
+          "comparison": "exact AST"
+        },
+        "path_block_domain": {
+          "normalized_ast_sha256": "73a983092d5b34df2b31b48f48132cdd633d3aafaecf4bd54c925096134aaa31",
+          "comparison": "exact AST"
+        },
+        "rng": {
+          "normalized_ast_sha256": "5afb3d1385d605e171d5d8bf370dc336e5064e395385dd46278e3bef2bb3ecfc",
+          "comparison": "exact AST"
+        },
+        "_dimensions": {
+          "normalized_ast_sha256": "a659c58e97d87b8c1b588734bcd3d43bcda90a6471deeb1434b37d0280360a58",
+          "comparison": "exact AST"
+        },
+        "_preparations": {
+          "normalized_ast_sha256": "80a4a6493bd410556e2bdd3e35be11e7686eaffafff065b4758f3d5eaebe048d",
+          "comparison": "exact AST"
+        },
+        "_calibration": {
+          "normalized_ast_sha256": "c0f0885e08ca7df792fcd6994c2e9af0f5e1f26e036d421bcb6ef41a3442a1f9",
+          "comparison": "exact AST"
+        },
+        "_paths_distribution": {
+          "normalized_ast_sha256": "db18521915f5a6124f61761e82d1354ca85fb91b00bc49ea163fe698d0b57f70",
+          "comparison": "exact AST"
+        },
+        "_paths_chain": {
+          "normalized_ast_sha256": "fa3bf2d34cd3b980f1f77103d29792da8dfb953a8ec4257662c3c1393dba9c08",
+          "comparison": "exact AST"
+        },
+        "V6Plant": {
+          "normalized_ast_sha256": "f4336405a0ac88d81af2e094cd6d2b748e3225c84046aca51733842d42073020",
+          "comparison": "exact AST"
+        },
+        "quadratic": {
+          "normalized_ast_sha256": "3670979bab5e1907fd2a7f6903cc6bbf1c73cecd5f85af1a6c22774026b0f5fd",
+          "comparison": "exact AST"
+        },
+        "clipped_linear": {
+          "normalized_ast_sha256": "e92d4f3d75b7ab9139339459166eb6e04199d46f6ea19160816405e1d0ffe937",
+          "comparison": "exact AST"
+        },
+        "ed": {
+          "normalized_ast_sha256": "f530ba3996e58d3ea3be7ef6cf9e0bb75e00038ae7b3f1d500da124adbadbce4",
+          "comparison": "exact AST"
+        },
+        "hmm": {
+          "normalized_ast_sha256": "6ef864c8d00fb5523de26cebfdca3c3fefc1f7eeaba95cdad5020d59396104b4",
+          "comparison": "exact AST"
+        },
+        "split_state": {
+          "normalized_ast_sha256": "7eec16aded8d433e26ccbd3b4b6879893c8ad0f955bff2634128f19111296bb6",
+          "comparison": "exact AST"
+        },
+        "pseudocampaign_context": {
+          "normalized_ast_sha256": "d90840d39666d9896c8793a19796cc59f70c6bd63a7bb54f6ad2677afe554f5f",
+          "comparison": "exact AST"
+        }
+      }
+    },
+    {
+      "original_module": "src/born_ladder/record_tests/test_b_census.py",
+      "original_sha256": "9e809319d94e7a64eaacd889acb6e5c5dba0656d84b2c2548d0a80cb89ad62be",
+      "public_module": "src/born_ladder/record_tests/test_b_census.py",
+      "definitions": {
+        "canonical_bytes": {
+          "normalized_ast_sha256": "9171af2eacf7ce72909616b5bfcacbecc7a89710d4ad90c7852571b23f87de0e",
+          "comparison": "exact AST"
+        },
+        "nearest_95": {
+          "normalized_ast_sha256": "708d52f71fa2e7990b92ef5e1ce69cf2b7f64764ee1124a63de9e24b062ce089",
+          "comparison": "exact AST"
+        },
+        "closure_deficit": {
+          "normalized_ast_sha256": "aecd7869d02b333626527bd6f4f9fffbe28a76aff6a49d5b70002d1be18c3e73",
+          "comparison": "exact AST"
+        },
+        "lumpability_defect": {
+          "normalized_ast_sha256": "ce37054f6f40d799c8bf8f0d9ecba176f647da168a31e14c6af4c0c0c1005fdd",
+          "comparison": "exact AST"
+        },
+        "census_for_context": {
+          "normalized_ast_sha256": "4ff9b07cf4c2c21c09f23b9d9de90f0e5cc1bf25e9373e24db798141d572fa9c",
+          "comparison": "exact AST"
+        },
+        "_write_hashed": {
+          "normalized_ast_sha256": "9177daed5a85b83ad8da7f4c5f734f8ab70c4164263e8fbc6b275f631cc8627f",
+          "comparison": "exact AST"
+        },
+        "run": {
+          "normalized_ast_sha256": "e6682ae539038b086f383ba24ee4188da248a6f6b0fe086d881edc5e62e2e2f8",
+          "comparison": "exact AST"
+        },
+        "main": {
+          "normalized_ast_sha256": "2c7bc1b7cd784e2c5f9756eaa4efd7d5da0fc627a240b93fee37497831d43629",
+          "comparison": "exact AST"
+        }
+      }
+    },
+    {
+      "original_module": "src/born_ladder/record_tests/test_b_census_v6.py",
+      "original_sha256": "78faa0d4c9cf1dfabf1e511846355f43c412d467c85c76274c5b91001c7542b6",
+      "public_module": "src/born_ladder/record_tests/test_b_census_v6.py",
+      "definitions": {
+        "source_header": {
+          "normalized_ast_sha256": "ee57dd5088f89c8920cce9bbe154781d1609c6431f891ecbc727c7e5e06f0ca3",
+          "comparison": "exact AST"
+        },
+        "recipes_v6": {
+          "normalized_ast_sha256": "9aac72af6cf7b311d2dd200f60c1bec6c067f5a8c230acd7c05d8d76537465d8",
+          "comparison": "exact AST"
+        },
+        "_context_census": {
+          "normalized_ast_sha256": "4dd71cb1bb96fd20310be7394b0f2ffdeb087fd6c05ce0f9c4749a25580a40e9",
+          "comparison": "exact AST"
+        },
+        "_unit": {
+          "normalized_ast_sha256": "da941f010acc4919b7983a5a75595f444682959d72a0064e30e8462e7d7c7ac0",
+          "comparison": "exact AST"
+        },
+        "_write_hashed": {
+          "normalized_ast_sha256": "363b96336359b38c1a83e97c0ed628f5da3bbb957503ec06394675cc75420f3a",
+          "comparison": "exact AST"
+        },
+        "run": {
+          "normalized_ast_sha256": "52de5fc9baf19a1b501f735c56aeb1cc0c44af2a6316c196d03effef7efeb083",
+          "comparison": "exact AST"
+        },
+        "main": {
+          "normalized_ast_sha256": "d8c8943bdc6cadc25072e0e5c6f74f01335e8d72a4b233074ddda587da73cd34",
+          "comparison": "exact AST"
+        }
+      }
+    },
+    {
+      "original_module": "src/born_ladder/record_tests/record_view_v6.py",
+      "original_sha256": "ced896d80355cffa0afbadb290aa6272e9dbb7f4d8cbbc70c726821bebbcdb71",
+      "public_module": "src/born_ladder/record_tests/record_view_v6.py",
+      "definitions": {
+        "canonical": {
+          "normalized_ast_sha256": "220168ea68e914889b1b9b7b868261954b1545d54a03356837fea9c0e3f4d210",
+          "comparison": "exact AST"
+        },
+        "build": {
+          "normalized_ast_sha256": "94c6a14214cdd57428fbd5c3f2be4d957872d440f6c337aace9560b003971ed1",
+          "comparison": "exact AST"
+        },
+        "main": {
+          "normalized_ast_sha256": "dcb43b597540a898e9f0b5759df3433930e442a43c57e008045396c6c57301c6",
+          "comparison": "exact AST"
+        }
+      }
+    },
+    {
+      "original_module": "src/born_ladder/record_tests/scorer.py",
+      "original_sha256": "73645f0fb75656cb20570e5ec96053ba1772223bd67d535342a9cb6a092775d8",
+      "public_module": "src/born_ladder/record_tests/generation_scorer.py",
+      "definitions": {
+        "seal_predictions": {
+          "normalized_ast_sha256": "0ad3d7cafc90e403518e54e58d6901af777a6251cadbb1d11a7bc68c1d2095fe",
+          "comparison": "exact AST"
+        },
+        "open_sealed_predictions": {
+          "normalized_ast_sha256": "bf91b7253ac27bbcf54b02a6ba9eba8da892e4b16bd00ad42e9ce7d2d878dd6e",
+          "comparison": "exact AST"
+        },
+        "scoring_probability": {
+          "normalized_ast_sha256": "2e2ec32268c244371224cdf9709cd4df914666e760bfa05e1d63593016d3c9ad",
+          "comparison": "exact AST"
+        },
+        "oracle_law": {
+          "normalized_ast_sha256": "81d8cc4498696e99d31e8e6a497b4e2ab33d8bb60ce33e7380b95acb7fbf566f",
+          "comparison": "exact AST"
+        },
+        "excess_log_loss": {
+          "normalized_ast_sha256": "b4b91a05e01be00d4a17f5651ddf70a88ffb216dd66f29cfef607655b40d9936",
+          "comparison": "exact AST"
+        },
+        "sampled_loss": {
+          "normalized_ast_sha256": "d997dadee171bc7881bcdda5ec0ef06935d6f1aed73d524b156a65fe7afdabda",
+          "comparison": "exact AST"
+        },
+        "paired_block_statistic": {
+          "normalized_ast_sha256": "4aafef8f9a599e6150711f5a16461e1ec13ab0724bdfe329d1f0c09d6b278633",
+          "comparison": "exact AST"
+        },
+        "equal_context_mean": {
+          "normalized_ast_sha256": "f0771f42a0384dbac822c3c9bbf8ccd52a3e9989ee53e179a3a4932496235819",
+          "comparison": "exact AST"
+        },
+        "bootstrap_indices": {
+          "normalized_ast_sha256": "873f0951bde83d237d3420051c089652219b03dbd2a5305e4f2f3ec18c2c0409",
+          "comparison": "exact AST"
+        },
+        "centered_p": {
+          "normalized_ast_sha256": "c91de56e6b850bc857a16c9f31a87b8667fe7b16a31e9ba868d56257900098cd",
+          "comparison": "exact AST"
+        },
+        "holm": {
+          "normalized_ast_sha256": "6e62a4f2140df6d4505cfc1cc9cd8cb20b1093f3c4eed47f4053fda24ef345ee",
+          "comparison": "exact AST"
+        },
+        "lower_bound": {
+          "normalized_ast_sha256": "556a3a0c832a75b78deb5b491f1f7702705b27a0406ff12c53ad3ef808a95cf5",
+          "comparison": "exact AST"
+        },
+        "family_inference": {
+          "normalized_ast_sha256": "7c63a3a0b7769f82e5b23b639b1a7c1947196a2655f0961cfcf139defa163e66",
+          "comparison": "exact AST"
+        },
+        "nearest_95": {
+          "normalized_ast_sha256": "90ab4a2156dc25561ae1035f48053d0cde4086bc37dfb9bd9998fbff20018da9",
+          "comparison": "exact AST"
+        },
+        "scope_audit": {
+          "normalized_ast_sha256": "fa086727006bb5c8ef7735bdedcb64de33b3e45b756c992ba5a0c3a5a242ebb9",
+          "comparison": "exact AST"
+        },
+        "signal_audit": {
+          "normalized_ast_sha256": "917cf39ea972eb24b60f9f71094c466a82ffc66489f1e9e2b607efe7109dc36d",
+          "comparison": "exact AST"
+        }
+      }
+    },
+    {
+      "original_module": "src/born_ladder/record_tests/scorer_v6.py",
+      "original_sha256": "f87be94f3e14189951dc9b957d0f08449a746a9b64df8eb1d0749ddc7dd6db93",
+      "public_module": "src/born_ladder/record_tests/scorer_v6.py",
+      "definitions": {
+        "bootstrap_indices": {
+          "normalized_ast_sha256": "cc8d227da5396f20de1097b0f7a148ebae9c3f9e0fbc82de4a8a1bc468077502",
+          "comparison": "exact AST"
+        },
+        "sampled_loss": {
+          "normalized_ast_sha256": "10f64cefb8a541378e30ebe05f4dbc6a8e5cf0fe2161f94f652b189e840bc961",
+          "comparison": "exact AST"
+        },
+        "inference": {
+          "normalized_ast_sha256": "501f563e67b74e0a75b7d676af3a8c34b1fe2a18cd67ef1ef6853100466e067c",
+          "comparison": "exact AST"
+        },
+        "signal": {
+          "normalized_ast_sha256": "a6fc31b2c22730afed771445b9c33212a848a6af9f3407407835928e29f539c0",
+          "comparison": "exact AST"
+        }
+      }
+    },
+    {
+      "original_module": "src/born_ladder/record_tests/cert_v6.py",
+      "original_sha256": "bc6e7d8cc266dd782188d14f51b7a9ad0de8da358d7230ebcee984fa5f30398c",
+      "public_module": "src/born_ladder/record_tests/cert_v6.py",
+      "definitions": {
+        "cannot_reach_minimum": {
+          "normalized_ast_sha256": "428350806fb5e7c7c27a2ca61d90a7742137503929c5a33181a673ee36266e4f",
+          "comparison": "exact AST"
+        },
+        "fidelity_pass": {
+          "normalized_ast_sha256": "c325f1558968208e99c4cf648cefcc863995567cf244d1bbf23702258e237632",
+          "comparison": "exact AST"
+        },
+        "rank_claim": {
+          "normalized_ast_sha256": "4bae51edc2606b2dd228b032ac94a6df19b9a59e3a72ebfd57c4f28796ebbcf8",
+          "comparison": "exact AST"
+        },
+        "pseudo_rank_claim": {
+          "normalized_ast_sha256": "a4bbf7a8c9227fdb3cc04968c7fafef228ee78e516476d15bc6ac7077be3e506",
+          "comparison": "exact AST"
+        },
+        "false_square_pass": {
+          "normalized_ast_sha256": "31494ccfc27eee63e14368420b1a29ff4b272e0590d333d565aa4bfeaa520417",
+          "comparison": "exact AST"
+        },
+        "split_pass": {
+          "normalized_ast_sha256": "613e8f4f23071bcbacb118d2b177ad37ff6c6782d22120e860e929639e106b05",
+          "comparison": "exact AST"
+        },
+        "pseudo_pass": {
+          "normalized_ast_sha256": "2769f670fbe1920a0b71bd4f8da13abec09660b8308560f0dbb1ab39d5ae0630",
+          "comparison": "exact AST"
+        },
+        "encoded": {
+          "normalized_ast_sha256": "80015bf4699555d35ee4b1499a615b303c8d3452b27762935616bb0a4f55ba48",
+          "comparison": "exact AST"
+        },
+        "write_once": {
+          "normalized_ast_sha256": "bcef2a00ef7e302616d7fc28e86368a099e59fd03110d8506709af80d89a193c",
+          "comparison": "exact AST"
+        },
+        "write_or_verify": {
+          "normalized_ast_sha256": "3f85716bff8ff38bda9ddd3b8296d4be4af6b2daf9c700e8c554e3d0e4533626",
+          "comparison": "exact AST"
+        },
+        "append": {
+          "normalized_ast_sha256": "ab6d595be8d36815f07bac78f43899cb0932b52544351582e709fe16392e4553",
+          "comparison": "exact AST"
+        },
+        "read_prefix": {
+          "normalized_ast_sha256": "979a8a24f3b29d5c3c3990c946aeb7a6e12b41e7ed28eb323edff48f210512a0",
+          "comparison": "exact AST"
+        },
+        "complete_canonical_rows": {
+          "normalized_ast_sha256": "08bc2bda14645d52de3eede2de050866b439ac022ba5e6f5de96687a3c9fa774",
+          "comparison": "exact AST"
+        },
+        "canonical_document": {
+          "normalized_ast_sha256": "8f1a1fee9792f2b1f318162531e122313fcd2c29c910fd7d98816a9622963f2b",
+          "comparison": "exact AST"
+        },
+        "verify_fidelity_verdict": {
+          "normalized_ast_sha256": "55f41148b07d00c83829629f9ce175a7381cb9a6aaca59a5bad1a5eb55c53895",
+          "comparison": "exact AST"
+        },
+        "verify_split_verdict": {
+          "normalized_ast_sha256": "c40b372635ea4812bf9f2de9d4b03f3b9bac6f8fe4799b83953a45c43e7f98f1",
+          "comparison": "exact AST"
+        },
+        "verify_pseudo_verdict": {
+          "normalized_ast_sha256": "6f65f6e4373029ae3525649ba446bbf7a9ee946b20aa34deb2429e3844e036b7",
+          "comparison": "exact AST"
+        },
+        "complete_ordered_rows": {
+          "normalized_ast_sha256": "217af79916f5586bffe7ce50266dcbdb4c50ad567b092f6379ec1092e198ae32",
+          "comparison": "exact AST"
+        },
+        "seal_rank_margins": {
+          "normalized_ast_sha256": "1926afe81d8fcaf250dcd9a0904e6f777d16882fabf641f8df21db1ab80a452c",
+          "comparison": "exact AST"
+        },
+        "read_sealed_margins": {
+          "normalized_ast_sha256": "142ac06a9a72330d3f65431c6a7d8d9c0b0b376f88e57838ec9576da71f0e595",
+          "comparison": "exact AST"
+        },
+        "sha_array": {
+          "normalized_ast_sha256": "dd6d945a502a8b6987639938d0624d8982813798ce448c3c2f4c38b177a02f2d",
+          "comparison": "exact AST"
+        },
+        "plant": {
+          "normalized_ast_sha256": "cc8cf162b222ba0eb6a969e2bbe77213f4e4ea86122835e4febe3fd42d03576a",
+          "comparison": "exact AST"
+        },
+        "draw_digest": {
+          "normalized_ast_sha256": "e768e7cf0717fbbfa508128e3b28719ffa7e80699e5703dd7d79f1111eabfeba",
+          "comparison": "exact AST"
+        },
+        "commit_domain": {
+          "normalized_ast_sha256": "503d89b011f7c97cdba950ac907fef30365b0fd92ece75e49718f392c2cb1013",
+          "comparison": "exact AST"
+        },
+        "plant_readings": {
+          "normalized_ast_sha256": "7463250e7e6026a3b9de408e2e1b8250befa27e4be29ae0bad827e681fee0fa3",
+          "comparison": "exact AST"
+        },
+        "plant_marginals": {
+          "normalized_ast_sha256": "d0ef31835cfbb7f5db802906ab962d3331190d31f689d74dcc85126be9360289",
+          "comparison": "exact AST"
+        },
+        "record": {
+          "normalized_ast_sha256": "3d4ea62bef00383f206a59d46bfd08598c90f8c47435d43d6c7735d7a211bb00",
+          "comparison": "exact AST"
+        },
+        "expected_excess": {
+          "normalized_ast_sha256": "013aba925dfc685b547cd000e365c99de2c62cded76c6f23bb8b7462beb06fea",
+          "comparison": "exact AST"
+        },
+        "fit_failure": {
+          "normalized_ast_sha256": "23dc949c48c39abb939c491739fb7810e5da89184d68ac1aeea07fe673a056cd",
+          "comparison": "exact AST"
+        },
+        "fidelity_case": {
+          "normalized_ast_sha256": "c20b15db03da03673255796ba5bb6a3cc1f21095ac0c7899199d30662b922f66",
+          "comparison": "exact AST"
+        },
+        "fidelity_gate": {
+          "normalized_ast_sha256": "eb34311836a1ba772fdd5c5a41ada969bf6830a64930ab93482f5c0f52b2e395",
+          "comparison": "exact AST"
+        },
+        "fixed_census": {
+          "normalized_ast_sha256": "ceca52f10f4f94dbf6e788dbe5bbb4040be44b68ffa1a17d7949634c003a5eff",
+          "comparison": "exact AST"
+        },
+        "control_census": {
+          "normalized_ast_sha256": "bf7784d035b500aeb554659b32d41fcc0096ea8e90d255761f89c280631a910b",
+          "comparison": "exact AST"
+        },
+        "fold_record": {
+          "normalized_ast_sha256": "d812034eed6dda7db66ad831c77970630b75c5245d2287450e843ad38f2f4d2d",
+          "comparison": "exact AST"
+        },
+        "label_loss": {
+          "normalized_ast_sha256": "83dca56f822e3882429f041b97aef24e313d18b98aa38fb1a1fa18cb38930fb4",
+          "comparison": "exact AST"
+        },
+        "fold_contrast": {
+          "normalized_ast_sha256": "e0360954fd2fa43de09af38ebb9b8d00c2f0722abb90228c04e1070b79d7f179",
+          "comparison": "exact AST"
+        },
+        "seal_or_verify_prediction": {
+          "normalized_ast_sha256": "bf2e1bdaf5995ffdea3bd7e35e55a079075846d752cf1e4340d2ec80b64a5201",
+          "comparison": "exact AST"
+        },
+        "fit_seal_case": {
+          "normalized_ast_sha256": "302e9e9c6ad018dda60b1b7c0388fdff732be2636d9aa526901994026f10ee12",
+          "comparison": "exact AST"
+        },
+        "score_sealed_case": {
+          "normalized_ast_sha256": "3d1e1ad69791aa1890b45181ee20dc09721a7e3d404d0365cc241af378609977",
+          "comparison": "exact AST"
+        },
+        "main_case_fit_package": {
+          "normalized_ast_sha256": "744c7ba73ced015e27a7d7b103c8f484e77321bff5a107c3e65abc72356cc1cd",
+          "comparison": "exact AST"
+        },
+        "main_case_score_package": {
+          "normalized_ast_sha256": "66b42a36f4774dac7060f68f6aabe9e550705d129b3f5619880c22f2d91631c2",
+          "comparison": "exact AST"
+        },
+        "synthetic_census_commit": {
+          "normalized_ast_sha256": "6a56d032ecd77a71583a5a4d663f8197bd24599f156a986a1f59fb6810a5bd51",
+          "comparison": "exact AST"
+        },
+        "inventory_orphan_seals": {
+          "normalized_ast_sha256": "ea7d12117463fa91ef69252c0be45ca7fba853e07f990ea6f3456012167a6d8f",
+          "comparison": "exact AST"
+        },
+        "verify_pooled_verdict": {
+          "normalized_ast_sha256": "1b4d34d4c8f82a99e41908b2b5777711d912d64148bab887be9eeaf1ebcbdf05",
+          "comparison": "exact AST"
+        },
+        "pooled_false_square": {
+          "normalized_ast_sha256": "7cd528358e571a8614ed5f688191420a56296f1ae7fee7beea5add4ca57f1819",
+          "comparison": "exact AST"
+        },
+        "split_control": {
+          "normalized_ast_sha256": "902105653c6536c34b9dbb6d0d9ee01ed710fd5158447b81b2f9297de3594794",
+          "comparison": "exact AST"
+        },
+        "pseudo_fit_package": {
+          "normalized_ast_sha256": "85c603bb41591708759c76dc5b8eda66a2d30a4debb1bfab9f1917c77dac3773",
+          "comparison": "exact AST"
+        },
+        "pseudo_rank_task": {
+          "normalized_ast_sha256": "e9032a0c912709ed3e1dd90d4aeb837bb73a26da7a32ac0a827203cf8845a3a4",
+          "comparison": "exact AST"
+        },
+        "pseudo_task_arguments": {
+          "normalized_ast_sha256": "5997fd2aa27f804007e8d171c2e1a31a264a43f366c4374d06f2fe265ec9a52c",
+          "comparison": "exact AST"
+        },
+        "assemble_pseudo_fits": {
+          "normalized_ast_sha256": "a3ea62726dd48d03d6b1b5eed545b1bf740a1ae068144531cafa64058a46625a",
+          "comparison": "exact AST"
+        },
+        "pseudo_fit_scheduler": {
+          "normalized_ast_sha256": "211633cccec8ab50b36d6dcf1ce1335482b326c2d7bcf5ad73e874e1c48d4616",
+          "comparison": "exact AST"
+        },
+        "pseudo_score_package": {
+          "normalized_ast_sha256": "91ce66c06340dd84e33b5ef43e26fb0f0ef884abd8b17fe63a3d43e60602be7b",
+          "comparison": "exact AST"
+        },
+        "pseudocampaigns": {
+          "normalized_ast_sha256": "ee0e90baba52eabc743c0757120dd5769b095197bfc98d71d31fdd4affc99848",
+          "comparison": "exact AST"
+        }
+      }
+    },
+    {
+      "original_module": "src/born_ladder/record_tests/real_v6.py",
+      "original_sha256": "c7282b455edac3c5b3ab7f37ae7b8e5e6f3a8d92548e901a5e6f34a899ff718a",
+      "public_module": "src/born_ladder/record_tests/real_v6.py",
+      "definitions": {
+        "validate_control_rules": {
+          "normalized_ast_sha256": "dedc9933845aaf113e4c605560031b527d773007807de361bca0b97c71690120",
+          "comparison": "exact AST"
+        },
+        "sha": {
+          "normalized_ast_sha256": "937184219425afbfa2634610ec0ce315281737bc5b2a4fad53cc46f4b8154fbc",
+          "comparison": "exact AST"
+        },
+        "put": {
+          "normalized_ast_sha256": "88ace7d60a92a439e84dae6ea9458a9989a3b9ee8f244d5d75b123a5aa24c232",
+          "comparison": "exact AST"
+        },
+        "put_bytes": {
+          "normalized_ast_sha256": "935592e0fbc5df6e2f0ecbb4a271b7df454d31e4adb2783305d5db1e854ab755",
+          "comparison": "exact AST"
+        },
+        "tree_hashes": {
+          "normalized_ast_sha256": "b86b484d42faa4587b0b6e6b14c1a1e8ad2b81718b69464efa92ead3886fa488",
+          "comparison": "exact AST"
+        },
+        "verify_files": {
+          "normalized_ast_sha256": "af4e6f7277eaa56555d29e398818e32836966a612c120d7b885e7e1d69ddd1e9",
+          "comparison": "exact AST"
+        },
+        "verify_phase": {
+          "normalized_ast_sha256": "4e118769948e88982700f5d979d4a27328e3df2b961b27d9f6b626ed25379923",
+          "comparison": "exact AST"
+        },
+        "commit_phase": {
+          "normalized_ast_sha256": "43e9325c415694dd323654c5a22a96333367465e8d238c19c8b39ddf8d2973ed",
+          "comparison": "exact AST"
+        },
+        "unit_key": {
+          "normalized_ast_sha256": "605b2ad954cf29c520ef27bdccbefd4c860075e7cea3aada6dded05e66701cb6",
+          "comparison": "exact AST"
+        },
+        "job_name": {
+          "normalized_ast_sha256": "1a269e7e9fb592e2559258237eb6a8a67d954a43846b5153e1f468ebeef19d50",
+          "comparison": "exact AST"
+        },
+        "runner_command": {
+          "normalized_ast_sha256": "98ed443870b3f383b1e0c639dd7b1cd10d3bcb9dd56c6b8bb7c9502d5d9eea02",
+          "comparison": "exact AST"
+        },
+        "normalized": {
+          "normalized_ast_sha256": "5d393c90483c98d44c4a5dd874c69a80553f5ccbb017ac251d4a683540140f70",
+          "comparison": "exact AST"
+        },
+        "legacy_hashes": {
+          "normalized_ast_sha256": "3e252c01773b3e6916082b28dbf1f88e3f169442d032dead30f6b5b4fbf12be4",
+          "comparison": "exact AST"
+        },
+        "P5RecordLoader": {
+          "normalized_ast_sha256": "4751654209a275e4d83f3eb50fad579c61fd9a525328a66812db44be3896cea8",
+          "comparison": "exact AST"
+        },
+        "validate_sample": {
+          "normalized_ast_sha256": "36fdea584b8b0be31373fa7e7732afa3d8f15f9ecd7027bf060f7b60d22ce624",
+          "comparison": "exact AST"
+        },
+        "calibration_census": {
+          "normalized_ast_sha256": "c2a0300dd599bcc74608a82d1c01b8d769109ed50f87de9907951e5f2724bb8e",
+          "comparison": "exact AST"
+        },
+        "predictions": {
+          "normalized_ast_sha256": "f45f447d06360adec1e5f43604be5adbc69d9fb0c33bd0cef06fa053b9e38dd4",
+          "comparison": "exact AST"
+        },
+        "fit_identity": {
+          "normalized_ast_sha256": "e88cf8b22b0ae328cb2c7862897d353199f322168e791e03106ead04b867e61a",
+          "comparison": "exact AST"
+        },
+        "load_bundle": {
+          "normalized_ast_sha256": "3eca1cd5922ba62cc5b3fadfda5a4baf0ac16df3a34e20c2c447e66a1a5c8f4c",
+          "comparison": "exact AST"
+        },
+        "fit_record_job": {
+          "normalized_ast_sha256": "a1a8f737292a0d690f94767e210c6c673b4ecdd3accde96081589d4c191efb77",
+          "comparison": "exact AST"
+        },
+        "eligible_entries": {
+          "normalized_ast_sha256": "6b6524fed39e80b5fae6ddb929d6eb2ad70466307af47962bfee6758951f89e6",
+          "comparison": "exact AST"
+        },
+        "fit": {
+          "normalized_ast_sha256": "70b0fb08ee01fdee7c5a15492adc6a97cbd3614c9345ffa7f77eaca0b374a00d",
+          "comparison": "exact AST"
+        },
+        "record_alphabet": {
+          "normalized_ast_sha256": "5bf80554f59e1fbfd3e62b989eb9d38e0951587e3e0f55874d2fe5c30d98aad4",
+          "comparison": "exact AST"
+        },
+        "control_seed": {
+          "normalized_ast_sha256": "4ef93345ec6e911ef4007f17db7428ba55181bb408d4849bc419dc62aa8c73b1",
+          "comparison": "exact AST"
+        },
+        "erasure_not_computed": {
+          "normalized_ast_sha256": "4a94b09351a489bae609438b7129d1ee265b6d44d5bd799ecd6e4eb9a8c7c555",
+          "comparison": "retained original AST plus documented refactor AST and exact output-equivalence checks",
+          "refactor": {
+            "original_source": "def erasure_not_computed(root: Path, entries: list, rules: dict) -> dict:\n    \"\"\"\u00a76 line 139 and prospective manager ruling: diagnostic omission, no gate change.\"\"\"\n    figures = []\n    seen = set()\n    for entry, _ in entries:\n        if entry['file'] in seen: continue\n        seen.add(entry['file'])\n        alphabet = record_alphabet(root, entry)\n        raw_m = len(set(alphabet[:, 0])); package_m = len(set(alphabet[:, 1]))\n        m = raw_m * package_m\n        candidates = (1 << (m-1)) * 76\n        figures.append({'context_file': entry['file'], 'original_labels': entry['m'],\n            'raw_labels': raw_m, 'package_labels': package_m, 'full_product_labels': m,\n            'rank_two_sign_patterns': 1 << (m-1), 'rank_two_scored_candidates': candidates,\n            'candidate_theta_arrays_bytes_alone': candidates * (2*m+4) * 8})\n    return {'status': 'NOT_COMPUTED', 'diagnostic_only': True, 'refits': 0,\n        'spec_reference': '\u00a76 line 139',\n        'spec_quote': 'Erasure is diagnostic; equivariance or leakage failure invalidates v6.',\n        'manager_ruling': 'Report structural erasure NOT_COMPUTED: the frozen estimator cannot run '\n            'on the re-paired product alphabet. Make no erasure refits and invent no encoding, '\n            'calibration rule or estimator change. Erasure cannot change a gate or the verdict.',\n        'manager_approval': rules['manager_approval'],\n        'subset_infeasibility_reference': {'product_labels': 20, 'rank_two_scored_candidates': 39845888,\n            'candidate_theta_arrays_bytes_alone': 14025752576},\n        'campaign_context_figures': figures, 'changes_gate_or_verdict': False}\n",
+            "current_definitions": {
+              "src/born_ladder/record_tests/real_v6.py": {
+                "erasure_not_computed": "dbe5d07702a6abc290f810701595e76b459f15396d086f521781de70e09de0d9",
+                "erasure_diagnostics": "dac9ac576e292cdd8b362644b14e6d7d3a4441f59b74f45a37f67a484beff1e5"
+              },
+              "src/born_ladder/record_tests/erasure.py": {
+                "candidate_counts": "24baa0c24e0a2f0c8104bf6aaeb310ab521a9e404773f7358f7093b19756fc78",
+                "diagnostics": "e3959248da602de83b6557154a35f7d57c49e3229af2fd10e8126296f5450d46"
+              }
+            },
+            "scope": "Exact scientific values and campaign ordering for nonempty two-column integer alphabets; legacy documentary keys unchanged; pipeline omits four documentary keys; top-level insertion order changes; empty alphabet ValueError wording changes.",
+            "original_source_origin": "0eaae46d7 parent; normalized AST matches the retained recovery fingerprint",
+            "equivalence_tests": [
+              "test_e2e_p1.py::test_erasure_refactor_exact_output_equivalence",
+              "test_e2e_p1.py::test_erasure_refactor_error_boundary",
+              "test_e2e_p1.py::test_erasure_refactor_real_pipeline_inputs"
+            ]
+          }
+        },
+        "canonical_signature": {
+          "normalized_ast_sha256": "2bf24646a2e10e9dc7f6b807cf58f2ac3294158daee422de6452e0e1a94718a3",
+          "comparison": "exact AST"
+        },
+        "literal_relabel_case": {
+          "normalized_ast_sha256": "072ce3956409d7b77f4c3f1faecdfc8b89fef9c996daec2ed6d6e8a4519b044b",
+          "comparison": "exact AST"
+        },
+        "literal_relabel_refits": {
+          "normalized_ast_sha256": "3d85acce07442126aa457914cf25f60471d536c661a773ad77a6e53cd3e0c29f",
+          "comparison": "exact AST"
+        },
+        "training_audit_initialize": {
+          "normalized_ast_sha256": "555f5384d44b26a1bcaa96f7370197fc8cb533da9ee70f3c107f18f19eec1776",
+          "comparison": "exact AST"
+        },
+        "training_audit_case": {
+          "normalized_ast_sha256": "141b5a8871e279379339cbebf04ae0c6386cd91c0ea9152bbbd366124cc58bb6",
+          "comparison": "exact AST"
+        },
+        "training_audit": {
+          "normalized_ast_sha256": "9256c31681172d0f8e97025760acdf97929f6c52d19436ffa5487d98c521350b",
+          "comparison": "exact AST"
+        }
+      }
+    },
+    {
+      "original_module": "src/born_ladder/record_tests/fresh_v6.py",
+      "original_sha256": "1dc436903d9e4daba35c9b7bfd7aaabd9b11fd254bdee4256b63796339746989",
+      "public_module": "src/born_ladder/record_tests/fresh_v6.py",
+      "definitions": {
+        "identity": {
+          "normalized_ast_sha256": "fc03f2fc7040d56c122112495c481713c1343f5c5e853d28159cfc3112e8a881",
+          "comparison": "exact AST"
+        },
+        "commit": {
+          "normalized_ast_sha256": "2c5e682dba369f8e94d805dcc0091001bb9590cb396a85e4ab80288d87ded864",
+          "comparison": "exact AST"
+        },
+        "verify_commit": {
+          "normalized_ast_sha256": "438c2ed5d1c7a0167a0ef4b8bdb4aa798ad59d967e9b001bee3d01990581f8af",
+          "comparison": "exact AST"
+        },
+        "check_out": {
+          "normalized_ast_sha256": "134aee3677b15629bcf649577a15ff89f572936d170eaeeed28be32342dcbf49",
+          "comparison": "exact AST"
+        },
+        "copy_once": {
+          "normalized_ast_sha256": "312dc414650d98f143f90243d18cc31fa884d6eadcd3dc0c55749bdfcb1cb3b2",
+          "comparison": "exact AST"
+        },
+        "validate_census": {
+          "normalized_ast_sha256": "784803a8c9f79b27dbf7788b34f85b69e6cbb27a40baf8c574812c8c96485594",
+          "comparison": "exact AST"
+        },
+        "fresh_command": {
+          "normalized_ast_sha256": "0757249bf0b0d56c984e79f80bb02145c5c8a504627e6f6e4cd7ecec792b612a",
+          "comparison": "exact AST"
+        },
+        "sample_job": {
+          "normalized_ast_sha256": "2f9bf23046814787c22617f12e25ffe599ea499528f585a33f009c0cda5a95e8",
+          "comparison": "exact AST"
+        },
+        "sample": {
+          "normalized_ast_sha256": "ed02d6005b45e0cfa882246ce223f6aef9469abc39a031c02f258e4ec0877451",
+          "comparison": "exact AST"
+        },
+        "_sample": {
+          "normalized_ast_sha256": "baafd5de2af218f2ef37b0177fd44cccb413db3905aa2f516658058fd51c1b01",
+          "comparison": "exact AST"
+        },
+        "read_header": {
+          "normalized_ast_sha256": "d16f8146880c9f750ea4c49f0214009809c0c13cdab46fcf5b0e63c4919b9a0e",
+          "comparison": "exact AST"
+        },
+        "validate_sidecars": {
+          "normalized_ast_sha256": "7a59fd1f014a3dfc89bfc05b21e27861f64d39e71432cc1a5d29a2b6bf809fec",
+          "comparison": "exact AST"
+        },
+        "reversal_kl": {
+          "normalized_ast_sha256": "bd93bd0ffbbe8e4ee85602f926a5a3c00389f75c788dfaa38c20817b3c611a69",
+          "comparison": "exact AST"
+        },
+        "exact_arrow": {
+          "normalized_ast_sha256": "6d7c21f6894d1068d6557ad52c1e5cb1e08e381d190c9fd978883f0f1c683664",
+          "comparison": "exact AST"
+        },
+        "oracle_laws": {
+          "normalized_ast_sha256": "121bbd81b5e56a43a0e119bc29880b0dcc44daafb7f1060313f13b1f407b2910",
+          "comparison": "exact AST"
+        },
+        "evaluate_context": {
+          "normalized_ast_sha256": "61272f86aca7c0166c994a1241529aa60a03e2657a6d97e7bc848e4f5fb384ed",
+          "comparison": "exact AST"
+        },
+        "campaign": {
+          "normalized_ast_sha256": "8e89c2bf55516483dab08049d2fcb94677f951f1a32ec6a71f3343a34a7507f4",
+          "comparison": "exact AST"
+        },
+        "calibration_sensitivity": {
+          "normalized_ast_sha256": "51e04150a6f8865c9b129d70f6c101847635c3eb1f1c4431dbe914eb8193c1cf",
+          "comparison": "exact AST"
+        },
+        "score": {
+          "normalized_ast_sha256": "f45f424c3bf4bf36914a472635b740fb36883e4c79218dea2d715e9f942234c1",
+          "comparison": "exact AST"
+        },
+        "record_failure": {
+          "normalized_ast_sha256": "ea8dec02bab7631da37907d8af3c059c4e0bdcdbd84cb5cf3d02ef58bdabb790",
+          "comparison": "exact AST"
+        }
+      }
+    },
+    {
+      "original_module": "CENSUS/common.py",
+      "original_sha256": "669303d4edff96fa26e6b7c8e6a13a4fa15ae8fc3e7ad7f5c7a1a3a84c8038f2",
+      "public_module": "src/born_ladder/reproduction/census_writers/common.py",
+      "definitions": {
+        "sha": {
+          "normalized_ast_sha256": "91a4b426da9a52d3c18b626ec7b002973d48e3bd2698b95a8b8d696ed51ca6b7",
+          "comparison": "exact AST"
+        },
+        "hb": {
+          "normalized_ast_sha256": "ca0a6a202e5dd75dc54534221b55068e25a3936848c80415e48bf28f550c8247",
+          "comparison": "exact AST"
+        },
+        "canonical": {
+          "normalized_ast_sha256": "96a33ada3c5ba82d8329b2a5b414c37bef413b3dbda399d2ea8d38fb52ca8c7e",
+          "comparison": "exact AST"
+        },
+        "qs": {
+          "normalized_ast_sha256": "1501f7c7ce0451a8e823b69cf96bba409614a2b9f4c1a1a81f91cbb671e1acfa",
+          "comparison": "exact AST"
+        },
+        "put": {
+          "normalized_ast_sha256": "4e0f79ca045efa66b455c55cc109e3dc8ad65aa801c2a4b52b81552c2e2314ca",
+          "comparison": "exact AST"
+        },
+        "quantiles": {
+          "normalized_ast_sha256": "84f9ebded72eaaa3aad8f1ef752d5e532c81a2222bfcfac0abc83753e515a9f3",
+          "comparison": "exact AST"
+        }
+      }
+    },
+    {
+      "original_module": "CENSUS/structural_completion.py",
+      "original_sha256": "9212bb76402313523248750eab9288170af59945288a6e8d3cb7683938d2c479",
+      "public_module": "src/born_ladder/reproduction/census_writers/structural_completion.py",
+      "definitions": {
+        "Quad": {
+          "normalized_ast_sha256": "7fb7844280318128d40d70a16e98094fe54eb423c286a47faf22dcab341c962e",
+          "comparison": "exact AST"
+        },
+        "mm": {
+          "normalized_ast_sha256": "8054995905a011ea6392859e3360abb131251af94cd7074dd2a1add451daa3f6",
+          "comparison": "exact AST"
+        },
+        "add": {
+          "normalized_ast_sha256": "da0ff47bf3349a2f92a834fd5f93c2d46a4fe4c7d98c2a8aeaafb6ee0728bd32",
+          "comparison": "exact AST"
+        },
+        "scale": {
+          "normalized_ast_sha256": "64d221f58936b87aaa7d9cff06d19e145fd40943bad3c416af038a082fd3577f",
+          "comparison": "exact AST"
+        },
+        "trace": {
+          "normalized_ast_sha256": "ed4834a5bf312642a1068f6c4d01e5a15b70d998d783d9de930829204a0d726c",
+          "comparison": "exact AST"
+        },
+        "sub": {
+          "normalized_ast_sha256": "88a6a6ddc15baea8915506822c8724a4726dde344afc595cbcb40eba024f29b5",
+          "comparison": "exact AST"
+        },
+        "dump": {
+          "normalized_ast_sha256": "6cc065f3ccc304222d6dadd11cc0860d3dc8f25ebc26285b3d37c10b7e211247",
+          "comparison": "exact AST"
+        },
+        "certify_G": {
+          "normalized_ast_sha256": "5ba77fb698ae9c2d3bb127681a9de97f2fb88320d2c323a4824df202b16bf870",
+          "comparison": "exact AST"
+        }
+      }
+    },
+    {
+      "original_module": "CENSUS/structural.py",
+      "original_sha256": "a05834319fc4c775e1556c5364fecdc5565a9a20cb4a26162d2bbe2005778005",
+      "public_module": "src/born_ladder/reproduction/census_writers/structural.py",
+      "definitions": {
+        "native_step": {
+          "normalized_ast_sha256": "5e9f93a0ffeb080ed01125dfa1adaf6fbe4a8eeda89fc5ecb1fd5839cbc4e488",
+          "comparison": "exact AST"
+        },
+        "diffs": {
+          "normalized_ast_sha256": "3608969de02d09e3a31fbf1ad86a2b1ccba2f89b98f3db894839b2cc166b3d73",
+          "comparison": "exact AST"
+        },
+        "old_view": {
+          "normalized_ast_sha256": "2b4e2ddb6df407c8c81e81429bf35ece3d0f1ce171a1227e6404d85b4b545c18",
+          "comparison": "exact AST"
+        },
+        "point_search": {
+          "normalized_ast_sha256": "9a77ea1ea0c9ffb08f4b02185fd13543032be7f10810aab9b93b05f1a6d131c2",
+          "comparison": "exact AST"
+        }
+      }
+    },
+    {
+      "original_module": "src/born_ladder/certificates.py",
+      "original_sha256": "0710f4ba6985cc1f855272bf5a4c22aeef31233a8d63b8317d9189caa11bce2f",
+      "public_module": "src/born_ladder/reproduction/census_writers/certificates.py",
+      "definitions": {
+        "_require": {
+          "normalized_ast_sha256": "99b5d89f15e90cb6bbc6b651d003b023736740a56b81dbd7ba8cf06cf3c2f621",
+          "comparison": "exact AST"
+        },
+        "native_step": {
+          "normalized_ast_sha256": "5e9f93a0ffeb080ed01125dfa1adaf6fbe4a8eeda89fc5ecb1fd5839cbc4e488",
+          "comparison": "exact AST"
+        },
+        "diffs": {
+          "normalized_ast_sha256": "3608969de02d09e3a31fbf1ad86a2b1ccba2f89b98f3db894839b2cc166b3d73",
+          "comparison": "exact AST"
+        },
+        "old_view": {
+          "normalized_ast_sha256": "2b4e2ddb6df407c8c81e81429bf35ece3d0f1ce171a1227e6404d85b4b545c18",
+          "comparison": "exact AST"
+        },
+        "point_search": {
+          "normalized_ast_sha256": "9917b50b76ffde9982ac3f834abbf653e3bf7693d41034236dd743c2cf2aa34a",
+          "comparison": "exact AST"
+        },
+        "construct_context": {
+          "normalized_ast_sha256": "f03656095fe55bb53c9febf12cb45c93b7217b4d519c86253ad93e2825d3ed94",
+          "comparison": "exact AST"
+        },
+        "registered_correspondence": {
+          "normalized_ast_sha256": "4c2148947f4cef0844f5f6f82eafb0c99e5c3d15725cce1b973e27dc7dbb60a6",
+          "comparison": "exact AST"
+        }
+      }
+    },
+    {
+      "original_module": "scripts/rebuild1/provenance.py",
+      "original_sha256": "1703bc02f98978d617dffb4716c67dc8a90ef9fe47fa69cc222445e2bbe1064e",
+      "public_module": "src/born_ladder/snapshot/provenance.py",
+      "definitions": {
+        "file_sha256": {
+          "normalized_ast_sha256": "345f0b94fc63256ebc7b8f741d3d7fcf5c32f893aac918aaec12e645ed7a3447",
+          "comparison": "exact AST"
+        },
+        "ProvenanceFiles": {
+          "normalized_ast_sha256": "1c25afe379e7e04a24692355a4eff152c8ae2114daa3aebc48de592640f51b3e",
+          "comparison": "exact AST"
+        },
+        "_measured_file": {
+          "normalized_ast_sha256": "b6efb89dfd6f5b9151ad8fb2b0d2404ac6571db7c19519c88bb80f9a4a8fbbaf",
+          "comparison": "exact AST"
+        },
+        "_require_sha256": {
+          "normalized_ast_sha256": "e2fc8ebcf5b3b2992fb686ddc9ff5872f4898446b45391795de8c8491f4a348a",
+          "comparison": "exact AST"
+        },
+        "validate_provenance": {
+          "normalized_ast_sha256": "a9f77e049707e68f7b076ec588d7476e10d3bba400af94770040a8906be0596d",
+          "comparison": "exact AST"
+        }
+      }
+    },
+    {
+      "definitions": {
+        "clean": {
+          "comparison": "unchanged original definition",
+          "normalized_ast_sha256": "1584d15d5b74d56a7eca7c22a3519be1ed8070bd91105b764505b18c43354acb"
+        },
+        "eq": {
+          "comparison": "unchanged original definition",
+          "normalized_ast_sha256": "267d3e8bb6b5054fc77f43e7196244b854ce94fb84ee825cef6f19901bfc4b46"
+        }
+      },
+      "original_module": "CB/algebraic.py",
+      "original_sha256": "0f9817eaa8287e0d26c25105a8c6d06ef450ca71c333a65e6202be77f412f3b1",
+      "public_module": "src/born_ladder/reproduction/census_writers/legacy_trine.py"
+    }
+  ],
+  "historical_data": false,
+  "reference_type": "source_ast_fingerprints",
+  "population_body": {
+    "historical_body_normalized_sha256": "f664e0e7b3bdb983ef2fad3965e2af5fd344dc08288d9a2934d23714cfa230ec",
+    "boundary": "starts at tie_tolerance; only final completeness metadata changed"
+  }
+}

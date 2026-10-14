@@ -1,0 +1,583 @@
+{
+  "control_link": {
+    "artifact": "rb1v2_g2c_v23_controls.jsonl",
+    "dedicated_link_order": [
+      "g2c_controls"
+    ],
+    "historical_absent_artifact": "rb1v2_g2c_v22_controls.jsonl",
+    "join_keys": [
+      "unit_id",
+      "kind_cell_id"
+    ],
+    "link_shape": {
+      "keys": [
+        "path",
+        "sha256"
+      ]
+    },
+    "one_per_universal_kind_cell": true,
+    "scientific_and_residual_fields_agree": true
+  },
+  "control_record_shape": {
+    "field_shapes": {
+      "kind_cell_id": {
+        "constraint": "exactly 64 lowercase hexadecimal characters",
+        "kind": "scalar",
+        "leaf_type": "UTF-8 string"
+      },
+      "nondegenerate": {
+        "constraint": "none",
+        "kind": "scalar",
+        "leaf_type": "JSON Boolean"
+      },
+      "normalization_mass_q_full_control": {
+        "constraint": ">0",
+        "kind": "scalar",
+        "leaf_type": "finite binary64"
+      },
+      "parseval_residuals": {
+        "keys": [
+          "p_full_norm_minus_one",
+          "spectral_energy_minus_p_full_energy"
+        ],
+        "kind": "object",
+        "properties": {
+          "p_full_norm_minus_one": {
+            "constraint": "none",
+            "kind": "scalar",
+            "leaf_type": "finite binary64"
+          },
+          "spectral_energy_minus_p_full_energy": {
+            "constraint": "none",
+            "kind": "scalar",
+            "leaf_type": "finite binary64"
+          }
+        },
+        "serialization_order": "UTF-8 byte lexicographic"
+      },
+      "pass_boolean_for_each_control": {
+        "keys": [
+          "parseval",
+          "rotation",
+          "ties"
+        ],
+        "kind": "object",
+        "properties": {
+          "parseval": {
+            "constraint": "none",
+            "kind": "scalar",
+            "leaf_type": "JSON Boolean"
+          },
+          "rotation": {
+            "constraint": "none",
+            "kind": "scalar",
+            "leaf_type": "JSON Boolean"
+          },
+          "ties": {
+            "constraint": "none",
+            "kind": "scalar",
+            "leaf_type": "JSON Boolean"
+          }
+        },
+        "serialization_order": "UTF-8 byte lexicographic"
+      },
+      "rotation_residuals": {
+        "keys": [
+          "q_full_max_component",
+          "q_full_dtv",
+          "q_diag_max_component_diagnostic"
+        ],
+        "kind": "object",
+        "properties": {
+          "q_diag_max_component_diagnostic": {
+            "constraint": "none",
+            "kind": "scalar",
+            "leaf_type": "finite binary64"
+          },
+          "q_full_dtv": {
+            "constraint": "none",
+            "kind": "scalar",
+            "leaf_type": "finite binary64"
+          },
+          "q_full_max_component": {
+            "constraint": "none",
+            "kind": "scalar",
+            "leaf_type": "finite binary64"
+          }
+        },
+        "serialization_order": "UTF-8 byte lexicographic"
+      },
+      "spectral_coefficients": {
+        "keys": [
+          "mode_ids",
+          "values"
+        ],
+        "kind": "object",
+        "properties": {
+          "mode_ids": {
+            "dimensions": [
+              "r"
+            ],
+            "item": {
+              "constraint": "nonempty",
+              "kind": "scalar",
+              "leaf_type": "UTF-8 string"
+            },
+            "kind": "array",
+            "ordering": "emitted/SVD order; unique"
+          },
+          "values": {
+            "dimensions": [
+              "r"
+            ],
+            "item": {
+              "constraint": "none",
+              "kind": "scalar",
+              "leaf_type": "finite binary64"
+            },
+            "kind": "array",
+            "ordering": "emitted/SVD order"
+          }
+        },
+        "serialization_order": "UTF-8 byte lexicographic"
+      },
+      "tie_residuals": {
+        "key_set": [
+          "D__L_full_minus_q_full",
+          "D__L_uniform_minus_q_full",
+          "D__L_clipped_linear_minus_q_full",
+          "D__q_diag_minus_q_full",
+          "D__q_lambda_1_16_minus_q_full",
+          "D__q_lambda_1_8_minus_q_full",
+          "D__q_lambda_1_4_minus_q_full",
+          "D__q_lambda_1_2_minus_q_full",
+          "D__q_lambda_1_minus_q_full",
+          "D__q_lambda_2_minus_q_full",
+          "D__q_lambda_4_minus_q_full",
+          "D__q_lambda_8_minus_q_full",
+          "D__q_lambda_16_minus_q_full"
+        ],
+        "kind": "object_map",
+        "semantic_order": "D_CONTRASTS frozen order",
+        "serialization_order": "UTF-8 byte lexicographic",
+        "value": {
+          "constraint": "none",
+          "kind": "scalar",
+          "leaf_type": "finite binary64"
+        }
+      },
+      "unit_id": {
+        "constraint": "exactly 64 lowercase hexadecimal characters",
+        "kind": "scalar",
+        "leaf_type": "UTF-8 string"
+      }
+    },
+    "keys": [
+      "unit_id",
+      "kind_cell_id",
+      "spectral_coefficients",
+      "normalization_mass_q_full_control",
+      "nondegenerate",
+      "parseval_residuals",
+      "rotation_residuals",
+      "tie_residuals",
+      "pass_boolean_for_each_control"
+    ]
+  },
+  "core_derivations": {
+    "exp112": {
+      "pass_boolean_for_each_residual": {
+        "dependencies": [
+          "all residual fields",
+          "tolerance_for_each_residual",
+          "g2c_rotation_replicate_evidence"
+        ],
+        "expression": {
+          "arguments": [
+            {
+              "kind": "variable",
+              "name": "residuals"
+            },
+            {
+              "kind": "variable",
+              "name": "tolerance_for_each_residual"
+            },
+            {
+              "kind": "variable",
+              "name": "g2c_rotation_replicate_evidence"
+            }
+          ],
+          "function": "compare_g2c_v22_residuals_with_certificate_and_nonrotation_tolerances",
+          "kind": "call"
+        },
+        "formula_pointers": [
+          "/completeness/g2c_raw_stdout_derivation/controls/rotation/q_full/kind_cell_pass",
+          "/completeness/g2c_raw_stdout_derivation/controls/rotation/validation_and_reconstruction"
+        ],
+        "kind": "typed_derivation"
+      },
+      "rotation_residuals": {
+        "dependencies": [
+          "unrounded_p_full",
+          "basis_and_projector_inputs",
+          "law_numerators",
+          "normalization_mass_q_full_control",
+          "g2c_rotation_replicate_evidence",
+          "bound_observation_map",
+          "selected_unrounded_y"
+        ],
+        "expression": {
+          "arguments": [
+            {
+              "kind": "variable",
+              "name": "unrounded_p_full"
+            },
+            {
+              "kind": "variable",
+              "name": "basis_and_projector_inputs"
+            },
+            {
+              "kind": "variable",
+              "name": "normalization_mass_q_full_control"
+            },
+            {
+              "kind": "variable",
+              "name": "g2c_rotation_replicate_evidence"
+            },
+            {
+              "kind": "variable",
+              "name": "bound_observation_map"
+            },
+            {
+              "kind": "variable",
+              "name": "selected_unrounded_y"
+            }
+          ],
+          "function": "reconstruct_g2c_v22_rotation_residuals_and_certificates",
+          "kind": "call"
+        },
+        "formula_pointers": [
+          "/completeness/g2c_raw_stdout_derivation/controls/rotation",
+          "/thresholds/items/32/value"
+        ],
+        "kind": "typed_derivation"
+      },
+      "tolerance_for_each_residual": {
+        "dependencies": [
+          "finite_residuals",
+          "mass_residuals",
+          "parseval_residuals",
+          "rotation_residuals",
+          "identity_residuals",
+          "sequential_residuals",
+          "g2c_rotation_replicate_evidence"
+        ],
+        "expression": {
+          "arguments": [
+            {
+              "kind": "variable",
+              "name": "frozen_thresholds"
+            },
+            {
+              "kind": "variable",
+              "name": "g2c_v22_rotation_contract"
+            }
+          ],
+          "function": "serve_g2c_v22_residual_policy_map",
+          "kind": "call"
+        },
+        "formula_pointers": [
+          "/thresholds/items",
+          "/completeness/g2c_raw_stdout_derivation/controls/rotation/admissibility",
+          "/completeness/g2c_raw_stdout_derivation/controls/rotation/certificate"
+        ],
+        "kind": "typed_derivation"
+      }
+    },
+    "named": {
+      "pass_boolean_for_each_residual": {
+        "dependencies": [
+          "all residual fields",
+          "tolerance_for_each_residual",
+          "g2c_rotation_replicate_evidence"
+        ],
+        "expression": {
+          "arguments": [
+            {
+              "kind": "variable",
+              "name": "residuals"
+            },
+            {
+              "kind": "variable",
+              "name": "tolerance_for_each_residual"
+            },
+            {
+              "kind": "variable",
+              "name": "g2c_rotation_replicate_evidence"
+            }
+          ],
+          "function": "compare_g2c_v22_residuals_with_certificate_and_nonrotation_tolerances",
+          "kind": "call"
+        },
+        "formula_pointers": [
+          "/completeness/g2c_raw_stdout_derivation/controls/rotation/q_full/kind_cell_pass",
+          "/completeness/g2c_raw_stdout_derivation/controls/rotation/validation_and_reconstruction"
+        ],
+        "kind": "typed_derivation"
+      },
+      "rotation_residuals": {
+        "dependencies": [
+          "unrounded_p_full",
+          "basis_and_projector_inputs",
+          "law_numerators",
+          "normalization_mass_q_full_control",
+          "g2c_rotation_replicate_evidence",
+          "bound_observation_map",
+          "selected_unrounded_y"
+        ],
+        "expression": {
+          "arguments": [
+            {
+              "kind": "variable",
+              "name": "unrounded_p_full"
+            },
+            {
+              "kind": "variable",
+              "name": "basis_and_projector_inputs"
+            },
+            {
+              "kind": "variable",
+              "name": "normalization_mass_q_full_control"
+            },
+            {
+              "kind": "variable",
+              "name": "g2c_rotation_replicate_evidence"
+            },
+            {
+              "kind": "variable",
+              "name": "bound_observation_map"
+            },
+            {
+              "kind": "variable",
+              "name": "selected_unrounded_y"
+            }
+          ],
+          "function": "reconstruct_g2c_v22_rotation_residuals_and_certificates",
+          "kind": "call"
+        },
+        "formula_pointers": [
+          "/completeness/g2c_raw_stdout_derivation/controls/rotation",
+          "/thresholds/items/32/value"
+        ],
+        "kind": "typed_derivation"
+      },
+      "tolerance_for_each_residual": {
+        "dependencies": [
+          "finite_residuals",
+          "mass_residuals",
+          "parseval_residuals",
+          "rotation_residuals",
+          "identity_residuals",
+          "sequential_residuals",
+          "g2c_rotation_replicate_evidence"
+        ],
+        "expression": {
+          "arguments": [
+            {
+              "kind": "variable",
+              "name": "frozen_thresholds"
+            },
+            {
+              "kind": "variable",
+              "name": "g2c_v22_rotation_contract"
+            }
+          ],
+          "function": "serve_g2c_v22_residual_policy_map",
+          "kind": "call"
+        },
+        "formula_pointers": [
+          "/thresholds/items",
+          "/completeness/g2c_raw_stdout_derivation/controls/rotation/admissibility",
+          "/completeness/g2c_raw_stdout_derivation/controls/rotation/certificate"
+        ],
+        "kind": "typed_derivation"
+      }
+    }
+  },
+  "schema_version": "RB1_G2C_V23_EFFECTIVE_SCHEMA_V1",
+  "selection": {
+    "control_artifact": "rb1v2_g2c_v23_controls.jsonl",
+    "historical_v21_companion": "born_route_rebuild1_spec_v21.json",
+    "item_7_operates_for_selected_g2c_rotation": false,
+    "item_7_preserved_for_non_g2c_consumers": true,
+    "operative_rotation_pointer": "/completeness/g2c_raw_stdout_derivation/controls/rotation",
+    "v21_control_artifact_absent_under_v22": true
+  },
+  "stage_control_shape": {
+    "field_shapes": {
+      "kind_cell_id": {
+        "constraint": "exactly 64 lowercase hexadecimal characters",
+        "kind": "scalar",
+        "leaf_type": "UTF-8 string"
+      },
+      "nondegenerate": {
+        "constraint": "none",
+        "kind": "scalar",
+        "leaf_type": "JSON Boolean"
+      },
+      "normalization_mass_q_full_control": {
+        "constraint": ">0",
+        "kind": "scalar",
+        "leaf_type": "finite binary64"
+      },
+      "parseval_residuals": {
+        "keys": [
+          "p_full_norm_minus_one",
+          "spectral_energy_minus_p_full_energy"
+        ],
+        "kind": "object",
+        "properties": {
+          "p_full_norm_minus_one": {
+            "constraint": "none",
+            "kind": "scalar",
+            "leaf_type": "finite binary64"
+          },
+          "spectral_energy_minus_p_full_energy": {
+            "constraint": "none",
+            "kind": "scalar",
+            "leaf_type": "finite binary64"
+          }
+        },
+        "serialization_order": "UTF-8 byte lexicographic"
+      },
+      "pass_boolean_for_each_control": {
+        "keys": [
+          "parseval",
+          "rotation",
+          "ties"
+        ],
+        "kind": "object",
+        "properties": {
+          "parseval": {
+            "constraint": "none",
+            "kind": "scalar",
+            "leaf_type": "JSON Boolean"
+          },
+          "rotation": {
+            "constraint": "none",
+            "kind": "scalar",
+            "leaf_type": "JSON Boolean"
+          },
+          "ties": {
+            "constraint": "none",
+            "kind": "scalar",
+            "leaf_type": "JSON Boolean"
+          }
+        },
+        "serialization_order": "UTF-8 byte lexicographic"
+      },
+      "rotation_residuals": {
+        "keys": [
+          "q_full_max_component",
+          "q_full_dtv",
+          "q_diag_max_component_diagnostic"
+        ],
+        "kind": "object",
+        "properties": {
+          "q_diag_max_component_diagnostic": {
+            "constraint": "none",
+            "kind": "scalar",
+            "leaf_type": "finite binary64"
+          },
+          "q_full_dtv": {
+            "constraint": "none",
+            "kind": "scalar",
+            "leaf_type": "finite binary64"
+          },
+          "q_full_max_component": {
+            "constraint": "none",
+            "kind": "scalar",
+            "leaf_type": "finite binary64"
+          }
+        },
+        "serialization_order": "UTF-8 byte lexicographic"
+      },
+      "spectral_coefficients": {
+        "keys": [
+          "mode_ids",
+          "values"
+        ],
+        "kind": "object",
+        "properties": {
+          "mode_ids": {
+            "dimensions": [
+              "r"
+            ],
+            "item": {
+              "constraint": "nonempty",
+              "kind": "scalar",
+              "leaf_type": "UTF-8 string"
+            },
+            "kind": "array",
+            "ordering": "emitted/SVD order; unique"
+          },
+          "values": {
+            "dimensions": [
+              "r"
+            ],
+            "item": {
+              "constraint": "none",
+              "kind": "scalar",
+              "leaf_type": "finite binary64"
+            },
+            "kind": "array",
+            "ordering": "emitted/SVD order"
+          }
+        },
+        "serialization_order": "UTF-8 byte lexicographic"
+      },
+      "tie_residuals": {
+        "key_set": [
+          "D__L_full_minus_q_full",
+          "D__L_uniform_minus_q_full",
+          "D__L_clipped_linear_minus_q_full",
+          "D__q_diag_minus_q_full",
+          "D__q_lambda_1_16_minus_q_full",
+          "D__q_lambda_1_8_minus_q_full",
+          "D__q_lambda_1_4_minus_q_full",
+          "D__q_lambda_1_2_minus_q_full",
+          "D__q_lambda_1_minus_q_full",
+          "D__q_lambda_2_minus_q_full",
+          "D__q_lambda_4_minus_q_full",
+          "D__q_lambda_8_minus_q_full",
+          "D__q_lambda_16_minus_q_full"
+        ],
+        "kind": "object_map",
+        "semantic_order": "D_CONTRASTS frozen order",
+        "serialization_order": "UTF-8 byte lexicographic",
+        "value": {
+          "constraint": "none",
+          "kind": "scalar",
+          "leaf_type": "finite binary64"
+        }
+      },
+      "unit_id": {
+        "constraint": "exactly 64 lowercase hexadecimal characters",
+        "kind": "scalar",
+        "leaf_type": "UTF-8 string"
+      }
+    },
+    "keys": [
+      "unit_id",
+      "kind_cell_id",
+      "spectral_coefficients",
+      "normalization_mass_q_full_control",
+      "nondegenerate",
+      "parseval_residuals",
+      "rotation_residuals",
+      "tie_residuals",
+      "pass_boolean_for_each_control"
+    ]
+  },
+  "stage_control_shape_pointer": "/completeness/universal_evidence_shapes/stage_control_shapes/g2c_controls"
+}

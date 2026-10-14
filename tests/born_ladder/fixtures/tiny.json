@@ -1,0 +1,1 @@
+{"kind":"synthetic_rank_two","variant":"tiny","n":32,"mode":"odd_integer_ramp with entry1 = entry0 + 2^-250, centered, scaled by 2^-540","kernel":"3/4 I + 1/4 uniform","lens":"singleton31 and two-half refinement","historical_data":false}

@@ -1,0 +1,27 @@
+{
+  "census_sources_unchanged": true,
+  "checked_receipts": [
+    "IntegrationBuild.json",
+    "IntegrationAudit.json",
+    "IntegrationRenderedBuild.json",
+    "IntegrationRenderedAudit.json",
+    "IntegrationScaleBuild.json",
+    "IntegrationScaleAudit.json",
+    "IntegrationInventoryScale.json",
+    "IntegrationReferenceAudit.json"
+  ],
+  "final_default_targets_up_to_date": true,
+  "merged_image_rows": 1,
+  "public_declarations": 947,
+  "rendered_census_hashes_preserved": true,
+  "scale_audit_declarations": 5047,
+  "standard_lean_crosscheck_declarations": 40,
+  "status": "PASS",
+  "table_rows": 12,
+  "tracked_files_changed": [
+    "Makefile",
+    "lean_born/BornCalculus.lean",
+    "lean_born/BornCalculus/Audit.lean",
+    "lean_born/tools/audit_declarations.py"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "accepted_content_sha256": [
+    "4e81de7fa8b718c010f83234fde390e1a26348e0dbe5b807bf0f05683625b763",
+    "7059d70fa86fcdfe6c46e26a1efcc3e01d90d0c65c0b0c94cb5860905e3efa5c",
+    "9598518e2c26d182418b666c299c7e9370f3102ee20f6c655e88176df196c99c"
+  ],
+  "digest_definition": "SHA256 of canonical ASCII JSON {schema,files,claims,root_names}; roots values excluded ONLY for storage relocation; full file bytes checked after anchoring",
+  "governing_receipt_sha256": {
+    "CENSUS/artifact_manifest.json": "9eda5216856129dbf458530bccdf63ae6a8c03549883e463896d71e90862b39b",
+    "CENSUS/receipt.json": "5de139818f3405ec01f151da56e41db5d95714d4f41274372a7ffacae42a779b",
+    "E3/artifact_manifest.json": "65caf8b94824ffa18a773ab89ab92dfbdc42a98826034ef782b1e065d0eca0c7",
+    "R2/input_receipt.json": "1cf123cb3e4f2d939d50230af9eeaa6c36fe5b3ee70aa018881851d020f3e306"
+  },
+  "historical_manifest_sha256": "f0f0cd3fe9c1d3749868f5314afe7b1b2cbfb02553df0e48bb74232f4e82c11f",
+  "original_bundle_sha256": [
+    "f409f5c30dda019e40dee27e9287bfb15b9dccbbd1d4f689b263617b38855810",
+    "d03fcbfdff188041c5f8b02bc3bb98cf16150fc8f350f42ec5e547b222942623",
+    "0fab7e3939e59b36b39280085bb3ad9f2bbeaec7dc8270708ea50fad8b229be6"
+  ],
+  "schema": "born_claim_trust_anchor_v1"
+}

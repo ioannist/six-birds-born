@@ -1,0 +1,59 @@
+{
+  "schema": "test_b_scientific_contract_v1",
+  "data_design_sha256": "3abc68c6f0a8070240a2302434b28644fbf8b67f955a65af2cf33667cfd6d2cd",
+  "inference_rng_identity": "958c66539b1a1d91ceb9b567e837b2e1d947b3d85af395e315112921a7de743d",
+  "data_protocol": "test_b_v6.md",
+  "inference_protocol": "test_b_v6_1.md",
+  "kernel_seed": 910000,
+  "scale": 32,
+  "recipes": {
+    "total": 60,
+    "train": 36,
+    "validation": 12,
+    "test": 12
+  },
+  "calibration_draws": 8192,
+  "replicates": 32,
+  "lags": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "closure_threshold": 0.01,
+  "fit": {
+    "starts": 96,
+    "warm_iterations": 200,
+    "polish_iterations": 500,
+    "legacy_control_identity": "ee9be77e2dcfc308e31f31f2a97622d4c81db79c729ce328e796813d727896e0",
+    "floor": 1e-12,
+    "checkpoints": [
+      25,
+      50,
+      100,
+      200,
+      500
+    ]
+  },
+  "bootstrap_draws": 200000,
+  "effective_seal_controls": {
+    "schema": "test_b_v6_1_p5_control_rules_v1",
+    "structural_erasure": {
+      "status": "NOT_COMPUTED",
+      "diagnostic_only": true,
+      "make_erasure_refits": false
+    },
+    "relabeling_equivariance": {
+      "mode": "literal_full_refits",
+      "permutations": 22,
+      "tolerance": 1e-09
+    },
+    "training_block_audit": {
+      "campaigns": 1000,
+      "resampled_vectors": 10,
+      "available_leave_two_out_vectors": 5,
+      "centered_margins": true,
+      "descriptive_only": true
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "source_files_changed": false,
+  "controls": [
+    {
+      "mutation": "integer_frame.json",
+      "status": "REJECTED",
+      "reason": "full census integer frame differs"
+    },
+    {
+      "mutation": "CONTEXT.json",
+      "status": "REJECTED",
+      "reason": "full census source vector/exact frame differs"
+    },
+    {
+      "mutation": "structural_completion_certificate.json",
+      "status": "REJECTED",
+      "reason": "full census atom certificates differ"
+    },
+    {
+      "mutation": "maximal_gap_witness.json",
+      "status": "REJECTED",
+      "reason": "full census maximal-gap certificate differs"
+    }
+  ]
+}

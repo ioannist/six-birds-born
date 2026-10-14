@@ -1,0 +1,1871 @@
+{
+  "exhaustive": true,
+  "id": "g2c",
+  "ordered": true,
+  "rows": [
+    {
+      "ordered_fallback": false,
+      "predicate": {
+        "arguments": [
+          {
+            "arguments": [],
+            "kind": "predicate",
+            "name": "eligible_nondegenerate_context_exists_in_every_required_source_and_kind",
+            "return_type": "boolean"
+          }
+        ],
+        "kind": "boolean_operator",
+        "operator": "not",
+        "return_type": "boolean"
+      },
+      "predicate_description": "no eligible nondegenerate underlying context exists in a source and kind required by the estimand",
+      "priority": 1,
+      "status": "G2C_V2_VACUOUS"
+    },
+    {
+      "ordered_fallback": false,
+      "predicate": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [
+                      {
+                        "arguments": [],
+                        "kind": "predicate",
+                        "name": "eligible_nondegenerate_context_exists_in_every_required_source_and_kind",
+                        "return_type": "boolean"
+                      }
+                    ],
+                    "kind": "boolean_operator",
+                    "operator": "not",
+                    "return_type": "boolean"
+                  }
+                ],
+                "kind": "boolean_operator",
+                "operator": "or",
+                "return_type": "boolean"
+              }
+            ],
+            "kind": "boolean_operator",
+            "operator": "not",
+            "return_type": "boolean"
+          },
+          {
+            "arguments": [],
+            "kind": "predicate",
+            "name": "exists_named_sensitivity_sign_reversal",
+            "return_type": "boolean"
+          }
+        ],
+        "kind": "boolean_operator",
+        "operator": "and",
+        "return_type": "boolean"
+      },
+      "predicate_description": "on a nonvacuous estimand, any named sensitivity has the strict unrounded sign reversal in Section 5.2",
+      "priority": 2,
+      "status": "G2C_V2_INCONCLUSIVE_SENSITIVITY"
+    },
+    {
+      "ordered_fallback": false,
+      "predicate": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [
+                      {
+                        "arguments": [],
+                        "kind": "predicate",
+                        "name": "eligible_nondegenerate_context_exists_in_every_required_source_and_kind",
+                        "return_type": "boolean"
+                      }
+                    ],
+                    "kind": "boolean_operator",
+                    "operator": "not",
+                    "return_type": "boolean"
+                  },
+                  {
+                    "arguments": [],
+                    "kind": "predicate",
+                    "name": "exists_named_sensitivity_sign_reversal",
+                    "return_type": "boolean"
+                  }
+                ],
+                "kind": "boolean_operator",
+                "operator": "or",
+                "return_type": "boolean"
+              }
+            ],
+            "kind": "boolean_operator",
+            "operator": "not",
+            "return_type": "boolean"
+          },
+          {
+            "arguments": [
+              {
+                "domain": [
+                  "raw",
+                  "pkg"
+                ],
+                "expression": {
+                  "arguments": [
+                    {
+                      "kind": "comparison",
+                      "left": {
+                        "kind": "variable",
+                        "name": "D_lower[kind]"
+                      },
+                      "operator": ">",
+                      "return_type": "boolean",
+                      "right": {
+                        "arguments": [
+                          {
+                            "kind": "literal",
+                            "value": 1
+                          },
+                          {
+                            "kind": "literal",
+                            "value": 240
+                          }
+                        ],
+                        "kind": "operator",
+                        "operator": "divide"
+                      }
+                    },
+                    {
+                      "kind": "comparison",
+                      "left": {
+                        "kind": "variable",
+                        "name": "holm_adjusted_margin_p[kind]"
+                      },
+                      "operator": "<=",
+                      "return_type": "boolean",
+                      "right": {
+                        "kind": "literal",
+                        "value": 0.05
+                      }
+                    }
+                  ],
+                  "kind": "boolean_operator",
+                  "operator": "and",
+                  "return_type": "boolean"
+                },
+                "kind": "quantifier",
+                "quantifier": "all",
+                "return_type": "boolean",
+                "variable": "kind"
+              },
+              {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "kind": "predicate",
+                    "name": "exists_named_sensitivity_sign_reversal",
+                    "return_type": "boolean"
+                  }
+                ],
+                "kind": "boolean_operator",
+                "operator": "not",
+                "return_type": "boolean"
+              }
+            ],
+            "kind": "boolean_operator",
+            "operator": "and",
+            "return_type": "boolean"
+          }
+        ],
+        "kind": "boolean_operator",
+        "operator": "and",
+        "return_type": "boolean"
+      },
+      "predicate_description": "both kinds have lower bound >1/240, adjusted margin-test p<=0.05, and no sensitivity reversal",
+      "priority": 3,
+      "status": "G2C_V2_CROSS_TERMS_LOAD_BEARING"
+    },
+    {
+      "ordered_fallback": false,
+      "predicate": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [
+                      {
+                        "arguments": [],
+                        "kind": "predicate",
+                        "name": "eligible_nondegenerate_context_exists_in_every_required_source_and_kind",
+                        "return_type": "boolean"
+                      }
+                    ],
+                    "kind": "boolean_operator",
+                    "operator": "not",
+                    "return_type": "boolean"
+                  },
+                  {
+                    "arguments": [],
+                    "kind": "predicate",
+                    "name": "exists_named_sensitivity_sign_reversal",
+                    "return_type": "boolean"
+                  },
+                  {
+                    "arguments": [
+                      {
+                        "domain": [
+                          "raw",
+                          "pkg"
+                        ],
+                        "expression": {
+                          "arguments": [
+                            {
+                              "kind": "comparison",
+                              "left": {
+                                "kind": "variable",
+                                "name": "D_lower[kind]"
+                              },
+                              "operator": ">",
+                              "return_type": "boolean",
+                              "right": {
+                                "arguments": [
+                                  {
+                                    "kind": "literal",
+                                    "value": 1
+                                  },
+                                  {
+                                    "kind": "literal",
+                                    "value": 240
+                                  }
+                                ],
+                                "kind": "operator",
+                                "operator": "divide"
+                              }
+                            },
+                            {
+                              "kind": "comparison",
+                              "left": {
+                                "kind": "variable",
+                                "name": "holm_adjusted_margin_p[kind]"
+                              },
+                              "operator": "<=",
+                              "return_type": "boolean",
+                              "right": {
+                                "kind": "literal",
+                                "value": 0.05
+                              }
+                            }
+                          ],
+                          "kind": "boolean_operator",
+                          "operator": "and",
+                          "return_type": "boolean"
+                        },
+                        "kind": "quantifier",
+                        "quantifier": "all",
+                        "return_type": "boolean",
+                        "variable": "kind"
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "arguments": [],
+                            "kind": "predicate",
+                            "name": "exists_named_sensitivity_sign_reversal",
+                            "return_type": "boolean"
+                          }
+                        ],
+                        "kind": "boolean_operator",
+                        "operator": "not",
+                        "return_type": "boolean"
+                      }
+                    ],
+                    "kind": "boolean_operator",
+                    "operator": "and",
+                    "return_type": "boolean"
+                  }
+                ],
+                "kind": "boolean_operator",
+                "operator": "or",
+                "return_type": "boolean"
+              }
+            ],
+            "kind": "boolean_operator",
+            "operator": "not",
+            "return_type": "boolean"
+          },
+          {
+            "arguments": [
+              {
+                "domain": [
+                  "raw",
+                  "pkg"
+                ],
+                "expression": {
+                  "kind": "comparison",
+                  "left": {
+                    "kind": "variable",
+                    "name": "D_lower[kind]"
+                  },
+                  "operator": ">",
+                  "return_type": "boolean",
+                  "right": {
+                    "kind": "literal",
+                    "value": 0
+                  }
+                },
+                "kind": "quantifier",
+                "quantifier": "all",
+                "return_type": "boolean",
+                "variable": "kind"
+              },
+              {
+                "domain": [
+                  "raw",
+                  "pkg"
+                ],
+                "expression": {
+                  "kind": "comparison",
+                  "left": {
+                    "kind": "variable",
+                    "name": "D_lower[kind]"
+                  },
+                  "operator": "<=",
+                  "return_type": "boolean",
+                  "right": {
+                    "arguments": [
+                      {
+                        "kind": "literal",
+                        "value": 1
+                      },
+                      {
+                        "kind": "literal",
+                        "value": 240
+                      }
+                    ],
+                    "kind": "operator",
+                    "operator": "divide"
+                  }
+                },
+                "kind": "quantifier",
+                "quantifier": "exists",
+                "return_type": "boolean",
+                "variable": "kind"
+              }
+            ],
+            "kind": "boolean_operator",
+            "operator": "and",
+            "return_type": "boolean"
+          }
+        ],
+        "kind": "boolean_operator",
+        "operator": "and",
+        "return_type": "boolean"
+      },
+      "predicate_description": "both kinds have lower bound >0 and at least one lower bound <=1/240",
+      "priority": 4,
+      "status": "G2C_V2_CROSS_TERMS_POSITIVE_BELOW_PRACTICAL_MARGIN"
+    },
+    {
+      "ordered_fallback": false,
+      "predicate": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [
+                      {
+                        "arguments": [],
+                        "kind": "predicate",
+                        "name": "eligible_nondegenerate_context_exists_in_every_required_source_and_kind",
+                        "return_type": "boolean"
+                      }
+                    ],
+                    "kind": "boolean_operator",
+                    "operator": "not",
+                    "return_type": "boolean"
+                  },
+                  {
+                    "arguments": [],
+                    "kind": "predicate",
+                    "name": "exists_named_sensitivity_sign_reversal",
+                    "return_type": "boolean"
+                  },
+                  {
+                    "arguments": [
+                      {
+                        "domain": [
+                          "raw",
+                          "pkg"
+                        ],
+                        "expression": {
+                          "arguments": [
+                            {
+                              "kind": "comparison",
+                              "left": {
+                                "kind": "variable",
+                                "name": "D_lower[kind]"
+                              },
+                              "operator": ">",
+                              "return_type": "boolean",
+                              "right": {
+                                "arguments": [
+                                  {
+                                    "kind": "literal",
+                                    "value": 1
+                                  },
+                                  {
+                                    "kind": "literal",
+                                    "value": 240
+                                  }
+                                ],
+                                "kind": "operator",
+                                "operator": "divide"
+                              }
+                            },
+                            {
+                              "kind": "comparison",
+                              "left": {
+                                "kind": "variable",
+                                "name": "holm_adjusted_margin_p[kind]"
+                              },
+                              "operator": "<=",
+                              "return_type": "boolean",
+                              "right": {
+                                "kind": "literal",
+                                "value": 0.05
+                              }
+                            }
+                          ],
+                          "kind": "boolean_operator",
+                          "operator": "and",
+                          "return_type": "boolean"
+                        },
+                        "kind": "quantifier",
+                        "quantifier": "all",
+                        "return_type": "boolean",
+                        "variable": "kind"
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "arguments": [],
+                            "kind": "predicate",
+                            "name": "exists_named_sensitivity_sign_reversal",
+                            "return_type": "boolean"
+                          }
+                        ],
+                        "kind": "boolean_operator",
+                        "operator": "not",
+                        "return_type": "boolean"
+                      }
+                    ],
+                    "kind": "boolean_operator",
+                    "operator": "and",
+                    "return_type": "boolean"
+                  },
+                  {
+                    "arguments": [
+                      {
+                        "domain": [
+                          "raw",
+                          "pkg"
+                        ],
+                        "expression": {
+                          "kind": "comparison",
+                          "left": {
+                            "kind": "variable",
+                            "name": "D_lower[kind]"
+                          },
+                          "operator": ">",
+                          "return_type": "boolean",
+                          "right": {
+                            "kind": "literal",
+                            "value": 0
+                          }
+                        },
+                        "kind": "quantifier",
+                        "quantifier": "all",
+                        "return_type": "boolean",
+                        "variable": "kind"
+                      },
+                      {
+                        "domain": [
+                          "raw",
+                          "pkg"
+                        ],
+                        "expression": {
+                          "kind": "comparison",
+                          "left": {
+                            "kind": "variable",
+                            "name": "D_lower[kind]"
+                          },
+                          "operator": "<=",
+                          "return_type": "boolean",
+                          "right": {
+                            "arguments": [
+                              {
+                                "kind": "literal",
+                                "value": 1
+                              },
+                              {
+                                "kind": "literal",
+                                "value": 240
+                              }
+                            ],
+                            "kind": "operator",
+                            "operator": "divide"
+                          }
+                        },
+                        "kind": "quantifier",
+                        "quantifier": "exists",
+                        "return_type": "boolean",
+                        "variable": "kind"
+                      }
+                    ],
+                    "kind": "boolean_operator",
+                    "operator": "and",
+                    "return_type": "boolean"
+                  }
+                ],
+                "kind": "boolean_operator",
+                "operator": "or",
+                "return_type": "boolean"
+              }
+            ],
+            "kind": "boolean_operator",
+            "operator": "not",
+            "return_type": "boolean"
+          },
+          {
+            "arguments": [
+              {
+                "domain": [
+                  "raw",
+                  "pkg"
+                ],
+                "expression": {
+                  "arguments": [
+                    {
+                      "kind": "comparison",
+                      "left": {
+                        "kind": "variable",
+                        "name": "D_lower[kind]"
+                      },
+                      "operator": ">=",
+                      "return_type": "boolean",
+                      "right": {
+                        "arguments": [
+                          {
+                            "arguments": [
+                              {
+                                "kind": "literal",
+                                "value": 1
+                              },
+                              {
+                                "kind": "literal",
+                                "value": 240
+                              }
+                            ],
+                            "kind": "operator",
+                            "operator": "divide"
+                          }
+                        ],
+                        "kind": "operator",
+                        "operator": "negate"
+                      }
+                    },
+                    {
+                      "kind": "comparison",
+                      "left": {
+                        "kind": "variable",
+                        "name": "D_upper[kind]"
+                      },
+                      "operator": "<=",
+                      "return_type": "boolean",
+                      "right": {
+                        "arguments": [
+                          {
+                            "kind": "literal",
+                            "value": 1
+                          },
+                          {
+                            "kind": "literal",
+                            "value": 240
+                          }
+                        ],
+                        "kind": "operator",
+                        "operator": "divide"
+                      }
+                    }
+                  ],
+                  "kind": "boolean_operator",
+                  "operator": "and",
+                  "return_type": "boolean"
+                },
+                "kind": "quantifier",
+                "quantifier": "all",
+                "return_type": "boolean",
+                "variable": "kind"
+              },
+              {
+                "domain": [
+                  "raw",
+                  "pkg"
+                ],
+                "expression": {
+                  "arguments": [
+                    {
+                      "kind": "comparison",
+                      "left": {
+                        "kind": "variable",
+                        "name": "D_lower[kind]"
+                      },
+                      "operator": "<=",
+                      "return_type": "boolean",
+                      "right": {
+                        "kind": "literal",
+                        "value": 0
+                      }
+                    },
+                    {
+                      "kind": "comparison",
+                      "left": {
+                        "kind": "variable",
+                        "name": "D_upper[kind]"
+                      },
+                      "operator": ">=",
+                      "return_type": "boolean",
+                      "right": {
+                        "kind": "literal",
+                        "value": 0
+                      }
+                    }
+                  ],
+                  "kind": "boolean_operator",
+                  "operator": "and",
+                  "return_type": "boolean"
+                },
+                "kind": "quantifier",
+                "quantifier": "exists",
+                "return_type": "boolean",
+                "variable": "kind"
+              }
+            ],
+            "kind": "boolean_operator",
+            "operator": "and",
+            "return_type": "boolean"
+          }
+        ],
+        "kind": "boolean_operator",
+        "operator": "and",
+        "return_type": "boolean"
+      },
+      "predicate_description": "both intervals lie inside [-1/240,1/240] and at least one includes zero",
+      "priority": 5,
+      "status": "G2C_V2_CROSS_TERMS_NEGLIGIBLE"
+    },
+    {
+      "ordered_fallback": false,
+      "predicate": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [
+                      {
+                        "arguments": [],
+                        "kind": "predicate",
+                        "name": "eligible_nondegenerate_context_exists_in_every_required_source_and_kind",
+                        "return_type": "boolean"
+                      }
+                    ],
+                    "kind": "boolean_operator",
+                    "operator": "not",
+                    "return_type": "boolean"
+                  },
+                  {
+                    "arguments": [],
+                    "kind": "predicate",
+                    "name": "exists_named_sensitivity_sign_reversal",
+                    "return_type": "boolean"
+                  },
+                  {
+                    "arguments": [
+                      {
+                        "domain": [
+                          "raw",
+                          "pkg"
+                        ],
+                        "expression": {
+                          "arguments": [
+                            {
+                              "kind": "comparison",
+                              "left": {
+                                "kind": "variable",
+                                "name": "D_lower[kind]"
+                              },
+                              "operator": ">",
+                              "return_type": "boolean",
+                              "right": {
+                                "arguments": [
+                                  {
+                                    "kind": "literal",
+                                    "value": 1
+                                  },
+                                  {
+                                    "kind": "literal",
+                                    "value": 240
+                                  }
+                                ],
+                                "kind": "operator",
+                                "operator": "divide"
+                              }
+                            },
+                            {
+                              "kind": "comparison",
+                              "left": {
+                                "kind": "variable",
+                                "name": "holm_adjusted_margin_p[kind]"
+                              },
+                              "operator": "<=",
+                              "return_type": "boolean",
+                              "right": {
+                                "kind": "literal",
+                                "value": 0.05
+                              }
+                            }
+                          ],
+                          "kind": "boolean_operator",
+                          "operator": "and",
+                          "return_type": "boolean"
+                        },
+                        "kind": "quantifier",
+                        "quantifier": "all",
+                        "return_type": "boolean",
+                        "variable": "kind"
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "arguments": [],
+                            "kind": "predicate",
+                            "name": "exists_named_sensitivity_sign_reversal",
+                            "return_type": "boolean"
+                          }
+                        ],
+                        "kind": "boolean_operator",
+                        "operator": "not",
+                        "return_type": "boolean"
+                      }
+                    ],
+                    "kind": "boolean_operator",
+                    "operator": "and",
+                    "return_type": "boolean"
+                  },
+                  {
+                    "arguments": [
+                      {
+                        "domain": [
+                          "raw",
+                          "pkg"
+                        ],
+                        "expression": {
+                          "kind": "comparison",
+                          "left": {
+                            "kind": "variable",
+                            "name": "D_lower[kind]"
+                          },
+                          "operator": ">",
+                          "return_type": "boolean",
+                          "right": {
+                            "kind": "literal",
+                            "value": 0
+                          }
+                        },
+                        "kind": "quantifier",
+                        "quantifier": "all",
+                        "return_type": "boolean",
+                        "variable": "kind"
+                      },
+                      {
+                        "domain": [
+                          "raw",
+                          "pkg"
+                        ],
+                        "expression": {
+                          "kind": "comparison",
+                          "left": {
+                            "kind": "variable",
+                            "name": "D_lower[kind]"
+                          },
+                          "operator": "<=",
+                          "return_type": "boolean",
+                          "right": {
+                            "arguments": [
+                              {
+                                "kind": "literal",
+                                "value": 1
+                              },
+                              {
+                                "kind": "literal",
+                                "value": 240
+                              }
+                            ],
+                            "kind": "operator",
+                            "operator": "divide"
+                          }
+                        },
+                        "kind": "quantifier",
+                        "quantifier": "exists",
+                        "return_type": "boolean",
+                        "variable": "kind"
+                      }
+                    ],
+                    "kind": "boolean_operator",
+                    "operator": "and",
+                    "return_type": "boolean"
+                  },
+                  {
+                    "arguments": [
+                      {
+                        "domain": [
+                          "raw",
+                          "pkg"
+                        ],
+                        "expression": {
+                          "arguments": [
+                            {
+                              "kind": "comparison",
+                              "left": {
+                                "kind": "variable",
+                                "name": "D_lower[kind]"
+                              },
+                              "operator": ">=",
+                              "return_type": "boolean",
+                              "right": {
+                                "arguments": [
+                                  {
+                                    "arguments": [
+                                      {
+                                        "kind": "literal",
+                                        "value": 1
+                                      },
+                                      {
+                                        "kind": "literal",
+                                        "value": 240
+                                      }
+                                    ],
+                                    "kind": "operator",
+                                    "operator": "divide"
+                                  }
+                                ],
+                                "kind": "operator",
+                                "operator": "negate"
+                              }
+                            },
+                            {
+                              "kind": "comparison",
+                              "left": {
+                                "kind": "variable",
+                                "name": "D_upper[kind]"
+                              },
+                              "operator": "<=",
+                              "return_type": "boolean",
+                              "right": {
+                                "arguments": [
+                                  {
+                                    "kind": "literal",
+                                    "value": 1
+                                  },
+                                  {
+                                    "kind": "literal",
+                                    "value": 240
+                                  }
+                                ],
+                                "kind": "operator",
+                                "operator": "divide"
+                              }
+                            }
+                          ],
+                          "kind": "boolean_operator",
+                          "operator": "and",
+                          "return_type": "boolean"
+                        },
+                        "kind": "quantifier",
+                        "quantifier": "all",
+                        "return_type": "boolean",
+                        "variable": "kind"
+                      },
+                      {
+                        "domain": [
+                          "raw",
+                          "pkg"
+                        ],
+                        "expression": {
+                          "arguments": [
+                            {
+                              "kind": "comparison",
+                              "left": {
+                                "kind": "variable",
+                                "name": "D_lower[kind]"
+                              },
+                              "operator": "<=",
+                              "return_type": "boolean",
+                              "right": {
+                                "kind": "literal",
+                                "value": 0
+                              }
+                            },
+                            {
+                              "kind": "comparison",
+                              "left": {
+                                "kind": "variable",
+                                "name": "D_upper[kind]"
+                              },
+                              "operator": ">=",
+                              "return_type": "boolean",
+                              "right": {
+                                "kind": "literal",
+                                "value": 0
+                              }
+                            }
+                          ],
+                          "kind": "boolean_operator",
+                          "operator": "and",
+                          "return_type": "boolean"
+                        },
+                        "kind": "quantifier",
+                        "quantifier": "exists",
+                        "return_type": "boolean",
+                        "variable": "kind"
+                      }
+                    ],
+                    "kind": "boolean_operator",
+                    "operator": "and",
+                    "return_type": "boolean"
+                  }
+                ],
+                "kind": "boolean_operator",
+                "operator": "or",
+                "return_type": "boolean"
+              }
+            ],
+            "kind": "boolean_operator",
+            "operator": "not",
+            "return_type": "boolean"
+          },
+          {
+            "domain": [
+              "raw",
+              "pkg"
+            ],
+            "expression": {
+              "kind": "comparison",
+              "left": {
+                "kind": "variable",
+                "name": "D_upper[kind]"
+              },
+              "operator": "<",
+              "return_type": "boolean",
+              "right": {
+                "arguments": [
+                  {
+                    "arguments": [
+                      {
+                        "kind": "literal",
+                        "value": 1
+                      },
+                      {
+                        "kind": "literal",
+                        "value": 240
+                      }
+                    ],
+                    "kind": "operator",
+                    "operator": "divide"
+                  }
+                ],
+                "kind": "operator",
+                "operator": "negate"
+              }
+            },
+            "kind": "quantifier",
+            "quantifier": "exists",
+            "return_type": "boolean",
+            "variable": "kind"
+          }
+        ],
+        "kind": "boolean_operator",
+        "operator": "and",
+        "return_type": "boolean"
+      },
+      "predicate_description": "either kind has upper bound <-1/240",
+      "priority": 6,
+      "status": "G2C_V2_DIAGONAL_BETTER"
+    },
+    {
+      "ordered_fallback": false,
+      "predicate": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [
+                      {
+                        "arguments": [],
+                        "kind": "predicate",
+                        "name": "eligible_nondegenerate_context_exists_in_every_required_source_and_kind",
+                        "return_type": "boolean"
+                      }
+                    ],
+                    "kind": "boolean_operator",
+                    "operator": "not",
+                    "return_type": "boolean"
+                  },
+                  {
+                    "arguments": [],
+                    "kind": "predicate",
+                    "name": "exists_named_sensitivity_sign_reversal",
+                    "return_type": "boolean"
+                  },
+                  {
+                    "arguments": [
+                      {
+                        "domain": [
+                          "raw",
+                          "pkg"
+                        ],
+                        "expression": {
+                          "arguments": [
+                            {
+                              "kind": "comparison",
+                              "left": {
+                                "kind": "variable",
+                                "name": "D_lower[kind]"
+                              },
+                              "operator": ">",
+                              "return_type": "boolean",
+                              "right": {
+                                "arguments": [
+                                  {
+                                    "kind": "literal",
+                                    "value": 1
+                                  },
+                                  {
+                                    "kind": "literal",
+                                    "value": 240
+                                  }
+                                ],
+                                "kind": "operator",
+                                "operator": "divide"
+                              }
+                            },
+                            {
+                              "kind": "comparison",
+                              "left": {
+                                "kind": "variable",
+                                "name": "holm_adjusted_margin_p[kind]"
+                              },
+                              "operator": "<=",
+                              "return_type": "boolean",
+                              "right": {
+                                "kind": "literal",
+                                "value": 0.05
+                              }
+                            }
+                          ],
+                          "kind": "boolean_operator",
+                          "operator": "and",
+                          "return_type": "boolean"
+                        },
+                        "kind": "quantifier",
+                        "quantifier": "all",
+                        "return_type": "boolean",
+                        "variable": "kind"
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "arguments": [],
+                            "kind": "predicate",
+                            "name": "exists_named_sensitivity_sign_reversal",
+                            "return_type": "boolean"
+                          }
+                        ],
+                        "kind": "boolean_operator",
+                        "operator": "not",
+                        "return_type": "boolean"
+                      }
+                    ],
+                    "kind": "boolean_operator",
+                    "operator": "and",
+                    "return_type": "boolean"
+                  },
+                  {
+                    "arguments": [
+                      {
+                        "domain": [
+                          "raw",
+                          "pkg"
+                        ],
+                        "expression": {
+                          "kind": "comparison",
+                          "left": {
+                            "kind": "variable",
+                            "name": "D_lower[kind]"
+                          },
+                          "operator": ">",
+                          "return_type": "boolean",
+                          "right": {
+                            "kind": "literal",
+                            "value": 0
+                          }
+                        },
+                        "kind": "quantifier",
+                        "quantifier": "all",
+                        "return_type": "boolean",
+                        "variable": "kind"
+                      },
+                      {
+                        "domain": [
+                          "raw",
+                          "pkg"
+                        ],
+                        "expression": {
+                          "kind": "comparison",
+                          "left": {
+                            "kind": "variable",
+                            "name": "D_lower[kind]"
+                          },
+                          "operator": "<=",
+                          "return_type": "boolean",
+                          "right": {
+                            "arguments": [
+                              {
+                                "kind": "literal",
+                                "value": 1
+                              },
+                              {
+                                "kind": "literal",
+                                "value": 240
+                              }
+                            ],
+                            "kind": "operator",
+                            "operator": "divide"
+                          }
+                        },
+                        "kind": "quantifier",
+                        "quantifier": "exists",
+                        "return_type": "boolean",
+                        "variable": "kind"
+                      }
+                    ],
+                    "kind": "boolean_operator",
+                    "operator": "and",
+                    "return_type": "boolean"
+                  },
+                  {
+                    "arguments": [
+                      {
+                        "domain": [
+                          "raw",
+                          "pkg"
+                        ],
+                        "expression": {
+                          "arguments": [
+                            {
+                              "kind": "comparison",
+                              "left": {
+                                "kind": "variable",
+                                "name": "D_lower[kind]"
+                              },
+                              "operator": ">=",
+                              "return_type": "boolean",
+                              "right": {
+                                "arguments": [
+                                  {
+                                    "arguments": [
+                                      {
+                                        "kind": "literal",
+                                        "value": 1
+                                      },
+                                      {
+                                        "kind": "literal",
+                                        "value": 240
+                                      }
+                                    ],
+                                    "kind": "operator",
+                                    "operator": "divide"
+                                  }
+                                ],
+                                "kind": "operator",
+                                "operator": "negate"
+                              }
+                            },
+                            {
+                              "kind": "comparison",
+                              "left": {
+                                "kind": "variable",
+                                "name": "D_upper[kind]"
+                              },
+                              "operator": "<=",
+                              "return_type": "boolean",
+                              "right": {
+                                "arguments": [
+                                  {
+                                    "kind": "literal",
+                                    "value": 1
+                                  },
+                                  {
+                                    "kind": "literal",
+                                    "value": 240
+                                  }
+                                ],
+                                "kind": "operator",
+                                "operator": "divide"
+                              }
+                            }
+                          ],
+                          "kind": "boolean_operator",
+                          "operator": "and",
+                          "return_type": "boolean"
+                        },
+                        "kind": "quantifier",
+                        "quantifier": "all",
+                        "return_type": "boolean",
+                        "variable": "kind"
+                      },
+                      {
+                        "domain": [
+                          "raw",
+                          "pkg"
+                        ],
+                        "expression": {
+                          "arguments": [
+                            {
+                              "kind": "comparison",
+                              "left": {
+                                "kind": "variable",
+                                "name": "D_lower[kind]"
+                              },
+                              "operator": "<=",
+                              "return_type": "boolean",
+                              "right": {
+                                "kind": "literal",
+                                "value": 0
+                              }
+                            },
+                            {
+                              "kind": "comparison",
+                              "left": {
+                                "kind": "variable",
+                                "name": "D_upper[kind]"
+                              },
+                              "operator": ">=",
+                              "return_type": "boolean",
+                              "right": {
+                                "kind": "literal",
+                                "value": 0
+                              }
+                            }
+                          ],
+                          "kind": "boolean_operator",
+                          "operator": "and",
+                          "return_type": "boolean"
+                        },
+                        "kind": "quantifier",
+                        "quantifier": "exists",
+                        "return_type": "boolean",
+                        "variable": "kind"
+                      }
+                    ],
+                    "kind": "boolean_operator",
+                    "operator": "and",
+                    "return_type": "boolean"
+                  },
+                  {
+                    "domain": [
+                      "raw",
+                      "pkg"
+                    ],
+                    "expression": {
+                      "kind": "comparison",
+                      "left": {
+                        "kind": "variable",
+                        "name": "D_upper[kind]"
+                      },
+                      "operator": "<",
+                      "return_type": "boolean",
+                      "right": {
+                        "arguments": [
+                          {
+                            "arguments": [
+                              {
+                                "kind": "literal",
+                                "value": 1
+                              },
+                              {
+                                "kind": "literal",
+                                "value": 240
+                              }
+                            ],
+                            "kind": "operator",
+                            "operator": "divide"
+                          }
+                        ],
+                        "kind": "operator",
+                        "operator": "negate"
+                      }
+                    },
+                    "kind": "quantifier",
+                    "quantifier": "exists",
+                    "return_type": "boolean",
+                    "variable": "kind"
+                  }
+                ],
+                "kind": "boolean_operator",
+                "operator": "or",
+                "return_type": "boolean"
+              }
+            ],
+            "kind": "boolean_operator",
+            "operator": "not",
+            "return_type": "boolean"
+          },
+          {
+            "arguments": [
+              {
+                "domain": [
+                  "raw",
+                  "pkg"
+                ],
+                "expression": {
+                  "kind": "comparison",
+                  "left": {
+                    "kind": "variable",
+                    "name": "D_upper[kind]"
+                  },
+                  "operator": "<",
+                  "return_type": "boolean",
+                  "right": {
+                    "kind": "literal",
+                    "value": 0
+                  }
+                },
+                "kind": "quantifier",
+                "quantifier": "all",
+                "return_type": "boolean",
+                "variable": "kind"
+              },
+              {
+                "domain": [
+                  "raw",
+                  "pkg"
+                ],
+                "expression": {
+                  "kind": "comparison",
+                  "left": {
+                    "kind": "variable",
+                    "name": "D_upper[kind]"
+                  },
+                  "operator": ">=",
+                  "return_type": "boolean",
+                  "right": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "kind": "literal",
+                            "value": 1
+                          },
+                          {
+                            "kind": "literal",
+                            "value": 240
+                          }
+                        ],
+                        "kind": "operator",
+                        "operator": "divide"
+                      }
+                    ],
+                    "kind": "operator",
+                    "operator": "negate"
+                  }
+                },
+                "kind": "quantifier",
+                "quantifier": "all",
+                "return_type": "boolean",
+                "variable": "kind"
+              },
+              {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "kind": "predicate",
+                    "name": "kinds_have_opposite_signs",
+                    "return_type": "boolean"
+                  }
+                ],
+                "kind": "boolean_operator",
+                "operator": "not",
+                "return_type": "boolean"
+              }
+            ],
+            "kind": "boolean_operator",
+            "operator": "and",
+            "return_type": "boolean"
+          }
+        ],
+        "kind": "boolean_operator",
+        "operator": "and",
+        "return_type": "boolean"
+      },
+      "predicate_description": "both kinds have upper bound <0, no upper bound <-1/240, and kinds are not mixed",
+      "priority": 7,
+      "status": "G2C_V2_DIAGONAL_ADVANTAGE_BELOW_PRACTICAL_MARGIN"
+    },
+    {
+      "ordered_fallback": true,
+      "predicate": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [
+                      {
+                        "arguments": [],
+                        "kind": "predicate",
+                        "name": "eligible_nondegenerate_context_exists_in_every_required_source_and_kind",
+                        "return_type": "boolean"
+                      }
+                    ],
+                    "kind": "boolean_operator",
+                    "operator": "not",
+                    "return_type": "boolean"
+                  },
+                  {
+                    "arguments": [],
+                    "kind": "predicate",
+                    "name": "exists_named_sensitivity_sign_reversal",
+                    "return_type": "boolean"
+                  },
+                  {
+                    "arguments": [
+                      {
+                        "domain": [
+                          "raw",
+                          "pkg"
+                        ],
+                        "expression": {
+                          "arguments": [
+                            {
+                              "kind": "comparison",
+                              "left": {
+                                "kind": "variable",
+                                "name": "D_lower[kind]"
+                              },
+                              "operator": ">",
+                              "return_type": "boolean",
+                              "right": {
+                                "arguments": [
+                                  {
+                                    "kind": "literal",
+                                    "value": 1
+                                  },
+                                  {
+                                    "kind": "literal",
+                                    "value": 240
+                                  }
+                                ],
+                                "kind": "operator",
+                                "operator": "divide"
+                              }
+                            },
+                            {
+                              "kind": "comparison",
+                              "left": {
+                                "kind": "variable",
+                                "name": "holm_adjusted_margin_p[kind]"
+                              },
+                              "operator": "<=",
+                              "return_type": "boolean",
+                              "right": {
+                                "kind": "literal",
+                                "value": 0.05
+                              }
+                            }
+                          ],
+                          "kind": "boolean_operator",
+                          "operator": "and",
+                          "return_type": "boolean"
+                        },
+                        "kind": "quantifier",
+                        "quantifier": "all",
+                        "return_type": "boolean",
+                        "variable": "kind"
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "arguments": [],
+                            "kind": "predicate",
+                            "name": "exists_named_sensitivity_sign_reversal",
+                            "return_type": "boolean"
+                          }
+                        ],
+                        "kind": "boolean_operator",
+                        "operator": "not",
+                        "return_type": "boolean"
+                      }
+                    ],
+                    "kind": "boolean_operator",
+                    "operator": "and",
+                    "return_type": "boolean"
+                  },
+                  {
+                    "arguments": [
+                      {
+                        "domain": [
+                          "raw",
+                          "pkg"
+                        ],
+                        "expression": {
+                          "kind": "comparison",
+                          "left": {
+                            "kind": "variable",
+                            "name": "D_lower[kind]"
+                          },
+                          "operator": ">",
+                          "return_type": "boolean",
+                          "right": {
+                            "kind": "literal",
+                            "value": 0
+                          }
+                        },
+                        "kind": "quantifier",
+                        "quantifier": "all",
+                        "return_type": "boolean",
+                        "variable": "kind"
+                      },
+                      {
+                        "domain": [
+                          "raw",
+                          "pkg"
+                        ],
+                        "expression": {
+                          "kind": "comparison",
+                          "left": {
+                            "kind": "variable",
+                            "name": "D_lower[kind]"
+                          },
+                          "operator": "<=",
+                          "return_type": "boolean",
+                          "right": {
+                            "arguments": [
+                              {
+                                "kind": "literal",
+                                "value": 1
+                              },
+                              {
+                                "kind": "literal",
+                                "value": 240
+                              }
+                            ],
+                            "kind": "operator",
+                            "operator": "divide"
+                          }
+                        },
+                        "kind": "quantifier",
+                        "quantifier": "exists",
+                        "return_type": "boolean",
+                        "variable": "kind"
+                      }
+                    ],
+                    "kind": "boolean_operator",
+                    "operator": "and",
+                    "return_type": "boolean"
+                  },
+                  {
+                    "arguments": [
+                      {
+                        "domain": [
+                          "raw",
+                          "pkg"
+                        ],
+                        "expression": {
+                          "arguments": [
+                            {
+                              "kind": "comparison",
+                              "left": {
+                                "kind": "variable",
+                                "name": "D_lower[kind]"
+                              },
+                              "operator": ">=",
+                              "return_type": "boolean",
+                              "right": {
+                                "arguments": [
+                                  {
+                                    "arguments": [
+                                      {
+                                        "kind": "literal",
+                                        "value": 1
+                                      },
+                                      {
+                                        "kind": "literal",
+                                        "value": 240
+                                      }
+                                    ],
+                                    "kind": "operator",
+                                    "operator": "divide"
+                                  }
+                                ],
+                                "kind": "operator",
+                                "operator": "negate"
+                              }
+                            },
+                            {
+                              "kind": "comparison",
+                              "left": {
+                                "kind": "variable",
+                                "name": "D_upper[kind]"
+                              },
+                              "operator": "<=",
+                              "return_type": "boolean",
+                              "right": {
+                                "arguments": [
+                                  {
+                                    "kind": "literal",
+                                    "value": 1
+                                  },
+                                  {
+                                    "kind": "literal",
+                                    "value": 240
+                                  }
+                                ],
+                                "kind": "operator",
+                                "operator": "divide"
+                              }
+                            }
+                          ],
+                          "kind": "boolean_operator",
+                          "operator": "and",
+                          "return_type": "boolean"
+                        },
+                        "kind": "quantifier",
+                        "quantifier": "all",
+                        "return_type": "boolean",
+                        "variable": "kind"
+                      },
+                      {
+                        "domain": [
+                          "raw",
+                          "pkg"
+                        ],
+                        "expression": {
+                          "arguments": [
+                            {
+                              "kind": "comparison",
+                              "left": {
+                                "kind": "variable",
+                                "name": "D_lower[kind]"
+                              },
+                              "operator": "<=",
+                              "return_type": "boolean",
+                              "right": {
+                                "kind": "literal",
+                                "value": 0
+                              }
+                            },
+                            {
+                              "kind": "comparison",
+                              "left": {
+                                "kind": "variable",
+                                "name": "D_upper[kind]"
+                              },
+                              "operator": ">=",
+                              "return_type": "boolean",
+                              "right": {
+                                "kind": "literal",
+                                "value": 0
+                              }
+                            }
+                          ],
+                          "kind": "boolean_operator",
+                          "operator": "and",
+                          "return_type": "boolean"
+                        },
+                        "kind": "quantifier",
+                        "quantifier": "exists",
+                        "return_type": "boolean",
+                        "variable": "kind"
+                      }
+                    ],
+                    "kind": "boolean_operator",
+                    "operator": "and",
+                    "return_type": "boolean"
+                  },
+                  {
+                    "domain": [
+                      "raw",
+                      "pkg"
+                    ],
+                    "expression": {
+                      "kind": "comparison",
+                      "left": {
+                        "kind": "variable",
+                        "name": "D_upper[kind]"
+                      },
+                      "operator": "<",
+                      "return_type": "boolean",
+                      "right": {
+                        "arguments": [
+                          {
+                            "arguments": [
+                              {
+                                "kind": "literal",
+                                "value": 1
+                              },
+                              {
+                                "kind": "literal",
+                                "value": 240
+                              }
+                            ],
+                            "kind": "operator",
+                            "operator": "divide"
+                          }
+                        ],
+                        "kind": "operator",
+                        "operator": "negate"
+                      }
+                    },
+                    "kind": "quantifier",
+                    "quantifier": "exists",
+                    "return_type": "boolean",
+                    "variable": "kind"
+                  },
+                  {
+                    "arguments": [
+                      {
+                        "domain": [
+                          "raw",
+                          "pkg"
+                        ],
+                        "expression": {
+                          "kind": "comparison",
+                          "left": {
+                            "kind": "variable",
+                            "name": "D_upper[kind]"
+                          },
+                          "operator": "<",
+                          "return_type": "boolean",
+                          "right": {
+                            "kind": "literal",
+                            "value": 0
+                          }
+                        },
+                        "kind": "quantifier",
+                        "quantifier": "all",
+                        "return_type": "boolean",
+                        "variable": "kind"
+                      },
+                      {
+                        "domain": [
+                          "raw",
+                          "pkg"
+                        ],
+                        "expression": {
+                          "kind": "comparison",
+                          "left": {
+                            "kind": "variable",
+                            "name": "D_upper[kind]"
+                          },
+                          "operator": ">=",
+                          "return_type": "boolean",
+                          "right": {
+                            "arguments": [
+                              {
+                                "arguments": [
+                                  {
+                                    "kind": "literal",
+                                    "value": 1
+                                  },
+                                  {
+                                    "kind": "literal",
+                                    "value": 240
+                                  }
+                                ],
+                                "kind": "operator",
+                                "operator": "divide"
+                              }
+                            ],
+                            "kind": "operator",
+                            "operator": "negate"
+                          }
+                        },
+                        "kind": "quantifier",
+                        "quantifier": "all",
+                        "return_type": "boolean",
+                        "variable": "kind"
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "arguments": [],
+                            "kind": "predicate",
+                            "name": "kinds_have_opposite_signs",
+                            "return_type": "boolean"
+                          }
+                        ],
+                        "kind": "boolean_operator",
+                        "operator": "not",
+                        "return_type": "boolean"
+                      }
+                    ],
+                    "kind": "boolean_operator",
+                    "operator": "and",
+                    "return_type": "boolean"
+                  }
+                ],
+                "kind": "boolean_operator",
+                "operator": "or",
+                "return_type": "boolean"
+              }
+            ],
+            "kind": "boolean_operator",
+            "operator": "not",
+            "return_type": "boolean"
+          },
+          {
+            "kind": "comparison",
+            "left": {
+              "kind": "literal",
+              "value": true
+            },
+            "operator": "==",
+            "return_type": "boolean",
+            "right": {
+              "kind": "literal",
+              "value": true
+            }
+          }
+        ],
+        "kind": "boolean_operator",
+        "operator": "and",
+        "return_type": "boolean"
+      },
+      "predicate_description": "every other valid combination",
+      "priority": 8,
+      "status": "G2C_V2_INCONCLUSIVE_MIXED_OR_LOW_POWER"
+    }
+  ]
+}

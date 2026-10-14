@@ -1,0 +1,1467 @@
+{
+  "exhaustive": true,
+  "id": "g2a",
+  "ordered": true,
+  "rows": [
+    {
+      "ordered_fallback": false,
+      "predicate": {
+        "arguments": [],
+        "kind": "predicate",
+        "name": "exists_named_sensitivity_sign_reversal",
+        "return_type": "boolean"
+      },
+      "predicate_description": "any named sensitivity has the strict unrounded sign reversal in Section 5.2",
+      "priority": 1,
+      "status": "G2A_V2_INCONCLUSIVE_SENSITIVITY"
+    },
+    {
+      "ordered_fallback": false,
+      "predicate": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "kind": "predicate",
+                    "name": "exists_named_sensitivity_sign_reversal",
+                    "return_type": "boolean"
+                  }
+                ],
+                "kind": "boolean_operator",
+                "operator": "or",
+                "return_type": "boolean"
+              }
+            ],
+            "kind": "boolean_operator",
+            "operator": "not",
+            "return_type": "boolean"
+          },
+          {
+            "domain": [
+              "raw",
+              "pkg"
+            ],
+            "expression": {
+              "kind": "comparison",
+              "left": {
+                "kind": "variable",
+                "name": "D_clipped_linear_upper[kind]"
+              },
+              "operator": "<",
+              "return_type": "boolean",
+              "right": {
+                "kind": "literal",
+                "value": 0
+              }
+            },
+            "kind": "quantifier",
+            "quantifier": "exists",
+            "return_type": "boolean",
+            "variable": "kind"
+          }
+        ],
+        "kind": "boolean_operator",
+        "operator": "and",
+        "return_type": "boolean"
+      },
+      "predicate_description": "clipped-linear is adverse in either kind",
+      "priority": 2,
+      "status": "G2A_V2_LINEAR_NOT_BEATEN"
+    },
+    {
+      "ordered_fallback": false,
+      "predicate": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "kind": "predicate",
+                    "name": "exists_named_sensitivity_sign_reversal",
+                    "return_type": "boolean"
+                  },
+                  {
+                    "domain": [
+                      "raw",
+                      "pkg"
+                    ],
+                    "expression": {
+                      "kind": "comparison",
+                      "left": {
+                        "kind": "variable",
+                        "name": "D_clipped_linear_upper[kind]"
+                      },
+                      "operator": "<",
+                      "return_type": "boolean",
+                      "right": {
+                        "kind": "literal",
+                        "value": 0
+                      }
+                    },
+                    "kind": "quantifier",
+                    "quantifier": "exists",
+                    "return_type": "boolean",
+                    "variable": "kind"
+                  }
+                ],
+                "kind": "boolean_operator",
+                "operator": "or",
+                "return_type": "boolean"
+              }
+            ],
+            "kind": "boolean_operator",
+            "operator": "not",
+            "return_type": "boolean"
+          },
+          {
+            "domain": [
+              "q_diag",
+              "q_lambda_1_16",
+              "q_lambda_1_8",
+              "q_lambda_1_4",
+              "q_lambda_1_2",
+              "q_lambda_1",
+              "q_lambda_2",
+              "q_lambda_4",
+              "q_lambda_8",
+              "q_lambda_16"
+            ],
+            "expression": {
+              "domain": [
+                "raw",
+                "pkg"
+              ],
+              "expression": {
+                "kind": "comparison",
+                "left": {
+                  "kind": "variable",
+                  "name": "D_upper[kind,competitor]"
+                },
+                "operator": "<",
+                "return_type": "boolean",
+                "right": {
+                  "kind": "literal",
+                  "value": 0
+                }
+              },
+              "kind": "quantifier",
+              "quantifier": "exists",
+              "return_type": "boolean",
+              "variable": "kind"
+            },
+            "kind": "quantifier",
+            "quantifier": "exists",
+            "return_type": "boolean",
+            "variable": "competitor"
+          }
+        ],
+        "kind": "boolean_operator",
+        "operator": "and",
+        "return_type": "boolean"
+      },
+      "predicate_description": "q-diag or any q-lambda candidate is adverse in either kind",
+      "priority": 3,
+      "status": "G2A_V2_FROZEN_COMPETITOR_ADVERSE"
+    },
+    {
+      "ordered_fallback": false,
+      "predicate": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "kind": "predicate",
+                    "name": "exists_named_sensitivity_sign_reversal",
+                    "return_type": "boolean"
+                  },
+                  {
+                    "domain": [
+                      "raw",
+                      "pkg"
+                    ],
+                    "expression": {
+                      "kind": "comparison",
+                      "left": {
+                        "kind": "variable",
+                        "name": "D_clipped_linear_upper[kind]"
+                      },
+                      "operator": "<",
+                      "return_type": "boolean",
+                      "right": {
+                        "kind": "literal",
+                        "value": 0
+                      }
+                    },
+                    "kind": "quantifier",
+                    "quantifier": "exists",
+                    "return_type": "boolean",
+                    "variable": "kind"
+                  },
+                  {
+                    "domain": [
+                      "q_diag",
+                      "q_lambda_1_16",
+                      "q_lambda_1_8",
+                      "q_lambda_1_4",
+                      "q_lambda_1_2",
+                      "q_lambda_1",
+                      "q_lambda_2",
+                      "q_lambda_4",
+                      "q_lambda_8",
+                      "q_lambda_16"
+                    ],
+                    "expression": {
+                      "domain": [
+                        "raw",
+                        "pkg"
+                      ],
+                      "expression": {
+                        "kind": "comparison",
+                        "left": {
+                          "kind": "variable",
+                          "name": "D_upper[kind,competitor]"
+                        },
+                        "operator": "<",
+                        "return_type": "boolean",
+                        "right": {
+                          "kind": "literal",
+                          "value": 0
+                        }
+                      },
+                      "kind": "quantifier",
+                      "quantifier": "exists",
+                      "return_type": "boolean",
+                      "variable": "kind"
+                    },
+                    "kind": "quantifier",
+                    "quantifier": "exists",
+                    "return_type": "boolean",
+                    "variable": "competitor"
+                  }
+                ],
+                "kind": "boolean_operator",
+                "operator": "or",
+                "return_type": "boolean"
+              }
+            ],
+            "kind": "boolean_operator",
+            "operator": "not",
+            "return_type": "boolean"
+          },
+          {
+            "arguments": [
+              {
+                "domain": [
+                  "L_clipped_linear",
+                  "q_diag",
+                  "q_lambda_1_16",
+                  "q_lambda_1_8",
+                  "q_lambda_1_4",
+                  "q_lambda_1_2",
+                  "q_lambda_1",
+                  "q_lambda_2",
+                  "q_lambda_4",
+                  "q_lambda_8",
+                  "q_lambda_16"
+                ],
+                "expression": {
+                  "domain": [
+                    "raw",
+                    "pkg"
+                  ],
+                  "expression": {
+                    "arguments": [
+                      {
+                        "kind": "comparison",
+                        "left": {
+                          "kind": "variable",
+                          "name": "D_lower[kind,competitor]"
+                        },
+                        "operator": ">",
+                        "return_type": "boolean",
+                        "right": {
+                          "kind": "literal",
+                          "value": 0
+                        }
+                      },
+                      {
+                        "kind": "comparison",
+                        "left": {
+                          "kind": "variable",
+                          "name": "holm_adjusted_p[kind,competitor]"
+                        },
+                        "operator": "<=",
+                        "return_type": "boolean",
+                        "right": {
+                          "kind": "literal",
+                          "value": 0.05
+                        }
+                      }
+                    ],
+                    "kind": "boolean_operator",
+                    "operator": "and",
+                    "return_type": "boolean"
+                  },
+                  "kind": "quantifier",
+                  "quantifier": "all",
+                  "return_type": "boolean",
+                  "variable": "kind"
+                },
+                "kind": "quantifier",
+                "quantifier": "all",
+                "return_type": "boolean",
+                "variable": "competitor"
+              },
+              {
+                "domain": [
+                  "raw",
+                  "pkg"
+                ],
+                "expression": {
+                  "kind": "comparison",
+                  "left": {
+                    "kind": "variable",
+                    "name": "S_2_upper[kind]"
+                  },
+                  "operator": "<=",
+                  "return_type": "boolean",
+                  "right": {
+                    "kind": "literal",
+                    "value": 0
+                  }
+                },
+                "kind": "quantifier",
+                "quantifier": "all",
+                "return_type": "boolean",
+                "variable": "kind"
+              }
+            ],
+            "kind": "boolean_operator",
+            "operator": "and",
+            "return_type": "boolean"
+          }
+        ],
+        "kind": "boolean_operator",
+        "operator": "and",
+        "return_type": "boolean"
+      },
+      "predicate_description": "both kinds beat all 11 competitors and both S_2,k contrasts pass",
+      "priority": 4,
+      "status": "G2A_V2_FULL_COMPETITOR_LANDING"
+    },
+    {
+      "ordered_fallback": false,
+      "predicate": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "kind": "predicate",
+                    "name": "exists_named_sensitivity_sign_reversal",
+                    "return_type": "boolean"
+                  },
+                  {
+                    "domain": [
+                      "raw",
+                      "pkg"
+                    ],
+                    "expression": {
+                      "kind": "comparison",
+                      "left": {
+                        "kind": "variable",
+                        "name": "D_clipped_linear_upper[kind]"
+                      },
+                      "operator": "<",
+                      "return_type": "boolean",
+                      "right": {
+                        "kind": "literal",
+                        "value": 0
+                      }
+                    },
+                    "kind": "quantifier",
+                    "quantifier": "exists",
+                    "return_type": "boolean",
+                    "variable": "kind"
+                  },
+                  {
+                    "domain": [
+                      "q_diag",
+                      "q_lambda_1_16",
+                      "q_lambda_1_8",
+                      "q_lambda_1_4",
+                      "q_lambda_1_2",
+                      "q_lambda_1",
+                      "q_lambda_2",
+                      "q_lambda_4",
+                      "q_lambda_8",
+                      "q_lambda_16"
+                    ],
+                    "expression": {
+                      "domain": [
+                        "raw",
+                        "pkg"
+                      ],
+                      "expression": {
+                        "kind": "comparison",
+                        "left": {
+                          "kind": "variable",
+                          "name": "D_upper[kind,competitor]"
+                        },
+                        "operator": "<",
+                        "return_type": "boolean",
+                        "right": {
+                          "kind": "literal",
+                          "value": 0
+                        }
+                      },
+                      "kind": "quantifier",
+                      "quantifier": "exists",
+                      "return_type": "boolean",
+                      "variable": "kind"
+                    },
+                    "kind": "quantifier",
+                    "quantifier": "exists",
+                    "return_type": "boolean",
+                    "variable": "competitor"
+                  },
+                  {
+                    "arguments": [
+                      {
+                        "domain": [
+                          "L_clipped_linear",
+                          "q_diag",
+                          "q_lambda_1_16",
+                          "q_lambda_1_8",
+                          "q_lambda_1_4",
+                          "q_lambda_1_2",
+                          "q_lambda_1",
+                          "q_lambda_2",
+                          "q_lambda_4",
+                          "q_lambda_8",
+                          "q_lambda_16"
+                        ],
+                        "expression": {
+                          "domain": [
+                            "raw",
+                            "pkg"
+                          ],
+                          "expression": {
+                            "arguments": [
+                              {
+                                "kind": "comparison",
+                                "left": {
+                                  "kind": "variable",
+                                  "name": "D_lower[kind,competitor]"
+                                },
+                                "operator": ">",
+                                "return_type": "boolean",
+                                "right": {
+                                  "kind": "literal",
+                                  "value": 0
+                                }
+                              },
+                              {
+                                "kind": "comparison",
+                                "left": {
+                                  "kind": "variable",
+                                  "name": "holm_adjusted_p[kind,competitor]"
+                                },
+                                "operator": "<=",
+                                "return_type": "boolean",
+                                "right": {
+                                  "kind": "literal",
+                                  "value": 0.05
+                                }
+                              }
+                            ],
+                            "kind": "boolean_operator",
+                            "operator": "and",
+                            "return_type": "boolean"
+                          },
+                          "kind": "quantifier",
+                          "quantifier": "all",
+                          "return_type": "boolean",
+                          "variable": "kind"
+                        },
+                        "kind": "quantifier",
+                        "quantifier": "all",
+                        "return_type": "boolean",
+                        "variable": "competitor"
+                      },
+                      {
+                        "domain": [
+                          "raw",
+                          "pkg"
+                        ],
+                        "expression": {
+                          "kind": "comparison",
+                          "left": {
+                            "kind": "variable",
+                            "name": "S_2_upper[kind]"
+                          },
+                          "operator": "<=",
+                          "return_type": "boolean",
+                          "right": {
+                            "kind": "literal",
+                            "value": 0
+                          }
+                        },
+                        "kind": "quantifier",
+                        "quantifier": "all",
+                        "return_type": "boolean",
+                        "variable": "kind"
+                      }
+                    ],
+                    "kind": "boolean_operator",
+                    "operator": "and",
+                    "return_type": "boolean"
+                  }
+                ],
+                "kind": "boolean_operator",
+                "operator": "or",
+                "return_type": "boolean"
+              }
+            ],
+            "kind": "boolean_operator",
+            "operator": "not",
+            "return_type": "boolean"
+          },
+          {
+            "arguments": [
+              {
+                "domain": [
+                  "L_clipped_linear",
+                  "q_diag"
+                ],
+                "expression": {
+                  "domain": [
+                    "raw",
+                    "pkg"
+                  ],
+                  "expression": {
+                    "arguments": [
+                      {
+                        "kind": "comparison",
+                        "left": {
+                          "kind": "variable",
+                          "name": "D_lower[kind,competitor]"
+                        },
+                        "operator": ">",
+                        "return_type": "boolean",
+                        "right": {
+                          "kind": "literal",
+                          "value": 0
+                        }
+                      },
+                      {
+                        "kind": "comparison",
+                        "left": {
+                          "kind": "variable",
+                          "name": "holm_adjusted_p[kind,competitor]"
+                        },
+                        "operator": "<=",
+                        "return_type": "boolean",
+                        "right": {
+                          "kind": "literal",
+                          "value": 0.05
+                        }
+                      }
+                    ],
+                    "kind": "boolean_operator",
+                    "operator": "and",
+                    "return_type": "boolean"
+                  },
+                  "kind": "quantifier",
+                  "quantifier": "all",
+                  "return_type": "boolean",
+                  "variable": "kind"
+                },
+                "kind": "quantifier",
+                "quantifier": "all",
+                "return_type": "boolean",
+                "variable": "competitor"
+              },
+              {
+                "domain": [
+                  "raw",
+                  "pkg"
+                ],
+                "expression": {
+                  "kind": "comparison",
+                  "left": {
+                    "kind": "variable",
+                    "name": "S_2_upper[kind]"
+                  },
+                  "operator": "<=",
+                  "return_type": "boolean",
+                  "right": {
+                    "kind": "literal",
+                    "value": 0
+                  }
+                },
+                "kind": "quantifier",
+                "quantifier": "all",
+                "return_type": "boolean",
+                "variable": "kind"
+              },
+              {
+                "arguments": [
+                  {
+                    "domain": [
+                      "L_clipped_linear",
+                      "q_diag",
+                      "q_lambda_1_16",
+                      "q_lambda_1_8",
+                      "q_lambda_1_4",
+                      "q_lambda_1_2",
+                      "q_lambda_1",
+                      "q_lambda_2",
+                      "q_lambda_4",
+                      "q_lambda_8",
+                      "q_lambda_16"
+                    ],
+                    "expression": {
+                      "domain": [
+                        "raw",
+                        "pkg"
+                      ],
+                      "expression": {
+                        "kind": "comparison",
+                        "left": {
+                          "kind": "variable",
+                          "name": "D_upper[kind,competitor]"
+                        },
+                        "operator": "<",
+                        "return_type": "boolean",
+                        "right": {
+                          "kind": "literal",
+                          "value": 0
+                        }
+                      },
+                      "kind": "quantifier",
+                      "quantifier": "exists",
+                      "return_type": "boolean",
+                      "variable": "kind"
+                    },
+                    "kind": "quantifier",
+                    "quantifier": "exists",
+                    "return_type": "boolean",
+                    "variable": "competitor"
+                  }
+                ],
+                "kind": "boolean_operator",
+                "operator": "not",
+                "return_type": "boolean"
+              },
+              {
+                "domain": [
+                  "q_lambda_1_16",
+                  "q_lambda_1_8",
+                  "q_lambda_1_4",
+                  "q_lambda_1_2",
+                  "q_lambda_1",
+                  "q_lambda_2",
+                  "q_lambda_4",
+                  "q_lambda_8",
+                  "q_lambda_16"
+                ],
+                "expression": {
+                  "arguments": [
+                    {
+                      "kind": "variable",
+                      "name": "competitor"
+                    }
+                  ],
+                  "kind": "predicate",
+                  "name": "comparison_unresolved",
+                  "return_type": "boolean"
+                },
+                "kind": "quantifier",
+                "quantifier": "exists",
+                "return_type": "boolean",
+                "variable": "competitor"
+              }
+            ],
+            "kind": "boolean_operator",
+            "operator": "and",
+            "return_type": "boolean"
+          }
+        ],
+        "kind": "boolean_operator",
+        "operator": "and",
+        "return_type": "boolean"
+      },
+      "predicate_description": "both kinds beat clipped-linear and q-diag, both S_2,k pass, no competitor is adverse, and at least one q-lambda is unresolved",
+      "priority": 5,
+      "status": "G2A_V2_PARTIAL_COMPETITOR_LANDING"
+    },
+    {
+      "ordered_fallback": false,
+      "predicate": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "kind": "predicate",
+                    "name": "exists_named_sensitivity_sign_reversal",
+                    "return_type": "boolean"
+                  },
+                  {
+                    "domain": [
+                      "raw",
+                      "pkg"
+                    ],
+                    "expression": {
+                      "kind": "comparison",
+                      "left": {
+                        "kind": "variable",
+                        "name": "D_clipped_linear_upper[kind]"
+                      },
+                      "operator": "<",
+                      "return_type": "boolean",
+                      "right": {
+                        "kind": "literal",
+                        "value": 0
+                      }
+                    },
+                    "kind": "quantifier",
+                    "quantifier": "exists",
+                    "return_type": "boolean",
+                    "variable": "kind"
+                  },
+                  {
+                    "domain": [
+                      "q_diag",
+                      "q_lambda_1_16",
+                      "q_lambda_1_8",
+                      "q_lambda_1_4",
+                      "q_lambda_1_2",
+                      "q_lambda_1",
+                      "q_lambda_2",
+                      "q_lambda_4",
+                      "q_lambda_8",
+                      "q_lambda_16"
+                    ],
+                    "expression": {
+                      "domain": [
+                        "raw",
+                        "pkg"
+                      ],
+                      "expression": {
+                        "kind": "comparison",
+                        "left": {
+                          "kind": "variable",
+                          "name": "D_upper[kind,competitor]"
+                        },
+                        "operator": "<",
+                        "return_type": "boolean",
+                        "right": {
+                          "kind": "literal",
+                          "value": 0
+                        }
+                      },
+                      "kind": "quantifier",
+                      "quantifier": "exists",
+                      "return_type": "boolean",
+                      "variable": "kind"
+                    },
+                    "kind": "quantifier",
+                    "quantifier": "exists",
+                    "return_type": "boolean",
+                    "variable": "competitor"
+                  },
+                  {
+                    "arguments": [
+                      {
+                        "domain": [
+                          "L_clipped_linear",
+                          "q_diag",
+                          "q_lambda_1_16",
+                          "q_lambda_1_8",
+                          "q_lambda_1_4",
+                          "q_lambda_1_2",
+                          "q_lambda_1",
+                          "q_lambda_2",
+                          "q_lambda_4",
+                          "q_lambda_8",
+                          "q_lambda_16"
+                        ],
+                        "expression": {
+                          "domain": [
+                            "raw",
+                            "pkg"
+                          ],
+                          "expression": {
+                            "arguments": [
+                              {
+                                "kind": "comparison",
+                                "left": {
+                                  "kind": "variable",
+                                  "name": "D_lower[kind,competitor]"
+                                },
+                                "operator": ">",
+                                "return_type": "boolean",
+                                "right": {
+                                  "kind": "literal",
+                                  "value": 0
+                                }
+                              },
+                              {
+                                "kind": "comparison",
+                                "left": {
+                                  "kind": "variable",
+                                  "name": "holm_adjusted_p[kind,competitor]"
+                                },
+                                "operator": "<=",
+                                "return_type": "boolean",
+                                "right": {
+                                  "kind": "literal",
+                                  "value": 0.05
+                                }
+                              }
+                            ],
+                            "kind": "boolean_operator",
+                            "operator": "and",
+                            "return_type": "boolean"
+                          },
+                          "kind": "quantifier",
+                          "quantifier": "all",
+                          "return_type": "boolean",
+                          "variable": "kind"
+                        },
+                        "kind": "quantifier",
+                        "quantifier": "all",
+                        "return_type": "boolean",
+                        "variable": "competitor"
+                      },
+                      {
+                        "domain": [
+                          "raw",
+                          "pkg"
+                        ],
+                        "expression": {
+                          "kind": "comparison",
+                          "left": {
+                            "kind": "variable",
+                            "name": "S_2_upper[kind]"
+                          },
+                          "operator": "<=",
+                          "return_type": "boolean",
+                          "right": {
+                            "kind": "literal",
+                            "value": 0
+                          }
+                        },
+                        "kind": "quantifier",
+                        "quantifier": "all",
+                        "return_type": "boolean",
+                        "variable": "kind"
+                      }
+                    ],
+                    "kind": "boolean_operator",
+                    "operator": "and",
+                    "return_type": "boolean"
+                  },
+                  {
+                    "arguments": [
+                      {
+                        "domain": [
+                          "L_clipped_linear",
+                          "q_diag"
+                        ],
+                        "expression": {
+                          "domain": [
+                            "raw",
+                            "pkg"
+                          ],
+                          "expression": {
+                            "arguments": [
+                              {
+                                "kind": "comparison",
+                                "left": {
+                                  "kind": "variable",
+                                  "name": "D_lower[kind,competitor]"
+                                },
+                                "operator": ">",
+                                "return_type": "boolean",
+                                "right": {
+                                  "kind": "literal",
+                                  "value": 0
+                                }
+                              },
+                              {
+                                "kind": "comparison",
+                                "left": {
+                                  "kind": "variable",
+                                  "name": "holm_adjusted_p[kind,competitor]"
+                                },
+                                "operator": "<=",
+                                "return_type": "boolean",
+                                "right": {
+                                  "kind": "literal",
+                                  "value": 0.05
+                                }
+                              }
+                            ],
+                            "kind": "boolean_operator",
+                            "operator": "and",
+                            "return_type": "boolean"
+                          },
+                          "kind": "quantifier",
+                          "quantifier": "all",
+                          "return_type": "boolean",
+                          "variable": "kind"
+                        },
+                        "kind": "quantifier",
+                        "quantifier": "all",
+                        "return_type": "boolean",
+                        "variable": "competitor"
+                      },
+                      {
+                        "domain": [
+                          "raw",
+                          "pkg"
+                        ],
+                        "expression": {
+                          "kind": "comparison",
+                          "left": {
+                            "kind": "variable",
+                            "name": "S_2_upper[kind]"
+                          },
+                          "operator": "<=",
+                          "return_type": "boolean",
+                          "right": {
+                            "kind": "literal",
+                            "value": 0
+                          }
+                        },
+                        "kind": "quantifier",
+                        "quantifier": "all",
+                        "return_type": "boolean",
+                        "variable": "kind"
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "domain": [
+                              "L_clipped_linear",
+                              "q_diag",
+                              "q_lambda_1_16",
+                              "q_lambda_1_8",
+                              "q_lambda_1_4",
+                              "q_lambda_1_2",
+                              "q_lambda_1",
+                              "q_lambda_2",
+                              "q_lambda_4",
+                              "q_lambda_8",
+                              "q_lambda_16"
+                            ],
+                            "expression": {
+                              "domain": [
+                                "raw",
+                                "pkg"
+                              ],
+                              "expression": {
+                                "kind": "comparison",
+                                "left": {
+                                  "kind": "variable",
+                                  "name": "D_upper[kind,competitor]"
+                                },
+                                "operator": "<",
+                                "return_type": "boolean",
+                                "right": {
+                                  "kind": "literal",
+                                  "value": 0
+                                }
+                              },
+                              "kind": "quantifier",
+                              "quantifier": "exists",
+                              "return_type": "boolean",
+                              "variable": "kind"
+                            },
+                            "kind": "quantifier",
+                            "quantifier": "exists",
+                            "return_type": "boolean",
+                            "variable": "competitor"
+                          }
+                        ],
+                        "kind": "boolean_operator",
+                        "operator": "not",
+                        "return_type": "boolean"
+                      },
+                      {
+                        "domain": [
+                          "q_lambda_1_16",
+                          "q_lambda_1_8",
+                          "q_lambda_1_4",
+                          "q_lambda_1_2",
+                          "q_lambda_1",
+                          "q_lambda_2",
+                          "q_lambda_4",
+                          "q_lambda_8",
+                          "q_lambda_16"
+                        ],
+                        "expression": {
+                          "arguments": [
+                            {
+                              "kind": "variable",
+                              "name": "competitor"
+                            }
+                          ],
+                          "kind": "predicate",
+                          "name": "comparison_unresolved",
+                          "return_type": "boolean"
+                        },
+                        "kind": "quantifier",
+                        "quantifier": "exists",
+                        "return_type": "boolean",
+                        "variable": "competitor"
+                      }
+                    ],
+                    "kind": "boolean_operator",
+                    "operator": "and",
+                    "return_type": "boolean"
+                  }
+                ],
+                "kind": "boolean_operator",
+                "operator": "or",
+                "return_type": "boolean"
+              }
+            ],
+            "kind": "boolean_operator",
+            "operator": "not",
+            "return_type": "boolean"
+          },
+          {
+            "domain": [
+              "raw",
+              "pkg"
+            ],
+            "expression": {
+              "kind": "comparison",
+              "left": {
+                "kind": "variable",
+                "name": "S_2_lower[kind]"
+              },
+              "operator": ">",
+              "return_type": "boolean",
+              "right": {
+                "kind": "literal",
+                "value": 0
+              }
+            },
+            "kind": "quantifier",
+            "quantifier": "exists",
+            "return_type": "boolean",
+            "variable": "kind"
+          }
+        ],
+        "kind": "boolean_operator",
+        "operator": "and",
+        "return_type": "boolean"
+      },
+      "predicate_description": "at least one kind has S_2,k lower bound >0 and no earlier adverse-competitor branch fired",
+      "priority": 6,
+      "status": "G2A_V2_FACTOR2_SERVICEABILITY_FAILS"
+    },
+    {
+      "ordered_fallback": true,
+      "predicate": {
+        "arguments": [
+          {
+            "arguments": [
+              {
+                "arguments": [
+                  {
+                    "arguments": [],
+                    "kind": "predicate",
+                    "name": "exists_named_sensitivity_sign_reversal",
+                    "return_type": "boolean"
+                  },
+                  {
+                    "domain": [
+                      "raw",
+                      "pkg"
+                    ],
+                    "expression": {
+                      "kind": "comparison",
+                      "left": {
+                        "kind": "variable",
+                        "name": "D_clipped_linear_upper[kind]"
+                      },
+                      "operator": "<",
+                      "return_type": "boolean",
+                      "right": {
+                        "kind": "literal",
+                        "value": 0
+                      }
+                    },
+                    "kind": "quantifier",
+                    "quantifier": "exists",
+                    "return_type": "boolean",
+                    "variable": "kind"
+                  },
+                  {
+                    "domain": [
+                      "q_diag",
+                      "q_lambda_1_16",
+                      "q_lambda_1_8",
+                      "q_lambda_1_4",
+                      "q_lambda_1_2",
+                      "q_lambda_1",
+                      "q_lambda_2",
+                      "q_lambda_4",
+                      "q_lambda_8",
+                      "q_lambda_16"
+                    ],
+                    "expression": {
+                      "domain": [
+                        "raw",
+                        "pkg"
+                      ],
+                      "expression": {
+                        "kind": "comparison",
+                        "left": {
+                          "kind": "variable",
+                          "name": "D_upper[kind,competitor]"
+                        },
+                        "operator": "<",
+                        "return_type": "boolean",
+                        "right": {
+                          "kind": "literal",
+                          "value": 0
+                        }
+                      },
+                      "kind": "quantifier",
+                      "quantifier": "exists",
+                      "return_type": "boolean",
+                      "variable": "kind"
+                    },
+                    "kind": "quantifier",
+                    "quantifier": "exists",
+                    "return_type": "boolean",
+                    "variable": "competitor"
+                  },
+                  {
+                    "arguments": [
+                      {
+                        "domain": [
+                          "L_clipped_linear",
+                          "q_diag",
+                          "q_lambda_1_16",
+                          "q_lambda_1_8",
+                          "q_lambda_1_4",
+                          "q_lambda_1_2",
+                          "q_lambda_1",
+                          "q_lambda_2",
+                          "q_lambda_4",
+                          "q_lambda_8",
+                          "q_lambda_16"
+                        ],
+                        "expression": {
+                          "domain": [
+                            "raw",
+                            "pkg"
+                          ],
+                          "expression": {
+                            "arguments": [
+                              {
+                                "kind": "comparison",
+                                "left": {
+                                  "kind": "variable",
+                                  "name": "D_lower[kind,competitor]"
+                                },
+                                "operator": ">",
+                                "return_type": "boolean",
+                                "right": {
+                                  "kind": "literal",
+                                  "value": 0
+                                }
+                              },
+                              {
+                                "kind": "comparison",
+                                "left": {
+                                  "kind": "variable",
+                                  "name": "holm_adjusted_p[kind,competitor]"
+                                },
+                                "operator": "<=",
+                                "return_type": "boolean",
+                                "right": {
+                                  "kind": "literal",
+                                  "value": 0.05
+                                }
+                              }
+                            ],
+                            "kind": "boolean_operator",
+                            "operator": "and",
+                            "return_type": "boolean"
+                          },
+                          "kind": "quantifier",
+                          "quantifier": "all",
+                          "return_type": "boolean",
+                          "variable": "kind"
+                        },
+                        "kind": "quantifier",
+                        "quantifier": "all",
+                        "return_type": "boolean",
+                        "variable": "competitor"
+                      },
+                      {
+                        "domain": [
+                          "raw",
+                          "pkg"
+                        ],
+                        "expression": {
+                          "kind": "comparison",
+                          "left": {
+                            "kind": "variable",
+                            "name": "S_2_upper[kind]"
+                          },
+                          "operator": "<=",
+                          "return_type": "boolean",
+                          "right": {
+                            "kind": "literal",
+                            "value": 0
+                          }
+                        },
+                        "kind": "quantifier",
+                        "quantifier": "all",
+                        "return_type": "boolean",
+                        "variable": "kind"
+                      }
+                    ],
+                    "kind": "boolean_operator",
+                    "operator": "and",
+                    "return_type": "boolean"
+                  },
+                  {
+                    "arguments": [
+                      {
+                        "domain": [
+                          "L_clipped_linear",
+                          "q_diag"
+                        ],
+                        "expression": {
+                          "domain": [
+                            "raw",
+                            "pkg"
+                          ],
+                          "expression": {
+                            "arguments": [
+                              {
+                                "kind": "comparison",
+                                "left": {
+                                  "kind": "variable",
+                                  "name": "D_lower[kind,competitor]"
+                                },
+                                "operator": ">",
+                                "return_type": "boolean",
+                                "right": {
+                                  "kind": "literal",
+                                  "value": 0
+                                }
+                              },
+                              {
+                                "kind": "comparison",
+                                "left": {
+                                  "kind": "variable",
+                                  "name": "holm_adjusted_p[kind,competitor]"
+                                },
+                                "operator": "<=",
+                                "return_type": "boolean",
+                                "right": {
+                                  "kind": "literal",
+                                  "value": 0.05
+                                }
+                              }
+                            ],
+                            "kind": "boolean_operator",
+                            "operator": "and",
+                            "return_type": "boolean"
+                          },
+                          "kind": "quantifier",
+                          "quantifier": "all",
+                          "return_type": "boolean",
+                          "variable": "kind"
+                        },
+                        "kind": "quantifier",
+                        "quantifier": "all",
+                        "return_type": "boolean",
+                        "variable": "competitor"
+                      },
+                      {
+                        "domain": [
+                          "raw",
+                          "pkg"
+                        ],
+                        "expression": {
+                          "kind": "comparison",
+                          "left": {
+                            "kind": "variable",
+                            "name": "S_2_upper[kind]"
+                          },
+                          "operator": "<=",
+                          "return_type": "boolean",
+                          "right": {
+                            "kind": "literal",
+                            "value": 0
+                          }
+                        },
+                        "kind": "quantifier",
+                        "quantifier": "all",
+                        "return_type": "boolean",
+                        "variable": "kind"
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "domain": [
+                              "L_clipped_linear",
+                              "q_diag",
+                              "q_lambda_1_16",
+                              "q_lambda_1_8",
+                              "q_lambda_1_4",
+                              "q_lambda_1_2",
+                              "q_lambda_1",
+                              "q_lambda_2",
+                              "q_lambda_4",
+                              "q_lambda_8",
+                              "q_lambda_16"
+                            ],
+                            "expression": {
+                              "domain": [
+                                "raw",
+                                "pkg"
+                              ],
+                              "expression": {
+                                "kind": "comparison",
+                                "left": {
+                                  "kind": "variable",
+                                  "name": "D_upper[kind,competitor]"
+                                },
+                                "operator": "<",
+                                "return_type": "boolean",
+                                "right": {
+                                  "kind": "literal",
+                                  "value": 0
+                                }
+                              },
+                              "kind": "quantifier",
+                              "quantifier": "exists",
+                              "return_type": "boolean",
+                              "variable": "kind"
+                            },
+                            "kind": "quantifier",
+                            "quantifier": "exists",
+                            "return_type": "boolean",
+                            "variable": "competitor"
+                          }
+                        ],
+                        "kind": "boolean_operator",
+                        "operator": "not",
+                        "return_type": "boolean"
+                      },
+                      {
+                        "domain": [
+                          "q_lambda_1_16",
+                          "q_lambda_1_8",
+                          "q_lambda_1_4",
+                          "q_lambda_1_2",
+                          "q_lambda_1",
+                          "q_lambda_2",
+                          "q_lambda_4",
+                          "q_lambda_8",
+                          "q_lambda_16"
+                        ],
+                        "expression": {
+                          "arguments": [
+                            {
+                              "kind": "variable",
+                              "name": "competitor"
+                            }
+                          ],
+                          "kind": "predicate",
+                          "name": "comparison_unresolved",
+                          "return_type": "boolean"
+                        },
+                        "kind": "quantifier",
+                        "quantifier": "exists",
+                        "return_type": "boolean",
+                        "variable": "competitor"
+                      }
+                    ],
+                    "kind": "boolean_operator",
+                    "operator": "and",
+                    "return_type": "boolean"
+                  },
+                  {
+                    "domain": [
+                      "raw",
+                      "pkg"
+                    ],
+                    "expression": {
+                      "kind": "comparison",
+                      "left": {
+                        "kind": "variable",
+                        "name": "S_2_lower[kind]"
+                      },
+                      "operator": ">",
+                      "return_type": "boolean",
+                      "right": {
+                        "kind": "literal",
+                        "value": 0
+                      }
+                    },
+                    "kind": "quantifier",
+                    "quantifier": "exists",
+                    "return_type": "boolean",
+                    "variable": "kind"
+                  }
+                ],
+                "kind": "boolean_operator",
+                "operator": "or",
+                "return_type": "boolean"
+              }
+            ],
+            "kind": "boolean_operator",
+            "operator": "not",
+            "return_type": "boolean"
+          },
+          {
+            "kind": "comparison",
+            "left": {
+              "kind": "literal",
+              "value": true
+            },
+            "operator": "==",
+            "return_type": "boolean",
+            "right": {
+              "kind": "literal",
+              "value": true
+            }
+          }
+        ],
+        "kind": "boolean_operator",
+        "operator": "and",
+        "return_type": "boolean"
+      },
+      "predicate_description": "every remaining valid outcome",
+      "priority": 7,
+      "status": "G2A_V2_INCONCLUSIVE_MIXED_OR_LOW_POWER"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "blas_lapack_build": {
+    "blas": {
+      "name": "scipy-openblas",
+      "openblas configuration": "OpenBLAS 0.3.31.188.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64",
+      "version": "0.3.31.188.0"
+    },
+    "lapack": {
+      "name": "scipy-openblas",
+      "openblas configuration": "OpenBLAS 0.3.31.188.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64",
+      "version": "0.3.31.188.0"
+    }
+  },
+  "byte_order": "little",
+  "dispatch_environment": {
+    "NPY_DISABLE_CPU_FEATURES": "X86_V4,AVX512_ICL,AVX512_SPR",
+    "OPENBLAS_CORETYPE": "Haswell",
+    "SYMPY_GROUND_TYPES": "gmpy"
+  },
+  "gmpy2_libraries": [
+    {
+      "name": "gmpy2/gmpy2.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "f51f654ddd203704adffb3531b7fabd9c6b064ada018559b85d994e168e4e799"
+    },
+    {
+      "name": "gmpy2.libs/libgmp-a6f47472.so.10.5.0",
+      "sha256": "4171491eeb36762b94b54cc9420aedc1a1468f8a5ab1cd1b488061f3172945a2"
+    },
+    {
+      "name": "gmpy2.libs/libmpc-0be9e396.so.3.4.0",
+      "sha256": "fec202b82970b6ea91ee40f7036c347303c3d3b7e8a0651758160c70230cfb27"
+    },
+    {
+      "name": "gmpy2.libs/libmpfr-bb88ce0c.so.6.2.2",
+      "sha256": "4b59a8a9018242391975c76283834cd3b99d4050ac54d0221b87a4697c912d3b"
+    }
+  ],
+  "gmpy2_version": "2.3.1",
+  "interpreter_binding": "version pinned here; exact interpreter executable hash is additionally recorded in each stage plan and must match on resume",
+  "libraries": [
+    {
+      "name": "_multiarray_umath.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "03b9aad465908f453b66b687a341067c9507214b85d713aa1dbb8511db42eb63"
+    },
+    {
+      "name": "_umath_linalg.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "f363041f986cb0c5ebabdf74c5ecd01ea119175ade9eda067fa20d6a35741592"
+    },
+    {
+      "name": "libgfortran-040039e1-0352e75f.so.5.0.0",
+      "sha256": "c6090048eccc763522c12ef016f81da6b627cb3a044f55cf0479a839c41c0980"
+    },
+    {
+      "name": "libquadmath-96973f99-934c22de.so.0.0.0",
+      "sha256": "6ed5137f412781ad7863439fb543613f620b43c32b63292a0029246162f5bbc6"
+    },
+    {
+      "name": "libscipy_openblas64_-32a4b2a6.so",
+      "sha256": "05c9f9eb89ee68a4b9d673184fa91c99587e736392c0c2d49180a8aa5303d080"
+    }
+  ],
+  "lock": "verification.lock",
+  "lock_sha256": "9359187219263cb6b4495c5dec54c1a03793734593d22b938ef8c110ef87ee51",
+  "machine": "x86_64",
+  "mpmath_version": "1.3.0",
+  "numpy_version": "2.4.4",
+  "profile": "verification",
+  "python_implementation": "CPython",
+  "python_version": "3.12.3",
+  "required_cpu_dispatch": "X86_V3; higher NumPy vector dispatch disabled; Haswell OpenBLAS selected",
+  "schema": "born_stage_environment_v1",
+  "scope": "Verification and reproduced census-constructor stack",
+  "symbolic_ground_types": "gmpy",
+  "symbolic_pin_scope": "GMP-backed symbolic diagnostic replays the archived mpz-overflow path; exact historical gmpy2 version is not attested by the retained census records.",
+  "sympy_version": "1.14.0",
+  "thread_environment": {
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "RAYON_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "thread_pools": [
+    {
+      "config": "OpenBLAS 0.3.31.188.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64",
+      "corename": "Haswell",
+      "library": "libscipy_openblas64_-32a4b2a6.so"
+    }
+  ],
+  "threads": 1
+}

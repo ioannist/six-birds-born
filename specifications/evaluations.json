@@ -1,0 +1,18 @@
+{
+  "schema": "born_population_entrypoints_v1",
+  "description": "I/O adapters only; scientific values and RNG namespaces are supplied by the readable registered versions. Original launch/review receipts are not production inputs.",
+  "competitor": {
+    "computation_version": "v8",
+    "acquisition_version": "v8",
+    "artifacts": ["rb1v2_g2a_campaign.json", "rb1v2_g2a_units.jsonl", "rb1v2_g2a_evaluation.json"],
+    "profile": "predictive",
+    "sign_arithmetic": "full 2^20 enumeration with inherited floating signed sums; not changed to exact dyadic tails in historical reproduction"
+  },
+  "cross-term": {
+    "computation_version": "v24",
+    "acquisition_version": "v21",
+    "profile": "predictive",
+    "sign_arithmetic": "full 2^20 enumeration with exact dyadic/integer counting helper"
+  },
+  "output_policy": "append-only attempts, immutable input/runtime/code plan, completed seal verified on resume"
+}

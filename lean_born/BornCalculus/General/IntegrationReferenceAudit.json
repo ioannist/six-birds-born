@@ -1,0 +1,207 @@
+{
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "comparison": "Exact equality with the fresh shared graph audit for all 40 representative source declarations.",
+  "declarations": 40,
+  "dependencies": {
+    "BornCalculus.AdminTag": [],
+    "BornCalculus.B06Event": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.General.basis_isometry": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.General.basis_projector": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.General.encoding_normalized_projection": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.General.inherited_no_density": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.General.orth_effect_compression": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.General.orth_effect_singular_iff_constant": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.General.orth_parent": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.General.orth_projected_square_trace": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.General.projected_square_trace": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.General.projector_fixed_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.General.projector_range": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.General.strict_refinement": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.RayEnsemble": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.Simplex32": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.VisibilityPackage": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.b04_frame_checksQ": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.b04_initial_simplexQ": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.b04_relative_rootsQ": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.b04_s_positiveQ": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.b06EventFintype": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.b06_all_small_non_density": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.b06_assignment_additive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.b06_assignment_endpoints": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.channel_C_positive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.channel_branch_bounds": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.channel_branch_formula": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.channel_ratio_checks": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.factor_on_image_iff": [
+      "Classical.choice"
+    ],
+    "BornCalculus.finite_program_fragment_all_small": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.lowerLinearRootQ": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.measurable_table_bridge": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.outcomesFintype": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.packageVisibility": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.packageVisibility_idempotent": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.packageVisibility_ledger": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.visibilityPushforward_psd": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.visibilityPushforward_sum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "BornCalculus.worked_equal_effects_unequal_channels": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "forbidden": {},
+  "status": "PASS"
+}

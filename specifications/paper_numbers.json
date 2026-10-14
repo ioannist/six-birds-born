@@ -1,0 +1,4758 @@
+{
+  "schema": "born_public_paper_numbers_v1",
+  "generated_by": "tools/generate_paper_number_map.py",
+  "scope": "used result macros; explicit public selectors and display rules, no expected result values",
+  "macros": [
+    {
+      "macro": "StateCount",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/StateCount"
+      }
+    },
+    {
+      "macro": "CarrierSize",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "worked",
+        "pointer": "/CarrierSize"
+      }
+    },
+    {
+      "macro": "CensusCases",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/CensusCases"
+      }
+    },
+    {
+      "macro": "WitnessCount",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/WitnessCount"
+      }
+    },
+    {
+      "macro": "ArchiveCases",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/ArchiveCases"
+      }
+    },
+    {
+      "macro": "RankTwoCases",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/RankTwoCases"
+      }
+    },
+    {
+      "macro": "ActiveAtoms",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/ActiveAtoms"
+      }
+    },
+    {
+      "macro": "PositiveAtoms",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/PositiveAtoms"
+      }
+    },
+    {
+      "macro": "SingularAtoms",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/SingularAtoms"
+      }
+    },
+    {
+      "macro": "SingularCases",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/SingularCases"
+      }
+    },
+    {
+      "macro": "Programs",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "component": "worked",
+        "file": "original/certificates.json",
+        "pointer": "/finite_events/complete_test_count"
+      }
+    },
+    {
+      "macro": "AtomicEffects",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "worked",
+        "pointer": "/AtomicEffects"
+      }
+    },
+    {
+      "macro": "Events",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "component": "worked",
+        "file": "original/certificates.json",
+        "pointer": "/finite_family/non_density/events"
+      }
+    },
+    {
+      "macro": "ProperEvents",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "component": "worked",
+        "file": "original/certificates.json",
+        "pointer": "/finite_family/non_density/proper_groupings_checked"
+      }
+    },
+    {
+      "macro": "LeanDeclarations",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "lean_audit",
+        "pointer": "/declarations"
+      }
+    },
+    {
+      "macro": "AxiomCount",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "lean_audit",
+        "aggregate": {
+          "operation": "length",
+          "pointer": "/allowed_axioms"
+        }
+      }
+    },
+    {
+      "macro": "Tolerance",
+      "class": "regenerated",
+      "format": "pow10",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "structural_results.json",
+        "pointer": "/0/certificates/correspondence/threshold_exact"
+      }
+    },
+    {
+      "macro": "CrossRaw",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "evaluation": "cross-term",
+        "pointer": "/statistics/raw/point_estimate"
+      }
+    },
+    {
+      "macro": "CrossRawLower",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": "lower",
+      "binding": {
+        "evaluation": "cross-term",
+        "pointer": "/statistics/raw/bootstrap/bca_simultaneous_lower"
+      }
+    },
+    {
+      "macro": "CrossRawUpper",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": "upper",
+      "binding": {
+        "evaluation": "cross-term",
+        "pointer": "/statistics/raw/bootstrap/bca_simultaneous_upper"
+      }
+    },
+    {
+      "macro": "CrossPkg",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "evaluation": "cross-term",
+        "pointer": "/statistics/pkg/point_estimate"
+      }
+    },
+    {
+      "macro": "CrossPkgLower",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": "lower",
+      "binding": {
+        "evaluation": "cross-term",
+        "pointer": "/statistics/pkg/bootstrap/bca_simultaneous_lower"
+      }
+    },
+    {
+      "macro": "CrossPkgUpper",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": "upper",
+      "binding": {
+        "evaluation": "cross-term",
+        "pointer": "/statistics/pkg/bootstrap/bca_simultaneous_upper"
+      }
+    },
+    {
+      "macro": "SmallestGap",
+      "class": "regenerated",
+      "format": "sig:1",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/SmallestGap"
+      }
+    },
+    {
+      "macro": "LargestGap",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": "upper",
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/LargestGap"
+      }
+    },
+    {
+      "macro": "LabelMaps",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/LabelMaps"
+      }
+    },
+    {
+      "macro": "NumericalPass",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/NumericalPass"
+      }
+    },
+    {
+      "macro": "RegisteredPass",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/RegisteredPass"
+      }
+    },
+    {
+      "macro": "OriginalPass",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/OriginalPass"
+      }
+    },
+    {
+      "macro": "OriginalFail",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/OriginalFail"
+      }
+    },
+    {
+      "macro": "OriginalNumericalPass",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/OriginalNumericalPass"
+      }
+    },
+    {
+      "macro": "OriginalSymbolicPass",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/OriginalSymbolicPass"
+      }
+    },
+    {
+      "macro": "CompletedSymbolicPass",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/CompletedSymbolicPass"
+      }
+    },
+    {
+      "macro": "OriginalNumericalFail",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/OriginalNumericalFail"
+      }
+    },
+    {
+      "macro": "OriginalSymbolicFail",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/OriginalSymbolicFail"
+      }
+    },
+    {
+      "macro": "BitPass",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/BitPass"
+      }
+    },
+    {
+      "macro": "BitFail",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/BitFail"
+      }
+    },
+    {
+      "macro": "Trajectories",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "component": "attachments",
+        "file": "@attempt/attachments.json",
+        "pointer": "/0/fields/total_count",
+        "decode_json_string": true
+      }
+    },
+    {
+      "macro": "LambdaSmall",
+      "class": "regenerated",
+      "format": "frac",
+      "direction": null,
+      "binding": {
+        "public_spec": "v24",
+        "selection": {
+          "pointer": "/laws/lambda_grid/0",
+          "operation": "identity"
+        }
+      }
+    },
+    {
+      "macro": "LambdaNext",
+      "class": "regenerated",
+      "format": "frac",
+      "direction": null,
+      "binding": {
+        "public_spec": "v24",
+        "selection": {
+          "pointer": "/laws/lambda_grid/1",
+          "operation": "identity"
+        }
+      }
+    },
+    {
+      "macro": "FactorTwo",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "public_spec": "v24",
+        "selection": {
+          "pointer": "/thresholds/items",
+          "id": "factor2_serviceability",
+          "value_pointer": "/value"
+        }
+      }
+    },
+    {
+      "macro": "CrossMargin",
+      "class": "regenerated",
+      "format": "frac",
+      "direction": null,
+      "binding": {
+        "public_spec": "v24",
+        "selection": {
+          "pointer": "/thresholds/items",
+          "id": "m_cross",
+          "value_pointer": "/value"
+        }
+      }
+    },
+    {
+      "macro": "CompetitorLower",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": "lower",
+      "binding": {
+        "evaluation": "competitor",
+        "operation": "minimum_competitor_lower"
+      }
+    },
+    {
+      "macro": "CompetitorConfigs",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "evaluation": "competitor",
+        "pointer": "/statistics/raw::D__q_diag_minus_q_full/hierarchy_counts/configs",
+        "negate": false
+      }
+    },
+    {
+      "macro": "SeedCount",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "public_spec": "v24",
+        "selection": {
+          "pointer": "/confirmation_data/campaigns/0/seeds",
+          "operation": "identity_count"
+        }
+      }
+    },
+    {
+      "macro": "FragmentEpsilon",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "component": "worked",
+        "file": "original/certificates.json",
+        "pointer": "/finite_family/non_density/epsilon_exact"
+      }
+    },
+    {
+      "macro": "FragmentMargin",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": "lower",
+      "binding": {
+        "component": "worked",
+        "file": "original/certificates.json",
+        "pointer": "/finite_family/non_density/minimum_valuation_margin_exact"
+      }
+    },
+    {
+      "macro": "CertificateProjectorMin",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": "lower",
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/CertificateProjectorMin"
+      }
+    },
+    {
+      "macro": "CertificateProjectorMax",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": "upper",
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/CertificateProjectorMax"
+      }
+    },
+    {
+      "macro": "CertificateFixedMin",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": "lower",
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/CertificateFixedMin"
+      }
+    },
+    {
+      "macro": "CertificateFixedMax",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": "upper",
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/CertificateFixedMax"
+      }
+    },
+    {
+      "macro": "CertificateFloatingMin",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": "lower",
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/CertificateFloatingMin"
+      }
+    },
+    {
+      "macro": "CertificateFloatingMax",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": "upper",
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/CertificateFloatingMax"
+      }
+    },
+    {
+      "macro": "OwnRawMedian",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "raw",
+        "stat": "median",
+        "model": "L_full"
+      }
+    },
+    {
+      "macro": "OwnRawLowerQuartile",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "raw",
+        "stat": "q1",
+        "model": "L_full"
+      }
+    },
+    {
+      "macro": "OwnRawUpperQuartile",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "raw",
+        "stat": "q3",
+        "model": "L_full"
+      }
+    },
+    {
+      "macro": "OwnPkgMedian",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "pkg",
+        "stat": "median",
+        "model": "L_full"
+      }
+    },
+    {
+      "macro": "OwnPkgLowerQuartile",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "pkg",
+        "stat": "q1",
+        "model": "L_full"
+      }
+    },
+    {
+      "macro": "OwnPkgUpperQuartile",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "pkg",
+        "stat": "q3",
+        "model": "L_full"
+      }
+    },
+    {
+      "macro": "SmallRawMedian",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "raw",
+        "stat": "median",
+        "model": "q_lambda_1_16"
+      }
+    },
+    {
+      "macro": "SmallRawLowerQuartile",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "raw",
+        "stat": "q1",
+        "model": "q_lambda_1_16"
+      }
+    },
+    {
+      "macro": "SmallRawUpperQuartile",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "raw",
+        "stat": "q3",
+        "model": "q_lambda_1_16"
+      }
+    },
+    {
+      "macro": "SmallPkgMedian",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "pkg",
+        "stat": "median",
+        "model": "q_lambda_1_16"
+      }
+    },
+    {
+      "macro": "SmallPkgLowerQuartile",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "pkg",
+        "stat": "q1",
+        "model": "q_lambda_1_16"
+      }
+    },
+    {
+      "macro": "SmallPkgUpperQuartile",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "pkg",
+        "stat": "q3",
+        "model": "q_lambda_1_16"
+      }
+    },
+    {
+      "macro": "NextRawMedian",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "raw",
+        "stat": "median",
+        "model": "q_lambda_1_8"
+      }
+    },
+    {
+      "macro": "NextRawLowerQuartile",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "raw",
+        "stat": "q1",
+        "model": "q_lambda_1_8"
+      }
+    },
+    {
+      "macro": "NextRawUpperQuartile",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "raw",
+        "stat": "q3",
+        "model": "q_lambda_1_8"
+      }
+    },
+    {
+      "macro": "NextPkgMedian",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "pkg",
+        "stat": "median",
+        "model": "q_lambda_1_8"
+      }
+    },
+    {
+      "macro": "NextPkgLowerQuartile",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "pkg",
+        "stat": "q1",
+        "model": "q_lambda_1_8"
+      }
+    },
+    {
+      "macro": "NextPkgUpperQuartile",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "pkg",
+        "stat": "q3",
+        "model": "q_lambda_1_8"
+      }
+    },
+    {
+      "macro": "FullRawMedian",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "raw",
+        "stat": "median",
+        "model": "q_full"
+      }
+    },
+    {
+      "macro": "FullRawLowerQuartile",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "raw",
+        "stat": "q1",
+        "model": "q_full"
+      }
+    },
+    {
+      "macro": "FullRawUpperQuartile",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "raw",
+        "stat": "q3",
+        "model": "q_full"
+      }
+    },
+    {
+      "macro": "FullPkgMedian",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "pkg",
+        "stat": "median",
+        "model": "q_full"
+      }
+    },
+    {
+      "macro": "FullPkgLowerQuartile",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "pkg",
+        "stat": "q1",
+        "model": "q_full"
+      }
+    },
+    {
+      "macro": "FullPkgUpperQuartile",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "pkg",
+        "stat": "q3",
+        "model": "q_full"
+      }
+    },
+    {
+      "macro": "ClippedRawMedian",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "raw",
+        "stat": "median",
+        "model": "L_clipped_linear"
+      }
+    },
+    {
+      "macro": "ClippedRawLowerQuartile",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "raw",
+        "stat": "q1",
+        "model": "L_clipped_linear"
+      }
+    },
+    {
+      "macro": "ClippedRawUpperQuartile",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "raw",
+        "stat": "q3",
+        "model": "L_clipped_linear"
+      }
+    },
+    {
+      "macro": "ClippedPkgMedian",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "pkg",
+        "stat": "median",
+        "model": "L_clipped_linear"
+      }
+    },
+    {
+      "macro": "ClippedPkgLowerQuartile",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "pkg",
+        "stat": "q1",
+        "model": "L_clipped_linear"
+      }
+    },
+    {
+      "macro": "ClippedPkgUpperQuartile",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "pkg",
+        "stat": "q3",
+        "model": "L_clipped_linear"
+      }
+    },
+    {
+      "macro": "UniformRawMedian",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "raw",
+        "stat": "median",
+        "model": "L_uniform"
+      }
+    },
+    {
+      "macro": "UniformRawLowerQuartile",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "raw",
+        "stat": "q1",
+        "model": "L_uniform"
+      }
+    },
+    {
+      "macro": "UniformRawUpperQuartile",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "raw",
+        "stat": "q3",
+        "model": "L_uniform"
+      }
+    },
+    {
+      "macro": "UniformPkgMedian",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "pkg",
+        "stat": "median",
+        "model": "L_uniform"
+      }
+    },
+    {
+      "macro": "UniformPkgLowerQuartile",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "pkg",
+        "stat": "q1",
+        "model": "L_uniform"
+      }
+    },
+    {
+      "macro": "UniformPkgUpperQuartile",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "pkg",
+        "stat": "q3",
+        "model": "L_uniform"
+      }
+    },
+    {
+      "macro": "NoLiftFirstGap",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": "lower",
+      "binding": {
+        "view": "worked",
+        "pointer": "/NoLiftFirstGap"
+      }
+    },
+    {
+      "macro": "NoLiftSecondGap",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": "lower",
+      "binding": {
+        "view": "worked",
+        "pointer": "/NoLiftSecondGap"
+      }
+    },
+    {
+      "macro": "NoLiftThirdGap",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": "lower",
+      "binding": {
+        "view": "worked",
+        "pointer": "/NoLiftThirdGap"
+      }
+    },
+    {
+      "macro": "NoLiftFourthGap",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": "lower",
+      "binding": {
+        "view": "worked",
+        "pointer": "/NoLiftFourthGap"
+      }
+    },
+    {
+      "macro": "EnsembleLeftWeightFirst",
+      "class": "regenerated",
+      "format": "sig:6",
+      "direction": null,
+      "binding": {
+        "view": "worked",
+        "pointer": "/EnsembleLeftWeightFirst"
+      }
+    },
+    {
+      "macro": "EnsembleLeftWeightSecond",
+      "class": "regenerated",
+      "format": "sig:6",
+      "direction": null,
+      "binding": {
+        "view": "worked",
+        "pointer": "/EnsembleLeftWeightSecond"
+      }
+    },
+    {
+      "macro": "EnsembleLeftLower",
+      "class": "regenerated",
+      "format": "dec:12",
+      "direction": "lower",
+      "binding": {
+        "view": "worked",
+        "pointer": "/EnsembleLeftLower"
+      }
+    },
+    {
+      "macro": "EnsembleLeftUpper",
+      "class": "regenerated",
+      "format": "dec:12",
+      "direction": "upper",
+      "binding": {
+        "view": "worked",
+        "pointer": "/EnsembleLeftUpper"
+      }
+    },
+    {
+      "macro": "EnsembleRightWeightFirst",
+      "class": "regenerated",
+      "format": "sig:6",
+      "direction": null,
+      "binding": {
+        "view": "worked",
+        "pointer": "/EnsembleRightWeightFirst"
+      }
+    },
+    {
+      "macro": "EnsembleRightWeightSecond",
+      "class": "regenerated",
+      "format": "sig:6",
+      "direction": null,
+      "binding": {
+        "view": "worked",
+        "pointer": "/EnsembleRightWeightSecond"
+      }
+    },
+    {
+      "macro": "EnsembleRightLower",
+      "class": "regenerated",
+      "format": "dec:12",
+      "direction": "lower",
+      "binding": {
+        "view": "worked",
+        "pointer": "/EnsembleRightLower"
+      }
+    },
+    {
+      "macro": "EnsembleRightUpper",
+      "class": "regenerated",
+      "format": "dec:12",
+      "direction": "upper",
+      "binding": {
+        "view": "worked",
+        "pointer": "/EnsembleRightUpper"
+      }
+    },
+    {
+      "macro": "EnsembleGapLower",
+      "class": "regenerated",
+      "format": "sig:5",
+      "direction": "lower",
+      "binding": {
+        "view": "worked",
+        "pointer": "/EnsembleGapLower"
+      }
+    },
+    {
+      "macro": "EnsembleGapUpper",
+      "class": "regenerated",
+      "format": "sig:5",
+      "direction": "upper",
+      "binding": {
+        "view": "worked",
+        "pointer": "/EnsembleGapUpper"
+      }
+    },
+    {
+      "macro": "OrderForwardLower",
+      "class": "regenerated",
+      "format": "dec:12",
+      "direction": "lower",
+      "binding": {
+        "view": "worked",
+        "pointer": "/OrderForwardLower"
+      }
+    },
+    {
+      "macro": "OrderForwardUpper",
+      "class": "regenerated",
+      "format": "dec:12",
+      "direction": "upper",
+      "binding": {
+        "view": "worked",
+        "pointer": "/OrderForwardUpper"
+      }
+    },
+    {
+      "macro": "OrderReverseLower",
+      "class": "regenerated",
+      "format": "dec:12",
+      "direction": "lower",
+      "binding": {
+        "view": "worked",
+        "pointer": "/OrderReverseLower"
+      }
+    },
+    {
+      "macro": "OrderReverseUpper",
+      "class": "regenerated",
+      "format": "dec:12",
+      "direction": "upper",
+      "binding": {
+        "view": "worked",
+        "pointer": "/OrderReverseUpper"
+      }
+    },
+    {
+      "macro": "OrderGapLower",
+      "class": "regenerated",
+      "format": "sig:5",
+      "direction": "lower",
+      "binding": {
+        "view": "worked",
+        "pointer": "/OrderGapLower"
+      }
+    },
+    {
+      "macro": "OrderGapUpper",
+      "class": "regenerated",
+      "format": "sig:5",
+      "direction": "upper",
+      "binding": {
+        "view": "worked",
+        "pointer": "/OrderGapUpper"
+      }
+    },
+    {
+      "macro": "TestTwoRank",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "aggregate": {
+          "operation": "object_key",
+          "pointer": "/ranks",
+          "key": "2"
+        }
+      }
+    },
+    {
+      "macro": "TestTwoCases",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "aggregate": {
+          "operation": "length",
+          "pointer": "/ranks/2/scope/context_C95"
+        }
+      }
+    },
+    {
+      "macro": "TestTwoClosure",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/ranks/2/scope/mean_C95"
+      }
+    },
+    {
+      "macro": "TestTwoSignal",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/ranks/2/oracle_signal"
+      }
+    },
+    {
+      "macro": "TestTwoDEstimate",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/primary/estimates/D2"
+      }
+    },
+    {
+      "macro": "TestTwoDBound",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": "lower",
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/primary/bounds/D2"
+      }
+    },
+    {
+      "macro": "TestTwoDMargin",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/primary/margins/D2"
+      }
+    },
+    {
+      "macro": "TestTwoGEstimate",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/primary/estimates/G2"
+      }
+    },
+    {
+      "macro": "TestTwoGBound",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": "lower",
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/primary/bounds/G2"
+      }
+    },
+    {
+      "macro": "TestTwoGMargin",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/primary/margins/G2"
+      }
+    },
+    {
+      "macro": "TestTwoREstimate",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/reversal/estimates/R2"
+      }
+    },
+    {
+      "macro": "TestTwoRBound",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": "upper",
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/reversal/bounds/R2"
+      }
+    },
+    {
+      "macro": "TestTwoRMargin",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/reversal/margins/R2"
+      }
+    },
+    {
+      "macro": "TestTwoOEstimate",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/order/estimates/O2"
+      }
+    },
+    {
+      "macro": "TestTwoOBound",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": "lower",
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/order/bounds/O2"
+      }
+    },
+    {
+      "macro": "TestTwoOMargin",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/order/margins/O2"
+      }
+    },
+    {
+      "macro": "TestThreeRank",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "aggregate": {
+          "operation": "object_key",
+          "pointer": "/ranks",
+          "key": "3"
+        }
+      }
+    },
+    {
+      "macro": "TestThreeCases",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "aggregate": {
+          "operation": "length",
+          "pointer": "/ranks/3/scope/context_C95"
+        }
+      }
+    },
+    {
+      "macro": "TestThreeClosure",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/ranks/3/scope/mean_C95"
+      }
+    },
+    {
+      "macro": "TestThreeSignal",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/ranks/3/oracle_signal"
+      }
+    },
+    {
+      "macro": "TestThreeDEstimate",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/primary/estimates/D3"
+      }
+    },
+    {
+      "macro": "TestThreeDBound",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": "lower",
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/primary/bounds/D3"
+      }
+    },
+    {
+      "macro": "TestThreeDMargin",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/primary/margins/D3"
+      }
+    },
+    {
+      "macro": "TestThreeGEstimate",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/primary/estimates/G3"
+      }
+    },
+    {
+      "macro": "TestThreeGBound",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": "lower",
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/primary/bounds/G3"
+      }
+    },
+    {
+      "macro": "TestThreeGMargin",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/primary/margins/G3"
+      }
+    },
+    {
+      "macro": "TestThreeREstimate",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/reversal/estimates/R3"
+      }
+    },
+    {
+      "macro": "TestThreeRBound",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": "upper",
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/reversal/bounds/R3"
+      }
+    },
+    {
+      "macro": "TestThreeRMargin",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/reversal/margins/R3"
+      }
+    },
+    {
+      "macro": "TestThreeOEstimate",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/order/estimates/O3"
+      }
+    },
+    {
+      "macro": "TestThreeOBound",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": "lower",
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/order/bounds/O3"
+      }
+    },
+    {
+      "macro": "TestThreeOMargin",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/order/margins/O3"
+      }
+    },
+    {
+      "macro": "TestFourRank",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "aggregate": {
+          "operation": "object_key",
+          "pointer": "/ranks",
+          "key": "4"
+        }
+      }
+    },
+    {
+      "macro": "TestFourCases",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "aggregate": {
+          "operation": "length",
+          "pointer": "/ranks/4/scope/context_C95"
+        }
+      }
+    },
+    {
+      "macro": "TestFourClosure",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/ranks/4/scope/mean_C95"
+      }
+    },
+    {
+      "macro": "TestFourSignal",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/ranks/4/oracle_signal"
+      }
+    },
+    {
+      "macro": "TestFourDEstimate",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/primary/estimates/D4"
+      }
+    },
+    {
+      "macro": "TestFourDBound",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": "lower",
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/primary/bounds/D4"
+      }
+    },
+    {
+      "macro": "TestFourDMargin",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/primary/margins/D4"
+      }
+    },
+    {
+      "macro": "TestFourGEstimate",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/primary/estimates/G4"
+      }
+    },
+    {
+      "macro": "TestFourGBound",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": "lower",
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/primary/bounds/G4"
+      }
+    },
+    {
+      "macro": "TestFourGMargin",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/primary/margins/G4"
+      }
+    },
+    {
+      "macro": "TestFourREstimate",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/reversal/estimates/R4"
+      }
+    },
+    {
+      "macro": "TestFourRBound",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": "upper",
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/reversal/bounds/R4"
+      }
+    },
+    {
+      "macro": "TestFourRMargin",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/reversal/margins/R4"
+      }
+    },
+    {
+      "macro": "TestFourOEstimate",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/order/estimates/O4"
+      }
+    },
+    {
+      "macro": "TestFourOBound",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": "lower",
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/order/bounds/O4"
+      }
+    },
+    {
+      "macro": "TestFourOMargin",
+      "class": "regenerated",
+      "format": "sig:3",
+      "direction": null,
+      "binding": {
+        "component": "locked",
+        "file": "verdict.json",
+        "pointer": "/inference/order/margins/O4"
+      }
+    },
+    {
+      "macro": "EnsembleLeftRayFirst",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "worked",
+        "pointer": "/EnsembleLeftRayFirst"
+      }
+    },
+    {
+      "macro": "EnsembleLeftRaySecond",
+      "class": "regenerated",
+      "format": "frac",
+      "direction": null,
+      "binding": {
+        "view": "worked",
+        "pointer": "/EnsembleLeftRaySecond"
+      }
+    },
+    {
+      "macro": "EnsembleRightRayFirst",
+      "class": "regenerated",
+      "format": "frac",
+      "direction": null,
+      "binding": {
+        "view": "worked",
+        "pointer": "/EnsembleRightRayFirst"
+      }
+    },
+    {
+      "macro": "EnsembleRightRaySecond",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "worked",
+        "pointer": "/EnsembleRightRaySecond"
+      }
+    },
+    {
+      "macro": "TrajectoryWeight",
+      "class": "setting",
+      "format": "dec:2",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "vendor/pica/crates/runner/src/main.rs",
+        "pattern": "\\bp_traj:\\s*([0-9.eE_+-]+)\\s*,",
+        "section": [
+          "fn run_exp_100_single(",
+          "\nfn "
+        ]
+      }
+    },
+    {
+      "macro": "RewriteWeight",
+      "class": "setting",
+      "format": "dec:2",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "vendor/pica/crates/runner/src/main.rs",
+        "pattern": "\\bp_p1:\\s*([0-9.eE_+-]+)\\s*,",
+        "section": [
+          "fn run_exp_100_single(",
+          "\nfn "
+        ]
+      }
+    },
+    {
+      "macro": "GateWeight",
+      "class": "setting",
+      "format": "dec:2",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "vendor/pica/crates/runner/src/main.rs",
+        "pattern": "\\bp_p2:\\s*([0-9.eE_+-]+)\\s*,",
+        "section": [
+          "fn run_exp_100_single(",
+          "\nfn "
+        ]
+      }
+    },
+    {
+      "macro": "LensWeight",
+      "class": "setting",
+      "format": "dec:2",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "vendor/pica/crates/runner/src/main.rs",
+        "pattern": "\\bp_p4:\\s*([0-9.eE_+-]+)\\s*,",
+        "section": [
+          "fn run_exp_100_single(",
+          "\nfn "
+        ]
+      }
+    },
+    {
+      "macro": "PackagingWeight",
+      "class": "setting",
+      "format": "dec:2",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "vendor/pica/crates/runner/src/main.rs",
+        "pattern": "\\bp_p5:\\s*([0-9.eE_+-]+)\\s*,",
+        "section": [
+          "fn run_exp_100_single(",
+          "\nfn "
+        ]
+      }
+    },
+    {
+      "macro": "BudgetWeight",
+      "class": "setting",
+      "format": "dec:2",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "vendor/pica/crates/runner/src/main.rs",
+        "pattern": "\\bp_p6:\\s*([0-9.eE_+-]+)\\s*,",
+        "section": [
+          "fn run_exp_100_single(",
+          "\nfn "
+        ]
+      }
+    },
+    {
+      "macro": "ConfigCasesA",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-102/A1+A3+A13"
+      }
+    },
+    {
+      "macro": "ConfigCasesB",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-102/A7+A3"
+      }
+    },
+    {
+      "macro": "ConfigCasesC",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-103/A14_only"
+      }
+    },
+    {
+      "macro": "ConfigCasesD",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-103/A16_only"
+      }
+    },
+    {
+      "macro": "ConfigCasesE",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-103/A17_only"
+      }
+    },
+    {
+      "macro": "ConfigCasesF",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-103/all_MaxFrob"
+      }
+    },
+    {
+      "macro": "ConfigCasesG",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-103/all_MaxGap"
+      }
+    },
+    {
+      "macro": "ConfigCasesH",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-103/all_MinRM"
+      }
+    },
+    {
+      "macro": "ConfigCasesI",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-103/full_lens"
+      }
+    },
+    {
+      "macro": "ConfigCasesJ",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-104/A24_only"
+      }
+    },
+    {
+      "macro": "ConfigCasesK",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-104/A25_only"
+      }
+    },
+    {
+      "macro": "ConfigCasesL",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-104/P3_row_all"
+      }
+    },
+    {
+      "macro": "ConfigCasesM",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-104/P6_row_all"
+      }
+    },
+    {
+      "macro": "ConfigCasesN",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-105/A11_A21"
+      }
+    },
+    {
+      "macro": "ConfigCasesO",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-105/A11_A22"
+      }
+    },
+    {
+      "macro": "ConfigCasesP",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-105/A13_A18"
+      }
+    },
+    {
+      "macro": "ConfigCasesQ",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-105/A13_A18_A19"
+      }
+    },
+    {
+      "macro": "ConfigCasesR",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-105/A13_A18_A20"
+      }
+    },
+    {
+      "macro": "ConfigCasesS",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-105/A13_A24"
+      }
+    },
+    {
+      "macro": "ConfigCasesT",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-105/A13_A25"
+      }
+    },
+    {
+      "macro": "ConfigCasesU",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-105/A13_only"
+      }
+    },
+    {
+      "macro": "ConfigCasesV",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-105/A24_A25"
+      }
+    },
+    {
+      "macro": "ConfigCasesW",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-105/A5_A21"
+      }
+    },
+    {
+      "macro": "ConfigCasesX",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-105/sbrc"
+      }
+    },
+    {
+      "macro": "ConfigCasesY",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-106/A13_A18_A19"
+      }
+    },
+    {
+      "macro": "ConfigCasesZ",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-106/boost_0.1"
+      }
+    },
+    {
+      "macro": "ConfigCasesAA",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-106/boost_0.5"
+      }
+    },
+    {
+      "macro": "ConfigCasesAB",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-106/boost_1.0"
+      }
+    },
+    {
+      "macro": "ConfigCasesAC",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-106/boost_3.0"
+      }
+    },
+    {
+      "macro": "ConfigCasesAD",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-106/boost_4.0"
+      }
+    },
+    {
+      "macro": "ConfigCasesAE",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-107/A11_A22"
+      }
+    },
+    {
+      "macro": "ConfigCasesAF",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-107/A13_only"
+      }
+    },
+    {
+      "macro": "ConfigCasesAG",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-107/A24_only"
+      }
+    },
+    {
+      "macro": "ConfigCasesAH",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-107/A25_only"
+      }
+    },
+    {
+      "macro": "ConfigCasesAI",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-107/chain"
+      }
+    },
+    {
+      "macro": "ConfigCasesAJ",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-107/sbrc"
+      }
+    },
+    {
+      "macro": "ConfigCasesAK",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/A13_A11"
+      }
+    },
+    {
+      "macro": "ConfigCasesAL",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/A13_A14"
+      }
+    },
+    {
+      "macro": "ConfigCasesAM",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/A14_A17"
+      }
+    },
+    {
+      "macro": "ConfigCasesAN",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/A14_A25"
+      }
+    },
+    {
+      "macro": "ConfigCasesAO",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/A14_only"
+      }
+    },
+    {
+      "macro": "ConfigCasesAP",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/A16_only"
+      }
+    },
+    {
+      "macro": "ConfigCasesAQ",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/A17_only"
+      }
+    },
+    {
+      "macro": "ConfigCasesAR",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/P1_P3_rows"
+      }
+    },
+    {
+      "macro": "ConfigCasesAS",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/P1_row"
+      }
+    },
+    {
+      "macro": "ConfigCasesAT",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/P3_P4_rows"
+      }
+    },
+    {
+      "macro": "ConfigCasesAU",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/P3_row"
+      }
+    },
+    {
+      "macro": "ConfigCasesAV",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/P4_P5_rows"
+      }
+    },
+    {
+      "macro": "ConfigCasesAW",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/P4_row"
+      }
+    },
+    {
+      "macro": "ConfigCasesAX",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/P6_row"
+      }
+    },
+    {
+      "macro": "ConfigCasesAY",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/col_P1"
+      }
+    },
+    {
+      "macro": "ConfigCasesAZ",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/col_P2"
+      }
+    },
+    {
+      "macro": "ConfigCasesBA",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/col_P6"
+      }
+    },
+    {
+      "macro": "ConfigCasesBB",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/gen2_A14_A13"
+      }
+    },
+    {
+      "macro": "ConfigCasesBC",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/gen3_A13_A18_A19"
+      }
+    },
+    {
+      "macro": "RunHorizon",
+      "class": "setting",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "vendor/pica/crates/runner/src/main.rs",
+        "pattern": "\\btotal_steps:\\s*n\\s*\\*\\s*([0-9.eE_+-]+)",
+        "section": [
+          "fn run_exp_100_single(",
+          "\nfn "
+        ]
+      }
+    },
+    {
+      "macro": "RunObservation",
+      "class": "setting",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "vendor/pica/crates/runner/src/main.rs",
+        "pattern": "\\bobs_interval:\\s*n\\s*\\*\\s*([0-9.eE_+-]+)",
+        "section": [
+          "fn run_exp_100_single(",
+          "\nfn "
+        ]
+      }
+    },
+    {
+      "macro": "RunClusters",
+      "class": "setting",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "vendor/pica/crates/runner/src/main.rs",
+        "pattern": "\\bn_clusters:\\s*([0-9.eE_+-]+)\\s*,",
+        "section": [
+          "fn run_exp_100_single(",
+          "\nfn "
+        ]
+      }
+    },
+    {
+      "macro": "RunBudgetRate",
+      "class": "setting",
+      "format": "dec:2",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "vendor/pica/crates/runner/src/main.rs",
+        "pattern": "budget_rate:\\s*ln_n\\s*\\*\\s*([0-9.eE_+-]+)",
+        "section": [
+          "fn run_exp_100_single(",
+          "\nfn "
+        ]
+      }
+    },
+    {
+      "macro": "RunProtocolCycle",
+      "class": "setting",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "vendor/pica/crates/runner/src/main.rs",
+        "pattern": "\\bprotocol_cycle_len:\\s*([0-9.eE_+-]+)\\s*,",
+        "section": [
+          "fn run_exp_100_single(",
+          "\nfn "
+        ]
+      }
+    },
+    {
+      "macro": "RobustGapBound",
+      "class": "regenerated",
+      "format": "frac",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/RobustGapBound"
+      }
+    },
+    {
+      "macro": "RobustGapMinimumLower",
+      "class": "regenerated",
+      "format": "dec:7",
+      "direction": "lower",
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/RobustGapMinimumLower"
+      }
+    },
+    {
+      "macro": "RobustGapMinimumUpper",
+      "class": "regenerated",
+      "format": "dec:7",
+      "direction": "upper",
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/RobustGapMinimumUpper"
+      }
+    },
+    {
+      "macro": "InitialWeightFloor",
+      "class": "setting",
+      "format": "sig:1",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "vendor/pica/crates/six_primitives_core/src/substrate.rs",
+        "pattern": "rng\\.gen::<f64>\\(\\)\\s*\\+\\s*([0-9.eE_+-]+)",
+        "section": [
+          "pub fn random(",
+          "\n    pub fn "
+        ]
+      }
+    },
+    {
+      "macro": "RewriteStrength",
+      "class": "setting",
+      "format": "dec:1",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "vendor/pica/crates/runner/src/main.rs",
+        "pattern": "\\bp1_strength:\\s*([0-9.eE_+-]+)\\s*,",
+        "section": [
+          "fn run_exp_100_single(",
+          "\nfn "
+        ]
+      }
+    },
+    {
+      "macro": "EntropyFloorFraction",
+      "class": "setting",
+      "format": "dec:1",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "vendor/pica/crates/runner/src/main.rs",
+        "pattern": "min_row_entropy:\\s*([0-9.eE_+-]+)\\s*\\*\\s*ln_n",
+        "section": [
+          "fn run_exp_100_single(",
+          "\nfn "
+        ]
+      }
+    },
+    {
+      "macro": "CostCutoff",
+      "class": "setting",
+      "format": "sig:1",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "vendor/pica/crates/dynamics/src/drive.rs",
+        "pattern": "if [pq] >\\s*([0-9.eE_+-]+)"
+      }
+    },
+    {
+      "macro": "CostPenalty",
+      "class": "setting",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "vendor/pica/crates/dynamics/src/drive.rs",
+        "pattern": "cost \\+= p \\*\\s*([0-9.eE_+-]+)"
+      }
+    },
+    {
+      "macro": "StationaryTolerance",
+      "class": "setting",
+      "format": "sig:1",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "vendor/pica/crates/dynamics/src/spectral.rs",
+        "pattern": "kernel\\.stationary\\(10000,\\s*([0-9.eE_+-]+)\\)"
+      }
+    },
+    {
+      "macro": "StationaryMaxIterations",
+      "class": "setting",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "vendor/pica/crates/dynamics/src/spectral.rs",
+        "pattern": "kernel\\.stationary\\(([0-9.eE_+-]+),\\s*1e-12\\)"
+      }
+    },
+    {
+      "macro": "FallbackThreshold",
+      "class": "setting",
+      "format": "sig:1",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "vendor/pica/crates/dynamics/src/spectral.rs",
+        "pattern": "if pi\\[i\\] >\\s*([0-9.eE_+-]+)"
+      }
+    },
+    {
+      "macro": "GoldenStep",
+      "class": "setting",
+      "format": "dec:10",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "vendor/pica/crates/dynamics/src/spectral.rs",
+        "pattern": "let phi =\\s*([0-9.eE_+-]+)"
+      }
+    },
+    {
+      "macro": "StartOffset",
+      "class": "setting",
+      "format": "dec:1",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "vendor/pica/crates/dynamics/src/spectral.rs",
+        "pattern": "i as f64 \\* phi \\+\\s*([0-9.eE_+-]+)"
+      }
+    },
+    {
+      "macro": "FallbackMaxIterations",
+      "class": "setting",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "vendor/pica/crates/dynamics/src/spectral.rs",
+        "pattern": "for _ in 0\\.\\.([0-9]+) \\{",
+        "section": [
+          "pub fn top_eigenvectors(",
+          "\npub fn "
+        ]
+      }
+    },
+    {
+      "macro": "NormFloor",
+      "class": "setting",
+      "format": "sig:1",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "vendor/pica/crates/dynamics/src/spectral.rs",
+        "pattern": "if (?:norm|new_norm) <\\s*([0-9.eE_+-]+)"
+      }
+    },
+    {
+      "macro": "RowMassFloor",
+      "class": "setting",
+      "format": "sig:1",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "vendor/pica/crates/dynamics/src/pica/p5_cells.rs",
+        "pattern": "if row_sum >\\s*([0-9.eE_+-]+)"
+      }
+    },
+    {
+      "macro": "TauCap",
+      "class": "setting",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "vendor/pica/crates/dynamics/src/observe.rs",
+        "pattern": "\\.floor\\(\\)\\.min\\(([0-9.eE_+-]+)\\)"
+      }
+    },
+    {
+      "macro": "TauAlpha",
+      "class": "setting",
+      "format": "dec:1",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "vendor/pica/crates/runner/src/main.rs",
+        "pattern": "\\btau_alpha:\\s*([0-9.eE_+-]+)\\s*,",
+        "section": [
+          "fn run_exp_100_single(",
+          "\nfn "
+        ]
+      }
+    },
+    {
+      "macro": "GapFloor",
+      "class": "setting",
+      "format": "sig:1",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "vendor/pica/crates/dynamics/src/observe.rs",
+        "pattern": "if gap <=\\s*([0-9.eE_+-]+)"
+      }
+    },
+    {
+      "macro": "SeedOffset",
+      "class": "setting",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "vendor/pica/crates/runner/src/main.rs",
+        "pattern": "seed \\+\\s*([0-9.eE_+-]+)\\s*\\+ idx as u64"
+      }
+    },
+    {
+      "macro": "VerificationCommands",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "public_registry",
+        "pointer": "/commands"
+      }
+    },
+    {
+      "macro": "JacobiRotationFactor",
+      "class": "setting",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "vendor/pica/crates/dynamics/src/spectral.rs",
+        "pattern": "for _ in 0\\.\\.([0-9]+) \\* n \\* n"
+      }
+    },
+    {
+      "macro": "JacobiTolerance",
+      "class": "setting",
+      "format": "sig:1",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "vendor/pica/crates/dynamics/src/spectral.rs",
+        "pattern": "if max_val <\\s*([0-9.eE_+-]+)"
+      }
+    },
+    {
+      "macro": "LagTolerance",
+      "class": "setting",
+      "format": "dec:2",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "vendor/pica/crates/dynamics/src/pica/p3_cells.rs",
+        "pattern": "if d1 >\\s*([0-9.eE_+-]+)"
+      }
+    },
+    {
+      "macro": "LensHysteresis",
+      "class": "setting",
+      "format": "dec:2",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "vendor/pica/crates/dynamics/src/pica/lens_cells.rs",
+        "pattern": "\\(current_score - best_score\\) / current_score >\\s*([0-9.eE_+-]+)"
+      }
+    },
+    {
+      "macro": "UnitRoundoff",
+      "class": "setting",
+      "format": "powtwo",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "src/born_ladder/certificates.py",
+        "pattern": "\\bu=Q\\(1,2\\*\\*([0-9]+)\\)",
+        "transform": "inverse_power_two"
+      }
+    },
+    {
+      "macro": "SmallestSubnormal",
+      "class": "setting",
+      "format": "powtwo",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "src/born_ladder/certificates.py",
+        "pattern": "\\beta=Q\\(1,2\\*\\*([0-9]+)\\)",
+        "transform": "inverse_power_two"
+      }
+    },
+    {
+      "macro": "EnvelopeSumIndex",
+      "class": "setting",
+      "format": "dec:0",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "src/born_ladder/certificates.py",
+        "pattern": "eps=.*?gamma\\(([0-9]+)\\)"
+      }
+    },
+    {
+      "macro": "EnvelopeMassIndex",
+      "class": "setting",
+      "format": "dec:0",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "src/born_ladder/certificates.py",
+        "pattern": "envelope=.*?gamma\\(([0-9]+)\\)"
+      }
+    },
+    {
+      "macro": "EnvelopeDotUnderflow",
+      "class": "setting",
+      "format": "dec:0",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "src/born_ladder/certificates.py",
+        "pattern": "\\+([0-9]+)\\*eta;normlo"
+      }
+    },
+    {
+      "macro": "EnvelopeMassUnderflow",
+      "class": "setting",
+      "format": "dec:0",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "src/born_ladder/certificates.py",
+        "pattern": "\\+([0-9]+)\\*eta/"
+      }
+    },
+    {
+      "macro": "TieThreshold",
+      "class": "setting",
+      "format": "pow10",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "src/born_ladder/snapshot/g2c_controls.py",
+        "pattern": "\"tie\":\\s*([0-9.eE_+-]+)"
+      }
+    },
+    {
+      "macro": "NondegeneracyThreshold",
+      "class": "setting",
+      "format": "pow10",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "src/born_ladder/snapshot/g2c_controls.py",
+        "pattern": "\"coefficient\":\\s*([0-9.eE_+-]+)"
+      }
+    },
+    {
+      "macro": "CalibrationReadings",
+      "class": "setting",
+      "format": "int:thin",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "vendor/pica/crates/runner/src/test_b_sidecar.rs",
+        "pattern": "for _ in 0\\.\\.([0-9]+)\\s*\\{\\s*states\\.push\\(v6_start\\(",
+        "section": [
+          "fn write_v6_contexts(",
+          "\nfn "
+        ]
+      }
+    },
+    {
+      "macro": "ProbabilityFloor",
+      "class": "setting",
+      "format": "pow10",
+      "direction": null,
+      "binding": {
+        "kind": "literal",
+        "file": "src/born_ladder/record_tests/scorer.py",
+        "pattern": "^FLOOR =\\s*([0-9.eE_+-]+)"
+      }
+    },
+    {
+      "macro": "CorrCompetitorConfigs",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "v25",
+        "evaluation": "competitor",
+        "pointer": "/configs"
+      }
+    },
+    {
+      "macro": "CorrCompetitorCases",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "v25",
+        "evaluation": "competitor",
+        "pointer": "/cases"
+      }
+    },
+    {
+      "macro": "CorrCrossCases",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "v25",
+        "evaluation": "cross-term",
+        "pointer": "/cases"
+      }
+    },
+    {
+      "macro": "CorrCrossInvocations",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "v25",
+        "evaluation": "cross-term",
+        "pointer": "/invocations"
+      }
+    },
+    {
+      "macro": "CorrCompetitorComparisons",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "v25",
+        "evaluation": "competitor",
+        "pointer": "/comparisons"
+      }
+    },
+    {
+      "macro": "CorrCompetitorLower",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": "lower",
+      "binding": {
+        "view": "v25",
+        "evaluation": "competitor",
+        "pointer": "/minimum_lower"
+      }
+    },
+    {
+      "macro": "CorrServiceRawMean",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "v25",
+        "evaluation": "competitor",
+        "pointer": "/paper_values/raw::serviceability_factor_two/point"
+      }
+    },
+    {
+      "macro": "CorrServiceRawLower",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": "lower",
+      "binding": {
+        "view": "v25",
+        "evaluation": "competitor",
+        "pointer": "/paper_values/raw::serviceability_factor_two/lower"
+      }
+    },
+    {
+      "macro": "CorrServiceRawUpper",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": "upper",
+      "binding": {
+        "view": "v25",
+        "evaluation": "competitor",
+        "pointer": "/paper_values/raw::serviceability_factor_two/upper"
+      }
+    },
+    {
+      "macro": "CorrCompDiagRaw",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "v25",
+        "evaluation": "competitor",
+        "pointer": "/paper_values/raw::q_diag_canonical/point"
+      }
+    },
+    {
+      "macro": "CorrCompDiagRawLower",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": "lower",
+      "binding": {
+        "view": "v25",
+        "evaluation": "competitor",
+        "pointer": "/paper_values/raw::q_diag_canonical/lower"
+      }
+    },
+    {
+      "macro": "CorrCompDiagRawUpper",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": "upper",
+      "binding": {
+        "view": "v25",
+        "evaluation": "competitor",
+        "pointer": "/paper_values/raw::q_diag_canonical/upper"
+      }
+    },
+    {
+      "macro": "CorrCrossRaw",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "v25",
+        "evaluation": "cross-term",
+        "pointer": "/paper_values/raw/point"
+      }
+    },
+    {
+      "macro": "CorrCrossRawLower",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": "lower",
+      "binding": {
+        "view": "v25",
+        "evaluation": "cross-term",
+        "pointer": "/paper_values/raw/lower"
+      }
+    },
+    {
+      "macro": "CorrCrossRawUpper",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": "upper",
+      "binding": {
+        "view": "v25",
+        "evaluation": "cross-term",
+        "pointer": "/paper_values/raw/upper"
+      }
+    },
+    {
+      "macro": "CorrServicePkgMean",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "v25",
+        "evaluation": "competitor",
+        "pointer": "/paper_values/package::serviceability_factor_two/point"
+      }
+    },
+    {
+      "macro": "CorrServicePkgLower",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": "lower",
+      "binding": {
+        "view": "v25",
+        "evaluation": "competitor",
+        "pointer": "/paper_values/package::serviceability_factor_two/lower"
+      }
+    },
+    {
+      "macro": "CorrServicePkgUpper",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": "upper",
+      "binding": {
+        "view": "v25",
+        "evaluation": "competitor",
+        "pointer": "/paper_values/package::serviceability_factor_two/upper"
+      }
+    },
+    {
+      "macro": "CorrCompDiagPkg",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "v25",
+        "evaluation": "competitor",
+        "pointer": "/paper_values/package::q_diag_canonical/point"
+      }
+    },
+    {
+      "macro": "CorrCompDiagPkgLower",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": "lower",
+      "binding": {
+        "view": "v25",
+        "evaluation": "competitor",
+        "pointer": "/paper_values/package::q_diag_canonical/lower"
+      }
+    },
+    {
+      "macro": "CorrCompDiagPkgUpper",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": "upper",
+      "binding": {
+        "view": "v25",
+        "evaluation": "competitor",
+        "pointer": "/paper_values/package::q_diag_canonical/upper"
+      }
+    },
+    {
+      "macro": "CorrCrossPkg",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "v25",
+        "evaluation": "cross-term",
+        "pointer": "/paper_values/package/point"
+      }
+    },
+    {
+      "macro": "CorrCrossPkgLower",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": "lower",
+      "binding": {
+        "view": "v25",
+        "evaluation": "cross-term",
+        "pointer": "/paper_values/package/lower"
+      }
+    },
+    {
+      "macro": "CorrCrossPkgUpper",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": "upper",
+      "binding": {
+        "view": "v25",
+        "evaluation": "cross-term",
+        "pointer": "/paper_values/package/upper"
+      }
+    },
+    {
+      "macro": "OrientationCount",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "v25",
+        "evaluation": "cross-term",
+        "pointer": "/orientation/registered_slots"
+      }
+    },
+    {
+      "macro": "OrientRawMin",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": "lower",
+      "binding": {
+        "view": "v25",
+        "evaluation": "cross-term",
+        "pointer": "/orientation/summaries/raw/min"
+      }
+    },
+    {
+      "macro": "OrientRawMax",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": "upper",
+      "binding": {
+        "view": "v25",
+        "evaluation": "cross-term",
+        "pointer": "/orientation/summaries/raw/max"
+      }
+    },
+    {
+      "macro": "HistSvdRaw",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "v25",
+        "evaluation": "cross-term",
+        "pointer": "/orientation/historical_svd/raw"
+      }
+    },
+    {
+      "macro": "OrientPkgMin",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": "lower",
+      "binding": {
+        "view": "v25",
+        "evaluation": "cross-term",
+        "pointer": "/orientation/summaries/package/min"
+      }
+    },
+    {
+      "macro": "OrientPkgMax",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": "upper",
+      "binding": {
+        "view": "v25",
+        "evaluation": "cross-term",
+        "pointer": "/orientation/summaries/package/max"
+      }
+    },
+    {
+      "macro": "HistSvdPkg",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "v25",
+        "evaluation": "cross-term",
+        "pointer": "/orientation/historical_svd/package"
+      }
+    },
+    {
+      "macro": "CorrCrossSeedBase",
+      "class": "setting",
+      "format": "pow10",
+      "direction": null,
+      "binding": {
+        "kind": "json",
+        "file": "specifications/predictive_v25.json",
+        "pointers": [
+          "/scientific/acquisition/seed_design/campaigns/cross-term/base"
+        ]
+      }
+    },
+    {
+      "macro": "CorrCompSeedBase",
+      "class": "setting",
+      "format": "sig:1",
+      "direction": null,
+      "binding": {
+        "kind": "json",
+        "file": "specifications/predictive_v25.json",
+        "pointers": [
+          "/scientific/acquisition/seed_design/campaigns/competitor/base"
+        ]
+      }
+    },
+    {
+      "macro": "CorrSeedSpacing",
+      "class": "setting",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "kind": "json",
+        "file": "specifications/predictive_v25.json",
+        "pointers": [
+          "/scientific/acquisition/seed_design/campaigns/cross-term/spacing",
+          "/scientific/acquisition/seed_design/campaigns/competitor/spacing"
+        ]
+      }
+    },
+    {
+      "macro": "CanonicalDiagRawLowerQuartile",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "canonical_census",
+        "map": "raw",
+        "stat": "q1"
+      }
+    },
+    {
+      "macro": "CanonicalDiagRawMedian",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "canonical_census",
+        "map": "raw",
+        "stat": "median"
+      }
+    },
+    {
+      "macro": "CanonicalDiagRawUpperQuartile",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "canonical_census",
+        "map": "raw",
+        "stat": "q3"
+      }
+    },
+    {
+      "macro": "HistDiagRawMedian",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "raw",
+        "stat": "median",
+        "model": "q_diag"
+      }
+    },
+    {
+      "macro": "HistDiagRawLowerQuartile",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "raw",
+        "stat": "q1",
+        "model": "q_diag"
+      }
+    },
+    {
+      "macro": "HistDiagRawUpperQuartile",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "raw",
+        "stat": "q3",
+        "model": "q_diag"
+      }
+    },
+    {
+      "macro": "SelectedDCanonicalRaw",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "v25_selected",
+        "pointer": "/raw"
+      }
+    },
+    {
+      "macro": "CanonicalDiagPkgLowerQuartile",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "canonical_census",
+        "map": "pkg",
+        "stat": "q1"
+      }
+    },
+    {
+      "macro": "CanonicalDiagPkgMedian",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "canonical_census",
+        "map": "pkg",
+        "stat": "median"
+      }
+    },
+    {
+      "macro": "CanonicalDiagPkgUpperQuartile",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "canonical_census",
+        "map": "pkg",
+        "stat": "q3"
+      }
+    },
+    {
+      "macro": "HistDiagPkgMedian",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "pkg",
+        "stat": "median",
+        "model": "q_diag"
+      }
+    },
+    {
+      "macro": "HistDiagPkgLowerQuartile",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "pkg",
+        "stat": "q1",
+        "model": "q_diag"
+      }
+    },
+    {
+      "macro": "HistDiagPkgUpperQuartile",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "census_attachments",
+        "map": "pkg",
+        "stat": "q3",
+        "model": "q_diag"
+      }
+    },
+    {
+      "macro": "SelectedDCanonicalPkg",
+      "class": "regenerated",
+      "format": "sig:4",
+      "direction": null,
+      "binding": {
+        "view": "v25_selected",
+        "pointer": "/pkg"
+      }
+    },
+    {
+      "macro": "OriginalFailBoth",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/OriginalFailBoth"
+      }
+    },
+    {
+      "macro": "SingularSingletons",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/SingularSingletons"
+      }
+    },
+    {
+      "macro": "SingularNonsingletons",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/SingularNonsingletons"
+      }
+    },
+    {
+      "macro": "RegisteredRobustPass",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/RegisteredRobustPass"
+      }
+    },
+    {
+      "macro": "RegisteredRobustFail",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/RegisteredRobustFail"
+      }
+    },
+    {
+      "macro": "LexicographicNonzeroFirst",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/LexicographicNonzeroFirst"
+      }
+    },
+    {
+      "macro": "LexicographicRoundedEqual",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/LexicographicRoundedEqual"
+      }
+    },
+    {
+      "macro": "RegisteredRobustGapBound",
+      "class": "regenerated",
+      "format": "frac",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/RegisteredRobustGapBound"
+      }
+    },
+    {
+      "macro": "ConfigCasesBD",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-102/A1+A12"
+      }
+    },
+    {
+      "macro": "ConfigCasesBE",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-102/A3+A12"
+      }
+    },
+    {
+      "macro": "ConfigCasesBF",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-102/baseline_ref"
+      }
+    },
+    {
+      "macro": "ConfigCasesBG",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-102/combo_rm"
+      }
+    },
+    {
+      "macro": "ConfigCasesBH",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-102/combo_structure"
+      }
+    },
+    {
+      "macro": "ConfigCasesBI",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-102/full_action_safe"
+      }
+    },
+    {
+      "macro": "ConfigCasesBJ",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-103/baseline"
+      }
+    },
+    {
+      "macro": "ConfigCasesBK",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-104/A18_only"
+      }
+    },
+    {
+      "macro": "ConfigCasesBL",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-104/A19_only"
+      }
+    },
+    {
+      "macro": "ConfigCasesBM",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-104/A20_only"
+      }
+    },
+    {
+      "macro": "ConfigCasesBN",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-104/A21_only"
+      }
+    },
+    {
+      "macro": "ConfigCasesBO",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-104/A22_only"
+      }
+    },
+    {
+      "macro": "ConfigCasesBP",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-104/A23_only"
+      }
+    },
+    {
+      "macro": "ConfigCasesBQ",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-104/P5_row_all"
+      }
+    },
+    {
+      "macro": "ConfigCasesBR",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-104/baseline"
+      }
+    },
+    {
+      "macro": "ConfigCasesBS",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-104/full_action"
+      }
+    },
+    {
+      "macro": "ConfigCasesBT",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-104/full_all"
+      }
+    },
+    {
+      "macro": "ConfigCasesBU",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-105/A3_A13"
+      }
+    },
+    {
+      "macro": "ConfigCasesBV",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-105/P1_row_A13"
+      }
+    },
+    {
+      "macro": "ConfigCasesBW",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-105/baseline"
+      }
+    },
+    {
+      "macro": "ConfigCasesBX",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-105/mixer"
+      }
+    },
+    {
+      "macro": "ConfigCasesBY",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-106/A13_A14_A19"
+      }
+    },
+    {
+      "macro": "ConfigCasesBZ",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-106/A13_A21_A19"
+      }
+    },
+    {
+      "macro": "ConfigCasesCA",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-106/A13_A3_A19"
+      }
+    },
+    {
+      "macro": "ConfigCasesCB",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-106/baseline"
+      }
+    },
+    {
+      "macro": "ConfigCasesCC",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-106/chain_A24"
+      }
+    },
+    {
+      "macro": "ConfigCasesCD",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-106/chain_SBRC"
+      }
+    },
+    {
+      "macro": "ConfigCasesCE",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-106/chain_pkg"
+      }
+    },
+    {
+      "macro": "ConfigCasesCF",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-107/A19_only"
+      }
+    },
+    {
+      "macro": "ConfigCasesCG",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-107/P1_row_A13"
+      }
+    },
+    {
+      "macro": "ConfigCasesCH",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-107/baseline"
+      }
+    },
+    {
+      "macro": "ConfigCasesCI",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-107/chain_A24"
+      }
+    },
+    {
+      "macro": "ConfigCasesCJ",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-107/chain_SBRC"
+      }
+    },
+    {
+      "macro": "ConfigCasesCK",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-107/full_action"
+      }
+    },
+    {
+      "macro": "ConfigCasesCL",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-107/full_all"
+      }
+    },
+    {
+      "macro": "ConfigCasesCM",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/A12_A25"
+      }
+    },
+    {
+      "macro": "ConfigCasesCN",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/A14_A19"
+      }
+    },
+    {
+      "macro": "ConfigCasesCO",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/A18_A19"
+      }
+    },
+    {
+      "macro": "ConfigCasesCP",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/A18_only"
+      }
+    },
+    {
+      "macro": "ConfigCasesCQ",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/A20_only"
+      }
+    },
+    {
+      "macro": "ConfigCasesCR",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/A22_only"
+      }
+    },
+    {
+      "macro": "ConfigCasesCS",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/A4_A19"
+      }
+    },
+    {
+      "macro": "ConfigCasesCT",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/P2_P3_rows"
+      }
+    },
+    {
+      "macro": "ConfigCasesCU",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/P2_row"
+      }
+    },
+    {
+      "macro": "ConfigCasesCV",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/P5_row"
+      }
+    },
+    {
+      "macro": "ConfigCasesCW",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/baseline"
+      }
+    },
+    {
+      "macro": "ConfigCasesCX",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/col_P3"
+      }
+    },
+    {
+      "macro": "ConfigCasesCY",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/col_P4"
+      }
+    },
+    {
+      "macro": "ConfigCasesCZ",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/col_P5"
+      }
+    },
+    {
+      "macro": "ConfigCasesDA",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/fa_no_P1row"
+      }
+    },
+    {
+      "macro": "ConfigCasesDB",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/fa_no_P2mod"
+      }
+    },
+    {
+      "macro": "ConfigCasesDC",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/fa_no_P3row"
+      }
+    },
+    {
+      "macro": "ConfigCasesDD",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/fa_no_inf_P3"
+      }
+    },
+    {
+      "macro": "ConfigCasesDE",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/fa_no_inf_P4"
+      }
+    },
+    {
+      "macro": "ConfigCasesDF",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/fa_no_inf_P5"
+      }
+    },
+    {
+      "macro": "ConfigCasesDG",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/fa_no_inf_P6"
+      }
+    },
+    {
+      "macro": "ConfigCasesDH",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/full_action"
+      }
+    },
+    {
+      "macro": "ConfigCasesDI",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/full_all"
+      }
+    },
+    {
+      "macro": "ConfigCasesDJ",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/gen3_A13_A14_A19"
+      }
+    },
+    {
+      "macro": "ConfigCasesDK",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/gen4_core"
+      }
+    },
+    {
+      "macro": "ConfigCasesDL",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/gen5_core_A25"
+      }
+    },
+    {
+      "macro": "ConfigCasesDM",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/gen6_core_A12_A25"
+      }
+    },
+    {
+      "macro": "ConfigCasesDN",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/loo_A1"
+      }
+    },
+    {
+      "macro": "ConfigCasesDO",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/loo_A11"
+      }
+    },
+    {
+      "macro": "ConfigCasesDP",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/loo_A12"
+      }
+    },
+    {
+      "macro": "ConfigCasesDQ",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/loo_A13"
+      }
+    },
+    {
+      "macro": "ConfigCasesDR",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/loo_A14"
+      }
+    },
+    {
+      "macro": "ConfigCasesDS",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/loo_A17"
+      }
+    },
+    {
+      "macro": "ConfigCasesDT",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/loo_A18"
+      }
+    },
+    {
+      "macro": "ConfigCasesDU",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/loo_A19"
+      }
+    },
+    {
+      "macro": "ConfigCasesDV",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/loo_A2"
+      }
+    },
+    {
+      "macro": "ConfigCasesDW",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/loo_A20"
+      }
+    },
+    {
+      "macro": "ConfigCasesDX",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/loo_A21"
+      }
+    },
+    {
+      "macro": "ConfigCasesDY",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/loo_A22"
+      }
+    },
+    {
+      "macro": "ConfigCasesDZ",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/loo_A23"
+      }
+    },
+    {
+      "macro": "ConfigCasesEA",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/loo_A24"
+      }
+    },
+    {
+      "macro": "ConfigCasesEB",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/loo_A25"
+      }
+    },
+    {
+      "macro": "ConfigCasesEC",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/loo_A3"
+      }
+    },
+    {
+      "macro": "ConfigCasesED",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/loo_A4"
+      }
+    },
+    {
+      "macro": "ConfigCasesEE",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/loo_A5"
+      }
+    },
+    {
+      "macro": "ConfigCasesEF",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/loo_A6"
+      }
+    },
+    {
+      "macro": "ConfigCasesEG",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/loo_A7"
+      }
+    },
+    {
+      "macro": "ConfigCasesEH",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/loo_A8"
+      }
+    },
+    {
+      "macro": "ConfigCasesEI",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "configuration_counts",
+        "pointer": "/EXP-112/loo_A9"
+      }
+    },
+    {
+      "macro": "SelectedCaseIndex",
+      "class": "regenerated",
+      "format": "int",
+      "direction": null,
+      "binding": {
+        "view": "census",
+        "file": "full_cohort",
+        "pointer": "/SelectedCaseIndex"
+      }
+    },
+    {
+      "macro": "caption@documentclass",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "MarkManuscriptCitation",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "ManuscriptHasCitations",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "qedsymbol",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "X",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "simplex",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "ones",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "States",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "Effects",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "rec",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "dTV",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "fraw",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "fpkg",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "fjnt",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "test",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "prog",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "arraystretch",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "tr",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "Sym",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "FigArchitecture",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "FigCardItem",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "FigEncoderCircle",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "EncoderTMin",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "EncoderTMax",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "EncoderArcStart",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "EncoderArcEnd",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "lastrow",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "px",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "pz",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "labelvalue",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "witnessvalue",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "shape",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "zerox",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "zeroz",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "twox",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "twoz",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "FigThreeDescriptions",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "RepositoryURL",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "ReleaseTag",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    },
+    {
+      "macro": "thetable",
+      "class": "non_numerical",
+      "source": "manuscript symbol, layout, figure, citation or release metadata command; result-macro references are checked; coordinates and literal figure labels are not"
+    }
+  ]
+}

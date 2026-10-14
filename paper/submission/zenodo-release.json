@@ -1,0 +1,51 @@
+{
+  "artifact": {
+    "bytes": 1089807,
+    "filename": "Tsiokos_2026_An_Audited_Born_Calculus_on_a_Pre_Physical_Stochastic_Substrate.pdf",
+    "pages": 67,
+    "path": "paper/submission/artifacts/Tsiokos_2026_An_Audited_Born_Calculus_on_a_Pre_Physical_Stochastic_Substrate.pdf",
+    "sha256": "525e4aa80f0e5997c76abc014148128237b5235661e0353ba5120f39c9aa920a",
+    "source_git_commit": "1170a2af50392e4dd8be146c7c5820d43cc989cc",
+    "validated_values": {
+      "copyright": "© 2026",
+      "license": "CC-BY 4.0",
+      "paper version": "Preprint v1.0",
+      "publication date": "14 October 2026",
+      "reserved DOI": "10.5281/zenodo.23261473"
+    }
+  },
+  "assembled_at_utc": "2026-10-14T12:08:12.430814+00:00",
+  "dashboard_url": "https://zenodo.org/deposit/23261473",
+  "deposition_id": 23261473,
+  "doi_reservation": {
+    "client": "datacite",
+    "identifier": "10.5281/zenodo.23261473",
+    "provider": "datacite",
+    "verified_via": "rdm_pid_table"
+  },
+  "draft_source": "created",
+  "manual_dashboard_publication_only": true,
+  "metadata": {
+    "citation_count": 45,
+    "path": "paper/submission/zenodo-metadata.json",
+    "sha256": "e0106963463a4510ca3847d120abbcd46dfb40731a0e081587a9117daa35293a",
+    "skipped_citations": []
+  },
+  "paper_release_include": "paper/includes/release_metadata.tex",
+  "publication_date": "2026-10-14",
+  "remote_file": {
+    "bytes": 1089807,
+    "filename": "Tsiokos_2026_An_Audited_Born_Calculus_on_a_Pre_Physical_Stochastic_Substrate.pdf",
+    "md5": "95012e0afad2faf2bf0f95f0c8a4de06",
+    "sha256": "525e4aa80f0e5997c76abc014148128237b5235661e0353ba5120f39c9aa920a",
+    "verified": true
+  },
+  "remote_metadata": {
+    "desired_sha256": "b36a3e2677641d3425cf8b6c265e587e6e796e4f96af034ee6207b827899d3a0",
+    "modified": "2026-10-14T12:50:34.319756+00:00",
+    "sha256": "f82dbf04ae132bd40064be2419ebd8944161e643f0ab5c7155911d0fc4654a32"
+  },
+  "reserved_doi": "10.5281/zenodo.23261473",
+  "schema_version": 1,
+  "stage": "metadata_prepared"
+}

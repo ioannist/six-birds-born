@@ -1,0 +1,45 @@
+{
+  "binding_mode": "evaluation contains each item or binds it through immutable references",
+  "path": "rb1v2_g2c_v23_evaluation.json",
+  "persistence_requirements": [
+    "Complete census and joins: all scheduled groups and invocations, planned exclusions with reasons, seeds, sources, kinds, stable contexts and recorded steps; distinguish accepted attempts from retries and named labels from experiment groups.",
+    "Spectral evidence: original-basis coefficient evidence, active-coefficient counts, inclusion mask, context identities and links to structural completeness and control results; persist degenerate and included contexts.",
+    "Every hierarchy level: total, eligible, nondegenerate and degenerate counts; nonempty/empty invocation and group counts; identities of every empty child; numerical denominators, applicable weights and intermediate means; distinguish zero or tie from undefined.",
+    "All required seed/source/kind cells: explicit records even when empty, source estimates, combined estimates and every primary vacuity witness; kind-specific ledgers preserve paired context identity without double-counting.",
+    "Sensitivity membership: method, grain, source stratum, statistic, replicate/deletion index, sampled indices and multiplicities, paired draw linkage, support counts, denominators and estimates; preserve existing RNG audit bindings.",
+    "Undefined-result ledger: typed null plus a closed reason code and exact empty-population witness; no NaN sentinel, omitted array entry or numerical zero substitute; prescribed, defined and undefined replicate/deletion counts reconcile exactly.",
+    "Branch audit: all applicable preemptions, vacuity witnesses, sensitivity reversal and non-evaluability causes, unrounded comparison inputs and selected branch; every statistic carries its count summary and detailed-census reference."
+  ],
+  "prepublication_provenance_pointer": "/prepublication_provenance",
+  "replicate_count_reconciliation": {
+    "fields": [
+      "prescribed",
+      "defined",
+      "undefined"
+    ],
+    "formula": "prescribed = defined + undefined",
+    "required": true
+  },
+  "rotation_certificate_scale": {
+    "keys": [
+      "certificate_component_max",
+      "certificate_dtv_max",
+      "rejected_attempt_total"
+    ],
+    "report_only": true
+  },
+  "schema_version": "RB1_G2C_V21_EVALUATION_EMPTY_GROUP_PERSISTENCE_V1",
+  "undefined_result": {
+    "closed_reason_codes": [
+      "EMPTY_REQUIRED_SPECTRAL_POPULATION",
+      "UNDEFINED_REQUIRED_ACROSS_SEED_GROUP_MEAN",
+      "UNDEFINED_REQUIRED_SENSITIVITY_REPLICATE",
+      "UNDEFINED_REQUIRED_SENSITIVITY_INTERVAL"
+    ],
+    "empty_population_witness_required": true,
+    "nan_sentinel_permitted": false,
+    "omitted_array_entry_permitted": false,
+    "typed_value": null,
+    "zero_substitute_permitted": false
+  }
+}

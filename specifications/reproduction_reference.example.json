@@ -1,0 +1,36 @@
+{
+  "schema": "born_reproduction_reference_v1",
+  "description": "Read-only comparison inputs, supplied after production. All paths resolve relative to this file, then their named root. A historical_bundle may supply predictive compressed artifacts and historical roots instead of predictive below. Missing references never pass. Lean comparison requires lean_historical_sources: an independently retained historical project tree matching lean_audit, not the current checkout. Historical statement/axiom preservation is separate from the fresh full-project audit.",
+  "roots": {
+    "retained": "retained",
+    "formal": "retained/lean-historical-sources"
+  },
+  "components": {
+    "census": "retained/census",
+    "worked": "retained/worked",
+    "test_b": "retained/test-b",
+    "test_b_census": "retained/test-b-census",
+    "locked": "retained/locked",
+    "certification": "retained/certification",
+    "lean": "formal/."
+  },
+  "predictive": {
+    "competitor": {"units": "retained/competitor/units.jsonl", "evaluation": "retained/competitor/evaluation.json"},
+    "cross-term": {"units": "retained/cross-term/units.jsonl", "evaluation": "retained/cross-term/evaluation.json"}
+  },
+  "captures": {
+    "competitor": "retained/captures/competitor",
+    "cross-term": "retained/captures/cross-term",
+    "worked": "retained/captures/worked",
+    "test-b": "retained/captures/test-b"
+  },
+  "lean_historical_sources": "retained/lean-historical-sources",
+  "lean_audit": "retained/lean-audit.json",
+  "non_trace_reference": "retained/non_trace_rederivation.json",
+  "paper_quantities": [],
+  "paper_binding_format": {
+    "description": "Automatic ledger source expressions cover population JSON pointers, Test B verdict fields, census/configuration counts, structural extrema, archived descriptive quantiles and registered specification constants. Additional explicit bindings are allowed, with no numerical value in the binding.",
+    "example": {"macro": "CrossRaw", "evaluation": "cross-term", "pointer": "/statistics/raw/point_estimate"},
+    "component_example": {"macro": "TestTwoClosure", "component": "locked", "file": "verdict.json", "pointer": "/ranks/2/scope/mean_C95"}
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "schema": "born_shared_scientific_sections_v1",
+  "version": "v8",
+  "main_file": "predictive_v8.json",
+  "sections": [
+    {
+      "pointer": "/laws",
+      "file": "shared_sections/laws.json",
+      "encoding": "json",
+      "scientific_value_sha256": "ed5c813b943f52421e068449c8f4b1e4ae1061fdbf20f55e7c2195592097f53d"
+    },
+    {
+      "pointer": "/identity/normative_expression_registry",
+      "file": "shared_sections/identity__normative_expression_registry.json",
+      "encoding": "json",
+      "scientific_value_sha256": "45e24c113417f4d20231e00dc6336f367afc1ef4eea6ab53dee86baed1a2575f"
+    },
+    {
+      "pointer": "/completeness/expected_matrices/0",
+      "file": "shared_sections/completeness__expected_matrices__0.json",
+      "encoding": "json",
+      "scientific_value_sha256": "9f0870fd0aa9bdcee4c80e4659960d24872c01688fbf16c0a0aa2c7e0d60f9f6"
+    },
+    {
+      "pointer": "/completeness/expected_matrices/6",
+      "file": "shared_sections/completeness__expected_matrices__6.json",
+      "encoding": "json",
+      "scientific_value_sha256": "80ba64d66ce6d2181b60f440152091de2ee542528292793d3f9e88fccfbe3bd9"
+    },
+    {
+      "pointer": "/completeness/planned_exclusions",
+      "file": "shared_sections/completeness__planned_exclusions.json",
+      "encoding": "json",
+      "scientific_value_sha256": "db7701b71c2aa75cafe9b7763c5da4dd930eb48cdcbad38e52bbff193fbb3f8d"
+    },
+    {
+      "pointer": "/branch_truth_tables/tables/0",
+      "file": "shared_sections/branch_truth_tables__tables__0.json",
+      "encoding": "json",
+      "scientific_value_sha256": "fc332d7d4c8fc6a643c51dd8086e5e2d59a90958b45a206f84f48507dacc77ae"
+    },
+    {
+      "pointer": "/branch_truth_tables/tables/7",
+      "file": "shared_sections/branch_truth_tables__tables__7.json",
+      "encoding": "json",
+      "scientific_value_sha256": "bbe89c89513455021d1a2e8eac95b1c01b62ebb0401f528651779631aa7a29a8"
+    },
+    {
+      "pointer": "/branch_truth_tables/tables/9",
+      "file": "shared_sections/branch_truth_tables__tables__9.json",
+      "encoding": "json",
+      "scientific_value_sha256": "f3298e48fed048c9e8d25d54a5df8cd868676f8837b94b4c2595b43bcbe74a47"
+    },
+    {
+      "pointer": "/completeness/universal_evidence_shapes",
+      "file": "shared_sections/completeness__universal_evidence_shapes.json",
+      "encoding": "json",
+      "scientific_value_sha256": "b0aff28378fe5ec53f2e7b65463f7064d07145cb2b1cbf7ed7574cb189bcd8d1"
+    },
+    {
+      "pointer": "/completeness/g2a_raw_stdout_derivation",
+      "file": "shared_sections/completeness__g2a_raw_stdout_derivation.json",
+      "encoding": "json",
+      "scientific_value_sha256": "171dfc4eb045337ef0a76d727086ddd0e01e97a1c3688e2b8b1eca557bc7bf27"
+    }
+  ]
+}

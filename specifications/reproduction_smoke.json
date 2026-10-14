@@ -1,0 +1,25 @@
+{
+  "schema": "born_reproduction_smoke_v1",
+  "qualification": "Reduced conformance only; never a registered population or historical result",
+  "runner_grid": "e2e-smoke",
+  "runner_scale_and_horizon": "unchanged scale 32 and full runner horizon",
+  "predictive_units_grid": "smoke",
+  "population": {
+    "bootstrap_draws": 200,
+    "seed_blocks": 4,
+    "description": "Four deterministic synthetic seed contrasts anchored to fresh unit loss differences; shared historical numerical BCa/sign/Holm helpers, no registered-cohort verdict"
+  },
+  "test_b": {
+    "header_subset": "original worked case's captured seed-910000 header",
+    "starts": 2,
+    "warm_iterations": 2,
+    "polish_iterations": 4,
+    "checkpoints": [2, 4],
+    "literal_relabels_per_context_dimension": 2,
+    "training_audit_draws": 4,
+    "bootstrap_draws": 200000,
+    "sampling": "Unchanged calibration, train/validation and locked sample counts and RNG domains",
+    "certification": "Five fidelity examples, split-state, four false-square examples, one census-matched pseudo example and decision boundaries; reduced fitting budgets"
+  },
+  "lean": "Check all exact census and worked-case certificates; formal coverage is not applicable to this cohort. Do not parameterize or build the registered 120-case inputs."
+}
